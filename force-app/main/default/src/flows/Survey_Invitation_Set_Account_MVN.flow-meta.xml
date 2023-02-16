@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Set Account_MVN__c from the associated Contact&apos;s AccountId</description>
+        <name>Set_Account_MVN</name>
+        <label>Set Account</label>
+        <locationX>754</locationX>
+        <locationY>117</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Account_MVN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_MVN.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Only proceed forward if participant is contact</description>
+        <name>Is_Participant_Contact_MVN</name>
+        <label>Is Participant Contact?</label>
+        <locationX>435</locationX>
+        <locationY>118</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ParticipantId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>003</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Contact_MVN</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Update the SurveyInvitation.Account_MVN__c field so that it can be used by a Timeline View Configuration.</description>
+    <interviewLabel>Survey Invitation Set Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Survey Invitation Set Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get Contact record from SurveyInvitation.ParticipantId
+(Note:  ContactId does not get populated on before trigger.)</description>
+        <name>Get_Contact_MVN</name>
+        <label>Get Contact</label>
+        <locationX>608</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Account_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParticipantId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Is_Participant_Contact_MVN</targetReference>
+        </connector>
+        <object>SurveyInvitation</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

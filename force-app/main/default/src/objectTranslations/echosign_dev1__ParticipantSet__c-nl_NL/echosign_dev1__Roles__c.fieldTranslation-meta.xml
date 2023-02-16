@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Roles --></label>
+    <name>echosign_dev1__Roles__c</name>
+    <picklistValues>
+        <masterLabel>ACCEPTOR</masterLabel>
+        <translation><!-- ACCEPTOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APPROVER</masterLabel>
+        <translation><!-- APPROVER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC</masterLabel>
+        <translation><!-- CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CERTIFIED_RECIPIENT</masterLabel>
+        <translation><!-- CERTIFIED_RECIPIENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE</masterLabel>
+        <translation><!-- DELEGATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE_TO_ACCEPTOR</masterLabel>
+        <translation><!-- DELEGATE_TO_ACCEPTOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE_TO_APPROVER</masterLabel>
+        <translation><!-- DELEGATE_TO_APPROVER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE_TO_CERTIFIED_RECIPIENT</masterLabel>
+        <translation><!-- DELEGATE_TO_CERTIFIED_RECIPIENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE_TO_FORM_FILLER</masterLabel>
+        <translation><!-- DELEGATE_TO_FORM_FILLER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELEGATE_TO_SIGNER</masterLabel>
+        <translation><!-- DELEGATE_TO_SIGNER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FORM_FILLER</masterLabel>
+        <translation><!-- FORM_FILLER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENDER</masterLabel>
+        <translation><!-- SENDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHARE</masterLabel>
+        <translation><!-- SHARE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGNER</masterLabel>
+        <translation><!-- SIGNER --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

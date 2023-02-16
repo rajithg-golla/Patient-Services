@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica la fase in cui si trova il paziente per il programma CCM Medicare.</help>
+    <label><!-- Stage --></label>
+    <name>HealthCloudGA__Stage__c</name>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>Rifiutato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation>In corso</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Program</masterLabel>
+        <translation>In programma</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potential</masterLabel>
+        <translation>Potenziale</translation>
+    </picklistValues>
+</CustomFieldTranslation>

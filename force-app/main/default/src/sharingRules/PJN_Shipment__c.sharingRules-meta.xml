@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing rule to share cases related to the Evkeeza program with the Evkeeza Public Group</description>
+        <label>Evkeeza</label>
+        <sharedTo>
+            <group>MVN_EVK</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_Evkeeza_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Evkeeza Read Only</label>
+        <sharedTo>
+            <group>MVN_EVK_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_RBM_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>RBM Sharing</label>
+        <sharedTo>
+            <group>MVN_EVK_RBM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

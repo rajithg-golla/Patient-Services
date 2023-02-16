@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates that the record cannot be modified, anonymized, or deleted because there is a legal hold --></help>
+    <label><!-- Legal Hold --></label>
+    <name>PJN_Legal_Hold__c</name>
+</CustomFieldTranslation>

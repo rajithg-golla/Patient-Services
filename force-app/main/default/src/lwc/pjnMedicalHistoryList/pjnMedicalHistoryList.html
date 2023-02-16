@@ -1,0 +1,50 @@
+<template>
+    <template if:true={loading}>
+        <div class="slds-is-relative min-120-px">
+            <lightning-spinner alternative-text={labels.LOADING} size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={loading}>
+        <template if:true={records}>
+            <template if:true={showPagination}>
+                <div class="slds-text-align_center slds-m-vertical_small">
+                    <template if:true={disablePrevious}>
+                        <span class="slds-text-color_weak">&lt; {labels.PREVIOUS}</span>
+                    </template>
+                    <template if:false={disablePrevious}>
+                        <a href="javascript:void(0)" onclick={handlePrevious}>&lt; {labels.PREVIOUS}</a>
+                    </template>
+
+                    <span class="slds-m-horizontal_x-small">{pageXofY}</span>
+
+                    <template if:true={disableNext}>
+                        <span class="slds-text-color_weak">{labels.NEXT} &gt;</span>
+                    </template>
+                    <template if:false={disableNext}>
+                        <a href="javascript:void(0)" onclick={handleNext}>{labels.NEXT} &gt;</a>
+                    </template>
+                </div>
+            </template>
+
+            <template if:true={hasRecords}>
+                <div class="slds-m-vertical_medium">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={records}
+                        columns={columns}
+                        hide-checkbox-column
+                        sorted-by={sortField}
+                        sorted-direction={sortDirection}
+                        onrowaction={handleRowAction}
+                        onsort={handleSort}>
+                    </lightning-datatable>
+                </div>
+            </template>
+            <template if:false={hasRecords}>
+                <div class="slds-text-align_center slds-p-around_xx-large slds-text-title_caps">
+                    {labels.NO_RECORDS}
+                </div>
+            </template>
+        </template>
+    </template>
+</template>

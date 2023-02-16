@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Survey_to_Task_before_Closing</fullName>
+    <active>true</active>
+    <description>Requires the addition of a Positive or Negative Survey before closing the task</description>
+    <errorConditionFormula>Subject = &quot;Automatically Send Survey&quot;
+&amp;&amp;
+ISBLANK(Survey_MVN__c)
+&amp;&amp;
+ISPICKVAL( Status , &quot;Closed&quot; )</errorConditionFormula>
+    <errorDisplayField>Survey_MVN__c</errorDisplayField>
+    <errorMessage>Please select a Positive Result or Negative Result Survey before closing this task</errorMessage>
+</ValidationRule>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialty --></label>
+    <name>PJN_Specialty__c</name>
+    <picklistValues>
+        <masterLabel>Allergy and Immunology</masterLabel>
+        <translation><!-- Allergy and Immunology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anesthesiology</masterLabel>
+        <translation><!-- Anesthesiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation><!-- Cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation><!-- Dermatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnostic Radiology</masterLabel>
+        <translation><!-- Diagnostic Radiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Medicine</masterLabel>
+        <translation><!-- Emergency Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology</masterLabel>
+        <translation><!-- Endocrinology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Medicine</masterLabel>
+        <translation><!-- Family Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Medicine</masterLabel>
+        <translation><!-- Internal Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lipidology</masterLabel>
+        <translation><!-- Lipidology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Geneticist</masterLabel>
+        <translation><!-- Medical Geneticist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation><!-- Neurology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear Medicine</masterLabel>
+        <translation><!-- Nuclear Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstetrics and Gynecology</masterLabel>
+        <translation><!-- Obstetrics and Gynecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation><!-- Ophthalmology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology</masterLabel>
+        <translation><!-- Pathology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pediatric Cardiology</masterLabel>
+        <translation><!-- Pediatric Cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pediatric Endocrinology</masterLabel>
+        <translation><!-- Pediatric Endocrinology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pediatric Lipidology</masterLabel>
+        <translation><!-- Pediatric Lipidology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pediatrics</masterLabel>
+        <translation><!-- Pediatrics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Medicine and Rehabilitation</masterLabel>
+        <translation><!-- Physical Medicine and Rehabilitation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preventative Medicine</masterLabel>
+        <translation><!-- Preventative Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatry</masterLabel>
+        <translation><!-- Psychiatry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation Oncology</masterLabel>
+        <translation><!-- Radiation Oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation><!-- Surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urology</masterLabel>
+        <translation><!-- Urology --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

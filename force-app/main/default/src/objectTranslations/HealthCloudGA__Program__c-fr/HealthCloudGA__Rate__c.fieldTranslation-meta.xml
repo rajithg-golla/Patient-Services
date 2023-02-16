@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indique le remboursement pour la période de mesure d&apos;un patient unique pour le programme spécifique (exemple : programme Medicare CCM).</help>
+    <label><!-- Rate --></label>
+    <name>HealthCloudGA__Rate__c</name>
+</CustomFieldTranslation>

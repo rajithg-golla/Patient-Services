@@ -1,0 +1,48 @@
+<aura:component implements="lightning:isUrlAddressable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <aura:attribute
+        name        = "isTargetSubtab"
+        type        = "Boolean"
+        description = "True when the tab to be created is a subtab"
+        default     = "false"
+    />
+    <aura:attribute
+        name        = "target"
+        type        = "String"
+        description = "API Name of the lightning:isUrlAddressable component to show in a tab"
+    />
+    <aura:attribute
+        name        = "displayName"
+        type        = "String"
+        description = "Label to display on the button"
+    />
+    <aura:attribute
+        name        = "parameters"
+        type        = "String"
+        description = 'Comma delimited list of quoted "name":"value" pairs for the component'
+    />
+    <aura:attribute
+        name        = "thisTabId"
+        type        = "String"
+        description = "Id of the tab this component is on"
+        access      = "private"
+    />
+    <aura:attribute
+        name        = "targetTabId"
+        type        = "String"
+        description = "Id of the tab previously displayed"
+        access      = "private"
+    />
+    <aura:attribute
+        name        = "returnUrl"
+        type        = "String"
+        description = "Page reference for coming back to the containing page"
+        access      = "private"
+    />
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <lightning:workspaceAPI aura:id="workspace" />
+
+    <lightning:button label="{!v.displayName}" onclick="{!c.openTab}" />
+
+</aura:component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>朝目標達成的完成度</help>
+    <label><!-- % Progress --></label>
+    <name>HealthCloudGA__Progress__c</name>
+</CustomFieldTranslation>

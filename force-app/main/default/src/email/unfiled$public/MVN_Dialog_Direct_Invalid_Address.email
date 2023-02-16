@@ -1,0 +1,5 @@
+The Fulfillment Partner has returned an invalid address for the address validation of Fulfillment Request {!PJN_Fulfillment_Request__c.Name}.
+
+Please update the address associated to this Fulfillment Request and resubmit.
+
+{!PJN_Fulfillment_Request__c.Link}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Copay_Medical_Required_Information</fullName>
+    <active>true</active>
+    <description>Requires Claim Date of Service, Eligible Claim Review Outcome, Private/Commercial Plan Type, completed BV, and HIPAA Consent to create a Copay Medical Claim Fulfillment Request. This information is captured under Claim, Member Plan, and Consent.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &quot;MVN_Copay_Medical_Claim&quot;,
+OR(
+ISBLANK(MVN_Claim_Date_of_Service__c), 
+MVN_Claim_Review_Outcome__c &lt;&gt; &quot;Eligible&quot;, 
+MVN_Plan_Type__c &lt;&gt; &quot;Private/Commercial&quot;,
+MVN_BV_Completed__c = False,
+PJN_HIPPA_Consent_Status__c &lt;&gt; &quot;Opt In&quot;
+)
+)</errorConditionFormula>
+    <errorMessage>The following is required in order to submit the Copay Medical Claim for processing: Claim Date of Service, Eligible Claim Review Outcome, Private/Commercial Plan Type, completed BV, and HIPAA Consent.</errorMessage>
+</ValidationRule>

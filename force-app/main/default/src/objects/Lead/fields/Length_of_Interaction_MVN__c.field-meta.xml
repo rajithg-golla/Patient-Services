@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Length_of_Interaction_MVN__c</fullName>
+    <description>Approximate length of time spent interacting with this person.</description>
+    <externalId>false</externalId>
+    <label>Length of Interaction</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under 5 minutes</fullName>
+                <default>false</default>
+                <label>Under 5 minutes</label>
+            </value>
+            <value>
+                <fullName>5-10 minutes</fullName>
+                <default>false</default>
+                <label>5-10 minutes</label>
+            </value>
+            <value>
+                <fullName>10-15 minutes</fullName>
+                <default>false</default>
+                <label>10-15 minutes</label>
+            </value>
+            <value>
+                <fullName>More than 15 minutes</fullName>
+                <default>false</default>
+                <label>More than 15 minutes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <description>Assign Account.Fax</description>
+        <name>Assign_Account_Fax_MVN</name>
+        <label>Assign Account.Fax</label>
+        <locationX>1167</locationX>
+        <locationY>331</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.Fax</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Fax__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Account_Address_Email_Fax_Phone_Fields_MVN</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign Account.PersonEmail field</description>
+        <name>Assign_Account_PersonEmail_Field_MVN</name>
+        <label>Assign Account.PersonEmail Field</label>
+        <locationX>791</locationX>
+        <locationY>327</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Email__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Account_Address_Email_Fax_Phone_Fields_MVN</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign Account PersonMailingStreet, PersonMailingCity, PersonMailingState, PersonMailingPostalCode, PersonMailingCountry fields</description>
+        <name>Assign_Account_PersonMailing_Fields_MVN</name>
+        <label>Assign Account.PersonMailing Fields</label>
+        <locationX>645</locationX>
+        <locationY>457</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonMailingStreet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>STREET_ADDRESS_MVN</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonMailingCity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_City__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonMailingState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_State__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonMailingPostalCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Postal_Code__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.PersonMailingCountry</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Country__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Account_Address_Email_Fax_Phone_Fields_MVN</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign Account.Phone</description>
+        <name>Assign_Account_Phone_MVN</name>
+        <label>Assign Account.Phone</label>
+        <locationX>966</locationX>
+        <locationY>331</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.Phone</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Phone__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Account_Address_Email_Fax_Phone_Fields_MVN</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign Account BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry fields</description>
+        <name>Assign_Billing_Fields_MVN</name>
+        <label>Assign Account.Billing Fields</label>
+        <locationX>477</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.BillingStreet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>STREET_ADDRESS_MVN</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.BillingCity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_City__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.BillingState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_State__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.BillingPostalCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Postal_Code__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Account_MVN.BillingCountry</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Country__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Account_Address_Email_Fax_Phone_Fields_MVN</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>For newline.  If Flows will ever support newlines in the future, this and NEWLINE_MVN can be removed.</description>
+        <name>EMPTY_STRING</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Name of the Contact Information Address record type (to be matched against the field PJN_Record_Type_Name__c)</description>
+        <name>RECORD_TYPE_ADDRESS_MVN</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Address</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Name of the Contact Information Email record type (to be matched against the field PJN_Record_Type_Name__c)</description>
+        <name>RECORD_TYPE_EMAIL_MVN</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Email</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Name of the Contact Information Fax record type (to be matched against the field PJN_Record_Type_Name__c)</description>
+        <name>RECORD_TYPE_FAX_MVN</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Fax</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Name of the Contact Information Phone record type (to be matched against the field PJN_Record_Type_Name__c)</description>
+        <name>RECORD_TYPE_PHONE_MVN</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Phone</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Check if the Contact Information record is for addresses, email, fax, or phone.  This could be done through record type, but because those are references, we will assume that only one of these fields is populated for each type of record.</description>
+        <name>Check_for_Type_of_Contact_Information_MVN</name>
+        <label>Check for Type of Contact Information</label>
+        <locationX>860</locationX>
+        <locationY>125</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Address_MVN</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PJN_Record_Type_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>RECORD_TYPE_ADDRESS_MVN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Person_Account_MVN</targetReference>
+            </connector>
+            <label>Address</label>
+        </rules>
+        <rules>
+            <name>Email_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PJN_Record_Type_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>RECORD_TYPE_EMAIL_MVN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Account_PersonEmail_Field_MVN</targetReference>
+            </connector>
+            <label>Email</label>
+        </rules>
+        <rules>
+            <name>Fax_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PJN_Record_Type_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>RECORD_TYPE_FAX_MVN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Account_Fax_MVN</targetReference>
+            </connector>
+            <label>Fax</label>
+        </rules>
+        <rules>
+            <name>Phone_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PJN_Record_Type_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>RECORD_TYPE_PHONE_MVN</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Account_Phone_MVN</targetReference>
+            </connector>
+            <label>Phone</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determine if the account is a person account or business account</description>
+        <name>Is_Person_Account_MVN</name>
+        <label>Is Person Account?</label>
+        <locationX>558</locationX>
+        <locationY>273</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Billing_Fields_MVN</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Business Account</defaultConnectorLabel>
+        <rules>
+            <name>Person_Account_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Account_MVN.IsPersonAccount</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Account_PersonMailing_Fields_MVN</targetReference>
+            </connector>
+            <label>Person Account</label>
+        </rules>
+    </decisions>
+    <description>If the Address, Email, Fax, or Phone fields get updated on the Contact Information record, update the corresponding fields on the associated Account (based on Contact Information record type) as follows:
+- BillingStreet, BillingCity, BillingState, BillingPostalCode, BillingCountry if Account is a Business Account
+- PersonMailingStreet, PersonMailingCity, PersonMailingState, PersonMailingPostalCode, PersonMailingCountry if Account is a Person Account
+- PersonEmail
+- Fax
+- Phone
+This works with code in the class PrimaryCIChangeHdlrMVN, where any changes to the Account.PJN_Primary_Address__c, Account.PJN_Primary_Email__c, Account.PJN_Primary_Fax__c, or Account.PJN_Primary_Phone__c fields reflects in the above fields consistent with the same logic, above.</description>
+    <formulas>
+        <description>Concatenated value of PJN_Address_Line_1__c and PJN_Address_Line_2__c</description>
+        <name>STREET_ADDRESS_MVN</name>
+        <dataType>String</dataType>
+        <expression>TRIM( {!$Record.PJN_Address_Line_1__c} &amp; {!NEWLINE_MVN} &amp;  {!$Record.PJN_Address_Line_2__c} )</expression>
+    </formulas>
+    <interviewLabel>Contact Information Set Address, Email, Fax, Phone {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact Information Set Address, Email, Fax, Phone</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get account associated with PJN_Account__c.  We will need this to modify the associated address, email, phone, fax fields.</description>
+        <name>Get_Related_Account_MVN</name>
+        <label>Get Related Account</label>
+        <locationX>681</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_Type_of_Contact_Information_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.PJN_Account__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Save account with updated values</description>
+        <name>Set_Account_Address_Email_Fax_Phone_Fields_MVN</name>
+        <label>Set Account Address, Email, Fax, Phone Fields</label>
+        <locationX>883</locationX>
+        <locationY>583</locationY>
+        <inputReference>Get_Related_Account_MVN</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>154</locationX>
+        <locationY>43</locationY>
+        <connector>
+            <targetReference>Get_Related_Account_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PJN_Primary__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>PJN_Contact_Information__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <description>Newline character</description>
+        <name>NEWLINE_MVN</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>{!EMPTY_STRING}
+{!EMPTY_STRING}</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dwelling --></label>
+    <name>HealthCloudGA__Dwelling__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation>Byt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board and Care or Assisted Living Facility</masterLabel>
+        <translation>Pečovatelský dům nebo asistované bydlení</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel or Motel</masterLabel>
+        <translation>Hotel nebo motel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation>Dům</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long-Term Care Facility</masterLabel>
+        <translation>Zařízení dlouhodobé péče</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family Dwelling</masterLabel>
+        <translation>Bydlení pro více rodin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation>Domov s pečovatelskou službou</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Vehicle or Mobile Home</masterLabel>
+        <translation>Rekreační vozidlo nebo mobilní dům</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skilled Nursing Facility</masterLabel>
+        <translation>Kvalifikované ošetřovatelské zařízení</translation>
+    </picklistValues>
+</CustomFieldTranslation>

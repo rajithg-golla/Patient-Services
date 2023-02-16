@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The investigation representing the Patient&apos;s current coverage --></help>
+    <label><!-- Active Coverage Investigation --></label>
+    <name>PJN_Active_Coverage_Investigation__c</name>
+    <relationshipLabel><!-- Cases --></relationshipLabel>
+</CustomFieldTranslation>

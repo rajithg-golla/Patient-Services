@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <description><!-- Allows you to run a DocGen Package to be attached to a record. --></description>
+        <label><!-- Attach --></label>
+        <name>Loop__Attach</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Content Delivery --></description>
+        <label><!-- Content Delivery --></label>
+        <name>Loop__ContentDelivery</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to DocuSign --></description>
+        <label><!-- DocuSign --></label>
+        <name>Loop__DocuSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Allows the DocGen Package to be sent to the DocGen Queue tab --></description>
+        <label><!-- DocGen Queue --></label>
+        <name>Loop__Document_Queue</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to download this DocGen Package --></description>
+        <label><!-- Download --></label>
+        <name>Loop__Download</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Adobe Sign / Nintex Sign --></description>
+        <label><!-- Adobe Sign / Nintex Sign --></label>
+        <name>Loop__EchoSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create a Delivery Option to route the DocGen Package via email. --></description>
+        <label><!-- Email --></label>
+        <name>Loop__Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to any HTTP Service --></description>
+        <label><!-- HTTP Service --></label>
+        <name>Loop__HTTP_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Allows the DocGen Package to be sent to the LOOP tab --></description>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Lob --></description>
+        <label><!-- Lob (Deprecated) --></label>
+        <name>Loop__Lob</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to a Nintex Workflow Cloud External Start workflow --></description>
+        <label><!-- Start Nintex Workflow --></label>
+        <name>Loop__NWC_External_Start</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to automatically email this DocGen Package through a 3rd party email account --></description>
+        <label><!-- SMTP Service --></label>
+        <name>Loop__SMTPService</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Sertifi --></description>
+        <label><!-- Sertifi --></label>
+        <name>Loop__Sertifi</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to SignNow --></description>
+        <label><!-- SignNow --></label>
+        <name>Loop__SignNow</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to OneSpan Sign --></description>
+        <label><!-- OneSpan Sign --></label>
+        <name>Loop__e_SignLive</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Lob record type is deprecated. --></errorMessage>
+        <name>Loop__Deprecate_Lob</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Custom_Delete --></label>
+        <name>Loop__Custom_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Field_Tagger --></label>
+        <name>Loop__Field_Tagger</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מוצר | קוד אריזה</help>
+    <label><!-- Dispense Medication Kind Code --></label>
+    <name>HealthCloudGA__DispenseMedicationKindCode__c</name>
+</CustomFieldTranslation>

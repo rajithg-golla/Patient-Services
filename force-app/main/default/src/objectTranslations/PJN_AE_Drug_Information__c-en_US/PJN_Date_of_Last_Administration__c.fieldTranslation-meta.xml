@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For ongoing drug administration after the onset of the reaction or event, this item
+should be blank and Actions taken with drug should be used. --></help>
+    <label><!-- Date of Last Administration --></label>
+    <name>PJN_Date_of_Last_Administration__c</name>
+</CustomFieldTranslation>

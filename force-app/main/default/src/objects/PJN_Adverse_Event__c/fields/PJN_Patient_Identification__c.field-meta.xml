@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Patient_Identification__c</fullName>
+    <description>E2B (R2): B.1.1, patientinitial (10AN)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The identification of the patient may be prohibited by certain national confidentiality
+laws or directives. The information should be provided when it is in conformance with the
+confidentiality requirements.</inlineHelpText>
+    <label>Patient Identification</label>
+    <length>10</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

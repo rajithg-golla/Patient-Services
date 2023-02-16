@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Estimated Household Income returned from the financial clearing house --></help>
+    <label><!-- Estimated Household Income --></label>
+    <name>PJN_Estimated_Household_Income__c</name>
+</CustomFieldTranslation>

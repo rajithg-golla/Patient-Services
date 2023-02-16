@@ -1,0 +1,8 @@
+.submitting-spinner {
+    height: 6rem;
+    top: 4rem
+}
+
+.submitting-spinner > .spinner-label {
+    top: 6rem;
+}

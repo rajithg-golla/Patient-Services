@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Noemer van een verhouding van twee waarden voor Hoeveelheid - een teller en een noemer</help>
+    <label><!-- Rate Denominator --></label>
+    <name>HealthCloudGA__RateDenominator__c</name>
+</CustomFieldTranslation>

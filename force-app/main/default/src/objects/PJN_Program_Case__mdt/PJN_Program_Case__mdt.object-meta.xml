@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Program Builder
+Purpose: Case activities that are specific to a Program Problem, and are created automatically on a Care Plan when the patient enters that Program Problem/Stage.
+Metadata Relationship(s): Program Problem; Program Case Dependency
+Created by Mavens: Yes</description>
+    <label>Program Case</label>
+    <pluralLabel>Program Cases</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

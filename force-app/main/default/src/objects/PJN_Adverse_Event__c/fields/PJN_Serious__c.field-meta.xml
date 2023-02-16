@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Serious__c</fullName>
+    <description>E2B (R2): A.1.5.1, serious (1N)
+E2B (R3): NA</description>
+    <externalId>false</externalId>
+    <label>Serious</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

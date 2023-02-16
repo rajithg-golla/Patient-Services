@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable" controller="PJN_PatientMergeCtrl">
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="showModal" type="Boolean" default="false" />
+    <aura:attribute name="selectedRecord" type="PJN_Data_Change_Request__c" />
+    <aura:attribute name="selectedRowIndex" type="Integer" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="removeRowEvent" 
+                    event="c:PJN_PatientMergeRemoveRowEvent" 
+                    action="{!c.removeRow}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <lightning:datatable
+        keyField="Id"
+        data="{!v.data}"
+        columns="{!v.columns}"
+        hideCheckboxColumn="true"
+        onrowaction="{!c.onHandleRowAction}" 
+    />
+    <aura:if isTrue="{!v.selectedRecord}">
+        <c:PJN_PatientMergeTool 
+            showModal="{!v.showModal}"
+            selectedRecord="{!v.selectedRecord}"
+        />
+    </aura:if>
+</aura:component>

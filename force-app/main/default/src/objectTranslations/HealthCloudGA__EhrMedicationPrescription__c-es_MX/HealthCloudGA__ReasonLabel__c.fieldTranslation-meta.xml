@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Nombre descriptivo para código de motivo o indicación para redactar la prescripción</help>
+    <label><!-- Reason Label --></label>
+    <name>HealthCloudGA__ReasonLabel__c</name>
+</CustomFieldTranslation>

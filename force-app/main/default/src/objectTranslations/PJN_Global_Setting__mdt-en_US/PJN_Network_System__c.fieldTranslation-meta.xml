@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- System used to identify in every connection with Veeva Network. --></help>
+    <label><!-- Network System --></label>
+    <name>PJN_Network_System__c</name>
+</CustomFieldTranslation>

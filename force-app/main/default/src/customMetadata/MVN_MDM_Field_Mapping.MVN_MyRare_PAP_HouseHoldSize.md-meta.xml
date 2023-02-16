@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>MyRare:PAP:HouseHoldSize</label>
+    <protected>false</protected>
+    <values>
+        <field>MVN_Inbound__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MVN_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MVN_Is_Lookup_Field__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>MVN_Lookup_Field_Filter__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MVN_Lookup_sObject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MVN_MDM_Field__c</field>
+        <value xsi:type="xsd:string">householdsize</value>
+    </values>
+    <values>
+        <field>MVN_MDM_Object_Setting__c</field>
+        <value xsi:type="xsd:string">MVN_MyRare_PAP</value>
+    </values>
+    <values>
+        <field>MVN_Outbound__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>MVN_SFDC_Field__c</field>
+        <value xsi:type="xsd:string">MVN_Household_Size__c</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,29 @@
+<aura:component controller="PJN_EnrollmentWizardSelectProgramCtrl">
+
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="programList" type="List" />
+    <aura:attribute name="programDeveloperName" type="String" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.loadPrograms}" />
+
+    <h3 class="slds-section-title_divider">
+        {!$Label.c.PJN_Program_Screen_Title}
+    </h3>
+
+    <lightning:messages />
+
+    <aura:if isTrue="{!not(empty(v.programList))}">
+    <lightning:select aura:id="programSelector" name="programSelector" class="slds-m-top_small" 
+        label="Select Program" required="true" value="{!v.programDeveloperName}">
+        <option value=""></option>
+         <aura:iteration items="{!v.programList}" var="program">
+            <option text="{!program.label}" value="{!program.value}" selected="{!program.selected}"/>
+        </aura:iteration>
+    </lightning:select>
+    </aura:if>
+
+</aura:component>

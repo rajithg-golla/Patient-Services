@@ -1,0 +1,32 @@
+<apex:page showHeader="false" standardStylesheets="false" lightningStylesheets="true" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <html
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        lang="en"
+        style="background: rgba(176, 196, 223, 1);
+        background-image: url(/_slds/images/themes/lightning_blue/lightning_blue_background.png),linear-gradient(to top, rgba(160, 180, 206, 0.0) 0, rgba(160, 180, 206, 1));
+        background-repeat: repeat-x;
+        background-position: top left;">
+        <head>
+            <meta charset="utf-8" />
+            <apex:includeLightning />
+        </head>
+        <body>
+            <div id="lightning" />
+        </body>
+        <script>
+            const myUserContext = "{!JSENCODE($User.UITheme)}";
+            $Lightning.use("c:PJN_CarePlanPathOut", function() {
+                $Lightning.createComponent(
+                    "c:PJN_CarePlanPathList",
+                    {
+                        patientId: "{!JSENCODE($CurrentPage.parameters.recId)}",
+                        context: myUserContext
+                    },
+                    "lightning",
+                    function(component) {}
+                );
+            });
+        </script>
+    </html>
+</apex:page>

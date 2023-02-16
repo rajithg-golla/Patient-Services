@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_to_Close_DateTime_Submitted</fullName>
+    <active>true</active>
+    <description>The date/time submitted must be populated to close a PQC</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PJN_Status__c, &quot;Closed&quot;),
+ISBLANK( PJN_Date_Time_Submitted__c  )
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Date_Time_Submitted__c</errorDisplayField>
+    <errorMessage>Cannot close the PQC unless the Date/Time Submitted is populated.</errorMessage>
+</ValidationRule>

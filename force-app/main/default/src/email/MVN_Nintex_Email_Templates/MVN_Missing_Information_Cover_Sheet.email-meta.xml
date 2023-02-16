@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Cover sheet used when sending an eFax for missing information</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Missing Information Cover Sheet</name>
+    <style>none</style>
+    <subject>Missing Information - {!Case.Parent}</subject>
+    <textOnly>FAX
+
+Please find the attached missing information request for patient #{!Case.Parent}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Sent_Datetime__c</fullName>
+    <description>Part of the Patient Service accelerator: Time the record has been sent to the MDM system for approval.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Time the record has been sent to the MDM system for approval.</inlineHelpText>
+    <label>Sent Datetime</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

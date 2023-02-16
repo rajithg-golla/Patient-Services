@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Måleenhed for mål for tid pr. patient for måleperioden (bruges med feltet &quot;mål&quot;).</help>
+    <label><!-- Unit of Measure --></label>
+    <name>HealthCloudGA__UnitOfMeasure__c</name>
+    <picklistValues>
+        <masterLabel>Minutes</masterLabel>
+        <translation>Minutter</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seconds</masterLabel>
+        <translation>Sekunder</translation>
+    </picklistValues>
+</CustomFieldTranslation>

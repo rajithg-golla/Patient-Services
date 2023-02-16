@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tick this checkbox to include the Open Data records searching, synchronising or downloading any record. --></help>
+    <label><!-- Include Open Data Network? --></label>
+    <name>PJN_Include_Open_Data_Network__c</name>
+</CustomFieldTranslation>

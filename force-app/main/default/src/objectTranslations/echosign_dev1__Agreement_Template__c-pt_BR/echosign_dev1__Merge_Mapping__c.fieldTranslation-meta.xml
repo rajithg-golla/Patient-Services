@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Selecione o mapeamento de mesclagem para mesclar os campos do Salesforce com o contrato do Adobe Sign antes de enviá-lo para assinatura.</help>
+    <label><!-- Merge Mapping --></label>
+    <name>echosign_dev1__Merge_Mapping__c</name>
+    <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+</CustomFieldTranslation>

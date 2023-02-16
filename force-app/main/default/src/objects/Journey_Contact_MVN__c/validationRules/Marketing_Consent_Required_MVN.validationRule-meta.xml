@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Consent_Required_MVN</fullName>
+    <active>true</active>
+    <description>Verifies if Marketing Consent has been obtained.</description>
+    <errorConditionFormula>Care_Plan_MVN__r.Has_Program_Consent_MVN__c = false</errorConditionFormula>
+    <errorMessage>Marketing Consent is required to enroll this patient/caregiver in a marketing journey.</errorMessage>
+</ValidationRule>

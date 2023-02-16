@@ -1,0 +1,124 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <aura:attribute name        = "isPersonSearch"
+                    type        = "Boolean"
+                    default     = "true"
+                    description = "True when the current search is for a person account"
+                    access      = "public"
+    />
+    <aura:attribute name        = "account"
+                    type        = "Account"
+                    description = "The account on this case"
+                    access      = "public"
+    />
+    <aura:attribute name        = "contactInfo"
+                    type        = "PJN_Contact_Information__c"
+                    default     = "{}"
+                    description = "Related contact information"
+                    access      = "public"
+    />
+    <aura:attribute name        = "accountSearchFieldsArray"
+                    type        = "List"
+                    default     = "[]"
+                    description = "the basic field objects used to bulid inputFields"
+    />
+    <aura:attribute name        = "contactInfoSearchFieldsArray"
+                    type        = "List"
+                    default     = "[]"
+                    description = "the basic field objects used to bulid inputFields"
+    />
+    <aura:attribute name        = "fieldSetName"
+                    type        = "String"
+                    default     = "Person_Search_Form"
+                    description = "Identifies whether working with person or business account fields"
+                    access      = "private"
+    />
+    <aura:attribute name        = "results"
+                    type        = "Object"
+                    description = "Search results"
+                    access      = "public"
+    />
+    <aura:attribute name        = "searching"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "Shows the spinner when set to True"
+                    access      = "public"
+    />
+    <aura:attribute name        = "searchPerformed"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "True when a search has been performed"
+                    access      = "public"
+    />
+    <aura:attribute name        = "searchHandlers"
+                    type        = "String[]"
+                    default     = "['PJN_AccountSearchHdlr']"
+                    description = "Specifies the apex search handler class to use for the search"
+                    access      = "private"
+    />
+    <aura:attribute name        = "hasBusinessAccounts"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "True when business account record types are to be displayed"
+                    access      = "public"
+    />
+    <aura:attribute name        = "defaultCountry"
+                    type        = "String"
+                    description = "User Country to default country field on account search"
+    />
+    <aura:attribute name        = "phone"
+                    type        = "String"
+                    description = "Phone Number sent over from the CTI widget on incoming calls"
+    />
+    <aura:attribute name        = "incomingCall"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "Set to true if the account search is being called from the CTI widget"
+    />
+
+    <!-- Handlers -->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:handler name   = "recordTypeChangeEvent"
+                  event  = "c:PJN_AccountSearchRecordTypeEvent"
+                  action = "{!c.handleRTChange}"
+    />
+
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+
+    <!-- Person Account Fields -->
+    <div onkeydown="{!c.onKeyDown}">
+        <fieldset class="account-search">
+            <c:PJN_AccountSearchRecordTypeSelector
+                aura:id="selector"
+                hasBusinessAccounts="{!v.hasBusinessAccounts}"
+            />
+
+            <!-- Search Form -->
+            <form class="slds-form" autocomplete="off" id="search-form">
+
+                <c:pjnAccountSearchInputForm
+                    aura:id="accountForm"
+                    objectName="Account"
+                    fieldList="{!v.accountSearchFieldsArray}"
+                />
+
+                <c:pjnAccountSearchInputForm
+                    aura:id="ciForm"
+                    objectName="PJN_Contact_Information__c"
+                    fieldList="{!v.contactInfoSearchFieldsArray}"
+                />
+
+                <lightning:button label="Clear"
+                    class="slds-m-top_medium"
+                    variant="neutral"
+                    onclick="{!c.clearForm}"
+                />
+                <lightning:button label="Search"
+                    class="slds-m-top_medium"
+                    variant="brand"
+                    onclick="{!c.submitForm}"
+                />
+            </form>
+
+        </fieldset>
+    </div>
+</aura:component>

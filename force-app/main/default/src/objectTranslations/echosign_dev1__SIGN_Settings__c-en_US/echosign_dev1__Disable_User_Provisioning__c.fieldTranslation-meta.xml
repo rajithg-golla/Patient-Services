@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to prevent users from being auto-provisioned with an Adobe user account when they send or manage agreements. This setting does not prevent auto-provisioning of users that occurs when Update Agreement is clicked from the Agreement list. --></help>
+    <label><!-- Disable User Provisioning --></label>
+    <name>echosign_dev1__Disable_User_Provisioning__c</name>
+</CustomFieldTranslation>

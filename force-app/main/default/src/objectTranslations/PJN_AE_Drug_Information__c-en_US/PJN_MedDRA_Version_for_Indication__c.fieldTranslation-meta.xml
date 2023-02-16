@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The indication as reported. For multiple indications for the same drug, repeat the
+entire drug entry, specifying the same drug for each indication.   MedDRA terms should be provided as code. --></help>
+    <label><!-- MedDRA Version for Indication --></label>
+    <name>PJN_MedDRA_Version_for_Indication__c</name>
+</CustomFieldTranslation>

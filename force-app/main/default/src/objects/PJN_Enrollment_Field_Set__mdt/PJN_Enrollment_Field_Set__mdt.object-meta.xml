@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Enrollment Wizard
+Purpose: Define field attributes for fields being used in the Enrollment Wizard Record Form. This is step 5 in setting up the Enrollment Wizard.
+Metadata Relationship(s): Enrollment Wizard Record Form
+Created by Mavens: Yes</description>
+    <label>Enrollment Field Set</label>
+    <pluralLabel>Enrollment Field Sets</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

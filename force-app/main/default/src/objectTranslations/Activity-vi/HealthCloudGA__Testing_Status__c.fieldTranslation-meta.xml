@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Testing Status --></label>
+    <name>HealthCloudGA__Testing_Status__c</name>
+    <picklistValues>
+        <masterLabel>Negative Test</masterLabel>
+        <translation>Xét Nghiệm Âm Tính</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Test</masterLabel>
+        <translation>Xét Nghiệm Dương Tính</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Results Pending</masterLabel>
+        <translation>Đang Chờ Kết Quả Xét Nghiệm</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Scheduled</masterLabel>
+        <translation>Đã Lên Lịch Xét Nghiệm</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing Recommended</masterLabel>
+        <translation>Được Đề Xuất Xét Nghiệm</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation>Không Xác Định</translation>
+    </picklistValues>
+</CustomFieldTranslation>

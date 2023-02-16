@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Date_Time_Opened__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <description>E2B (R2): A.1.3a, transmissiondateformat (3N) --&gt; value should be 102 AND A.1.3b, transmissiondate (8N), covert to CCYYMMDD
+
+E2B (R3): C.1.2 Date of Creation
+User Guidance: This data element has the function of a timestamp and represents the
+equivalent of a version number for the ICSR.
+Every ICSR and every iteration (e.g. version) of an ICSR in a safety
+message must have a different value for Date of Creation. The most recent
+version of an ICSR will have the most recent date; previous versions of an
+ICSR will have older dates.
+Conformance: Required
+Data Type: Date / Time
+OID: None
+Value Allowed: See Appendix II for further information.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element has the function of a timestamp and represents the
+equivalent of a version number for the ICSR.</inlineHelpText>
+    <label>Date/Time Opened</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

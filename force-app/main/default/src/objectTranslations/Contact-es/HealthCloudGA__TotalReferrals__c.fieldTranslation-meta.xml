@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Recuento del número de referencias enviadas en los últimos 6 meses por el facultativo referente.</help>
+    <label><!-- Total Referrals --></label>
+    <name>HealthCloudGA__TotalReferrals__c</name>
+</CustomFieldTranslation>

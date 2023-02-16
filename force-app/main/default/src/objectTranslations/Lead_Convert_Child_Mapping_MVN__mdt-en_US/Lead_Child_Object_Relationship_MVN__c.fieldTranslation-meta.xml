@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The API name of the Child object relationship to parent to the converted account. --></help>
+    <label><!-- Lead Child Object Relationship --></label>
+    <name>Lead_Child_Object_Relationship_MVN__c</name>
+</CustomFieldTranslation>

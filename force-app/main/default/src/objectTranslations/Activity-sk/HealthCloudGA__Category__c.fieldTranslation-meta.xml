@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>HealthCloudGA__Category__c</name>
+    <picklistValues>
+        <masterLabel>Counselling</masterLabel>
+        <translation>Poradenstvo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnosis</masterLabel>
+        <translation>Diagnóza</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exercise</masterLabel>
+        <translation>Cvičenie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vaccination</masterLabel>
+        <translation>Očkovanie</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Angiv op til 7 kommaseparerede feltnavne relateret til dette objekt. Feltoplysninger vises, når brugere fører musen hen over et objekt på tidslinjen.</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

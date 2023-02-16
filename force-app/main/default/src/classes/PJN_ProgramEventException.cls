@@ -1,0 +1,1 @@
+public with sharing class PJN_ProgramEventException extends Exception {}

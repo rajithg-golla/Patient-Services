@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica o reembolso para o período de medição de um único paciente para o programa específico (exemplo: programa de saúde Medicare CCM).</help>
+    <label><!-- Rate --></label>
+    <name>HealthCloudGA__Rate__c</name>
+</CustomFieldTranslation>

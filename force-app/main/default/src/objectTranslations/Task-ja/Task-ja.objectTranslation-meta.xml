@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- HcCarePlanTaskFields --></label>
+        <name>HealthCloudGA__HcCarePlanTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HC Task List --></label>
+        <name>HealthCloudGA__HcTaskList</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Task related to healthcare plan --></description>
+        <label><!-- Care Plan Task --></label>
+        <name>HealthCloudGA__CarePlanTask</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Contact Attempt --></description>
+        <label><!-- Contact Attempt --></label>
+        <name>PJN_Contact_Attempt</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default Task type --></description>
+        <label><!-- Task --></label>
+        <name>PJN_Task</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please select a Positive Result or Negative Result Survey before closing this task --></errorMessage>
+        <name>Add_Survey_to_Task_before_Closing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Due Date before creating the task --></errorMessage>
+        <name>Require_Due_Date_to_Creat_Task</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add an email address to the account associated with this task before marking this task complete. --></errorMessage>
+        <name>Survey_No_Account_PersonEmail_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate the task&apos;s Survey field before marking this task complete. --></errorMessage>
+        <name>Survey_No_Survey_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please associate this task to a case before marking this task complete. --></errorMessage>
+        <name>Survey_Not_Associated_With_Case_MVN</name>
+    </validationRules>
+</CustomObjectTranslation>

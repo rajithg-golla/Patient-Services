@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Når det krysses av i denne boksen, vil Adobe Sign sende dokumentet til kontaktens faksnummer. Hvis kontaktens faksnummer mangler, vil Adobe Sign sende dokumentet til kontaktens e-postadresse.</help>
+    <label><!-- Send written signatures to fax number --></label>
+    <name>echosign_dev1__PreferFax__c</name>
+</CustomFieldTranslation>

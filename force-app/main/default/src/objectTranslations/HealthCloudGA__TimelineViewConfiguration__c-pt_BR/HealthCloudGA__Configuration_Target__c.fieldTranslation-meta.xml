@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Selecione as linhas do tempo em que deseja que os usuários vejam esses campos.</help>
+    <label><!-- Configuration Target --></label>
+    <name>HealthCloudGA__Configuration_Target__c</name>
+    <picklistValues>
+        <masterLabel>Health Cloud Console App</masterLabel>
+        <translation>Aplicativo de console da Health Cloud</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timeline For Health Cloud Empower</masterLabel>
+        <translation>Linha do tempo para empoderamento da Health Cloud</translation>
+    </picklistValues>
+</CustomFieldTranslation>

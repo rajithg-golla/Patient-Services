@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Objetivo de tiempo que hay que completar por paciente para el periodo de valoración.</help>
+    <label><!-- Target --></label>
+    <name>HealthCloudGA__Target__c</name>
+</CustomFieldTranslation>

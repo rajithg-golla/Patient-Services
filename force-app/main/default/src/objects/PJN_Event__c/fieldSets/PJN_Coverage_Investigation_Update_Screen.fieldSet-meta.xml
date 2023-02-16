@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Coverage_Investigation_Update_Screen</fullName>
+    <description>Controls the editable fields displayed in the Coverage Investigation Update custom screen (pjnCoverageInvestigationUpdater)</description>
+    <displayedFields>
+        <field>PJN_Access_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>PJN_Start_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>PJN_End_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Coverage Investigation Update Screen</label>
+</FieldSet>

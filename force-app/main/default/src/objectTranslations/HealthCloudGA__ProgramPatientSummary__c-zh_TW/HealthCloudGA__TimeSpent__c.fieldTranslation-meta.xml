@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>合格活動測量期間中花費在病患上的總時間。</help>
+    <label><!-- Time Spent --></label>
+    <name>HealthCloudGA__TimeSpent__c</name>
+</CustomFieldTranslation>

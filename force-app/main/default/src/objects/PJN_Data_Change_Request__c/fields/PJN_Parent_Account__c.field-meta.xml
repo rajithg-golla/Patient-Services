@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Part of the Patient Service accelerator: HCO account of the affiliation</description>
+    <externalId>false</externalId>
+    <label>Parent Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Data Change Requests (Parent Account)</relationshipLabel>
+    <relationshipName>PJN_Child_DCRs</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

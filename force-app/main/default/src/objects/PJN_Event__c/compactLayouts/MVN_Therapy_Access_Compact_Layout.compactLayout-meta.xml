@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Therapy_Access_Compact_Layout</fullName>
+    <fields>PJN_Event_Type__c</fields>
+    <fields>Name</fields>
+    <fields>PJN_Patient__c</fields>
+    <fields>PJN_Case__c</fields>
+    <fields>PJN_Access_Type__c</fields>
+    <label>Therapy Access Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>如果姓名為空值或空白，便會填入 GivenName1__c + FamilyName1__c，否則為填入姓名</help>
+    <label><!-- Calculated Name --></label>
+    <name>HealthCloudGA__CalculatedName__c</name>
+</CustomFieldTranslation>

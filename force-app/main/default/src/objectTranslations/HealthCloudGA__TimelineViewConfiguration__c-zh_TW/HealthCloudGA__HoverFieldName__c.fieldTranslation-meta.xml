@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>輸入與此物件相關的至多 7 個逗號分隔值。當使用者於時程表中將滑鼠懸停在物件上，便會顯示欄位詳細資料。</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

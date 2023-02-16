@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Adverse Event --></label>
+    <name>PJN_Adverse_Event__c</name>
+    <relationshipLabel><!-- Relevant Tests and Procedures --></relationshipLabel>
+</CustomFieldTranslation>

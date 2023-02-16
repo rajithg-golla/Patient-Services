@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The lookup on the object to a care plan that should be set with the newly created care plan --></help>
+    <label><!-- Care Plan Lookup Field --></label>
+    <name>Care_Plan_Lookup_Field_MVN__c</name>
+</CustomFieldTranslation>

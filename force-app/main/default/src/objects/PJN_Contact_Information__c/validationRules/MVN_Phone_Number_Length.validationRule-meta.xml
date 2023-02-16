@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Phone_Number_Length</fullName>
+    <active>true</active>
+    <description>Validates that the Phone number is in (999) 999-9999
+format. This works by using the REGEX function to check that the number has ten
+digits in the (999) 999-9999 format.</description>
+    <errorConditionFormula>AND(NOT(REGEX(PJN_Phone__c,&apos;\\d*&apos;)), NOT(REGEX(PJN_Phone__c,&apos;\\(\\d{3}\\) \\d{3}-\\d{4}&apos;)))</errorConditionFormula>
+    <errorDisplayField>PJN_Phone__c</errorDisplayField>
+    <errorMessage>Phone number must contain 10 digits unformatted or in the (999) 999-9999 format.</errorMessage>
+</ValidationRule>

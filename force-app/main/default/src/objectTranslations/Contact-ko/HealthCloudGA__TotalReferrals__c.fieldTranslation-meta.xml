@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>이 의뢰 의사가 지난 6개월 동안 제출한 총 의뢰 수입니다.</help>
+    <label><!-- Total Referrals --></label>
+    <name>HealthCloudGA__TotalReferrals__c</name>
+</CustomFieldTranslation>

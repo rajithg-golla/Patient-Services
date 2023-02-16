@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Enrollment_Wizard_Component__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Enrollment Wizard Component</label>
+    <referenceTo>PJN_Enrollment_Wizard_Component__mdt</referenceTo>
+    <relationshipLabel>Enrollment Wizard Record Lists</relationshipLabel>
+    <relationshipName>PJN_Enrollment_Wizard_Record_Lists</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EVK - PAP Outcome Case Start - Labels</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Always_Runs__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>PJN_Mapping_Job__c</field>
+        <value xsi:type="xsd:string">MVN_EVK_PAP_Outcome_Case_Start</value>
+    </values>
+    <values>
+        <field>PJN_Mapping_Type__c</field>
+        <value xsi:type="xsd:string">PJN_Label</value>
+    </values>
+    <values>
+        <field>PJN_Source_Object_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Source_Object_Type_Name__c</field>
+        <value xsi:type="xsd:string">labels</value>
+    </values>
+</CustomMetadata>

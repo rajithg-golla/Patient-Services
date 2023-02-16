@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timeline_Record_Name_MVN__c</fullName>
+    <description>Displays a text value for use in the timeline view.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK(TEXT(Physician_Specialty_MVN__c))) &amp;&amp; TEXT(Physician_Specialty_MVN__c) &lt;&gt; &quot;Unknown&quot;, 
+TEXT(Physician_Specialty_MVN__c) &amp; &quot; Appointment&quot;, 
+&quot;Appointment&quot;
+)</formula>
+    <label>Timeline Record Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

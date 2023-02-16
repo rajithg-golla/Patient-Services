@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field that need to be true for the trigger to send an Case to the corresponding CRM. --></help>
+    <label><!-- Case Trigger Field --></label>
+    <name>PJN_Case_Trigger_Field__c</name>
+</CustomFieldTranslation>

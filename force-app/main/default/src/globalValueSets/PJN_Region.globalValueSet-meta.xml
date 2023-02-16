@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Delaware Valley</fullName>
+        <default>false</default>
+        <label>Delaware Valley</label>
+    </customValue>
+    <customValue>
+        <fullName>Florida</fullName>
+        <default>false</default>
+        <label>Florida</label>
+    </customValue>
+    <customValue>
+        <fullName>Great Lakes</fullName>
+        <default>false</default>
+        <label>Great Lakes</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid-Atlantic</fullName>
+        <default>false</default>
+        <label>Mid-Atlantic</label>
+    </customValue>
+    <customValue>
+        <fullName>Midwest</fullName>
+        <default>false</default>
+        <label>Midwest</label>
+    </customValue>
+    <customValue>
+        <fullName>Northeast</fullName>
+        <default>false</default>
+        <label>Northeast</label>
+    </customValue>
+    <customValue>
+        <fullName>Northwest</fullName>
+        <default>false</default>
+        <label>Northwest</label>
+    </customValue>
+    <customValue>
+        <fullName>South Central</fullName>
+        <default>false</default>
+        <label>South Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Southeast</fullName>
+        <default>false</default>
+        <label>Southeast</label>
+    </customValue>
+    <customValue>
+        <fullName>Southwest</fullName>
+        <default>false</default>
+        <label>Southwest</label>
+    </customValue>
+    <description>Picklist field used in Zip to Team object to specify the region. This is a controlling field for Territories field.</description>
+    <masterLabel>Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

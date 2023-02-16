@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>환자가 비활성화되고 추가 조건이 있는 경우 이 추가 점수가 적용되면 True입니다.</help>
+    <label><!-- Apply If Disabled --></label>
+    <name>HealthCloudGA__ApplyIfDisabled__c</name>
+</CustomFieldTranslation>

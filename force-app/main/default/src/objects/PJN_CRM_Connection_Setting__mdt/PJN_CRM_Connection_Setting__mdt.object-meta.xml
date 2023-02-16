@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Connection settings for Patient Journey Navigator CRM integrations.</description>
+    <label>CRM Connection Setting</label>
+    <pluralLabel>CRM Connection Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

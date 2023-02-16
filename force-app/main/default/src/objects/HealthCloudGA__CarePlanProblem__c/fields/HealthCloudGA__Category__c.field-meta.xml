@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cognition</fullName>
+                <default>false</default>
+                <label>Cognition</label>
+            </value>
+            <value>
+                <fullName>Pain Monitoring or Management</fullName>
+                <default>false</default>
+                <label>Pain Monitoring or Management</label>
+            </value>
+            <value>
+                <fullName>Respiratory Impairment</fullName>
+                <default>false</default>
+                <label>Respiratory Impairment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Contains list of email addresses of local PV to send the email.  This is set based on the local settings. --></help>
+    <label><!-- Email To Address --></label>
+    <name>PJN_Email_To_Address__c</name>
+</CustomFieldTranslation>

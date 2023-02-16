@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of days the medication will last when used as prescribed. --></help>
+    <label><!-- Days Supply --></label>
+    <name>MVN_Days_Supply__c</name>
+</CustomFieldTranslation>

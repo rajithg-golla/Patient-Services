@@ -1,0 +1,193 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <!-- *** ATTRIBUTES *** -->
+    <!-- Attributes passed from Search -->
+    <aura:attribute name="showNewAccountForm" type="boolean"/>
+    <aura:attribute name="account" type="Account"/>
+    <aura:attribute name="isPersonSearch" type="Boolean" default="true"/>
+    <aura:attribute name="case" type="Case"/>
+    <aura:attribute name="contactInfo" type="PJN_Contact_Information__c"/>
+
+    <!-- Record Type Attributes -->
+    <!-- Account -->
+    <aura:attribute name="recordTypeOptions" type="List" />
+    <aura:attribute name="accountRecordTypeId" type="Id" />
+    <aura:attribute name="patientRecordTypeId" type="Id" />
+    <aura:attribute name="PhysicianRecordTypeId" type="Id" />
+    <aura:attribute name="PhysicianStaffRecordTypeId" type="Id" />
+    <aura:attribute name="caregiverRecordTypeId" type="Id" />
+    <aura:attribute name="addressesAccount"
+        type="Account"
+        description="The physician account to get care plans for"
+    />
+    <!-- Contact Info -->
+    <aura:attribute name="ciRecTypeOptions" type="List" />
+    <aura:attribute name="ciRecTypeOptionsMap" type="Map" default="{}"/>
+
+    <!-- FieldSet Attributes -->
+    <!-- Account -->
+    <aura:attribute name="fieldsetMap" type="Map" />
+    <aura:attribute name="fieldset" type="List" />
+    <!-- Contact Info -->
+    <aura:attribute name="fieldsetMapContactInfo" type="Map" />
+
+    <!-- Contact Info -->
+    <aura:attribute name="newRecTypeId" type="Id"/>
+    <aura:attribute name="newContactInfoList" type="List" default="[]"/>
+    <aura:attribute name="displayAddContactInfo" type="Boolean" default="false"/>
+    <aura:attribute name="defaultCountry" type="String"/>
+    <aura:attribute name="currentContactInfoIndex" type="Integer" default="0"/>
+
+    <!-- Relation -->
+    <aura:attribute name="displayAddRelation" type="Boolean" default="false"/>
+    <aura:attribute name="relationButtonLabel" type="String" />
+    <aura:attribute name="fieldsetRelation" type="List" />
+    <aura:attribute name="relationRecordTypeId" type="Id" />
+    <aura:attribute name="relationTitle" type="String" />
+
+    <!-- Helper Attributes -->
+    <aura:attribute name="newAccountId" type="Id" />
+
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+
+    <!-- *** HANDLERS *** -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="change"
+                value="{!v.accountRecordTypeId}"
+                action="{!c.setFieldSet}"/>
+    <aura:handler name="newContactInfoRecordEvent"
+                event="c:PJN_AccountSearchNewContactInfoRecordEvent"
+                action="{!c.addContactInfoRecord}"/>
+    <aura:handler name="editContactInfo"
+                event="c:PJN_AccountSearchNewContactInfoEdit"
+                action="{!c.editCIRecord}"/>
+    <aura:handler name="removeContactInfo"
+                event="c:PJN_AccountSearchNewContactInfoRemove"
+                action="{!c.removeCIRecord}"/>
+
+
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+	<div class="slds-is-relative">
+        <c:PJN_Loader isLoading="{!v.isLoading}" />
+        <aura:if isTrue="{! !v.displayAddContactInfo}">
+            <lightning:layout horizontalAlign="spread" multipleRows="false">
+                <lightning:layoutItem>
+                    <lightning:radioGroup name="recordTypeSelection"
+                        label=""
+                        options="{!v.recordTypeOptions}"
+                        value="{!v.accountRecordTypeId}"
+                        type="button"
+                    />
+                </lightning:layoutItem>
+
+                <lightning:layoutItem>
+                    <lightning:button variant="neutral" onclick="{!c.cancel}">
+                        {!$Label.c.PJN_New_Account_Back_Button}
+                    </lightning:button>
+                    <lightning:button
+                        variant="brand"
+                        label="{!$Label.c.PJN_New_Account_Save_Button}"
+                        title="{!$Label.c.PJN_New_Account_Save_Button}"
+                        onclick="{!c.submit}"
+                        disabled="{!not(v.accountRecordTypeId)}"
+                    />
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+
+        <aura:if isTrue="{!v.accountRecordTypeId}">
+            <aura:if isTrue="{!v.displayAddContactInfo}">
+                <!--**********************************************************-->
+                <!--********************* ADD CONTACT INFO *******************-->
+                <!--**********************************************************-->
+                <c:pjnAccountSearchContactInfoForm
+                    contactInfoRecordTypeId="{!v.newRecTypeId}"
+                    ciRecTypeOptionsMap="{!v.ciRecTypeOptionsMap}"
+                    fieldsetMapContactInfo="{!v.fieldsetMapContactInfo}"
+                    defaultCountry="{!v.defaultCountry}"
+                    contactInfoList="{!v.newContactInfoList}"
+                    searchContactInfoValues="{!v.contactInfo}"
+                    index="{!v.currentContactInfoIndex}"
+                    onclosemodal="{!c.closeModal}"
+                    onsubmittedrecord="{!c.handleSubmittedRecord}"
+                />
+
+                <aura:set attribute="else">
+                    <!--*****************************************************-->
+                    <!--********************* ELSE NEW ACCOUNT *******************-->
+                    <!--*****************************************************-->
+                    <c:PJN_AccountSearchNewAccount
+                        aura:id="accountFormId"
+                        accountRecordTypeId="{!v.accountRecordTypeId}"
+                        fieldsetAccount="{!v.fieldset}"
+                        account="{!v.account}"
+                        title="New Account"
+                    />
+
+                    <!--**********************************************************-->
+                    <!--********************* WITH NEW CONTACT INFO *******************-->
+                    <!--**********************************************************-->
+                    <h3 class="slds-section-title_divider slds-m-top_small slds-m-bottom_medium">
+                        {!$Label.c.PJN_New_Account_Contact_Information_Title}
+                    </h3>
+
+                    <lightning:layout horizontalAlign="left" multipleRows="true" class="slds-m-bottom_medium slds-grid_vertical-stretch">
+                        <aura:if isTrue="{!and(!empty(v.newContactInfoList),v.fieldsetMapContactInfo)}">
+                            <aura:iteration items="{!v.newContactInfoList}" var="item" indexVar="index">
+                                <aura:if isTrue="{!item.RecordTypeId!=null}">
+                                    <c:PJN_AccountSearchNewContactInfoSingle
+                                        aura:id="contactInfoRowId"
+                                        fieldsetContactInfoMap="{!v.fieldsetMapContactInfo}"
+                                        contactInfoRecord="{!item}"
+                                        recordTypesMap="{!v.ciRecTypeOptionsMap}"
+                                        index="{!index}"
+                                    />
+
+                                </aura:if>
+                            </aura:iteration>
+                        </aura:if>
+
+                        <lightning:layoutItem padding="horizontal-small" flexibility="auto" size="4">
+                            <div class="slds-align_absolute-center slds-text-align_center new-card slds-card slds-grid slds-wrap slds-p-around_x-small">
+                                <div class="slds-size_1-of-1">{!$Label.c.PJN_New_Account_Add_Contact_Info_Card}</div>
+                                <div class="slds-media__body slds-size_1-of-1">
+                                    <aura:iteration items="{!v.ciRecTypeOptions}" var="recTypeOption">
+                                        <lightning:button
+                                            value="{!recTypeOption.value}"
+                                            label="{!recTypeOption.label}"
+                                            class="slds-m-top_small"
+                                            onclick="{!c.addCIRecord}"
+                                        />
+                                    </aura:iteration>
+                                </div>
+                            </div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+
+                    <lightning:layout horizontalAlign="end" multipleRows="false" class="slds-m-bottom_medium">
+                        <lightning:layoutItem>
+                            <lightning:button variant="neutral" onclick="{!c.cancel}">
+                                {!$Label.c.PJN_New_Account_Back_Button}
+                            </lightning:button>
+                            <lightning:button
+                                variant="brand"
+                                label="{!$Label.c.PJN_New_Account_Save_Button}"
+                                title="{!$Label.c.PJN_New_Account_Save_Button}"
+                                onclick="{!c.submit}"
+                                disabled="{!not(v.accountRecordTypeId)}"
+                            />
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:set>
+
+            </aura:if>
+
+            <aura:set attribute="else">
+                <div class="slds-text-align_center slds-text-title_caps slds-m-vertical_xx-large">
+                    {!$Label.c.PJN_Select_Record_Type}
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

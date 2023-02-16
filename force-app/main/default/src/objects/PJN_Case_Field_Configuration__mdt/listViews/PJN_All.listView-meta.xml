@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_All</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>MVN_Account_Record_Type__c</columns>
+    <columns>PJN_Case_Field_API_Name__c</columns>
+    <columns>PJN_Case_Team_Role_Mapping__c</columns>
+    <columns>PJN_Case_Team_Inverse_Role_Mapping__c</columns>
+    <columns>PJN_Delete_Care_Team_Role_on_change__c</columns>
+    <columns>PJN_Reciprocal_Role__c</columns>
+    <columns>PJN_Reciprocal_Role_Case_Field__c</columns>
+    <columns>PJN_Reciprocal_Inverse_Role__c</columns>
+    <columns>PJN_Reciprocal_Inverse_Role_Case_Field__c</columns>
+    <columns>MVN_Account_Role_Mapping__c</columns>
+    <columns>MVN_Account_Role_Case_Field__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>PJN_All</label>
+    <language>en_US</language>
+</ListView>

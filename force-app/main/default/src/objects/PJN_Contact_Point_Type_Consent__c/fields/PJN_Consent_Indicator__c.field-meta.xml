@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Consent_Indicator__c</fullName>
+    <description>Displays an indicator icon based on the consent status and effective dates.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(PJN_Data_Use_Purpose__r.PJN_External_Id__c = &quot;MVN_EVK_Use_Disclose_Health_Info&quot; &amp;&amp; TEXT( PJN_Privacy_Consent_Status__c ) == &quot;Opt In&quot; &amp;&amp; PJN_Effective_To__c &gt;= TODAY(),
+PJN_Data_Use_Purpose__r.PJN_External_Id__c &lt;&gt; &quot;MVN_EVK_Use_Disclose_Health_Info&quot; &amp;&amp; TEXT( PJN_Privacy_Consent_Status__c ) == &quot;Opt In&quot;),
+IMAGE(&quot;/resource/PJNImages/OptIn.png&quot;,&quot;Opt In&quot;, 33, 115),
+IF(
+TEXT( PJN_Privacy_Consent_Status__c ) == &quot;Opt Out&quot; || PJN_Effective_To__c &lt; TODAY(),
+IMAGE(&quot;/resource/PJNImages/OptOut.png&quot;,&quot;Opt Out&quot;, 33, 115),
+IF(
+TEXT( PJN_Privacy_Consent_Status__c ) == &quot;Not Given&quot;,
+IMAGE(&quot;/resource/PJNImages/NotGiven.png&quot;,&quot;Not Given&quot;, 33, 115),
+NULL
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Consent Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

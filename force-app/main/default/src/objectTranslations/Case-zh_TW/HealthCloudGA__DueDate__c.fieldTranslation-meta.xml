@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>此照護落差應結束的日期。</help>
+    <label><!-- Due Date --></label>
+    <name>HealthCloudGA__DueDate__c</name>
+</CustomFieldTranslation>

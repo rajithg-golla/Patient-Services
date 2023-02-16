@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the ‘lowest’ value in the normal range for the
+test. This value is usually published by the laboratory providing the test
+results. The same units as the test results are implied. --></help>
+    <label><!-- Normal Low Range --></label>
+    <name>PJN_Normal_Low_Range__c</name>
+</CustomFieldTranslation>

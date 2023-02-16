@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Care plan field name to map value to --></help>
+    <label><!-- Care Plan Field Name --></label>
+    <name>Care_Plan_Field_Name_MVN__c</name>
+</CustomFieldTranslation>

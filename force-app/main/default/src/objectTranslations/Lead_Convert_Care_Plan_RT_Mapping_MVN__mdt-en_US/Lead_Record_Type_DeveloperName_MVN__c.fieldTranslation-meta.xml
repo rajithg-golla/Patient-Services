@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Developer name of the lead record type --></help>
+    <label><!-- Lead Record Type Name --></label>
+    <name>Lead_Record_Type_DeveloperName_MVN__c</name>
+</CustomFieldTranslation>

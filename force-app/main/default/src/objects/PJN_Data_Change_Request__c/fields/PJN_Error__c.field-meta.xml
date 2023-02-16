@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Error__c</fullName>
+    <description>Part of the Patient Service accelerator: Details of any errors that occurred during outbound DCR requests to Veeva Network, or inbound DCR updates from Veeva Network. Errors are cleared after DCR is successfully processed.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Details of any errors that occurred during outbound DCR requests to Veeva Network, or inbound DCR updates from Veeva Network. Errors are cleared after DCR is successfully processed.</inlineHelpText>
+    <label>Error</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Length of Interaction --></label>
+    <name>Length_of_Interaction_MVN__c</name>
+    <picklistValues>
+        <masterLabel>10-15 minutes</masterLabel>
+        <translation><!-- 10-15 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-10 minutes</masterLabel>
+        <translation><!-- 5-10 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More than 15 minutes</masterLabel>
+        <translation><!-- More than 15 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under 5 minutes</masterLabel>
+        <translation><!-- Under 5 minutes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

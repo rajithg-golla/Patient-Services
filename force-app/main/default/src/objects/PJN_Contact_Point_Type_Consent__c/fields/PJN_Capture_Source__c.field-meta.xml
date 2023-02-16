@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Capture_Source__c</fullName>
+    <description>The way you captured consent. For example, enrollment form or via phone.</description>
+    <externalId>false</externalId>
+    <label>Capture Source</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enrollment Form</fullName>
+                <default>false</default>
+                <label>Enrollment Form</label>
+            </value>
+            <value>
+                <fullName>eSignature</fullName>
+                <default>false</default>
+                <label>eSignature</label>
+            </value>
+            <value>
+                <fullName>myRARE</fullName>
+                <default>false</default>
+                <label>myRARE</label>
+            </value>
+            <value>
+                <fullName>Verbal</fullName>
+                <default>false</default>
+                <label>Verbal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

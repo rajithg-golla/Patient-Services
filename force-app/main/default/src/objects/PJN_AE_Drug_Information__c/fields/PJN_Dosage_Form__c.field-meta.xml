@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Dosage_Form__c</fullName>
+    <description>E2B (R2): B.4.k.7, drugdosageform (50AN)
+
+E2B (R3):  G.k.4.r.9.1 Pharmaceutical Dose Form (free text)
+Conformance: Optional
+Data Type: 60 AN
+OID: None
+Value Allowed:
+Free text
+nullFlavor: ASKU, NASK, UNK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>e.g., tablets, capsules, syrup</inlineHelpText>
+    <label>Dosage Form</label>
+    <length>60</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

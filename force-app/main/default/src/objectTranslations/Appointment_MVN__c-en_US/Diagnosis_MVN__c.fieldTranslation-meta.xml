@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Diagnosis --></label>
+    <name>Diagnosis_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Diabetic Macular Edema</masterLabel>
+        <translation><!-- Diabetic Macular Edema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diabetic Retinopathy</masterLabel>
+        <translation><!-- Diabetic Retinopathy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diabetic Retinopathy - Proliferative</masterLabel>
+        <translation><!-- Diabetic Retinopathy - Proliferative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPDR - Mild</masterLabel>
+        <translation><!-- NPDR - Mild --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPDR - Moderate</masterLabel>
+        <translation><!-- NPDR - Moderate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPDR - Severe</masterLabel>
+        <translation><!-- NPDR - Severe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

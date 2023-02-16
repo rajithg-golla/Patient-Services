@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element captures the date of the last menstrual period of the patient when it is relevant. --></help>
+    <label><!-- Patient Last Menstrual Period --></label>
+    <name>PJN_Patient_Last_Menstrual_Period__c</name>
+</CustomFieldTranslation>

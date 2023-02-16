@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Account_Network_Id__c</fullName>
+    <description>Network Key to identify the Parent Account in Veeva Network</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(NOT(ISNULL(PJN_Parent_Account__c)), NOT(ISBLANK( PJN_Parent_Account__r.PJN_Veeva_Network_Id__c ))),
+&quot;Network:Entity:&quot; + PJN_Parent_Account__r.PJN_Veeva_Network_Id__c,
+&quot;&quot;)</formula>
+    <label>Parent Account Network Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

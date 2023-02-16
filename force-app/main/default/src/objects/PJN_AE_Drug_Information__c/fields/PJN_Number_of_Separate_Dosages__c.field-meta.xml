@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Number_of_Separate_Dosages__c</fullName>
+    <description>E2B (R2): B.4.k.5.3 drugseparatedosagenumb (3N)
+
+E2B (R3): NA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Example: 5 mg 2 times a day every other day for 30 days
+Dose (number): 5
+Dose (unit): mg
+Interval: 2
+Interval Unit: day
+Cumulative Dose to First Reaction (number): 150
+Cumulative Dose to First Reaction (unit): mg</inlineHelpText>
+    <label>Number of Separate Dosages</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

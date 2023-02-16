@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Send_AE_Email</fullName>
+    <availability>online</availability>
+    <description>Compiles the AE information into a PDF to send via email</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send AE Email</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/45.0/integration.js&quot;)}
+
+result = sforce.connection.query(&quot;Select Id from Attachment where ParentId=&apos;{!PJN_Adverse_Event__c.Id}&apos;&quot;);
+
+records = result.getArray(&quot;records&quot;);
+
+attachmentIds = &quot;&quot;;
+for (var i=0; i&lt;records.length; i++) {
+var record = records[i];
+attachmentIds += record.Id;
+if(i+1&lt;records.length){
+attachmentIds += &quot;,&quot;;
+}
+}
+
+var FileResult = sforce.connection.query(&quot;SELECT Id,ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId =&apos;{!PJN_Adverse_Event__c.Id}&apos;&quot;);
+var Filerecords = FileResult.getArray(&quot;records&quot;);
+for (var i=0; i&lt;Filerecords.length; i++) {
+if(attachmentIds){
+attachmentIds += &quot;,&quot;;
+}
+var record = Filerecords[i];
+attachmentIds += record.ContentDocumentId;
+}
+
+var redirectUrl = &quot;/apex/loop__looplus?sessionId={!$Api.Session_ID}&amp;eid={!PJN_Adverse_Event__c.Id}&amp;autorun=true&amp;accountId=null&amp;hidecontact=true&amp;attachIds=&quot;+attachmentIds+&quot;&amp;filter= AESnapshotDDP&amp;dlpb={!$Label.PJN_Send_AE_Email}&quot;;
+
+if (sforce &amp;&amp; sforce.console &amp;&amp; sforce.console.isInConsole()) {
+sforce.console.getEnclosingTabId(function(enclosingResult){
+sforce.console.getEnclosingPrimaryTabId(function(primaryResult){
+sforce.console.openSubtab(primaryResult.id, redirectUrl+&apos;&amp;previousTabId=&apos;+enclosingResult.id+&apos;&amp;isSubTab=true&apos;, true, &apos;&apos;, null);
+});
+});
+}
+else {
+window.location.href = redirectUrl;
+}</url>
+</WebLink>

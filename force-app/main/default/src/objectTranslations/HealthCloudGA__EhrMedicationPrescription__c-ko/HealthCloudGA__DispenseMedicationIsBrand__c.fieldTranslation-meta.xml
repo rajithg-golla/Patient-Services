@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>상표명이 있는 경우 적용</help>
+    <label><!-- Dispense Medication Is Brand --></label>
+    <name>HealthCloudGA__DispenseMedicationIsBrand__c</name>
+</CustomFieldTranslation>

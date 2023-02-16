@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>c_11521830_aaf2_4308_9ae5_380fa5c0ac57</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_2222e322_ae7d_42ae_b2d1_3b4645853955</name>
+        <choiceText>Twice a year</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Twice a year</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_2b182278_527f_41da_a5a1_fe564bb66633</name>
+        <choiceText>I don&apos;t know/unsure</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>I don&apos;t know/unsure</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_642654a7_e79e_401f_9f05_d268c329b9ce</name>
+        <choiceText>An ophthalmologist</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>An ophthalmologist</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_70efc817_593a_40ff_886f_09a87f8d4b4f</name>
+        <choiceText>Once a year</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Once a year</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_86412fe6_babc_4966_b4ce_fd2e17b4712b</name>
+        <choiceText>A different time period</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>A different time period</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_9f425364_c7f3_4bc3_b3fb_f8438ae1f4e4</name>
+        <choiceText>No, but I intend to</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No, but I intend to</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_a298e228_97cb_4859_aece_179dde8241fc</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_bfb83170_4727_4796_ba22_0a80fa110f42</name>
+        <choiceText>A retina specialist</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>A retina specialist</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_e0aa2201_ff5b_4a53_90e9_f683a6456fa4</name>
+        <choiceText>An optometrist</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>An optometrist</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>c_f5177933_2762_4d75_85df_3098fc5f4f78</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <interviewLabel>Negative Result</interviewLabel>
+    <label>Negative Result</label>
+    <processMetadataValues>
+        <name>BrandingSet</name>
+        <value>
+            <stringValue>sb_negative_result_7_fa5f9008_300f_43b7_b573_a32de50daee8</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>advanceThankYouPageEnabled</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>autoProgressEnabled</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>hasWelcomePage</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>overrideActiveVersion</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
+    <processType>Survey</processType>
+    <screens>
+        <name>p_bc0a5997_1054_40f8_bdc6_7bcea88fe811</name>
+        <label>Page 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>q_c1f99401_036e_4cf8_9895_52eba6018926</name>
+            <choiceReferences>c_a298e228_97cb_4859_aece_179dde8241fc</choiceReferences>
+            <choiceReferences>c_f5177933_2762_4d75_85df_3098fc5f4f78</choiceReferences>
+            <dataType>String</dataType>
+            <extensionName>survey:runtimeRadioButton</extensionName>
+            <fieldText>&lt;p&gt;&lt;span class=&quot;ql-cursor&quot;&gt;&lt;/span&gt;Was this your first eye screening for diabetic retinopathy?&lt;/p&gt;</fieldText>
+            <fieldType>ComponentChoice</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>q_fc19d51d_b0eb_4546_adc8_78a9b1afe2d1</name>
+            <choiceReferences>c_70efc817_593a_40ff_886f_09a87f8d4b4f</choiceReferences>
+            <choiceReferences>c_2222e322_ae7d_42ae_b2d1_3b4645853955</choiceReferences>
+            <choiceReferences>c_86412fe6_babc_4966_b4ce_fd2e17b4712b</choiceReferences>
+            <dataType>String</dataType>
+            <extensionName>survey:runtimeRadioButton</extensionName>
+            <fieldText>&lt;p&gt;&lt;span class=&quot;ql-cursor&quot;&gt;&lt;/span&gt;How often do you have an eye exam?&lt;/p&gt;</fieldText>
+            <fieldType>ComponentChoice</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>q_e6b27111_bf67_45fa_bbc7_bee6d1551e21</name>
+            <choiceReferences>c_e0aa2201_ff5b_4a53_90e9_f683a6456fa4</choiceReferences>
+            <choiceReferences>c_642654a7_e79e_401f_9f05_d268c329b9ce</choiceReferences>
+            <choiceReferences>c_bfb83170_4727_4796_ba22_0a80fa110f42</choiceReferences>
+            <choiceReferences>c_2b182278_527f_41da_a5a1_fe564bb66633</choiceReferences>
+            <dataType>String</dataType>
+            <extensionName>survey:runtimeRadioButton</extensionName>
+            <fieldText>&lt;p&gt;&lt;span class=&quot;ql-cursor&quot;&gt;&lt;/span&gt;What type of eye doctor do you see?&lt;/p&gt;</fieldText>
+            <fieldType>ComponentChoice</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>q_76f63b30_b15a_48cf_9e3e_765304f18488</name>
+            <choiceReferences>c_11521830_aaf2_4308_9ae5_380fa5c0ac57</choiceReferences>
+            <choiceReferences>c_9f425364_c7f3_4bc3_b3fb_f8438ae1f4e4</choiceReferences>
+            <dataType>String</dataType>
+            <extensionName>survey:runtimeRadioButton</extensionName>
+            <fieldText>&lt;p&gt;Have you discussed the results of your recent eye screening with your eye doctor or another doctor?&lt;/p&gt;</fieldText>
+            <fieldType>ComponentChoice</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <pausedText>To pick up where you left off, refresh this page, or open the survey again.</pausedText>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>p_bc0a5997_1054_40f8_bdc6_7bcea88fe811</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>thankYouDescriptionTextTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text></text>
+    </textTemplates>
+    <textTemplates>
+        <name>thankYouLabelTextTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-family: sans-serif; font-size: 14px;&quot;&gt;Thank you!&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;07&lt;span class=&quot;ql-cursor&quot;&gt;&lt;/span&gt;/2022&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;OPH.22.05.0006&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>guestUserLang</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>invitationId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>previewMode</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>thankYouDescription</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>{!thankYouDescriptionTextTemplate}</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>thankYouLabel</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>{!thankYouLabelTextTemplate}</stringValue>
+        </value>
+    </variables>
+</Flow>

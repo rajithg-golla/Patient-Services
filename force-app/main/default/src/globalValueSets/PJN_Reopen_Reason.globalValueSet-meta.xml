@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Child AE Reopened</fullName>
+        <default>false</default>
+        <label>Child AE Reopened</label>
+    </customValue>
+    <customValue>
+        <fullName>Child Fulfillment Reopened</fullName>
+        <default>false</default>
+        <label>Child Fulfillment Reopened</label>
+    </customValue>
+    <customValue>
+        <fullName>Child PQC Reopened</fullName>
+        <default>false</default>
+        <label>Child PQC Reopened</label>
+    </customValue>
+    <customValue>
+        <fullName>Child Request Reopened</fullName>
+        <default>false</default>
+        <label>Child Request Reopened</label>
+    </customValue>
+    <customValue>
+        <fullName>Correct Categorization</fullName>
+        <default>false</default>
+        <label>Correct Categorization</label>
+    </customValue>
+    <customValue>
+        <fullName>Correct Identified Quality Issues</fullName>
+        <default>false</default>
+        <label>Correct Identified Quality Issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Log Missed AE/PQC</fullName>
+        <default>false</default>
+        <label>Log Missed AE/PQC</label>
+    </customValue>
+    <customValue>
+        <fullName>Log Missed Request</fullName>
+        <default>false</default>
+        <label>Log Missed Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-send Fulfillment</fullName>
+        <default>false</default>
+        <label>Re-send Fulfillment</label>
+    </customValue>
+    <description>Reasons that a record are reopened.</description>
+    <masterLabel>Reopen Reason</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

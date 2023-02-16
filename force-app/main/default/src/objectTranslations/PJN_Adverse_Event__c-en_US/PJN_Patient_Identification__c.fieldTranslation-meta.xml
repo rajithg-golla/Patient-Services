@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The identification of the patient may be prohibited by certain national confidentiality
+laws or directives. The information should be provided when it is in conformance with the
+confidentiality requirements. --></help>
+    <label><!-- Patient Identification --></label>
+    <name>PJN_Patient_Identification__c</name>
+</CustomFieldTranslation>

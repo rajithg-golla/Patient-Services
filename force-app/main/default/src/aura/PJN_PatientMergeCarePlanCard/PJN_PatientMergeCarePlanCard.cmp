@@ -1,0 +1,59 @@
+<aura:component>
+
+    <aura:attribute name="carePlan" type="Case" />
+    <aura:attribute name="selected" type="Boolean" default="false"/>
+    <aura:attribute name="selectedProgram" type="Boolean" default="false"/>
+    <aura:attribute name="fieldset" type="String[]" />
+
+    <!-- HANDLERS -->
+    <aura:handler event="c:PJN_PatientMergeSelectMasterCarePlanEvent" 
+                    action="{!c.handleSelectMasterCarePlan}" />
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="selectCarePlanEvent" type="c:PJN_PatientMergeSelectCarePlanEvent" />
+    <aura:registerEvent name="selectMasterCarePlanEvent" type="c:PJN_PatientMergeSelectMasterCarePlanEvent" />
+
+    <!-- Display a lightning card with details about the care plan -->
+    <div class="Record Details">
+        <lightning:card iconName="standard:channel_program_members" 
+            variant="Narrow" 
+            class="slds-card_boundary"> 
+            <aura:set attribute="title">
+                <a onclick="{!c.openCarePlan}">{!v.carePlan.Subject}</a>
+            </aura:set>
+
+            <aura:set attribute="actions">
+                <lightning:layout multipleRows="true">
+                <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="5" largeDeviceSize="5">
+                <lightning:button 
+                    label="{!(!v.selected) ? 'Select' : 'Selected'}"
+                    variant="{!(!v.selected) ? 'Neutral' : 'brand'}"
+                    onclick="{!c.handleCarePlanSelection}"
+                />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="7" largeDeviceSize="7">
+                <lightning:input 
+                    aura:id="masterToggleId"
+                    type="toggle" 
+                    label="" 
+                    name="togglevalue" 
+                    checked="false" 
+                    messageToggleActive="Master" 
+                    messageToggleInactive="Select as master"
+                    onchange="{!c.handleToggleMaster}"
+                />
+                </lightning:layoutItem>
+                </lightning:layout>
+
+            </aura:set>
+            <lightning:recordViewForm recordId="{!v.carePlan.Id}" objectApiName="Case">
+                <div class="slds-form slds-form_horizontal slds-p-horizontal_medium">
+                    <aura:iteration items="{!v.fieldset}" var="field">
+                        <lightning:outputField fieldName="{!field}" />
+                    </aura:iteration>
+                </div>
+            </lightning:recordViewForm>
+
+        </lightning:card>
+    </div>
+</aura:component>

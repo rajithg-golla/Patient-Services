@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Número de categorías de dolencias de HCC que se aplican al paciente.</help>
+    <label><!-- Number of Conditions --></label>
+    <name>HealthCloudGA__NumberOfConditions__c</name>
+</CustomFieldTranslation>

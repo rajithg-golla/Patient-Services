@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Un codice che specifica lo stato della dichiarazione. Generalmente lo stato è in-corso o completato.</help>
+    <label><!-- Status Code --></label>
+    <name>HealthCloudGA__StatusCode__c</name>
+    <picklistValues>
+        <masterLabel>completed</masterLabel>
+        <translation>completato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>entered-in-error</masterLabel>
+        <translation>immesso-per-errore</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>in-progress</masterLabel>
+        <translation>in-corso</translation>
+    </picklistValues>
+</CustomFieldTranslation>

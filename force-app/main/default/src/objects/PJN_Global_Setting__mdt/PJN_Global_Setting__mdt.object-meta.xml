@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Account Search
+Purpose: Definition of handler class used for the Account Search and the number max of results to be displayed. Global setting for all Programs; change only the max results field.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>Global Setting</label>
+    <pluralLabel>Global Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

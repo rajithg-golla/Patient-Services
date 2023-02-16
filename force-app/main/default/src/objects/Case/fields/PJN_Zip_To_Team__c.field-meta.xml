@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Zip_To_Team__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The record used to align this case to a care team - Created July 11, 2019</description>
+    <externalId>false</externalId>
+    <label>Zip To Team</label>
+    <referenceTo>PJN_Zip_To_Team__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>PJN_Cases</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

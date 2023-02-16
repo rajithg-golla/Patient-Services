@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Details__c</fullName>
+    <description>Summary details of each medical history record, shown in related list.</description>
+    <externalId>false</externalId>
+    <formula>CASE(
+RecordType.DeveloperName,
+&quot;PJN_Allergy&quot;, PJN_Substance__c,
+&quot;PJN_Concurrent_Medication&quot;, PJN_Medication__c,
+&quot;PJN_Lab_Results&quot;, PJN_Results_Summary__c,
+&quot;PJN_Vaccination&quot;, PJN_Vaccine__c,
+&quot;MVN_Family_History&quot;, IF(MVN_Section_Not_Completed__c = TRUE, &quot;Section Not Completed&quot;, IF(OR(MVN_Confirm_FH_Diagnosis_In_Both_Parents__c=TRUE, MVN_Evidence_of_FH_In_Both_Parents__c=TRUE),&quot;FH in Parents&quot;,NULL)),
+&quot;MVN_Prior_Current_Treatment&quot;, IF(MVN_Section_Not_Completed__c = TRUE, &quot;Section Not Completed&quot;, TEXT(MVN_Treatment__c)),
+&quot;MVN_Other_History&quot;, IF(MVN_Section_Not_Completed__c = TRUE, &quot;Section Not Completed&quot;, IF(MVN_Cutaneous_Or_Tendinous_Xanthoma__c=TRUE , &quot;Cutaneous or Tendinous Xanathoma&quot;, 
+IF(INCLUDES( MVN_Diagnostic__c , &quot;Clinical&quot; ) , &quot;Clinical&quot; , &quot;&quot; ) &amp;
+IF(INCLUDES( MVN_Diagnostic__c , &quot;Genetic Testing&quot; ) , &quot; Genetic Testing&quot; , &quot;&quot; ) &amp;
+IF(INCLUDES( MVN_Diagnostic__c , &quot;Other&quot; ) , &quot; &quot; &amp; MVN_Other_Diagnostic__c ,
+MVN_Other_Diagnostic__c))),
+NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Details</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

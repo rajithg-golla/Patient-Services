@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Transfer Reason --></help>
+    <label><!-- SP Reason --></label>
+    <name>PJN_SP_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Reason1</masterLabel>
+        <translation><!-- Reason1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reason2</masterLabel>
+        <translation><!-- Reason2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

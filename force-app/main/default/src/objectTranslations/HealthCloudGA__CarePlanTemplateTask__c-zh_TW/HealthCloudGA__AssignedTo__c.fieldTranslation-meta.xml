@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned To --></label>
+    <name>HealthCloudGA__AssignedTo__c</name>
+    <picklistValues>
+        <masterLabel>Care Coordinator</masterLabel>
+        <translation>照護協調員</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient</masterLabel>
+        <translation>病患</translation>
+    </picklistValues>
+</CustomFieldTranslation>

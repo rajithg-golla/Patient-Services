@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ο συνολικός αριθμός των παραπομπών που έχουν υποβληθεί τους τελευταίους 6 μήνες από τον συγκεκριμένο παραπέμποντα ιατρό.</help>
+    <label><!-- Total Referrals --></label>
+    <name>HealthCloudGA__TotalReferrals__c</name>
+</CustomFieldTranslation>

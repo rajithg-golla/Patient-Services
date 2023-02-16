@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set to ‘true’ when the medical information provided is also present in another family member (e.g. hereditary diseases). However, this data element is not used when the same medical concept is already provided in the medical history of the parent. --></help>
+    <label><!-- Family History --></label>
+    <name>PJN_Family_History__c</name>
+</CustomFieldTranslation>

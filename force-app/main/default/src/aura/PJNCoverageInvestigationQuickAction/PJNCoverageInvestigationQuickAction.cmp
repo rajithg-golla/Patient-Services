@@ -1,0 +1,25 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,lightning:actionOverride,lightning:isUrlAddressable">
+
+    <aura:html tag="style">
+        .slds-modal__container{
+            width: 90%;
+            max-width: 100rem;
+        }
+
+        .slds-modal__container .modal-body {
+            height: auto !important;
+            max-height: 100vh !important;
+        }
+    </aura:html>
+
+    <aura:handler name="init" value="this" action="{!c.init}"/>
+
+    <aura:attribute name="carePlanId" type="string"/>
+    <aura:attribute name="investigationId" type="string"/>
+
+    <c:pjnCoverageInvestigationItemSelector
+        carePlanId="{!v.carePlanId}"
+        investigationId="{!v.investigationId}"
+        onrefreshtab="{!c.refreshTab}"
+    />
+</aura:component>

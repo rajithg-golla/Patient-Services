@@ -1,0 +1,18 @@
+<template>
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">DEDSI Consent</h2>    
+    </header>
+    <div class="slds-align_absolute-center" style="height:7rem;margin-top:1rem">
+        <template if:false={submitting}>            
+            <lightning-button onclick={inPerson} variant="brand" label="Sign In Person" icon-name="utility:user" class="slds-m-right_large"></lightning-button>            
+            <lightning-button onclick={byEmail} variant="brand" label="Sign By Email" icon-name="utility:email"></lightning-button>
+        </template>
+
+        <template if:true={submitting}>
+            <div class="slds-is-relative">
+                <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+                <div style="margin-top:7rem">{submittingMessage}</div>
+            </div>
+        </template>
+    </div>
+</template>

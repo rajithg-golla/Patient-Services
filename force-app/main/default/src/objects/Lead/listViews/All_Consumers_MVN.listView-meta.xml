@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Consumers_MVN</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>HealthCloudGA__BirthDate__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Event_MVN__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Consumers</label>
+    <language>en_US</language>
+</ListView>

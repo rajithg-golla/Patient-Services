@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Recipient_Routing_Order_Sequential__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether the signing order is Sequential or Parallel. Maps to &quot;RROS&quot;</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Indicates whether the signing order is Sequential or Parallel. Maps to &quot;RROS&quot;</inlineHelpText>
+    <label>Recipient Routing Order Sequential</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De uiteindelijke HCC-codes die van toepassing zijn op de patiënt na de toepassing van de overschrijflogica.</help>
+    <label><!-- HCC Codes --></label>
+    <name>HealthCloudGA__HCCCodes__c</name>
+</CustomFieldTranslation>

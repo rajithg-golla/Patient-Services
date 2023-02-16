@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Document_Type__c</fullName>
+    <description>Specifies the type of document(s) related to the request.</description>
+    <externalId>false</externalId>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Appeal Approval Letter</fullName>
+                <default>false</default>
+                <label>Appeal Approval Letter</label>
+            </value>
+            <value>
+                <fullName>Appeal Denial Letter</fullName>
+                <default>false</default>
+                <label>Appeal Denial Letter</label>
+            </value>
+            <value>
+                <fullName>Appeal Form</fullName>
+                <default>false</default>
+                <label>Appeal Form</label>
+            </value>
+            <value>
+                <fullName>Appeal Letter</fullName>
+                <default>false</default>
+                <label>Appeal Letter</label>
+            </value>
+            <value>
+                <fullName>Claim Information</fullName>
+                <default>false</default>
+                <label>Claim Information</label>
+            </value>
+            <value>
+                <fullName>Clinical Documents</fullName>
+                <default>false</default>
+                <label>Clinical Documents</label>
+            </value>
+            <value>
+                <fullName>Consent Form</fullName>
+                <default>false</default>
+                <label>Consent Form</label>
+            </value>
+            <value>
+                <fullName>Financial Documents</fullName>
+                <default>false</default>
+                <label>Financial Documents</label>
+            </value>
+            <value>
+                <fullName>Insurance Cards</fullName>
+                <default>false</default>
+                <label>Insurance Cards</label>
+            </value>
+            <value>
+                <fullName>Insurance Information</fullName>
+                <default>false</default>
+                <label>Insurance Information</label>
+            </value>
+            <value>
+                <fullName>Letter of Medical Necessity</fullName>
+                <default>false</default>
+                <label>Letter of Medical Necessity</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PA Approval Letter</fullName>
+                <default>false</default>
+                <label>PA Approval Letter</label>
+            </value>
+            <value>
+                <fullName>PA Denial Letter</fullName>
+                <default>false</default>
+                <label>PA Denial Letter</label>
+            </value>
+            <value>
+                <fullName>PA Form</fullName>
+                <default>false</default>
+                <label>PA Form</label>
+            </value>
+            <value>
+                <fullName>PAP Appeal Documents</fullName>
+                <default>false</default>
+                <label>PAP Appeal Documents</label>
+            </value>
+            <value>
+                <fullName>Patient Authorization</fullName>
+                <default>false</default>
+                <label>Patient Authorization</label>
+            </value>
+            <value>
+                <fullName>Product Request Form</fullName>
+                <default>false</default>
+                <label>Product Request Form</label>
+            </value>
+            <value>
+                <fullName>Rx</fullName>
+                <default>false</default>
+                <label>Rx</label>
+            </value>
+            <value>
+                <fullName>Start Form</fullName>
+                <default>false</default>
+                <label>Start Form</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

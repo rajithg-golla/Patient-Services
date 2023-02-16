@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Can_only_Reopen_when_Closed</fullName>
+    <active>true</active>
+    <description>Can only reopen when record is closed.</description>
+    <errorConditionFormula>OR(
+(TEXT(PRIORVALUE(PJN_Status__c))=&quot;Cancelled&quot; &amp;&amp; ISPICKVAL(PJN_Status__c, &quot;Closed&quot;)),
+(TEXT(PRIORVALUE(PJN_Status__c))=&quot;Closed&quot; &amp;&amp; ISPICKVAL(PJN_Status__c, &quot;Cancelled&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Status__c</errorDisplayField>
+    <errorMessage>Can only reopen when record is closed.</errorMessage>
+</ValidationRule>

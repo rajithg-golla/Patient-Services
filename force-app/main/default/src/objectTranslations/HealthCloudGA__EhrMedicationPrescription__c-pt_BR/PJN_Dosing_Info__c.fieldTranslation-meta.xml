@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dosing Info --></label>
+    <name>PJN_Dosing_Info__c</name>
+    <picklistValues>
+        <masterLabel>Four times a day</masterLabel>
+        <translation><!-- Four times a day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Once a day</masterLabel>
+        <translation><!-- Once a day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Once every other day</masterLabel>
+        <translation><!-- Once every other day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Three times a day</masterLabel>
+        <translation><!-- Three times a day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Twice a day</masterLabel>
+        <translation><!-- Twice a day --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

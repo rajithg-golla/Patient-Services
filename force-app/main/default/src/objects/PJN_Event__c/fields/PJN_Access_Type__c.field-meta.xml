@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Access_Type__c</fullName>
+    <description>The patient&apos;s method of obtaining funding and access to therapy during the duration of the Event.</description>
+    <externalId>false</externalId>
+    <label>Access Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_Coverage_Types</valueSetName>
+    </valueSet>
+</CustomField>

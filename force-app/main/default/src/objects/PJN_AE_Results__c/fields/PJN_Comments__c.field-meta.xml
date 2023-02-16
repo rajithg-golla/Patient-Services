@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Comments__c</fullName>
+    <description>E2B (R2): NA
+
+E2B (R3): F.r.6 Comments
+User Guidance: This data element captures any relevant comments made by the reporter
+about the test result.
+Conformance: Optional
+Data Type: 2000AN
+OID: None
+Value Allowed: Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures any relevant comments made by the reporter
+about the test result.</inlineHelpText>
+    <label>Comments</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_Institution_on_Create__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This record type must have a related institution to create.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This record type must have a related institution to create.</inlineHelpText>
+    <label>Require Institution on Create</label>
+    <type>Checkbox</type>
+</CustomField>

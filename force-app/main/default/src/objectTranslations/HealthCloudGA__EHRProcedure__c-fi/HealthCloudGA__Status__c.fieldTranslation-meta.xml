@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>HealthCloudGA__Status__c</name>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation>Valmis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entered in Error</masterLabel>
+        <translation>Syötetty vahingossa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation>Kesken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Completed</masterLabel>
+        <translation>Ei valmis</translation>
+    </picklistValues>
+</CustomFieldTranslation>

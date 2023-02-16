@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Osoittaa vaiheen, jossa potilas on Medicare CCM -ohjelmassa.</help>
+    <label><!-- Stage --></label>
+    <name>HealthCloudGA__Stage__c</name>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>Hylätty</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation>Käynnissä</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Program</masterLabel>
+        <translation>Ohjelmassa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potential</masterLabel>
+        <translation>Potentiaali</translation>
+    </picklistValues>
+</CustomFieldTranslation>

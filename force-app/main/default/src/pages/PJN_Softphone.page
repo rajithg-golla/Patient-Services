@@ -1,0 +1,18 @@
+<apex:page controller="PJN_SoftphoneCtrl" action="{!doAction}">
+
+  <apex:includeScript value="/support/console/45.0/integration.js"/>
+  Redirecting to new case ...
+
+  <script>
+      sforce.console.openPrimaryTab(null, '/{!newCaseId}', true, 'Inbound Call', function(result) {
+          var tabId = (result.id).toString();
+          var s = '/lightning/cmp/c__PJN_AccountSearchGeneral?c__recordId={!newCaseId}&c__phone={!phone}&returnTabId='+tabId;
+          sforce.console.openSubtab(result.id, s, true, 'Account Search', null);
+          sforce.console.getEnclosingTabId(function(enclosingTab){
+              sforce.console.closeTab(enclosingTab.id);
+          });
+      });
+  </script>
+
+
+</apex:page>

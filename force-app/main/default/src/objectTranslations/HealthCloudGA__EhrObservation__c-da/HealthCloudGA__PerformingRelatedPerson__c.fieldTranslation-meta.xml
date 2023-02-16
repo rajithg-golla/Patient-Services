@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Relateret person, der registrerede denne observation</help>
+    <label><!-- Performing Related Person --></label>
+    <name>HealthCloudGA__PerformingRelatedPerson__c</name>
+    <relationshipLabel><!-- EHR Observations (Performing RelatedPersion) --></relationshipLabel>
+</CustomFieldTranslation>

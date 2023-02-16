@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_MDM_Connection__c</fullName>
+    <description>MDM Connect which uses the Object setting.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>MDM Connection</label>
+    <referenceTo>MVN_MDM_Connection__mdt</referenceTo>
+    <relationshipLabel>MDM Object Settings</relationshipLabel>
+    <relationshipName>MVN_MDM_Object_Settings</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

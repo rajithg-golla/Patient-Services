@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Gender --></label>
+    <name>HealthCloudGA__Gender__c</name>
+    <picklistValues>
+        <masterLabel>Decline to Specify</masterLabel>
+        <translation>Avslå for å angi</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Female</masterLabel>
+        <translation>Kvinne</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Male</masterLabel>
+        <translation>Mann</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Annet</translation>
+    </picklistValues>
+</CustomFieldTranslation>

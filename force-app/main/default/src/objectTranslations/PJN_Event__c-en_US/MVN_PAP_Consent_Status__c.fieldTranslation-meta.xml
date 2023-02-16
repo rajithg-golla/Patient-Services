@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PAP Consent Status --></label>
+    <name>MVN_PAP_Consent_Status__c</name>
+    <picklistValues>
+        <masterLabel>Not Given</masterLabel>
+        <translation><!-- Not Given --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opt In</masterLabel>
+        <translation><!-- Opt In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opt Out</masterLabel>
+        <translation><!-- Opt Out --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

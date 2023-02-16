@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dwelling --></label>
+    <name>HealthCloudGA__Dwelling__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation>Квартира</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board and Care or Assisted Living Facility</masterLabel>
+        <translation>Будинок для перестарілих</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel or Motel</masterLabel>
+        <translation>Готель або мотель</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation>Будинок</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long-Term Care Facility</masterLabel>
+        <translation>Довгострокове поселення в установі</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family Dwelling</masterLabel>
+        <translation>Багатоквартирний будинок</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation>Приватний санаторій</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Vehicle or Mobile Home</masterLabel>
+        <translation>Рекреаційний транспорт або дім на колесах</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skilled Nursing Facility</masterLabel>
+        <translation>Установа з кваліфікованим сестринським доглядом</translation>
+    </picklistValues>
+</CustomFieldTranslation>

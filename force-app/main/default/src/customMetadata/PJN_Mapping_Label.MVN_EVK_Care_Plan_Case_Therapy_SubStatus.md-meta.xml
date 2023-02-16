@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EVK - Care Plan Case Therapy Sub-Status</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Label_Text_Area__c</field>
+        <value xsi:type="xsd:string">New Referral</value>
+    </values>
+    <values>
+        <field>PJN_Mapping__c</field>
+        <value xsi:type="xsd:string">MVN_EVK_Care_Plan_Create_Labels</value>
+    </values>
+    <values>
+        <field>PJN_Source_Field_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Target_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Therapy_Sub_Status__c</value>
+    </values>
+</CustomMetadata>

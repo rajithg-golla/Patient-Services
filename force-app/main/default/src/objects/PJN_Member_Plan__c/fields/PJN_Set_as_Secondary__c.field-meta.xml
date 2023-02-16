@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Set_as_Secondary__c</fullName>
+    <description>Indicator to show if this should be set as the secondary member plan</description>
+    <externalId>false</externalId>
+    <formula>IF( AND( PJN_Set_as_Active__c ,  TEXT( PJN_Coverage_Order__c ) == &apos;Secondary&apos;) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Set as Secondary</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

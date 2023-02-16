@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__PerformingPractitioner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Practitioner who performed this observation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Practitioner who performed this observation</inlineHelpText>
+    <label>Performing Practitioner</label>
+    <referenceTo>HealthCloudGA__EhrPractitioner__c</referenceTo>
+    <relationshipLabel>EhrObservations (Performing Practitioner)</relationshipLabel>
+    <relationshipName>EhrObservations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

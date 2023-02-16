@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- OAuth scope value --></help>
+    <label><!-- Adobe Sign OAuth Scope --></label>
+    <name>echosign_dev1__Adobe_Sign_OAuth_Scope__c</name>
+</CustomFieldTranslation>

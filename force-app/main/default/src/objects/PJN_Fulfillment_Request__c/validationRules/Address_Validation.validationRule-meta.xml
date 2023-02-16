@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND( ISNEW(),  NOT(ISBLANK(TEXT(MVN_Address_Validation__c)))),(ISBLANK(TEXT(PRIORVALUE(MVN_Address_Validation__c)))) 
+&amp;&amp;
+ (TEXT( MVN_Address_Validation__c ) = &quot;Y&quot;))
+&amp;&amp;  RecordType.DeveloperName = &quot;PJN_Materials_Order&quot;</errorConditionFormula>
+    <errorDisplayField>MVN_Address_Validation__c</errorDisplayField>
+    <errorMessage>Address Validation can only be set to Yes – Validated after it has failed Address Validation.  Please Save as blank and Submit Fulfillment Request</errorMessage>
+</ValidationRule>

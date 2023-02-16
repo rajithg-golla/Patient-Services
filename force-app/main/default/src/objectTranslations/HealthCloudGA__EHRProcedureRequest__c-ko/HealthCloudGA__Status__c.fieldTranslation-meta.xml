@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>HealthCloudGA__Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation>수락됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation>완료됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation>초안</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation>진행 중</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Completed</masterLabel>
+        <translation>완료되지 않음</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposed</masterLabel>
+        <translation>제안됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation>수신됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation>거부됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested</masterLabel>
+        <translation>요청됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspended</masterLabel>
+        <translation>일시 중단됨</translation>
+    </picklistValues>
+</CustomFieldTranslation>

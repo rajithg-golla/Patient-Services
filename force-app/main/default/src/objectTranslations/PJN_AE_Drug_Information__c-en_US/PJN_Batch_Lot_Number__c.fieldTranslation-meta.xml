@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is particularly important for vaccines and biologicals. The section
+allows for multiple batch or lot numbers, each separated by a delimiter defined by the transmission
+standard chosen. The most specific information available should be provided. --></help>
+    <label><!-- Batch/Lot Number --></label>
+    <name>PJN_Batch_Lot_Number__c</name>
+</CustomFieldTranslation>

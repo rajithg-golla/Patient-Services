@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: The name should be that used by the reporter. It is recognized that a single product
+may have different proprietary names in different countries, even when produced by a single
+manufacturer. --></help>
+    <label><!-- Product --></label>
+    <name>PJN_Product__c</name>
+    <relationshipLabel><!-- AE Drug --></relationshipLabel>
+</CustomFieldTranslation>

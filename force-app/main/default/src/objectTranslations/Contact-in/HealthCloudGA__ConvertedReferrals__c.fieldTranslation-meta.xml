@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hitungan rujukan yang dikirimkan dalam 6 bulan terakhir oleh dokter pemberi rujukan ini yang mempunyai status “Dikonversikan Tertutup”.</help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

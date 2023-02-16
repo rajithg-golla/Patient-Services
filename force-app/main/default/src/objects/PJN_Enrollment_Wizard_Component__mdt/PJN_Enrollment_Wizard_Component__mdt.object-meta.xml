@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Enrollment Wizard
+Purpose: Define section title, type of component and its order within the Enrollment Wizard Step. This is step 3 in setting up the Enrollment Wizard.
+Metadata Relationship(s): Enrollment Wizard Step; Enrollment Wizard Record Form; Enrollment Wizard Record List
+Created by Mavens: Yes</description>
+    <label>Enrollment Wizard Component</label>
+    <pluralLabel>Enrollment Wizard Components</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

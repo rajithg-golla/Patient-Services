@@ -1,0 +1,42 @@
+<template>
+    <template if:true={loading}>
+        <div class="slds-is-relative min-50-px">
+            <lightning-spinner alternative-text={labels.LOADING} size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={loading}>
+        <template if:true={groups.length}>
+            <lightning-accordion
+                active-section-name=""
+                allow-multiple-sections-open="true"
+                onsectiontoggle={handleSectionToggle}>
+                <template for:each={groups} for:item="group">
+                    <lightning-accordion-section name={group.detail.Id} label={group.detail.Name} key={group.detail.Id}>
+                        <template if:true={group.open}>
+                            <lightning-button-icon
+                                slot="actions"
+                                icon-name="custom:custom39"
+                                alternative-text={labels.VIEW_DETAILS}
+                                data-group-id={group.detail.Id}
+                                variant="bare"
+                                size="large"
+                                onclick={handleButtonIconClick}>
+                        </lightning-button-icon>
+                        </template>
+                        <c-pjn-metric-group-summary
+                            care-plan-id={carePlanId}
+                            patient-id={patientId}
+                            group-id={group.detail.Id}
+                            show-all-for-current-patient={showAllForCurrentPatient}>
+                        </c-pjn-metric-group-summary>
+                    </lightning-accordion-section>
+                </template>
+            </lightning-accordion>
+        </template>
+        <template if:false={groups.length}>
+            <div class="slds-text-align_center slds-p-around_large slds-text-title_caps">
+                {labels.NO_RECORDS}
+            </div>
+        </template>
+    </template>
+</template>

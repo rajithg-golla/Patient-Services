@@ -1,0 +1,18 @@
+<apex:page >
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+
+    <div id="lightning" />
+    <script>
+    	var isLightning = (typeof sforce != 'undefined') && (sforce != null) && (sforce.one != null);
+    	var appName = "echosign_dev1:AnalyticsSettingsBridge";
+
+    	$Lightning.use(appName, function() {
+        	$Lightning.createComponent("echosign_dev1:AnalyticsSettings",
+          		{ "returnUrl" : "{! JSENCODE($CurrentPage.parameters.retUrl) }" },
+          		"lightning",
+          		function(cmp) {
+          	});
+        });
+    </script>
+</apex:page>

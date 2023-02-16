@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Not_Associated_With_Case_MVN</fullName>
+    <active>true</active>
+    <description>Errors if Subject is Care Plan Survey.Task Email Survey Subject Trigger, task is being closed, and associated WhatId does not begin with &quot;500&quot;.
+This validation protects the flow, Task_Email_Survey_MVN, which needs the WhatId field to be a case.</description>
+    <errorConditionFormula>Subject =  $CustomMetadata.Survey_Automation_MVN__mdt.Task_Email_Survey_MVN.Email_Survey_Trigger_MVN__c &amp;&amp;
+ISPICKVAL( Status , &quot;Completed&quot; ) &amp;&amp;
+!ISPICKVAL( PRIORVALUE( Status ), &quot;Completed&quot; ) &amp;&amp;
+LEFT( WhatId , 3) &lt;&gt; &quot;500&quot;</errorConditionFormula>
+    <errorDisplayField>WhatId</errorDisplayField>
+    <errorMessage>Please associate this task to a case before marking this task complete.</errorMessage>
+</ValidationRule>

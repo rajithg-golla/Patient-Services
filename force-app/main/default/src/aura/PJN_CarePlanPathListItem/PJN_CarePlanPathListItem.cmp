@@ -1,0 +1,88 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanPathListCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="careplan" type="Case"/>
+    <aura:attribute name="allCarePlanSettingsByProgramDeveloperName" type="Map"/>
+    <aura:attribute name="allCareplanSetting" type="PJN_All_Care_Plan_Setting__mdt"/>
+    <aura:attribute name="allCareplanSettingFields" type="PJN_All_Care_Plan_Setting_Field__mdt[]"/>
+    <aura:attribute name="subtitle" type="String"/>
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="isExpanded" type="Boolean" default="false" />
+
+    <!-- HANDLETS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <div class="slds-card slds-m-around--small">
+        <div class="slds-page-header slds-page-header_record-home">
+            <aura:if isTrue="{!v.allCareplanSetting}">
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-title">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <span class="slds-icon_container">
+                                    <a onclick="{!c.onExpand}">
+                                        <aura:if isTrue="{!not(v.isExpanded)}">
+                                            <lightning:icon aura:id="chevronright" class="slds-icon slds-page-header__icon" iconName="utility:chevronright" size="x-small"/>
+                                            <aura:set attribute="else">
+                                                <lightning:icon aura:id="chevrondown" class="slds-icon slds-page-header__icon" iconName="utility:chevrondown" size="x-small"/>
+                                            </aura:set>
+                                        </aura:if>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-page-header__name">
+                                    <div class="slds-page-header__name-title">
+                                        <h1>
+                                            <span>
+                                                {!v.subtitle}
+                                            </span>
+                                            <a onclick="{!c.onNavigateToCarePlan}">
+                                                <span class="slds-page-header__title slds-truncate slds-p-top_x-small" title="{!v.careplan.Subject}">
+                                                        {!v.title}
+                                                </span>
+                                            </a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aura:if>
+
+            <div class="slds-page-header__row slds-page-header__row_gutters">
+                <div class="slds-page-header__col-details">
+                    <div class="slds-grid slds-page-header__detail-row">
+                        <c:PJN_CarePlanPath recordId="{!v.careplan.Id}" isCollapsed="{!or(not(v.isExpanded), not(v.allCareplanSetting.PJN_Is_Path_Expandable__c))}" hasActions="false" context="{!v.context}"/>
+                    </div>
+                    <aura:if isTrue="{!v.isExpanded}">
+                        <article class="slds-card slds-is-relative slds-size_12-of-12">
+                            <div class="slds-card__body slds-card__body_inner">
+                                <div class="slds-path slds-path_has-coaching">
+                                    <div class="slds-path__content">
+                                        <div class="slds-path__coach slds-grid">
+                                            <div class="slds-path__keys">
+                                                <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
+                                                    <h2>{!$Label.c.PJN_Care_Plan_UI_Additional_Information}</h2>
+                                                </div>
+                                                <lightning:layout class="slds-page-header__detail-row">
+                                                    <aura:iteration items="{!v.allCareplanSettingFields}" var="allCareplanSettingField">
+                                                        <c:PJN_CarePlanPathListItemField careplan="{!v.careplan}" allCareplanSettingField="{!allCareplanSettingField}" context="{!v.context}" />
+                                                    </aura:iteration>
+                                                </lightning:layout>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

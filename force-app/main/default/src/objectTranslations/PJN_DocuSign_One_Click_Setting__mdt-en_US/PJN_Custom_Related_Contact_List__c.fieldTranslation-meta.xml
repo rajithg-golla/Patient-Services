@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Defines a custom related list to use for defining Recipients. (See DocuSign documentation for more information). Maps to &quot;CRCL&quot;. --></help>
+    <label><!-- Custom Related Contact List --></label>
+    <name>PJN_Custom_Related_Contact_List__c</name>
+</CustomFieldTranslation>

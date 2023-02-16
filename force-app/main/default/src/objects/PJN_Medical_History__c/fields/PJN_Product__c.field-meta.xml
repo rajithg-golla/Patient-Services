@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Product captured as a concurrent medication.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <referenceTo>CareProgramProduct</referenceTo>
+    <relationshipLabel>Medical History</relationshipLabel>
+    <relationshipName>PJN_Medical_History</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

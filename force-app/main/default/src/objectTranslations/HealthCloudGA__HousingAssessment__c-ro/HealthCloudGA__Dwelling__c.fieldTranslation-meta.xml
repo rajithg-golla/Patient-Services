@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dwelling --></label>
+    <name>HealthCloudGA__Dwelling__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation>Apartament</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board and Care or Assisted Living Facility</masterLabel>
+        <translation>Unitate cu alimentație și îngrijire sau cu asistare</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel or Motel</masterLabel>
+        <translation>Hotel sau motel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation>Casă</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long-Term Care Facility</masterLabel>
+        <translation>Unitate de îngrijire pe termen lung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family Dwelling</masterLabel>
+        <translation>Locuință de mai multe familii</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation>Cămin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Vehicle or Mobile Home</masterLabel>
+        <translation>Rulotă sau casă mobilă</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skilled Nursing Facility</masterLabel>
+        <translation>Unități de îngrijire specializată</translation>
+    </picklistValues>
+</CustomFieldTranslation>

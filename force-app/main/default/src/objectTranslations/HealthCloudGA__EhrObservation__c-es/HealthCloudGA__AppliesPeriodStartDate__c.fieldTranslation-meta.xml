@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Tiempo de relevancia fisiológica/periodo de tiempo para observación</help>
+    <label><!-- Applies Period Start Date --></label>
+    <name>HealthCloudGA__AppliesPeriodStartDate__c</name>
+</CustomFieldTranslation>

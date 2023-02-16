@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element is used when ‘results’ and ‘units’ cannot be split, often
+because a UCUM code is not available for the test unit. For example, for
+the test ‘protein excretion’, the result could be recorded here as ‘125mg /
+24 hours’. --></help>
+    <label><!-- Result (Free Text) --></label>
+    <name>PJN_Result__c</name>
+</CustomFieldTranslation>

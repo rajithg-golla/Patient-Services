@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Intermediate_Event__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag indicates that the event was created before the transaction completed and should be captured by the Program Event trigger which will reduce all of the ids down to a single string of semi-colon delimited ids that will be published in a single non-intermediate event.</description>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Intermediate Event</label>
+    <type>Checkbox</type>
+</CustomField>

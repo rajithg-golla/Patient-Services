@@ -1,0 +1,52 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanTimelineProblemCaseCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="caseWrapper" type="PJN_CarePlanCaseWrapper" />
+    <aura:attribute name="programDeveloperName" type="String" />
+    <aura:attribute name="ownerName" type="String" />
+    <aura:attribute name="iconName" type="String" />
+    <aura:attribute name="activityFieldSettings" type="PJN_Care_Plan_Timeline_Case_Field__mdt[]" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <li>
+        <div class="slds-timeline__item_expandable slds-timeline__item_task">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <button class="slds-button slds-button_icon" aria-controls="task-item-expanded" aria-expanded="true" disabled="true">
+                        <lightning:icon class="slds-button__icon slds-timeline__details-action-icon" iconName="utility:switch" size="xx-small" variant="inverse"/>
+                    </button>
+                    <div class="slds-icon_container slds-timeline__icon" title="task">
+                        <lightning:icon class="slds-icon slds-icon_small" iconName="{!v.iconName}" size="small"/>
+                    </div>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                            <h3 class="slds-truncate">
+                                <aura:if isTrue="{!v.caseWrapper.caseRecord}">
+                                    <a onclick="{!c.onNavigateToCase}">
+                                        <strong>{!v.caseWrapper.caseRecord.Subject}</strong>
+                                    </a>
+                                    <aura:set attribute="else">
+                                        <strong>{!v.caseWrapper.programCase.Label}</strong>
+                                    </aura:set>
+                                </aura:if>
+                            </h3>
+                        </div>
+                        <div class="slds-timeline__actions slds-timeline__actions_inline">
+                            <p class="slds-timeline__date">{!v.ownerName}</p>
+                        </div>
+                    </div>
+                    <aura:iteration items="{!v.activityFieldSettings}" var="activityFieldSetting">
+                        <c:PJN_CarePlanTimelineProblemCaseField caseWrapper="{!v.caseWrapper}" activityFieldSetting="{!activityFieldSetting}" context="{!v.context}"/>
+                    </aura:iteration>
+                </div>
+            </div>
+        </div>
+    </li>
+</aura:component>

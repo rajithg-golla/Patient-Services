@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OOP - Deductible --></label>
+    <name>MVN_OOP_Deductible__c</name>
+    <picklistValues>
+        <masterLabel>Excludes Deductible</masterLabel>
+        <translation><!-- Excludes Deductible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Includes Deductible</masterLabel>
+        <translation><!-- Includes Deductible --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

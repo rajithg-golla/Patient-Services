@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Task Email Survey</label>
+    <protected>false</protected>
+    <values>
+        <field>Allow_Guest_User_Response_MVN__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Allow_Participant_Access_Response_MVN__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Collect_Anonymous_Response_MVN__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Community_Name_MVN__c</field>
+        <value xsi:type="xsd:string">Surveys</value>
+    </values>
+    <values>
+        <field>Email_Survey_Trigger_MVN__c</field>
+        <value xsi:type="xsd:string">Automatically Send Survey</value>
+    </values>
+</CustomMetadata>

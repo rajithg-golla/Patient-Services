@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Testing Status --></label>
+    <name>HealthCloudGA__Testing_Status__c</name>
+    <picklistValues>
+        <masterLabel>Negative Test</masterLabel>
+        <translation>陰性検査</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Test</masterLabel>
+        <translation>陽性検査</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Results Awaited</masterLabel>
+        <translation>検査結果待ち</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Scheduled</masterLabel>
+        <translation>検査予定</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing Recommended</masterLabel>
+        <translation>検査実施推奨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation>不明</translation>
+    </picklistValues>
+</CustomFieldTranslation>

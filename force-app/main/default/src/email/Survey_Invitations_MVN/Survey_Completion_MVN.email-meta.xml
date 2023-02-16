@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response when a survey is completed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Regeneron_Logo_MVN</letterhead>
+    <name>Survey Completion</name>
+    <style>freeForm</style>
+    <subject>Thank you for participating in the DEDSI Program</subject>
+    <textOnly>Dear {!SurveyInvitation.Contact_First_Name_MVN__c},
+
+Thank you for participating in the Diabetic Eye Disease Screening Initiative.  We received your survey and appreciate your feedback.
+
+This concludes our services with you.  However, if you ever have any questions, do not hesitate to contact us at 1-800-123-4567.
+
+Your coordinator&apos;s name:
+{!SurveyInvitation.Care_Plan_Owner_Full_Name_MVN__c}
+
+Sincerely,
+Your friends at DEDSI</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

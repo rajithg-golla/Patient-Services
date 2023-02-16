@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Attachment Type --></label>
+    <name>echosign_dev1__Type__c</name>
+    <picklistValues>
+        <masterLabel>Document from Content</masterLabel>
+        <translation><!-- Document from Content --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document from EchoSign Library</masterLabel>
+        <translation><!-- Document from EchoSign Library --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document from Library</masterLabel>
+        <translation><!-- Document from Library --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document from Master Object</masterLabel>
+        <translation><!-- Document from Master Object --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Document from Master Quote</masterLabel>
+        <translation><!-- Quote Document from Master Quote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Document from Opportunity Quote</masterLabel>
+        <translation><!-- Quote Document from Opportunity Quote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Runtime Variable</masterLabel>
+        <translation><!-- Runtime Variable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

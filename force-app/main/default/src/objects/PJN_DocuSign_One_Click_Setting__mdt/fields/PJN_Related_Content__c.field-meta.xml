@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Related_Content__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Include related content for the source object. The Related Content related list must be added to an object layout to use this parameter. (See DocuSign documentation for more info.) Maps to &quot;RC&quot;.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Include related content for the source object. The Related Content related list must be added to an object layout to use this parameter. (See DocuSign documentation for more info.) Maps to &quot;RC&quot;.</inlineHelpText>
+    <label>Related Content</label>
+    <type>Checkbox</type>
+</CustomField>

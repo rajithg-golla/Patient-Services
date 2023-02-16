@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets the record&apos;s External ID field to the value of the Key formula field.</description>
+        <name>PJN_Set_External_ID</name>
+        <label>Set External ID</label>
+        <locationX>176</locationX>
+        <locationY>302</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_External_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Key__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PJN_Update_Zip_To_Team</targetReference>
+        </connector>
+    </assignments>
+    <description>Runs PJN logic after the save of any Zip To Team record being created or updated.</description>
+    <interviewLabel>Zip To Team - After Create Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Zip To Team - PJN After Create Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Save the updated Zip To Team record.</description>
+        <name>PJN_Update_Zip_To_Team</name>
+        <label>Update Zip To Team</label>
+        <locationX>340</locationX>
+        <locationY>302</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>PJN_Set_External_ID</targetReference>
+        </connector>
+        <object>PJN_Zip_To_Team__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to show latest images of all pages of all the documents associated with an agreement. --></help>
+    <label><!-- Show Images --></label>
+    <name>echosign_dev1__Show_Images__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Returns true if value of Status Label field is NOT equal to &apos; Resolved &apos;, else returns false.</help>
+    <label><!-- IsVisibleOnPatientCard --></label>
+    <name>HealthCloudGA__IsVisibleOnPatientCard__c</name>
+</CustomFieldTranslation>

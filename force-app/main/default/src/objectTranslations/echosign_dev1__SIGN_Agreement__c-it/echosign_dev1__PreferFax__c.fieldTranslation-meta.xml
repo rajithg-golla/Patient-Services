@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Se questa casella è selezionata, Adobe Sign invierà il documento al numero di fax del referente. Se il numero di fax del referente non viene specificato, Adobe Sign invierà il documento all&apos;indirizzo e-mail del referente.</help>
+    <label><!-- Send written signatures to fax number --></label>
+    <name>echosign_dev1__PreferFax__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Coverage Benefit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Coverage Benefits</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Home infusion administration benefit. --></description>
+        <label><!-- Home Infusion Administration --></label>
+        <name>MVN_Home_Infusion_Administration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Infusion administration benefit. --></description>
+        <label><!-- Infusion Administration --></label>
+        <name>MVN_Infusion_Administration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Physician purchase option through major medical benefits. --></description>
+        <label><!-- Buy &amp; Bill - Medical --></label>
+        <name>MVN_Physician_Purchase_Medical</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Specialty pharmacy option through major medical benefit. --></description>
+        <label><!-- SP - Medical --></label>
+        <name>MVN_SP_Medical</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Specialty pharmacy option through prescription drug benefit. --></description>
+        <label><!-- SP - Prescription Drug --></label>
+        <name>MVN_SP_Prescription_Drug</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Copay/Coinsurance may only contain 0-9, %, or $ characters --></errorMessage>
+        <name>CopayCoinsuranceFieldCharacterCheck</name>
+    </validationRules>
+</CustomObjectTranslation>

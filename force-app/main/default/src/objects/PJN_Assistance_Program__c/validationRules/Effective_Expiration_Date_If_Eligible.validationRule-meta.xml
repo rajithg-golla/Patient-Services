@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Expiration_Date_If_Eligible</fullName>
+    <active>false</active>
+    <description>Ensure the Effective Date and Expiration Dates are set if the Assistance Program Outcome is set the &apos;Eligible&apos;.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL( PJN_Outcome__c , &apos;Eligible&apos;),
+    OR(
+        ISBLANK( PJN_Effective_Date__c ),
+        ISBLANK( PJN_Expiration_Date__c )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Outcome__c</errorDisplayField>
+    <errorMessage>Must set the Effective Date and Expiration Date when setting the Outcome to Eligible.</errorMessage>
+</ValidationRule>

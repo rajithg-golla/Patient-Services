@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Reason_on_Cancelled_Case</fullName>
+    <active>false</active>
+    <description>Requires the user to specify a cancellation reason when a case is closed as Canceled.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Cancelled&quot;),
+ISBLANK(TEXT(PJN_Cancellation_Reason__c))
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Cancellation_Reason__c</errorDisplayField>
+    <errorMessage>Please specify a reason for cancellation.</errorMessage>
+</ValidationRule>

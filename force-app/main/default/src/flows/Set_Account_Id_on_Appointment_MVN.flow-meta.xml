@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets the appointment&apos;s Account Id field to the value from the parent Care Plan.</description>
+        <name>Set_Account_Id_MVN</name>
+        <label>Set Account Id</label>
+        <locationX>469</locationX>
+        <locationY>289</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Account_MVN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Care_Plan_MVN.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Converted_Lead_MVN</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Relates the appointment record to the campaign.</description>
+        <name>Set_Event_on_Appointment_MVN</name>
+        <label>Set Event on Appointment</label>
+        <locationX>958</locationX>
+        <locationY>292</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Event_MVN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Converted_Lead_MVN.Event_MVN__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Was_a_Care_Plan_Found_MVN</name>
+        <label>Was a Care Plan Found?</label>
+        <locationX>263</locationX>
+        <locationY>294</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Care_Plan_Found_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Care_Plan_MVN</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Care_Plan_MVN.AccountId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Account_Id_MVN</targetReference>
+            </connector>
+            <label>Care Plan Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Was a lead found for this account</description>
+        <name>Was_A_Lead_Found_MVN</name>
+        <label>Was a Lead Found?</label>
+        <locationX>737</locationX>
+        <locationY>291</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Lead_Found_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Converted_Lead_MVN</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Event_on_Appointment_MVN</targetReference>
+            </connector>
+            <label>Lead Found</label>
+        </rules>
+    </decisions>
+    <description>Sets the appointment&apos;s Account and Event to the values from the parent Care Plan and converted Lead.</description>
+    <interviewLabel>Set Account Id on Appointment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Account and Event on Appointment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Retrieves the appointment&apos;s parent Care Plan.</description>
+        <name>Get_Care_Plan_MVN</name>
+        <label>Get Care Plan</label>
+        <locationX>153</locationX>
+        <locationY>292</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Was_a_Care_Plan_Found_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Care_Plan_MVN__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the lead which led to the account&apos;s creation.</description>
+        <name>Get_Converted_Lead_MVN</name>
+        <label>Get Converted Lead</label>
+        <locationX>615</locationX>
+        <locationY>289</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Was_A_Lead_Found_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ConvertedAccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Care_Plan_MVN.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ConvertedAccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Care_Plan_MVN</targetReference>
+        </connector>
+        <object>Appointment_MVN__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

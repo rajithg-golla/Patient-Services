@@ -1,0 +1,10 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,lightning:isUrlAddressable" controller="PJN_NewFulfillmentRequestCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+</aura:component>

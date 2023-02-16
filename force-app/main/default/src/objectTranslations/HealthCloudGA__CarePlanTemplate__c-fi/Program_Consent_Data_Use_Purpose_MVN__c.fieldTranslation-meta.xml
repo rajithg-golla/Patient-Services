@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Certification Data Use Purpose --></label>
+    <name>Program_Consent_Data_Use_Purpose_MVN__c</name>
+    <relationshipLabel><!-- Care Plan Templates (Patient Certification) --></relationshipLabel>
+</CustomFieldTranslation>

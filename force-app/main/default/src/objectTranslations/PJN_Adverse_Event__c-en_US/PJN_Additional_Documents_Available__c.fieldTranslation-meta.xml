@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: When retransmitting information, the sender (retransmitter) indicates
+‘true’ in this data element only if they have the documents available. --></help>
+    <label><!-- Additional Documents Available --></label>
+    <name>PJN_Additional_Documents_Available__c</name>
+</CustomFieldTranslation>

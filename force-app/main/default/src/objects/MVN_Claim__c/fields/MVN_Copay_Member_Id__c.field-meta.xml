@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Copay_Member_Id__c</fullName>
+    <description>Copay Member Id of the Copay Assistance Program associated to this Claim.</description>
+    <externalId>false</externalId>
+    <formula>MVN_Copay_Assistance_Program__r.MVN_Copay_Member_Id__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Copay Member Id of the Copay Assistance Program associated to this Claim.</inlineHelpText>
+    <label>Copay Member Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

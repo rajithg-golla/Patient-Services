@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates whether to Load Files. When ON, all files attached to the Salesforce Object are added to the envelope.&lt;br&gt;Maps to property &quot;LF&quot;. --></help>
+    <label><!-- Load Files --></label>
+    <name>PJN_Load_Files__c</name>
+</CustomFieldTranslation>

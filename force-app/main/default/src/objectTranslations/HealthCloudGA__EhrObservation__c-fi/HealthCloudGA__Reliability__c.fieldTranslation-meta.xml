@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reliability --></label>
+    <name>HealthCloudGA__Reliability__c</name>
+    <picklistValues>
+        <masterLabel>calibrating</masterLabel>
+        <translation>kalibroidaan</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>early</masterLabel>
+        <translation>aikainen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>error</masterLabel>
+        <translation>virhe</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ok</masterLabel>
+        <translation>ok</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ongoing</masterLabel>
+        <translation>jatkuva</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>questionable</masterLabel>
+        <translation>kyseenalainen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

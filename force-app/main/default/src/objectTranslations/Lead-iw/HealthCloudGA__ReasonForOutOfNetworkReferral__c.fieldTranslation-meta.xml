@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Out of Network Referral --></label>
+    <name>HealthCloudGA__ReasonForOutOfNetworkReferral__c</name>
+    <picklistValues>
+        <masterLabel>Insurance Not Accepted</masterLabel>
+        <translation>הביטוח לא התקבל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limited Provider Availability</masterLabel>
+        <translation>זמינות מוגבלת של ספק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Preference</masterLabel>
+        <translation>העדפת מטופל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provider Preference</masterLabel>
+        <translation>העדפת ספק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Not Offered</masterLabel>
+        <translation>השירות לא מוצע</translation>
+    </picklistValues>
+</CustomFieldTranslation>

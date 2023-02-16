@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determine how Adobe Sign windows open in users&apos; browsers. &apos;Window&apos; - Open in a new windows; &apos;Frame&apos; - Open as a layer on top of the Agreement page; Default/Empty: Auto-detect based on the user&apos;s browser capabilities. --></help>
+    <label><!-- Action Window Type --></label>
+    <name>echosign_dev1__Action_Window_Type__c</name>
+</CustomFieldTranslation>

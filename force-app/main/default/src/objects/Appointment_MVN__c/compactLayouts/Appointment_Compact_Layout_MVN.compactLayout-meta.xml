@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Compact_Layout_MVN</fullName>
+    <fields>Name</fields>
+    <fields>Appointment_Date_MVN__c</fields>
+    <fields>Physician_Specialty_MVN__c</fields>
+    <fields>Attended_MVN__c</fields>
+    <label>Appointment Compact Layout</label>
+</CompactLayout>

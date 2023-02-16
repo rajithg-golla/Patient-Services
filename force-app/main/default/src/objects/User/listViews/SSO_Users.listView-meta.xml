@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSO_Users</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.USERNAME</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.USERS.SAML_SUBJECT</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.SAML_SUBJECT</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>SSO Users</label>
+    <language>en_US</language>
+</ListView>

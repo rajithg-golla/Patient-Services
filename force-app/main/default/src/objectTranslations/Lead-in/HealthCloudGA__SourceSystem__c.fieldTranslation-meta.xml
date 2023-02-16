@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Mengidentifkasi sistem yang membuat catatan dan memiliki hak pembaruan sendiri. Default to Health 1 untuk catatan yang dibuat secara manual.</help>
+    <label><!-- Source System --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

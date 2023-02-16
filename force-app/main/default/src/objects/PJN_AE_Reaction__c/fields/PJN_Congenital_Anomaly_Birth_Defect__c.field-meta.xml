@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Congenital_Anomaly_Birth_Defect__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>E2B (R2): Moved from A.1.5 (AE Object)
+
+E2B (R3): E.i.3.2e Congenital Anomaly/Birth Defect
+Conformance: Required
+Data Type: Boolean
+OID: None
+Value Allowed: true nullFlavor: NI</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The seriousness criteria of the reaction/event should be based on the definitions provided in the ICH E2A and E2D guidelines. More than one seriousness criteria can be chosen. If the event is not serious, all of these data elements should be left blank.</inlineHelpText>
+    <label>Congenital Anomaly/Birth Defect</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

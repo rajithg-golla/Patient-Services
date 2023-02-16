@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set to Files to make the package work with the latest generation Salesforce files based system. Set to Attachments to use the legacy storage object type. If left blank, will default to a method based on the version. --></help>
+    <label><!-- Agreement Document Storage Type --></label>
+    <name>echosign_dev1__Agreement_Document_Storage_Type__c</name>
+</CustomFieldTranslation>

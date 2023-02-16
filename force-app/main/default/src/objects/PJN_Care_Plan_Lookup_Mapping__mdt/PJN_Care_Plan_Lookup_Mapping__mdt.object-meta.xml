@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Mapping Engine for Care Plan lookup fields
+Purpose: Define fields to be populated on the careplan on record creation/insert using the mapping engine.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>Care Plan Lookup Mapping</label>
+    <pluralLabel>Care Plan Lookup Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

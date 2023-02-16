@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>PJN_Type__c</name>
+    <picklistValues>
+        <masterLabel>checkbox</masterLabel>
+        <translation><!-- checkbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>date</masterLabel>
+        <translation><!-- date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>datetime</masterLabel>
+        <translation><!-- datetime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>email</masterLabel>
+        <translation><!-- email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>number</masterLabel>
+        <translation><!-- number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>picklist</masterLabel>
+        <translation><!-- picklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tel</masterLabel>
+        <translation><!-- tel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>text</masterLabel>
+        <translation><!-- text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>time</masterLabel>
+        <translation><!-- time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>url</masterLabel>
+        <translation><!-- url --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

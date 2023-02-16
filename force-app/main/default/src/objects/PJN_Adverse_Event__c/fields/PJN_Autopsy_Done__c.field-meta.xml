@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Autopsy_Done__c</fullName>
+    <description>E2B (R2): B.1.9.3, patientautopsyyesno (1N)
+
+E2B (R3): D.9.3 Was Autopsy Done?
+Conformance: Optional, but required if D.9.1 is populated.
+Data Type: Boolean
+OID: None
+Value Allowed:
+false
+true
+nullFlavor: ASKU, NASK, UNK</description>
+    <externalId>false</externalId>
+    <label>Autopsy Done?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

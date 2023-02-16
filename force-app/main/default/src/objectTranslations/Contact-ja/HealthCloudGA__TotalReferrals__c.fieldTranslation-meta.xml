@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>過去 6 か月間にこの紹介元医師から送信された紹介の合計数。</help>
+    <label><!-- Total Referrals --></label>
+    <name>HealthCloudGA__TotalReferrals__c</name>
+</CustomFieldTranslation>

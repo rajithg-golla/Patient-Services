@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A record represents the number of days that a Case with a given Therapy Status/Sub-Status combination or Pharmacy Status is visible to the RBM group.</description>
+    <label>RBM Sharing Setting</label>
+    <pluralLabel>RBM Sharing Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96969685</developerName>
+        <masterLabel>Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ BCC LIBTAYO for BCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC How Libtayo can help you</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Is LIBTAYO right for you</sourceValue>
+            </sourceValues>
+            <value>Unqualified BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ CSCC How Libtayo can help you</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Is LIBTAYO right for you</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC LIBTAYO for CSCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ NSCLC LIBTAYO for NSCLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC How Libtayo can help you</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Is LIBTAYO right for you</sourceValue>
+            </sourceValues>
+            <value>Unqualified NSCLC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63850534</developerName>
+        <masterLabel>Unqualified Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ BCC LIBTAYO for BCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ CSCC LIBTAYO for CSCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ NSCLC LIBTAYO for NSCLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified NSCLC</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Clicked__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Opened__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__NumberOfUniqueClicks__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__HardBounce__c</field>
+    </columns>
+    <description>Individual Email Results by Journey</description>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>UQ</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96969685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Email Results by Unqualified Journey</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$et4ae5__IndividualEmailResult__c@et4ae5__IndividualEmailResult__c.Account_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>et4ae5__IndividualEmailResult__c.et4ae5__DateSent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

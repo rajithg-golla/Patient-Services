@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approximate_Wait_Time_MVN__c</fullName>
+    <description>Approximate length of time attendees needed to wait for their interaction/screening, on average.</description>
+    <externalId>false</externalId>
+    <label>Approximate Wait Time</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under 5 minutes</fullName>
+                <default>false</default>
+                <label>Under 5 minutes</label>
+            </value>
+            <value>
+                <fullName>5-10 minutes</fullName>
+                <default>false</default>
+                <label>5-10 minutes</label>
+            </value>
+            <value>
+                <fullName>10-20 minutes</fullName>
+                <default>false</default>
+                <label>10-20 minutes</label>
+            </value>
+            <value>
+                <fullName>20-30 minutes</fullName>
+                <default>false</default>
+                <label>20-30 minutes</label>
+            </value>
+            <value>
+                <fullName>Over 30 minutes</fullName>
+                <default>false</default>
+                <label>Over 30 minutes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

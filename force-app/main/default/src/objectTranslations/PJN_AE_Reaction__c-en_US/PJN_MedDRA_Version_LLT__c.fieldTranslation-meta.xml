@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element provides the MedDRA version --></help>
+    <label><!-- MedDRA Version (LLT) --></label>
+    <name>PJN_MedDRA_Version_LLT__c</name>
+</CustomFieldTranslation>

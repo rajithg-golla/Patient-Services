@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Установка обязательной проверки удостоверений внешних подписывающих сторон, прежде чем они смогут просмотреть или подписать документ.</help>
+    <label><!-- External Signers Verification Method --></label>
+    <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Knowledge based authentication</masterLabel>
+        <translation>Аутентификация на основе знаний</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password to sign agreement</masterLabel>
+        <translation>Пароль для подписи соглашения</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web identity authentication</masterLabel>
+        <translation>Аутентификация веб-удостоверений</translation>
+    </picklistValues>
+</CustomFieldTranslation>

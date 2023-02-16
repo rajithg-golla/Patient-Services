@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Type_Formula__c</fullName>
+    <description>Return the record type plus the type</description>
+    <externalId>false</externalId>
+    <formula>RecordType.Name +
+ IF (NOT(ISBLANK(TEXT(PJN_Type__c))), &apos; - &apos; + TEXT(PJN_Type__c), &apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Return the record type plus the type</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

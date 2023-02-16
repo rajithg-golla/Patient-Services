@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>License</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Licenses</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- A Controlled and Dangerous Substances license --></description>
+        <label><!-- CDS License --></label>
+        <name>PJN_CDS_License</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Drug Enforcement Administration license --></description>
+        <label><!-- DEA License --></label>
+        <name>PJN_DEA_License</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An Physicians State License Number --></description>
+        <label><!-- State License Number --></label>
+        <name>PJN_State_License_Number</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

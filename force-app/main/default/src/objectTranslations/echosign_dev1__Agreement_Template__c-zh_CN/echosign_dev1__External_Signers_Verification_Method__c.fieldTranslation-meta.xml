@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>确保外部签名者必须先验证其身份，然后才能查看或签署文档。</help>
+    <label><!-- External Signers Verification Method --></label>
+    <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Knowledge based authentication</masterLabel>
+        <translation>基于知识的身份验证</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password to sign agreement</masterLabel>
+        <translation>协议签署密码</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web identity authentication</masterLabel>
+        <translation>Web 身份验证</translation>
+    </picklistValues>
+</CustomFieldTranslation>

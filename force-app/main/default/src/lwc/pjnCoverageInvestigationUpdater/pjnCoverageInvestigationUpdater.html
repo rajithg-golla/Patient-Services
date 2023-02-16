@@ -1,0 +1,184 @@
+<template>
+
+    <div class="slds-text-heading_large slds-text-align_center">
+        {labels.HEADER}
+    </div>
+
+    <hr/>
+
+    <template if:true={loading}>
+        <div class="slds-is-relative" style="height: 5rem;">
+            <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+
+    <template if:false={loading}>
+        <div class="slds-box slds-m-vertical_small" if:true={memberPlans.data.length}>
+            <div class="slds-text-heading_medium">{labels.MEMBER_PLANS}</div>
+            <lightning-datatable
+                key-field="Id"
+                data={memberPlans.data}
+                columns={memberPlans.columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+
+        </div>
+
+        <div class="slds-box slds-m-vertical_small" if:true={priorAuths.data.length}>
+            <div class="slds-text-heading_medium">{labels.PRIOR_AUTHORIZATIONS}</div>
+            <lightning-datatable
+                key-field="Id"
+                data={priorAuths.data}
+                columns={priorAuths.columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+        </div>
+
+        <div class="slds-box slds-m-vertical_small" if:true={assistancePrograms.data.length}>
+            <div class="slds-text-heading_medium">{labels.ASSISTANCE_PROGRAMS}</div>
+            <lightning-datatable
+                key-field="Id"
+                data={assistancePrograms.data}
+                columns={assistancePrograms.columns}
+                hide-checkbox-column
+            ></lightning-datatable>
+        </div>
+
+        <div class="slds-text-heading_medium slds-m-top_large">{labels.ACTIONS}</div>
+        <div class="slds-text-body_small">{labels.ACTIONS_SUBHEADER}</div>
+
+        <!-- UPDATE INVESTIGATION -->
+        <div class="slds-box slds-m-vertical_small">
+            <div class="slds-text-heading_small slds-m-top_medium">
+                {labels.INVESTIGATON_ACTION}
+                <lightning-button-icon
+                    icon-name="utility:add"
+                    variant="brand"
+                    size="small"
+                    if:false={updateInvestigation}
+                    onclick={toggleUpdateInvestigation}
+                    class="slds-m-left_small"
+                ></lightning-button-icon>
+            </div>
+            <div class="slds-m-bottom_x-small">
+                {labels.INVESTIGATON_ACTION_SUB}
+            </div>
+            <lightning-layout data-id="investigation">
+                <span>
+                    <div if:true={updateInvestigation} class="slds-p-top_large">
+                        <lightning-button-icon
+                            icon-name="utility:delete"
+                            variant="bare"
+                            onclick={toggleUpdateInvestigation}
+                        ></lightning-button-icon>
+                    </div>
+                </span>
+                <lightning-record-edit-form record-id={investigationId} class="PJN_Coverage_Investigation__c" object-api-name="PJN_Coverage_Investigation__c" if:true={updateInvestigation}>
+                    <div class="slds-grid">
+                        <template for:each={fields.investigation} for:item="field">
+                            <div class="slds-col slds-size_1-of-3" key={field.name}>
+                                <lightning-input-field
+                                    field-name={field.name}
+                                    onchange={checkFields}
+                                    data-fieldname={field.name}
+                                    required={field.required}
+                                ></lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-record-edit-form>
+            </lightning-layout>
+
+            <!-- THERAPY ACCESS -->
+            <div class="slds-text-heading_small slds-m-top_medium">
+                {labels.THERAPY_ACCESS_ACTION}
+                <lightning-button-icon
+                    icon-name="utility:add"
+                    variant="brand"
+                    size="small"
+                    if:false={createEvent}
+                    onclick={toggleCreateEvent}
+                    class="slds-m-left_small"
+                ></lightning-button-icon>
+            </div>
+            <div class="slds-m-bottom_x-small">
+                {labels.THERAPY_ACCESS_ACTION_SUB}
+            </div>
+
+            <lightning-layout data-id="event">
+                <span>
+                    <div if:true={createEvent} class="slds-p-top_large">
+                        <lightning-button-icon
+                            icon-name="utility:delete"
+                            variant="bare"
+                            onclick={toggleCreateEvent}
+                        ></lightning-button-icon>
+                    </div>
+                </span>
+                <lightning-record-edit-form class="PJN_Event__c" object-api-name="PJN_Event__c" if:true={createEvent} record-type-id={therapyAccessRecTypeId}>
+                    <div class="slds-grid">
+                        <template for:each={fields.event} for:item="field">
+                            <div class="slds-col slds-size_1-of-3" key={field.name}>
+                                <lightning-input-field
+                                    field-name={field.name}
+                                    onchange={checkFields}
+                                    data-fieldname={field.name}
+                                    required={field.required}
+                                ></lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-record-edit-form>
+            </lightning-layout>
+
+            <!-- FOLLOW UP ACTIVITY -->
+            <div class="slds-text-heading_small slds-m-top_medium">
+                {labels.ACTIVITY_ACTION}
+                <lightning-button-icon
+                    icon-name="utility:add"
+                    variant="brand"
+                    size="small"
+                    if:false={createCase}
+                    onclick={toggleCreateCase}
+                    class="slds-m-left_small"
+                ></lightning-button-icon>
+            </div>
+            <div class="slds-m-bottom_x-small">
+                {labels.ACTIVITY_ACTION_SUB}
+            </div>
+            <lightning-layout data-id="case">
+                <span>
+                    <div if:true={createCase} class="slds-p-top_large">
+                        <lightning-button-icon
+                            icon-name="utility:delete"
+                            variant="bare"
+                            onclick={toggleCreateCase}
+                        ></lightning-button-icon>
+                    </div>
+                </span>
+                <lightning-record-edit-form class="Case" object-api-name="Case" if:true={createCase}>
+                    <div class="slds-grid">
+                        <template for:each={fields.case} for:item="field">
+                            <div class="slds-col slds-size_1-of-3" key={field.name}>
+                                <lightning-input-field
+                                    field-name={field.name}
+                                    onchange={checkFields}
+                                    data-fieldname={field.name}
+                                    required={field.required}
+                                ></lightning-input-field>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-record-edit-form>
+            </lightning-layout>
+
+            <lightning-layout horizontal-align="end">
+                <lightning-layout-item padding="horizontal-small">
+                    <lightning-button onclick={cancel} label={labels.CANCEL} title="Cancel" class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button onclick={submit} variant="brand" label={labels.SAVE} title="Save" class="slds-m-left_x-small"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+
+</template>

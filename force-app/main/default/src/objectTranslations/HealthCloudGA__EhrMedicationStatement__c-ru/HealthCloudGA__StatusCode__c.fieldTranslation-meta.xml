@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Код, указывающий состояние записи. Обычно это либо завершенное состояние либо в процессе выполнения.</help>
+    <label><!-- Status Code --></label>
+    <name>HealthCloudGA__StatusCode__c</name>
+    <picklistValues>
+        <masterLabel>completed</masterLabel>
+        <translation>завершено</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>entered-in-error</masterLabel>
+        <translation>составлено с ошибкой</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>in-progress</masterLabel>
+        <translation>выполняется</translation>
+    </picklistValues>
+</CustomFieldTranslation>

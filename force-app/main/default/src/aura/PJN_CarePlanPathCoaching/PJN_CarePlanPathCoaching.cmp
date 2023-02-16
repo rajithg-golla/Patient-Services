@@ -1,0 +1,20 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanPathCoachingCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="problemRecord" type="HealthCloudGA__CarePlanProblem__c" />
+    <aura:attribute name="componentRecords" type="PJN_CarePlan_Path_Coaching_Setting__mdt[]" />
+    <aura:attribute name="hasActions" type="Boolean" default="true"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onProblemChange}"/>
+    <aura:handler name="change" value="{!v.problemRecord}" action="{!c.onProblemChange}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <div class="slds-path__coach slds-grid">
+        <aura:iteration items="{!v.componentRecords}" var="componentRecord">
+            <c:PJN_CarePlanPathCoachingComponent problemRecord="{!v.problemRecord}" componentRecord="{!componentRecord}" hasActions="{!v.hasActions}" context="{!v.context}"/>
+        </aura:iteration>
+    </div>
+</aura:component>

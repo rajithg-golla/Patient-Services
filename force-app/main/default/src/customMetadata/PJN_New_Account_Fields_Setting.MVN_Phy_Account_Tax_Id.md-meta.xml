@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Phy Account Group Tax Id</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">HealthCloudGA__TaxId__c</value>
+    </values>
+    <values>
+        <field>PJN_Order__c</field>
+        <value xsi:type="xsd:double">60.0</value>
+    </values>
+    <values>
+        <field>PJN_Record_Type__c</field>
+        <value xsi:type="xsd:string">PJN_Physician</value>
+    </values>
+    <values>
+        <field>PJN_Required__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

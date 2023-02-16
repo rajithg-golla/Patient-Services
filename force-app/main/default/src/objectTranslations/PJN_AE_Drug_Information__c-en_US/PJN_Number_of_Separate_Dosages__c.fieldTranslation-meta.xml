@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Example: 5 mg 2 times a day every other day for 30 days
+Dose (number): 5
+Dose (unit): mg
+Interval: 2
+Interval Unit: day
+Cumulative Dose to First Reaction (number): 150
+Cumulative Dose to First Reaction (unit): mg --></help>
+    <label><!-- Number of Separate Dosages --></label>
+    <name>PJN_Number_of_Separate_Dosages__c</name>
+</CustomFieldTranslation>

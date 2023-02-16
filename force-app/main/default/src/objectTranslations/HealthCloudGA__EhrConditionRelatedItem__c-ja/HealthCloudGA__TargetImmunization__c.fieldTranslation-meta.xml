@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Immunization --></label>
+    <name>HealthCloudGA__TargetImmunization__c</name>
+    <relationshipLabel><!-- EHR Conditon Related Items --></relationshipLabel>
+</CustomFieldTranslation>

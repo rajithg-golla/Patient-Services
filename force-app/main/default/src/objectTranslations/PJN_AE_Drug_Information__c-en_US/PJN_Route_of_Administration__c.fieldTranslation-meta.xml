@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For a
+parent-child or parent-fetus report, this indicates the route of administration of a drug given to the
+child or fetus. This is usually an indirect exposure, such as transmammary, but can include more usual
+routes of administration. --></help>
+    <label><!-- Route of Administration --></label>
+    <name>PJN_Route_of_Administration__c</name>
+</CustomFieldTranslation>

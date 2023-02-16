@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The order to display the field when creating a new contact information record on an existing account. --></help>
+    <label><!-- Contact Info Create Order --></label>
+    <name>PJN_Contact_Info_Create_Order__c</name>
+</CustomFieldTranslation>

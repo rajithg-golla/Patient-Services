@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Text for relevant medical history and concurrent conditions of patient (not including reaction/event). --></help>
+    <label><!-- Patient Relevant Medical History --></label>
+    <name>PJN_Patient_Relevant_Medical_History__c</name>
+</CustomFieldTranslation>

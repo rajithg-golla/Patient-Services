@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Tổng số giấy giới thiệu được bác sĩ giới thiệu này gửi trong 6 tháng qua.</help>
+    <label><!-- Total Referrals --></label>
+    <name>HealthCloudGA__TotalReferrals__c</name>
+</CustomFieldTranslation>

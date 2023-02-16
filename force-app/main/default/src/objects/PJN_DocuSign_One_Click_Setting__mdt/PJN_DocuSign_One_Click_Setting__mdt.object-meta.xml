@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: DocuSign One Click
+Purpose: A configuration record for the DocuSign One Click functionality. This is the first step in setting up the Docusign One Click custom metadata.
+Metadata Relationship(s): Program; DocuSign One Click Recipient.
+Created by Mavens: Yes</description>
+    <label>DocuSign One Click Setting</label>
+    <pluralLabel>DocuSign One Click Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,82 @@
+<template>
+
+    <template if:true={loading}>
+        <div class="slds-is-relative" style="height: 10rem;">
+            <lightning-spinner size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={loading}>
+        <lightning-card  title={title}>
+
+            <template if:true={showTypeSelection}>
+                <div class="slds-align_absolute-center" style="height: 5rem;">
+                    <lightning-combobox
+                        name={labels.COVERAGE_INVESTIGATION_TYPE}
+                        label={labels.COVERAGE_INVESTIGATION_TYPE}
+                        value={selectedType}
+                        placeholder="Select Type"
+                        options={typePicklistValues}
+                        onchange={setType}
+                    ></lightning-combobox>
+                </div>
+
+                <div slot="actions">
+                    <lightning-button
+                        label={labels.NEXT}
+                        variant="brand-outline"
+                        onclick={nextPage}
+                    ></lightning-button>
+                </div>
+            </template>
+
+            <template if:true={showMemberPlanSelection}>
+                <div class="slds-p-around_medium">
+                    <div class="slds-text-heading_medium">
+                        {labels.MEMBER_PLANS}
+                    </div>
+                    <div class="slds-m-bottom_small">
+                        {labels.SELECT_MP}
+                    </div>
+
+                    <template if:true={memberPlans.length}>
+                        <lightning-datatable
+                            key-field="Id"
+                            data={memberPlans}
+                            columns={columns.memberPlans}
+                            hide-checkbox-column
+                            onrowaction={addOrRemoveMemberPlan}
+                        ></lightning-datatable>
+
+                    </template>
+                    <template if:false={memberPlans.length}>
+                        <div
+                            class="slds-box slds-m-around_medium slds-align_absolute-center slds-text-heading_small slds-text-color_weak"
+                            style="height:3rem;"
+                        >
+                            <lightning-icon
+                                icon-name="utility:error"
+                                class="slds-m-right_small"
+                            ></lightning-icon>
+                            {labels.NO_MEMBER_PLANS}
+                        </div>
+                    </template>
+                </div>
+
+                <div slot="actions">
+                    <lightning-button
+                        if:false={investigationId}
+                        label={labels.PREVIOUS}
+                        variant="brand-outline"
+                        onclick={previousPage}
+                        class="slds-m-right_medium"
+                    ></lightning-button>
+                    <lightning-button
+                        label={createOrUpdate}
+                        variant="brand"
+                        onclick={submit}
+                    ></lightning-button>
+                </div>
+            </template>
+        </lightning-card>
+    </template>
+</template>

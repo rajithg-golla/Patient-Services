@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>pulver | tabletter | karton + system</help>
+    <label><!-- Medication Product Form System --></label>
+    <name>HealthCloudGA__MedicationProductFormSystem__c</name>
+</CustomFieldTranslation>

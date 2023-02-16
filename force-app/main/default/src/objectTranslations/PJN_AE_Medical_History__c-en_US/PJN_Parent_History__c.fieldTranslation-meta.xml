@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates if the history is for the parent or the patient. This should be used in the case of a parent-child or parent-fetus report where the parent had no reaction or event. --></help>
+    <label><!-- Parent History? --></label>
+    <name>PJN_Parent_History__c</name>
+</CustomFieldTranslation>

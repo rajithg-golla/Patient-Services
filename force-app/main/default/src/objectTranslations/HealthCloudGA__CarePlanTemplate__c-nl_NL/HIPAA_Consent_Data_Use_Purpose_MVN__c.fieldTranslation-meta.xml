@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- HIPAA Consent Data Use Purpose --></label>
+    <name>HIPAA_Consent_Data_Use_Purpose_MVN__c</name>
+    <relationshipLabel><!-- Care Plan Templates (HIPAA) --></relationshipLabel>
+</CustomFieldTranslation>

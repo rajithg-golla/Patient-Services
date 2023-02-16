@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <description>Sets the care plan lookup to match the member plan lookup</description>
+        <name>MVN_Set_Care_Plan_to_Member_Plan_Care_Plan</name>
+        <label>Set Care Plan to Member Plan Care Plan</label>
+        <locationX>132</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.MVN_Care_Plan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.MVN_Copay_Assistance_Program__r.PJN_Care_Plan__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Program_Developer_Name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the Claim&apos;s Program Developer Name field to the value of its parent Care Plan&apos;s Program Developer Name.</description>
+        <name>Set_Program_Developer_Name</name>
+        <label>Set Program Developer Name</label>
+        <locationX>176</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.MVN_Program_DeveloperName__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.MVN_Care_Plan__r.PJN_Program_DeveloperName__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks to see if the Care Plan is already set. If so, then it ignores the flow. Otherwise, it will set the Care Plan from the Assistance Program record.</description>
+        <name>MVN_Is_Care_Plan_Null</name>
+        <label>Is Care Plan Null?</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MVN_Care_Plan__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Program_Developer_Name</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>No</label>
+        </rules>
+        <rules>
+            <name>MVN_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MVN_Care_Plan__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MVN_Set_Care_Plan_to_Member_Plan_Care_Plan</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Claim - MVN Before {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Claim - MVN Before Create Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>MVN_Is_Care_Plan_Null</targetReference>
+        </connector>
+        <object>MVN_Claim__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Code that is used for Journey Entry in Marketing Cloud. --></help>
+    <label><!-- Journey Code --></label>
+    <name>Journey_Code_MVN__c</name>
+</CustomFieldTranslation>

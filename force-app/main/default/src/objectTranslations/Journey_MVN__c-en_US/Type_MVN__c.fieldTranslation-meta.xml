@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates if the journey represents an individual email (for resends) or a full journey (multiple emails). --></help>
+    <label><!-- Type --></label>
+    <name>Type_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Individual</masterLabel>
+        <translation><!-- Individual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journey</masterLabel>
+        <translation><!-- Journey --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

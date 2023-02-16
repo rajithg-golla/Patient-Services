@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_AE_Reporter_Compact_Layout</fullName>
+    <fields>PJN_Adverse_Event__c</fields>
+    <fields>PJN_First_Name__c</fields>
+    <fields>PJN_Last_Name__c</fields>
+    <fields>PJN_Qualification__c</fields>
+    <fields>PJN_Primary_Source_Regulatory_Purposes__c</fields>
+    <label>AE Reporter Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dwelling --></label>
+    <name>HealthCloudGA__Dwelling__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation>公寓</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board and Care or Assisted Living Facility</masterLabel>
+        <translation>膳食和照護或輔助生活設施</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel or Motel</masterLabel>
+        <translation>旅館或汽車旅館</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation>房屋</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long-Term Care Facility</masterLabel>
+        <translation>長期照護設施</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family Dwelling</masterLabel>
+        <translation>多家庭住宅</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation>護理之家</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Vehicle or Mobile Home</masterLabel>
+        <translation>露營車或移動房屋</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skilled Nursing Facility</masterLabel>
+        <translation>技術性護理設施</translation>
+    </picklistValues>
+</CustomFieldTranslation>

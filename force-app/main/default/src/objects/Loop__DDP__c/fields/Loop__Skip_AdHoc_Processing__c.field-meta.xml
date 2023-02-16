@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loop__Skip_AdHoc_Processing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>By default, all files, including those selected at run time, are processed. Check this to prevent processing of ad hoc files selected at run time.</description>
+    <externalId>false</externalId>
+    <label>Skip AdHoc Processing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_AE_Reaction_Compact_Layout</fullName>
+    <fields>PJN_Adverse_Event__c</fields>
+    <fields>PJN_Reaction_Event_as_Reported_en__c</fields>
+    <fields>PJN_Start_Date_of_Reaction_Event__c</fields>
+    <fields>PJN_End_Date_of_Reaction_Event__c</fields>
+    <label>AE Reaction Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Disease_Surgical_Procedure_Etc__c</fullName>
+    <description>E2B (R2): B.1.7.1a.2, patientepisodename (250AN)
+E2B (R2): B.1.10.7.1a.2, parentmedicalepisodename (250AN)
+
+E2B (R3): D.7.1.r.1b Medical History (disease / surgical procedure / etc.) (MedDRA code)
+E2B (R3): D.10.7.1.r.1b Medical History (disease / surgical procedure / etc.) (MedDRA code)
+Conformance: Optional, but required if D.10.7.1.r.1a is populated.
+Data Type: 8N
+OID: 2.16.840.1.113883.6.163
+Value Allowed: Numeric</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Medical judgment should be exercised in completing this section. Information pertinent to understanding the case is desired, such as diseases, conditions such as pregnancy, surgical procedures, and psychological trauma.</inlineHelpText>
+    <label>Disease/Surgical Procedure/Etc.</label>
+    <length>8</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

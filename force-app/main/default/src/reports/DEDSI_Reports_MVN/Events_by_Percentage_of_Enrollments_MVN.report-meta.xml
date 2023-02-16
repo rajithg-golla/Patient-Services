@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount/Campaign.Total_Number_of_Attendees_MVN__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Compares the number of enrolled consumer interactions with the event&apos;s Total Attendees</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percentage of Attendees Enrolled</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>Campaign.Consumers_MVN__r$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.Consumers_MVN__r$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Campaign$Total_Number_of_Attendees_MVN__c</field>
+    </columns>
+    <description>Lists events and the percentage of their total attendees who were enrolled at each event.</description>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.Consumers_MVN__r$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Enrolled</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Events by Percentage of Enrollments</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaign_Events_with_Consumers_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

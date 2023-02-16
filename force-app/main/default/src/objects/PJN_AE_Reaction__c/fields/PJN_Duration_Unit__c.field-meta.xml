@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Duration_Unit__c</fullName>
+    <description>E2B (R2): B.2.i.6b, reactiondurationunit (3N)
+
+E2B (R3): E.i.6b Duration of Reaction / Event (unit)
+Conformance: Optional, but required if E.i.6a is populated.
+Data Type: 50AN
+OID: 2.16.840.1.113883.3.989.2.1.1.26
+Value Allowed: Constrained UCUM codes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This data element captures the unit of time for the value recorded.</inlineHelpText>
+    <label>Duration Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Time_Units</valueSetName>
+    </valueSet>
+</CustomField>

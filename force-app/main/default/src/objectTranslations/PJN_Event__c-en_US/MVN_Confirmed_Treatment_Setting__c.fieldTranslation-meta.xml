@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Confirmed Treatment Setting --></label>
+    <name>MVN_Confirmed_Treatment_Setting__c</name>
+    <picklistValues>
+        <masterLabel>Clinical Setting</masterLabel>
+        <translation><!-- Clinical Setting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home</masterLabel>
+        <translation><!-- Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital System SP</masterLabel>
+        <translation><!-- Hospital System SP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undecided</masterLabel>
+        <translation><!-- Undecided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

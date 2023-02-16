@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Interaction</fullName>
+        <default>true</default>
+        <label>Interaction</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Consented</fullName>
+        <default>false</default>
+        <label>Consented</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined Consent</fullName>
+        <default>false</default>
+        <label>Declined Consent</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Enrolled</fullName>
+        <default>false</default>
+        <label>Enrolled</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Create_CM_Activity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to trigger Create CM Activity.</description>
+    <externalId>false</externalId>
+    <label>Create CM Activity</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__ApplyIfDisabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Whether condition interacts with being disabled.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>True when this additive score is applied if the patient is disabled and has additional conditions.</inlineHelpText>
+    <label>Apply If Disabled</label>
+    <type>Checkbox</type>
+</CustomField>

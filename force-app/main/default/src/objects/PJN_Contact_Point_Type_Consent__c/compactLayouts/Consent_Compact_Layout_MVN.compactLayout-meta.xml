@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consent_Compact_Layout_MVN</fullName>
+    <fields>Name</fields>
+    <fields>PJN_Care_Plan__c</fields>
+    <fields>PJN_Data_Use_Purpose_Formula__c</fields>
+    <fields>PJN_Effective_From__c</fields>
+    <fields>PJN_Effective_To__c</fields>
+    <fields>PJN_Privacy_Consent_Status__c</fields>
+    <label>Consent Compact Layout</label>
+</CompactLayout>

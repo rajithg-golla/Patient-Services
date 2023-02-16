@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Plan_MVN__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to the care plan from which this email quick send was sent.</description>
+    <externalId>false</externalId>
+    <label>Care Plan</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Case.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>CarePlan</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Email Quick Sends</relationshipLabel>
+    <relationshipName>Email_Quick_Sends</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

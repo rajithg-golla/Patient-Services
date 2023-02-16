@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caregiver_as_Primary_Contact_Formula_MVN__c</fullName>
+    <description>Translates the&apos; Caregiver as Primary Contact&apos; field to a Yes/No value for use in conversion.</description>
+    <externalId>false</externalId>
+    <formula>IF( Caregiver_as_Primary_Contact_MVN__c, &quot;Yes&quot;, &quot;No&quot; )</formula>
+    <label>Caregiver as Primary Contact Formula</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

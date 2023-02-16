@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The number of days a case can sit in this status before being considered stale --></help>
+    <label><!-- Stale after Days --></label>
+    <name>PJN_Stale_after_Days__c</name>
+</CustomFieldTranslation>

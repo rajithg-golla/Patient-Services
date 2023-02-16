@@ -1,0 +1,54 @@
+<template>
+    <lightning-spinner class={spinnerClass} alternative-text="Loading" size="large"></lightning-spinner>
+    <template if:true={isLoaded}>
+        <article class="slds-card">
+            <template if:false={hasUserPermissions}>
+                <div class="slds-text-align_center">
+                    You don't have permissions to view files. Please contact administrator
+                </div>
+            </template>
+            <template if:true={hasUserPermissions}>
+                <div class="slds-grid slds-page-header recordFileHeader">
+                    <header class="slds-media slds-media__center slds-has-flexi-truncate">
+                        <div class="slds-media__figure stencil slds-avatar slds-avatar_small">
+                            <lightning-icon icon-name="standard:file" size="small" title="Files"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <span title="Files" class="slds-truncate slds-m-right_xx-small">Files</span>
+                                <span title={countOfFiles} class="slds-shrink-none slds-m-right_xx-small">{countOfFiles}</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <template for:each={files} for:item="file">
+                    <div key={file.contentDocumentId}>
+                        <div class="slds-var-p-horizontal_medium slds-var-p-vertical_xx-small">
+                            <div class="slds-size_12-of-12 slds-grid">
+                                <div class="slds-show_inline-block slds-float_left slds-align-middle fileThumbnail">
+                                    <img class="fileThumbnail" src={file.fileThumbnail} alt={file.fileTitle} />
+                                </div>
+                                <div class="slds-show_inline-block slds-float_left slds-p-left_x-small slds-truncate slds-m-right_x-small">
+                                    <div class="slds-text-link_reset slds-text-link slds-truncate">
+                                        <a onclick={previewHandler} data-id={file.contentDocumentId} title={file.fileTitle}>{file.fileTitle}</a>
+                                    </div>
+                                    <div class="slds-m-around_none slds-text-body__small slds-truncate">
+                                        <span class="midDot">
+                                            {file.fileDate}
+                                        </span>
+                                        <span class="midDot">
+                                            {file.fileSize}
+                                        </span>
+                                        <span class="midDot">
+                                            {file.fileExtension}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </article>
+    </template>
+</template>

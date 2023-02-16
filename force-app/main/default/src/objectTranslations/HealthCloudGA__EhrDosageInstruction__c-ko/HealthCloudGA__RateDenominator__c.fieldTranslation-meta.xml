@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>두 수량 값(분자 및 분모) 비율의 분모</help>
+    <label><!-- Rate Denominator --></label>
+    <name>HealthCloudGA__RateDenominator__c</name>
+</CustomFieldTranslation>

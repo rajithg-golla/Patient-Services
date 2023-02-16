@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Estado de discapacidad de CMS.</help>
+    <label><!-- Disability Status --></label>
+    <name>HealthCloudGA__DisabilityStatus__c</name>
+</CustomFieldTranslation>

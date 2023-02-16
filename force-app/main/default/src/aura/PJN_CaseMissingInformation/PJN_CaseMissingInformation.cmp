@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+    <lightning:workspaceAPI aura:id="workspace" />
+    <aura:handler event="lightning:tabFocused" action="{! c.onTabFocused }"/>
+    <c:pjnCaseMissingInformation recordId="{!v.recordId}" aura:id="missinginfo"></c:pjnCaseMissingInformation>
+</aura:component>

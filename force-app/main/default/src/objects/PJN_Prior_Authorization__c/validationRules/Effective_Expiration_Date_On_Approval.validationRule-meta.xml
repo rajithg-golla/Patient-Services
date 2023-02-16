@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Expiration_Date_On_Approval</fullName>
+    <active>true</active>
+    <description>The Effective Date and Expiration Date must be set when a Prior Authorization is Approved.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL( PJN_Outcome__c , &apos;Approved&apos;),
+    OR(
+        ISBLANK( PJN_Effective_Date__c ),
+        ISBLANK( PJN_Expiration_Date__c )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Outcome__c</errorDisplayField>
+    <errorMessage>The Effective Date and Expiration Date must be set when a Prior Authorization is Approved.</errorMessage>
+</ValidationRule>

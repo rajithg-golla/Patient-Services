@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mail_Opt_In_MVN__c</fullName>
+    <description>Indicates if the participant has opted in to receive mail</description>
+    <externalId>false</externalId>
+    <label>Mail Opt In</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No_MVN</valueSetName>
+    </valueSet>
+</CustomField>

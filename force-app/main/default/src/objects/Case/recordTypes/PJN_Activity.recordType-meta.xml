@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Activity</fullName>
+    <active>true</active>
+    <businessProcess>PJN_Care Plan Activity</businessProcess>
+    <compactLayoutAssignment>PJN_Activity_Compact_Layout</compactLayoutAssignment>
+    <description>Defines activities related to a patient&apos;s care plan</description>
+    <label>Activity</label>
+    <picklistValues>
+        <picklist>Diagnosis_MVN__c</picklist>
+        <values>
+            <fullName>BCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSCLC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Opt_In_MVN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Confirmed_Acquisition_Channel__c</picklist>
+        <values>
+            <fullName>Buy and Bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Pharmacy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Confirmed_Clinical_Setting__c</picklist>
+        <values>
+            <fullName>In-Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infusion Center</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Confirmed_Treatment_Setting__c</picklist>
+        <values>
+            <fullName>Clinical Setting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Diagnosis__c</picklist>
+        <values>
+            <fullName>HoFH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Document_Type__c</picklist>
+        <values>
+            <fullName>Appeal Approval Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal Denial Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter of Medical Necessity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA Approval Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA Denial Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAP Appeal Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Authorization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Request Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start Form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_General_Inquiry_Topic__c</picklist>
+        <values>
+            <fullName>Distributor Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locate HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Non-HCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_ICD_10_CM_Diagnosis_Code__c</picklist>
+        <values>
+            <fullName>E78%2E01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Insured__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Missing_Information_Activity__c</picklist>
+        <values>
+            <fullName>Authorization to Disclose%2FUse Health Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete Prescription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnosis Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient BIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Certifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Date of Birth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Gender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Group Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Household Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Member ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Weight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician NPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Signature Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Site Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Site Study ID</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Missing_Information_Care_Plan__c</picklist>
+        <values>
+            <fullName>Authorization to Disclose%2FUse Health Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete Prescription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnosis Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient BIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Certifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Date of Birth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Gender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Group Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Household Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Member ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Weight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician NPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Signature Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Site Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Site Study ID</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Preferred_Acquisition_Channel__c</picklist>
+        <values>
+            <fullName>Buy and Bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Preferred_Clinical_Setting__c</picklist>
+        <values>
+            <fullName>In-Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infusion Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Preferred_Treatment_Setting__c</picklist>
+        <values>
+            <fullName>Clinical Setting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Referral_Source__c</picklist>
+        <values>
+            <fullName>AssistRx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Start_Form_Version__c</picklist>
+        <values>
+            <fullName>Version 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Version 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Treatment_Start_Date_Known__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Cadence__c</picklist>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Cancellation_Reason__c</picklist>
+        <values>
+            <fullName>Already completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage skipped</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Care_Plan_Start_Status__c</picklist>
+        <values>
+            <fullName>PJN_Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PJN_Initiate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PJN_Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PJN_Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Repeat__c</picklist>
+        <values>
+            <fullName>Doesn%27t Repeat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeats</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Therapy_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discontinued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Therapy_Sub_Status__c</picklist>
+        <values>
+            <fullName>Patient Deceased</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qualification_Status_MVN__c</picklist>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Topics_Discussed_MVN__c</picklist>
+        <values>
+            <fullName>Diabetes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diabetic Macular Edema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diabetic Retinopathy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Enrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

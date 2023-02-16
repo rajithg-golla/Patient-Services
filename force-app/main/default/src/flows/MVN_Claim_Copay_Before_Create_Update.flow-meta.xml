@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Claim_Record_Type</name>
+        <label>Claim Record Type</label>
+        <locationX>314</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copay_Medical_Claim_With_Program_Benefit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MVN_Copay_Medical_Claim</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_Program_Benefit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Helper_Field</targetReference>
+            </connector>
+            <label>Copay Medical Claim With Program Benefit</label>
+        </rules>
+        <rules>
+            <name>Copay_Pharmacy_Claim_With_Patient_Benefit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MVN_Copay_Pharmacy_Claim</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_Patient_Benefit__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Update_Helper_Field</targetReference>
+            </connector>
+            <label>Copay Pharmacy Claim With Patient Benefit</label>
+        </rules>
+    </decisions>
+    <description>Used in Evkeeza Phase 3 build regarding Funds automation. Updates the helper field on the Claim object with either the value from the Patient Benefit or Program Benefit field depending on the Claim Record Type used.</description>
+    <environments>Default</environments>
+    <interviewLabel>Claim - MVN Copay Before Create Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Claim - MVN Copay Before Create Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_Update_Helper_Field</name>
+        <label>Update Helper Field</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>MVN_Patient_Program_Benefit__c</field>
+            <value>
+                <elementReference>$Record.MVN_Patient_Benefit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Helper_Field</name>
+        <label>Update Helper Field</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>MVN_Patient_Program_Benefit__c</field>
+            <value>
+                <elementReference>$Record.MVN_Program_Benefit__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Claim_Record_Type</targetReference>
+        </connector>
+        <object>MVN_Claim__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

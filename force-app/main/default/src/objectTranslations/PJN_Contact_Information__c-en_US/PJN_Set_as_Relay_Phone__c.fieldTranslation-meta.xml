@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When true, sets this phone number as the Relay Phone on the parent Account. --></help>
+    <label><!-- Set as Relay Phone --></label>
+    <name>PJN_Set_as_Relay_Phone__c</name>
+</CustomFieldTranslation>

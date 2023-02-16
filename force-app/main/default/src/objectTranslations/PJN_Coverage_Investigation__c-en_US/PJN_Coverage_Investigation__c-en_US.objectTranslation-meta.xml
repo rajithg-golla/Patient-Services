@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Coverage Investigation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Coverage Investigations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Coverage Investigation Update Screen --></label>
+        <name>PJN_Coverage_Investigation_Update_Screen</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Access Type must be filled out when the Outcome is set to Covered.  Please populate appropriate Access Type and save --></errorMessage>
+        <name>Access_Type_Required_if_Outcome_Covered</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- PJN_Assistance_Program --></label>
+        <name>PJN_Assistance_Program</name>
+    </webLinks>
+</CustomObjectTranslation>

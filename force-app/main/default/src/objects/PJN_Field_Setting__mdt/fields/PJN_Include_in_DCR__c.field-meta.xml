@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Include_in_DCR__c</fullName>
+    <description>Whether this field is within the scope of a DCR process.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Include in DCR</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not_Included__c</fullName>
+                <default>true</default>
+                <label>Not Included</label>
+            </value>
+            <value>
+                <fullName>On_Insert__c</fullName>
+                <default>false</default>
+                <label>On Insert</label>
+            </value>
+            <value>
+                <fullName>On_Update__c</fullName>
+                <default>false</default>
+                <label>On Update</label>
+            </value>
+            <value>
+                <fullName>On_Insert_and_Update__c</fullName>
+                <default>false</default>
+                <label>On Insert and Update</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Outbound__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Defines if current field mapping is for Outbound connection</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Outbound?</label>
+    <type>Checkbox</type>
+</CustomField>

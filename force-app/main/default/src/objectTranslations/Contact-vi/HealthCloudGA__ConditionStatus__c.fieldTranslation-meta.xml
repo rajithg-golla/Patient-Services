@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition Status --></label>
+    <name>HealthCloudGA__ConditionStatus__c</name>
+    <picklistValues>
+        <masterLabel>Asymptomatic</masterLabel>
+        <translation>Không Có Triệu Chứng</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+        <translation>Không Có Triệu Chứng - Đã Từ Chối Tham Gia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cured</masterLabel>
+        <translation>Đã Chữa Trị</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluated - No Risk</masterLabel>
+        <translation>Đã Đánh Giá - Không Có Rủi Ro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Symptomatic</masterLabel>
+        <translation>Có Triệu Chứng</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+        <translation>Có Triệu Chứng - Đã Từ Chối Tham Gia</translation>
+    </picklistValues>
+</CustomFieldTranslation>

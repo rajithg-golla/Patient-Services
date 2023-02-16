@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case_Accounts_Order__c</fullName>
+    <description>The order which the fields should appear on the interaction accounts screen once an account has been selected. Any fields configured will appear before those configured in Contact Info Case Mappings</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The order which the fields should appear on the interaction accounts screen once an account has been selected. Any fields configured will appear before those configured in Contact Info Case Mappings</inlineHelpText>
+    <label>Interaction Accounts Order</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

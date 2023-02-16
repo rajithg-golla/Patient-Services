@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Program Builder; Care Plan Path
+Purpose: Define the field and icon to be displayed on the right-side boxes in the care plan path for a specific program problem.
+Metadata Relationship(s): CarePlan Path Coaching Setting
+Created by Mavens: Yes</description>
+    <label>Care Plan Field</label>
+    <pluralLabel>Care Plan Fields</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

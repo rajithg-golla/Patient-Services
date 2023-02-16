@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Share_with_RBM_Test__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+AND(
+ISPICKVAL(MVN_ICD_10_CM_Diagnosis_Code__c, &quot;E78.01&quot;),
+Account.MVN_Age__c &gt;= 12)
+,
+OR(
+ISPICKVAL(PJN_Therapy_Status__c, &quot;Active&quot;),
+ISPICKVAL(PJN_Therapy_Status__c, &quot;Pending&quot;),
+BEGINS(UPPER(MVN_Pharmacy_Status__c),&quot;ACTIVE&quot;),
+BEGINS(UPPER(MVN_Pharmacy_Status__c),&quot;PENDING&quot;),
+MVN_Share_with_RBM__c = TRUE
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Share with RBM Test</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

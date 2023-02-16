@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelayDisableAccountTrigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disable all Account trigger logic from running</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If checked (disabled), all Relay Account trigger logic will be disabled.</inlineHelpText>
+    <label>Disable</label>
+    <type>Checkbox</type>
+</CustomField>

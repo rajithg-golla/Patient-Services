@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Potenziali risparmi derivanti dalla chiusura della lacuna di assistenza.</help>
+    <label><!-- Financial Value --></label>
+    <name>HealthCloudGA__FinancialValue__c</name>
+</CustomFieldTranslation>

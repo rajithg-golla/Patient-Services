@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Code Historical --></label>
+    <name>Product_Code__c</name>
+    <picklistValues>
+        <masterLabel>Evkeeza Patient Information Packet</masterLabel>
+        <translation><!-- Evkeeza Patient Information Packet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evkeeza Patient Welcome Kit</masterLabel>
+        <translation><!-- Evkeeza Patient Welcome Kit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approximate Wait Time --></label>
+    <name>Approximate_Wait_Time_MVN__c</name>
+    <picklistValues>
+        <masterLabel>10-20 minutes</masterLabel>
+        <translation><!-- 10-20 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20-30 minutes</masterLabel>
+        <translation><!-- 20-30 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-10 minutes</masterLabel>
+        <translation><!-- 5-10 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 30 minutes</masterLabel>
+        <translation><!-- Over 30 minutes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under 5 minutes</masterLabel>
+        <translation><!-- Under 5 minutes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

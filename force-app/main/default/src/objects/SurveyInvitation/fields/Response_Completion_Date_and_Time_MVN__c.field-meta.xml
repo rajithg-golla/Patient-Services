@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Response_Completion_Date_and_Time_MVN__c</fullName>
+    <description>Copied from SurveyResponse object.  Populated by flow.  If multiple responses, will reflect the most recent.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Response Completion Date and Time</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

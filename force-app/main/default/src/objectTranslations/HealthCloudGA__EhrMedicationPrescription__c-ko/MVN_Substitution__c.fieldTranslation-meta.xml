@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Substitution --></label>
+    <name>MVN_Substitution__c</name>
+    <picklistValues>
+        <masterLabel>Dispense As Written</masterLabel>
+        <translation><!-- Dispense As Written --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substitution Permitted</masterLabel>
+        <translation><!-- Substitution Permitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EmailMessage$ToAddress</field>
+    </columns>
+    <columns>
+        <field>EmailMessage$TextBody</field>
+    </columns>
+    <columns>
+        <field>EmailMessage$MessageDate</field>
+    </columns>
+    <columns>
+        <field>EmailMessage$MVN_Program__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Email Messages from Previous Day</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Email_Messages__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>EmailMessage$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

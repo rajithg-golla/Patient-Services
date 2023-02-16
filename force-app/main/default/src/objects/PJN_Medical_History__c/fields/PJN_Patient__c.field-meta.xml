@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Patient__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Patien for which the medical history is recorded.</description>
+    <externalId>false</externalId>
+    <label>Patient</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Medical history must be related to a Patient account.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>PJN_Patient</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Medical History</relationshipLabel>
+    <relationshipName>PJN_Medical_History</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

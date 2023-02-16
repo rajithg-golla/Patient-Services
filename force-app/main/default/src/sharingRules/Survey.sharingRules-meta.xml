@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>DEDSI_Nurse_Educators_Group_MVN</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>DEDSI Nurse Educators</label>
+        <sharedTo>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_Public_Group_Survey_Sharing_MVN</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares all survey records owned by members of the DEDSI Survey Owners public group to all DEDSI users. Used because the user deploying a survey must remain its owner.</description>
+        <label>DEDSI Public Group Survey Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <group>DEDSI_Survey_Owners_MVN</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_Survey_Sharing_MVN</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares all survey records owned by DEDSI users to all other DEDSI users.</description>
+        <label>DEDSI Survey Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

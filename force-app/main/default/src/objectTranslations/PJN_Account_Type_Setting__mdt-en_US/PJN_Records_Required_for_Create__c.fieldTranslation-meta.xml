@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma separated list of Contact information Record Types required to create this type of account . --></help>
+    <label><!-- Records Required for Create --></label>
+    <name>PJN_Records_Required_for_Create__c</name>
+</CustomFieldTranslation>

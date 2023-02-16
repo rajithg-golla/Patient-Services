@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Broj preporuka koje je ovaj praktičar uputio u posljednjih 6 mjeseci i koje imaju status “Zatvoreno-konvertirano”. </help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

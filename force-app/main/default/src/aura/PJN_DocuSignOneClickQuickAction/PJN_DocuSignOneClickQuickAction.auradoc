@@ -1,0 +1,39 @@
+<aura:documentation>
+	<aura:description>
+        <h1>Description</h1>
+        <p>
+            A DocuSign One Click button is implemented as a Quick Action Button
+            that is added to a page layout
+        </p>
+        <p>
+            The button will read the record Id and query for all "DocuSign one
+            click setting" metadata records for the object.
+        </p>
+        <p>
+            These settings are then filtered to the first record that matches
+            the Program Name, Record Type (optional), and additional filter
+            (optional)
+        </p>
+        <p>
+            A url is then generated and the use is redirected to the DocuSign
+            create envelope visualforce page with the configured URL parameters
+            set based on the metadata configurations
+        </p>
+
+        <h1>Design Decisions</h1>
+        <p>
+            One may wonder why there is a visualforce page iFramed in the
+            component. In order to generate a proper URL that includes a CSRF
+            token the URL must be genertated using the URLFOR Function. This
+            function is only available in visualforce
+        </p>
+        <p>
+            In order to generate the URL correctly the visualforce page is
+            iFramed into the component. It is passed the base URL as well as
+            the hostname so that the visualforce page can post a message back
+            to the parent. That message is read by an event listener in the
+            lightning component and can then build the rest of the URL and
+            redirect the user to the DocuSign Create Envelope Visualforce page.
+        </p>
+    </aura:description>
+</aura:documentation>

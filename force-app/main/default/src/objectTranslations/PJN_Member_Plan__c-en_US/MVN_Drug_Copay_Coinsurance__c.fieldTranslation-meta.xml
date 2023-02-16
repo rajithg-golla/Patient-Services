@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Drug Copay/Coinsurance --></label>
+    <name>MVN_Drug_Copay_Coinsurance__c</name>
+</CustomFieldTranslation>

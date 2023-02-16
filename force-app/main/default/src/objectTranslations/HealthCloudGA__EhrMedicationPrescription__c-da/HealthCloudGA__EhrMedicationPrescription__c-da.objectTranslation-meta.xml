@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>EPJ – Medicinrecepten</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>EPJ – Medicinrecept</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>EPJ – Medicinrecept</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>EPJ – Medicinrecepterne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>EPJ – Medicinrecepter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>EPJ – Medicinrecepter</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>EPJ – Medicinrecept-id</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Prescription for Evkeeza (evinacumab-dgnb) injection. --></description>
+        <label><!-- Evkeeza --></label>
+        <name>MVN_Evkeeza</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Product must belong to the program a patient is being enrolled for. --></errorMessage>
+        <name>PJN_Must_Be_Program_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

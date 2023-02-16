@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Family_History__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>E2B (R2): NA
+
+E2B (R3): D.7.1.r.6 Family History
+Conformance: Optional
+Data Type: Boolean
+OID: None
+Value Allowed: True</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to ‘true’ when the medical information provided is also present in another family member (e.g. hereditary diseases). However, this data element is not used when the same medical concept is already provided in the medical history of the parent.</inlineHelpText>
+    <label>Family History</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

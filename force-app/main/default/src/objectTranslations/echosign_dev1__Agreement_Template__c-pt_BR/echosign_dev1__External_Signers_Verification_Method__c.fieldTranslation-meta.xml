@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Certifique-se de que antes dos signatários externos poderem exibir ou assinar o documento é necessário verificar a identidade.</help>
+    <label><!-- External Signers Verification Method --></label>
+    <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Knowledge based authentication</masterLabel>
+        <translation>Autenticação com base em conhecimento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password to sign agreement</masterLabel>
+        <translation>Senha para assinar o contrato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web identity authentication</masterLabel>
+        <translation>Autenticação por identidade Web</translation>
+    </picklistValues>
+</CustomFieldTranslation>

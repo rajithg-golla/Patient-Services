@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Valid_Date_of_Submission</fullName>
+    <active>true</active>
+    <description>Date of Submission cannot in the future or before the date of the complaint.</description>
+    <errorConditionFormula>PJN_Date_Time_Submitted__c &gt; Now() ||
+ DATEVALUE(PJN_Date_Time_Submitted__c) &lt;  PJN_Date_of_Complaint__c</errorConditionFormula>
+    <errorDisplayField>PJN_Date_Time_Submitted__c</errorDisplayField>
+    <errorMessage>Cannot set the Submission Date in the future or before the date of the complaint</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<aura:interface description="CarePlan Path Keys Interface">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="componentRecord" type="PJN_CarePlan_Path_Coaching_Setting__mdt" />
+    <aura:attribute name="problemRecord" type="HealthCloudGA__CarePlanProblem__c" />
+    <aura:attribute name="hasActions" type="Boolean" />
+</aura:interface>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Unité de mesure du temps à réaliser par patient pendant la période de mesure (associée au champ « Cible »).</help>
+    <label><!-- Unit of Measure --></label>
+    <name>HealthCloudGA__UnitOfMeasure__c</name>
+    <picklistValues>
+        <masterLabel>Minutes</masterLabel>
+        <translation>Minutes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seconds</masterLabel>
+        <translation>Secondes</translation>
+    </picklistValues>
+</CustomFieldTranslation>

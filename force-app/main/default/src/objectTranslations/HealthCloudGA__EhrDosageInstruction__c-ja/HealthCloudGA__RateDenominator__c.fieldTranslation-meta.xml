@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>2 つの数量値の比率 (分子と分母) の分母</help>
+    <label><!-- Rate Denominator --></label>
+    <name>HealthCloudGA__RateDenominator__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Coverage_Investigation__c</fullName>
+    <description>The parent Coverage Investigation which the items are related to.</description>
+    <externalId>false</externalId>
+    <label>Coverage Investigation</label>
+    <referenceTo>PJN_Coverage_Investigation__c</referenceTo>
+    <relationshipLabel>Coverage Investigation Items</relationshipLabel>
+    <relationshipName>Coverage_Investigation_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

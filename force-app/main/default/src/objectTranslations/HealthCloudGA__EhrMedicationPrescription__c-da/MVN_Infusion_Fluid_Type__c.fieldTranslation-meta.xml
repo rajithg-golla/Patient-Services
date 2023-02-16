@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Infusion Fluid Type --></label>
+    <name>MVN_Infusion_Fluid_Type__c</name>
+    <picklistValues>
+        <masterLabel>0.9% Sodium Chloride Injection, USP 250 mL bag</masterLabel>
+        <translation><!-- 0.9% Sodium Chloride Injection, USP 250 mL bag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5% Dextrose Injection, USP 250 mL bag</masterLabel>
+        <translation><!-- 5% Dextrose Injection, USP 250 mL bag --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Primary_PA_Start_Date_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK(PJN_Primary_PA_Start_Date__c)),
+
+   LEFT(TEXT(PJN_Primary_PA_Start_Date__c),4)&amp;
+   MID(TEXT(PJN_Primary_PA_Start_Date__c),6,2)&amp;
+   MID(TEXT(PJN_Primary_PA_Start_Date__c),9,2)&amp;
+   &apos;000000&apos;,
+
+   null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary PA Start Date Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

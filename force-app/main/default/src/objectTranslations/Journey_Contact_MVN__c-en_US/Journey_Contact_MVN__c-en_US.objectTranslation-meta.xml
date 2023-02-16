@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Journey Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Journey Contacts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Marketing Consent is required to enroll this patient/caregiver in a marketing journey. --></errorMessage>
+        <name>Marketing_Consent_Required_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The primary email for the account must be opted in. --></errorMessage>
+        <name>Primary_Email_Opt_In_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

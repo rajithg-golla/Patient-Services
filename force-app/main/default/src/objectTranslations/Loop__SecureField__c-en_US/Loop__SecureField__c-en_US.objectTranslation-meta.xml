@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <description><!-- Checkbox field --></description>
+        <label><!-- Checkbox --></label>
+        <name>Loop__Checkbox</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A list or drop down with two or more possible options --></description>
+        <label><!-- List --></label>
+        <name>Loop__List</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Other types such as Signer Attachment, Approve Button, and Decline Button --></description>
+        <label><!-- Other --></label>
+        <name>Loop__Other</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Radio field --></description>
+        <label><!-- Radio --></label>
+        <name>Loop__Radio</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Text field (e.g. plain text, email, date, number, ssn, zip, and zip-4) --></description>
+        <label><!-- Text --></label>
+        <name>Loop__Text</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Text Area field --></description>
+        <label><!-- Text Area --></label>
+        <name>Loop__Text_Area</name>
+    </recordTypes>
+</CustomObjectTranslation>

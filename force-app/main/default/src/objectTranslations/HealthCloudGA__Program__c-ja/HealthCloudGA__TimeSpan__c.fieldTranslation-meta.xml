@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>測定期間。</help>
+    <label><!-- Time Span --></label>
+    <name>HealthCloudGA__TimeSpan__c</name>
+    <picklistValues>
+        <masterLabel>Annually</masterLabel>
+        <translation>毎年</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation>毎月</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarterly</masterLabel>
+        <translation>毎四半期</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation>毎週</translation>
+    </picklistValues>
+</CustomFieldTranslation>

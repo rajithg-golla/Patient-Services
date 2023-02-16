@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Seleziona la mappatura dei dati per mappare i dati immessi nei campi Adobe Sign dall&apos;accordo firmato a Salesforce.</help>
+    <label><!-- Data Mapping --></label>
+    <name>echosign_dev1__Data_Mapping__c</name>
+    <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+</CustomFieldTranslation>

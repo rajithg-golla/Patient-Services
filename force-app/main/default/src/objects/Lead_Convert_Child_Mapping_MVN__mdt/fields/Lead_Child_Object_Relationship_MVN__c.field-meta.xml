@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Child_Object_Relationship_MVN__c</fullName>
+    <description>The API name of the Child object relationship to parent to the converted account.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The API name of the Child object relationship to parent to the converted account.</inlineHelpText>
+    <label>Lead Child Object Relationship</label>
+    <length>50</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

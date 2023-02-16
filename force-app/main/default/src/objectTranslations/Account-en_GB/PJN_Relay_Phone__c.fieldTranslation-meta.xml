@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The phone number used for Relay Network SMS communications. --></help>
+    <label><!-- Relay Phone --></label>
+    <name>PJN_Relay_Phone__c</name>
+    <relationshipLabel><!-- Accounts (Relay Phone) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>時間の測定の対象となるユーザの種別 (該当する場合)。</help>
+    <label><!-- User Role Field --></label>
+    <name>HealthCloudGA__UserRoleField__c</name>
+</CustomFieldTranslation>

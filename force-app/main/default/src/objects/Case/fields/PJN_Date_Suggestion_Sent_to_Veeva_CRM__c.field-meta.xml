@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Date_Suggestion_Sent_to_Veeva_CRM__c</fullName>
+    <description>Datetime the Case is sent to Veeva CRM as a Suggestion.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Datetime the Case is sent to Veeva CRM as a Suggestion.</inlineHelpText>
+    <label>Date Suggestion Sent to Veeva CRM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

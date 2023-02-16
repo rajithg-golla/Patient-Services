@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter a summary of the QA conducted on this AE. --></help>
+    <label><!-- QA Summary --></label>
+    <name>PJN_QA_Summary__c</name>
+</CustomFieldTranslation>

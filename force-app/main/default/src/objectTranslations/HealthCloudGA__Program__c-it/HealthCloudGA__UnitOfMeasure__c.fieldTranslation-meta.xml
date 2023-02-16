@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Unità di misura per il tempo di completamento per paziente nel periodo di valutazione (associato al campo &quot;Tempo di riferimento&quot;).</help>
+    <label><!-- Unit of Measure --></label>
+    <name>HealthCloudGA__UnitOfMeasure__c</name>
+    <picklistValues>
+        <masterLabel>Minutes</masterLabel>
+        <translation>Minuti</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seconds</masterLabel>
+        <translation>Secondi</translation>
+    </picklistValues>
+</CustomFieldTranslation>

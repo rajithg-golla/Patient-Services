@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Veeva_Network__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Allows Veeva Network connection (Send/Retrieve DCRs, Sync, Search...)</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Allows Veeva Network connection</inlineHelpText>
+    <label>Veeva Network</label>
+    <type>Checkbox</type>
+</CustomField>

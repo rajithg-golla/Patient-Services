@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>처방전 작성의 코드 시스템 이유 코드 또는 징후</help>
+    <label><!-- Reason System --></label>
+    <name>HealthCloudGA__ReasonSystem__c</name>
+</CustomFieldTranslation>

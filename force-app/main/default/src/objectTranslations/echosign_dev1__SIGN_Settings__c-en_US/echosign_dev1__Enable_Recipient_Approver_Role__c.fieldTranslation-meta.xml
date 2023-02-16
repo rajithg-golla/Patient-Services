@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Recipients marked as approvers review and approve the document but they are not required to sign it. They may be required to enter data into fields. --></help>
+    <label><!-- Enable Recipient Approver Role --></label>
+    <name>echosign_dev1__Enable_Recipient_Approver_Role__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica se questo record di configurazione deve essere usato.</help>
+    <label><!-- Active --></label>
+    <name>HealthCloudGA__Active__c</name>
+</CustomFieldTranslation>

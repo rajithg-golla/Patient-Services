@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Denial_Reason__c</fullName>
+    <description>Reason(s) prior authorization was denied.</description>
+    <externalId>false</externalId>
+    <label>Denial Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Lab Results</fullName>
+                <default>false</default>
+                <label>Lab Results</label>
+            </value>
+            <value>
+                <fullName>Letter of Medical Necessity</fullName>
+                <default>false</default>
+                <label>Letter of Medical Necessity</label>
+            </value>
+            <value>
+                <fullName>Missing Information</fullName>
+                <default>false</default>
+                <label>Missing Information</label>
+            </value>
+            <value>
+                <fullName>New to Market</fullName>
+                <default>false</default>
+                <label>New to Market</label>
+            </value>
+            <value>
+                <fullName>Radiographic Evidence</fullName>
+                <default>false</default>
+                <label>Radiographic Evidence</label>
+            </value>
+            <value>
+                <fullName>Specialist Rx</fullName>
+                <default>false</default>
+                <label>Specialist Rx</label>
+            </value>
+            <value>
+                <fullName>Step Edit</fullName>
+                <default>false</default>
+                <label>Step Edit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

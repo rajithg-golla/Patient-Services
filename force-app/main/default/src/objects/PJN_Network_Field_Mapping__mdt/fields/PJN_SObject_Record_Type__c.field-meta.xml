@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_SObject_Record_Type__c</fullName>
+    <defaultValue>&quot;ALL&quot;</defaultValue>
+    <description>SObject record type associated to this field mapping. &apos;ALL&apos; would be included in all record types.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>SObject record type associated to this field mapping. &apos;ALL&apos; would be included in all record types.</inlineHelpText>
+    <label>SObject Record Type</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Libtayo_Marketing_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Libtayo Marketing</label>
+        <sharedTo>
+            <roleAndSubordinates>Libtayo_Marketing_MVN</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Libtayo Marketing Consumer</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_Libtayo_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Libtayo Read Only</label>
+        <sharedTo>
+            <group>MVN_Libtayo_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Libtayo Marketing Consumer</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_Lead_Sharing_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares all leads (consumers) owned by users in the DEDSI role hierarchy to all other DEDSI users.</description>
+        <label>DEDSI Lead Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_NurseEducators_Group_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DEDSI Nurse Educators</label>
+        <sharedTo>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EVK - Consent List</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Care_Plan_Lookup_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Care_Plan__c</value>
+    </values>
+    <values>
+        <field>PJN_Deletable__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>PJN_Editable__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>PJN_Enrollment_Wizard_Component__c</field>
+        <value xsi:type="xsd:string">MVN_EVK_Consent_List_Component</value>
+    </values>
+    <values>
+        <field>PJN_Fields__c</field>
+        <value xsi:type="xsd:string">PJN_Data_Use_Purpose_Formula__c,PJN_Privacy_Consent_Status__c,PJN_Capture_Source__c,PJN_Effective_From__c</value>
+    </values>
+    <values>
+        <field>PJN_Order_By__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_RecordType_DeveloperName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_SObject_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Contact_Point_Type_Consent__c</value>
+    </values>
+    <values>
+        <field>PJN_Where_Clause__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

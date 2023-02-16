@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Is_Escalated__c</fullName>
+    <description>Indicates if the the AE is currently escalated to another user. Calculated by checking if the AE owner is different than the Interaction owner.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(PJN_Status__c, &quot;Closed&quot;)||ISPICKVAL(PJN_Status__c, &quot;Cancelled&quot;),
+FALSE,
+IF( OwnerId !=  PJN_Case__r.OwnerId  ,
+TRUE,
+FALSE
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates if the AE is currently escalated to another user.</inlineHelpText>
+    <label>Is Escalated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

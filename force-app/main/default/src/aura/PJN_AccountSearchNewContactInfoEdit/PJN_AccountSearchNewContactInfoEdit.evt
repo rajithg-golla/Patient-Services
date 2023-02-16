@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Edit contact info record from list">
+    <aura:attribute name="index" type="Integer" />
+</aura:event>

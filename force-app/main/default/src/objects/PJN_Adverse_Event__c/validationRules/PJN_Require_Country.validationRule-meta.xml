@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_Country</fullName>
+    <active>true</active>
+    <description>All AEs must have a primary country populated, in order to ensure data sharing is correct.</description>
+    <errorConditionFormula>!ISNEW() &amp;&amp; IsBlank(text(PJN_Country__c)) &amp;&amp; !ISBLANK(text(PRIORVALUE(PJN_Country__c)))</errorConditionFormula>
+    <errorDisplayField>PJN_Country__c</errorDisplayField>
+    <errorMessage>All AEs must have a primary country.</errorMessage>
+</ValidationRule>

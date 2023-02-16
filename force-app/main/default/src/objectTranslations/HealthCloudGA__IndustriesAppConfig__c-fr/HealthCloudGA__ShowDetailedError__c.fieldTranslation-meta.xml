@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Affichez un message d&apos;erreur détaillé lorsqu&apos;un utilisateur exécute une action sans autorisation.</help>
+    <label><!-- Show Detailed Error Messages --></label>
+    <name>HealthCloudGA__ShowDetailedError__c</name>
+</CustomFieldTranslation>

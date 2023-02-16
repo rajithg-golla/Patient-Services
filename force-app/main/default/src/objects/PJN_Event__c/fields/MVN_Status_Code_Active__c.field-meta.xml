@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Code_Active__c</fullName>
+    <description>Patient status codes for Status = Active</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Active&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Treatment Confirmed&quot;,&quot;A02&quot;,
+&quot;Patient Support&quot;,&quot;A03&quot;,
+&quot;Prescriber Support&quot;,&quot;A05&quot;,
+&quot;Transfer to SP IAP&quot;,&quot;A09&quot;,
+&quot;Transfer to SP PAP&quot;,&quot;A10&quot;,
+&quot;Prior Authorization Support Start&quot;,&quot;A11&quot;,
+&quot;Prior Authorization Approved&quot;,&quot;A12&quot;,
+&quot;Prior Authorization Denied&quot;,&quot;A13&quot;,
+&quot;Appeal Support (1st Level)&quot;,&quot;A14&quot;,
+&quot;Appeal Support (2nd Level)&quot;,&quot;A15&quot;,
+&quot;Appeal Support (3rd Level)&quot;,&quot;A16&quot;,
+&quot;Appeal Support (Peer-to-Peer)&quot;,&quot;A17&quot;,
+&quot;Appeal Approved&quot;,&quot;A18&quot;,
+&quot;Appeal Denied&quot;,&quot;A19&quot;,
+&quot;PA/Appeal Support Max Attempts&quot;,&quot;A20&quot;,
+&quot;Claims Support&quot;,&quot;A21&quot;,
+&quot;Copay Support&quot;,&quot;A22&quot;,
+null),
+null)</formula>
+    <label>Status Code - Active</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

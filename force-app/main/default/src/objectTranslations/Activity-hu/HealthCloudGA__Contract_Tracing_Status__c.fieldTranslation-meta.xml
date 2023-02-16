@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contract Tracing Status --></label>
+    <name>HealthCloudGA__Contract_Tracing_Status__c</name>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation>Befejezve</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation>Folyamatban</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incoming</masterLabel>
+        <translation>Bejövő</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation>Nincs válasz</translation>
+    </picklistValues>
+</CustomFieldTranslation>

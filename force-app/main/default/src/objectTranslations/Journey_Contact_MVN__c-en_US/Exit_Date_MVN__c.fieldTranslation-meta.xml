@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date/Time the contact exited the Journey. --></help>
+    <label><!-- Exit Date --></label>
+    <name>Exit_Date_MVN__c</name>
+</CustomFieldTranslation>

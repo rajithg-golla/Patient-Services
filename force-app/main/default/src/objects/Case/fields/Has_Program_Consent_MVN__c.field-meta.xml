@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Program_Consent_MVN__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by a flow when the corresponding consent record for the program is created/edited with program consent.</description>
+    <externalId>false</externalId>
+    <label>Has Program Consent</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

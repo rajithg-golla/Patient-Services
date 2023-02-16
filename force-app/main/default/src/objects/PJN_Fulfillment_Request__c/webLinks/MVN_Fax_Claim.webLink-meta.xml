@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Fax_Claim</fullName>
+    <availability>online</availability>
+    <description>Sends a fax to CRx with the relevant claim information</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Fax Claim</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/loop__looplus?&amp;eid={!PJN_Fulfillment_Request__c.Id}&amp;accountId={!PJN_Fulfillment_Request__c.MVN_Patient_Id__c}&amp;caseId={!PJN_Fulfillment_Request__c.MVN_Care_Plan_Id__c}&amp;hidecontact=true&amp;filter={!PJN_Fulfillment_Request__c.PJN_Record_Type_Name__c}</url>
+</WebLink>

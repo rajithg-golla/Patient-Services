@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hvis Navn er nul eller Tomt, udfyldes det med Fornavn1__c + Efternavn1__c. Ellers udfyldes det med Navn</help>
+    <label><!-- Calculated Name --></label>
+    <name>HealthCloudGA__CalculatedName__c</name>
+</CustomFieldTranslation>

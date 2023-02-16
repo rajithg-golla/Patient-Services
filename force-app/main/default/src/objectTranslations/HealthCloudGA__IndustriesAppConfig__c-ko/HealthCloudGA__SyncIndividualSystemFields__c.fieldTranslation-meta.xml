@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>개별 개체 모델에서 레코드가 만들어질 때 계정 및 연락처 필드를 동기화합니다.</help>
+    <label><!-- Sync Individual System Fields --></label>
+    <name>HealthCloudGA__SyncIndividualSystemFields__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Veeva Network external value. --></help>
+    <label><!-- External value --></label>
+    <name>PJN_External_Value__c</name>
+</CustomFieldTranslation>

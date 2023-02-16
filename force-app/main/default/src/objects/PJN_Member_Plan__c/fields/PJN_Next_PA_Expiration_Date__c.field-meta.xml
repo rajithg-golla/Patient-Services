@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Next_PA_Expiration_Date__c</fullName>
+    <description>Shows the next upcoming date when an approved Prior Authorisation will expire.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows the next upcoming date when an approved Prior Authorisation will expire.</inlineHelpText>
+    <label>Next PA Expiration Date</label>
+    <summarizedField>PJN_Prior_Authorization__c.PJN_Expiration_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>PJN_Prior_Authorization__c.PJN_Outcome__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PJN_Prior_Authorization__c.PJN_Member_Plan__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

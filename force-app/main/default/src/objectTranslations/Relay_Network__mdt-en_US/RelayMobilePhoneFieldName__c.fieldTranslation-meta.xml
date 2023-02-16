@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The filed name in the Account object that contains the mobile number. If left blank, it defaults to MobilePhone --></help>
+    <label><!-- Account Mobile Phone Field Name --></label>
+    <name>RelayMobilePhoneFieldName__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Brugervenligt navn for årsagskode eller -indikation for udlevering af recepten</help>
+    <label><!-- Reason Not Given Label --></label>
+    <name>HealthCloudGA__ReasonNotGivenLabel__c</name>
+</CustomFieldTranslation>

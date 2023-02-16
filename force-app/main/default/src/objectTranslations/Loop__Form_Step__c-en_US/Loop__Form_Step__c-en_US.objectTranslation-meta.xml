@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <label><!-- Clone_Form --></label>
+        <name>Loop__Clone_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditForm --></label>
+        <name>Loop__EditForm</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Form --></label>
+        <name>Loop__Edit_Form</name>
+    </webLinks>
+</CustomObjectTranslation>

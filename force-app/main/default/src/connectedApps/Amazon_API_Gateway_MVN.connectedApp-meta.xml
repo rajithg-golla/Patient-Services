@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>rlocke@mavens.com</contactEmail>
+    <label>Amazon API Gateway</label>
+    <logoUrl>https://regeneronhealthcaresolutions--dev--c.documentforce.com/servlet/servlet.ImageServer?id=0152a000000867q&amp;oid=00D2a0000004XbK</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9Kip4IKAZQEXH3QRISZ4gTIrfGMF8CMpZBRMxAbKZ4q.zm8LAPTPu3MQ7iVBQw8NlO6raZPN5kmCR9LIv</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

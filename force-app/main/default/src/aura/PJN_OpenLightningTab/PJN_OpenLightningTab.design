@@ -1,0 +1,22 @@
+<design:component >
+    <design:attribute
+        name        = "isTargetSubtab"
+        label       = "Create as Subtab?"
+        description = "Select this when the tab to be created is a subtab"
+    />
+    <design:attribute
+        name        = "target"
+        label       = "Component Name"
+        description = "API Name of the lightning:isUrlAddressable component to show in a tab"
+    />
+    <design:attribute
+        name        = "displayName"
+        label       = "Button Label"
+        description = "Label to display on the button"
+    />
+    <design:attribute
+        name        = "parameters"
+        label       = "Custom Parameters"
+        description = 'Comma delimited list of quoted "name":"value" pairs for the component'
+    />
+</design:component>

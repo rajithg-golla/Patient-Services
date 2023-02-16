@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Product__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>E2B (R2):  B.4.k.2.1, medicinalproduct (70AN)
+
+E2B (R3): G.k.2.2 Medicinal Product Name as Reported by the Primary Source
+Conformance: Required
+Data Type: 250AN
+OID: None
+Value Allowed: Free text</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: The name should be that used by the reporter. It is recognized that a single product
+may have different proprietary names in different countries, even when produced by a single
+manufacturer.</inlineHelpText>
+    <label>Product</label>
+    <referenceTo>CareProgramProduct</referenceTo>
+    <relationshipLabel>AE Drug</relationshipLabel>
+    <relationshipName>PJN_AE_Drug</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

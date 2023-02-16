@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Professional Designation --></label>
+    <name>PJN_Professional_Designation__c</name>
+    <picklistValues>
+        <masterLabel>MD</masterLabel>
+        <translation><!-- MD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NP</masterLabel>
+        <translation><!-- NP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

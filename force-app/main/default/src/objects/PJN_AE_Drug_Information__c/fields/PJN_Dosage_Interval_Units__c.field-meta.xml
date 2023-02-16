@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Dosage_Interval_Units__c</fullName>
+    <description>E2B (R2): B.4.k.5.5, drugintervaldosagedefinition (3AN)
+
+E2B (R3): G.k.4.r.3 Definition of the Time Interval Unit
+Conformance: Optional, but required if G.k.4.r.2 is populated.
+Data Type: 50AN
+OID: 2.16.840.1.113883.3.989.2.1.1.26
+Value Allowed: Constrained UCUM codes:{cyclical}, {asnecessary},{total}</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Example: 5 mg 2 times a day every other day for 30 days
+Dose (number): 5
+Dose (unit): mg
+Separate Dosages: 2
+Interval: 2
+Interval Unit: day
+Cumulative Dose to First Reaction (number): 150
+Cumulative Dose to First Reaction (unit): mg</inlineHelpText>
+    <label>Dosage Interval (Units)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Time_Units</valueSetName>
+    </valueSet>
+</CustomField>

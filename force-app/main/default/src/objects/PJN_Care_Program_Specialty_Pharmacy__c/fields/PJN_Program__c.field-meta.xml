@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Program__c</fullName>
+    <description>The Program which the Speciality Pharmacy distributes drug for.</description>
+    <externalId>false</externalId>
+    <label>Program</label>
+    <referenceTo>CareProgram</referenceTo>
+    <relationshipName>Program_Specialty_Pharmacies</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,53 @@
+<aura:component controller="PJN_CaseFilesPreviewLightningUtil">
+    <aura:attribute name = "caseId"
+                    type = "String"
+    />
+    <aura:attribute name    = "fileOptions"
+                    type    = "List"
+                    default = "[]"
+    />
+    <aura:attribute name    = "selectedFileId"
+                    type    = "String"
+                    default = ""
+    />
+    <aura:attribute name        = "loading"
+                    type        = "String"
+                    default     = "false"
+                    description = "Shows the spinner when the component is initializing"
+    />
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <div class="{! 'slds-align_absolute-center ' + (v.loading ? 'slds-show' : 'slds-hide')}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </div>
+
+    <aura:if isTrue="{!v.fileOptions.length > 1}">
+        <div class="selector-margin">
+        <lightning:select
+            aura:id="fileSelect"
+            name="Select File"
+            value="{!v.selectedFileId}"
+            onchange="{!c.handleFileChange}"
+        >
+            <aura:iteration items="{!v.fileOptions}" var="option">
+                <option value="{!option.documentId}">{!option.fileName}</option>
+            </aura:iteration>
+        </lightning:select>
+        </div>
+    </aura:if>
+
+    <aura:if isTrue="{!v.selectedFileId != ''}">
+        <div class="pdf-preview-wrapper">
+            <iFrame
+                src="{!'/sfc/servlet.shepherd/version/download/' + v.selectedFileId }"
+                class="max-width"
+            />
+        </div>
+        <aura:set attribute="else">
+            <div class="slds-align_absolute-center slds-text-heading_large slds-text-color_weak">
+                Select a file from above
+            </div>
+        </aura:set>
+    </aura:if>
+</aura:component>

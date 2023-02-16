@@ -1,0 +1,17 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="PJN_SubmitFulfillmentRequestCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <aura:html tag="style">
+        .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;  
+        }
+        .slds-fade-in-open {
+        display:none !important;
+    }
+    </aura:html>
+
+</aura:component>

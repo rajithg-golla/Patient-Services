@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_DEDSI_Consent_MVN</fullName>
+    <availability>online</availability>
+    <description>Launches Adobe Sign functionality from consumer.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Send Consent</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(&apos;/apex/echosign_dev1__AgreementTemplateProcess&apos;, null, [masterid=Lead.Id, templateId= $Setup.Adobe_Sign_Template_Ids_MVN__c.DEDSI_Consent_MVN__c ])}</url>
+</WebLink>

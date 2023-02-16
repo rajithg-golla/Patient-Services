@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Post Chatter update when agreement is viewed. --></help>
+    <label><!-- Post when Agreement Viewed --></label>
+    <name>echosign_dev1__Agreement_Viewed_Post__c</name>
+</CustomFieldTranslation>

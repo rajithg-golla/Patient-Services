@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Merge Child Records">
+    <aura:attribute name="selectedCarePlanIdList" type="Id[]" />
+    <aura:attribute name="masterCarePlanId" type="Id" />
+</aura:event>

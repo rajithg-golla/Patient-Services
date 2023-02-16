@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments_MVN__c</fullName>
+    <description>Summarized feedback of the event, the interaction/screening process, and its effectiveness.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Summarized feedback of the event, the interaction/screening process, and its effectiveness.</inlineHelpText>
+    <label>Comments</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

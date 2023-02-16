@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Physician_Change_Compact_Layout</fullName>
+    <fields>PJN_Event_Type__c</fields>
+    <fields>Name</fields>
+    <fields>PJN_Patient__c</fields>
+    <fields>PJN_Case__c</fields>
+    <fields>PJN_New_Physician__c</fields>
+    <fields>PJN_Previous_Physician__c</fields>
+    <label>Physician Change Compact Layout</label>
+</CompactLayout>

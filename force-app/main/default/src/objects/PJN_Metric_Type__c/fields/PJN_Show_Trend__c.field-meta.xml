@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Show_Trend__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Display data in a chart in addition to the list</description>
+    <externalId>false</externalId>
+    <label>Show Trend</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

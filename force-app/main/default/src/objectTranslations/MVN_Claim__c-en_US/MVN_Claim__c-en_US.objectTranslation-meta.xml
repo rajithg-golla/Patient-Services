@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Claim</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Claims</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Copay Medical Claim --></label>
+        <name>MVN_Copay_Medical_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Copay Pharmacy Claim --></label>
+        <name>MVN_Copay_Pharmacy_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Insurance Claim --></label>
+        <name>MVN_Insurance_Claim</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

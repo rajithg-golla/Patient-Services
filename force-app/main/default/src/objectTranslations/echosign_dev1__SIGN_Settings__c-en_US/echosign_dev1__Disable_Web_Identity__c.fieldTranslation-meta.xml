@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to hide the Web Identity option for agreements.  Web Identity verification requires signers to verify their identity by signing in to one of the following sites: Facebook, Google, LinkedIn, Twitter, Yahoo! or Microsoft Live.) --></help>
+    <label><!-- Deprecated --></label>
+    <name>echosign_dev1__Disable_Web_Identity__c</name>
+</CustomFieldTranslation>

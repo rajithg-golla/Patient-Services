@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Require_Status_for_Sub_Status</fullName>
+    <active>true</active>
+    <description>Requires the Status field to be populated when the Sub-Status field has a value.</description>
+    <errorConditionFormula>ISBLANK(MVN_Status__c) &amp;&amp; NOT(ISBLANK(MVN_Sub_Status__c ))</errorConditionFormula>
+    <errorMessage>A Status value is required if Sub-Status is not blank.</errorMessage>
+</ValidationRule>

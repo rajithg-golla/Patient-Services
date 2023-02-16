@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If a recipient email address belongs to one of these email domains, no Recipient Object matching (as specified in the Recipient Lookup Order) will be performed and the recipient will be stored as email address. --></help>
+    <label><!-- Recipient Lookup Domain Ignore List --></label>
+    <name>echosign_dev1__Recipient_Email_Domain_Ignore_List__c</name>
+</CustomFieldTranslation>

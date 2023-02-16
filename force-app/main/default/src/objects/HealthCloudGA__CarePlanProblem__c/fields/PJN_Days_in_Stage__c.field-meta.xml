@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Days_in_Stage__c</fullName>
+    <description>Returns the number of days the care plan has been (or was) in this stage.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(PJN_Status__c, &quot;Planned&quot;),
+0,
+IF(
+ISPICKVAL(PJN_Status__c, &quot;Open&quot;),
+TODAY() - PJN_Date_Started__c + 1,
+PJN_Date_Closed__c - PJN_Date_Started__c + 1
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days in Stage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

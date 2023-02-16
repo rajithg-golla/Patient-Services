@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The cumulative dose
+provided is the total dose administered until the first sign, symptom, or reaction. --></help>
+    <label><!-- Cumulative Dose to First Reaction (Num) --></label>
+    <name>PJN_Cumulative_Dose_First_Reaction_Num__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Contact_Contact_Relationship_Compact_Layout</fullName>
+    <fields>PJN_Relationship_Display_Name__c</fields>
+    <fields>HealthCloudGA__Contact__c</fields>
+    <fields>HealthCloudGA__RelatedContact__c</fields>
+    <fields>HealthCloudGA__Role__c</fields>
+    <fields>HealthCloudGA__Active__c</fields>
+    <label>Contact-Contact Relationship Compact Layout</label>
+</CompactLayout>

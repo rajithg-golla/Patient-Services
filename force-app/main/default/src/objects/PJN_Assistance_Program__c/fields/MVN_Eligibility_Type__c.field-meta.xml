@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Eligibility_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Eligibility Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Exception</fullName>
+                <default>false</default>
+                <label>Exception</label>
+            </value>
+            <value>
+                <fullName>Functionally Uninsured</fullName>
+                <default>false</default>
+                <label>Functionally Uninsured</label>
+            </value>
+            <value>
+                <fullName>Insurance Status Change</fullName>
+                <default>false</default>
+                <label>Insurance Status Change</label>
+            </value>
+            <value>
+                <fullName>Insured - Commercial</fullName>
+                <default>false</default>
+                <label>Insured - Commercial</label>
+            </value>
+            <value>
+                <fullName>Insured - Government</fullName>
+                <default>false</default>
+                <label>Insured - Government</label>
+            </value>
+            <value>
+                <fullName>Medicare Part B</fullName>
+                <default>false</default>
+                <label>Medicare Part B</label>
+            </value>
+            <value>
+                <fullName>PA/Appeal Processing</fullName>
+                <default>false</default>
+                <label>PA/Appeal Processing</label>
+            </value>
+            <value>
+                <fullName>Pending PA Appeal</fullName>
+                <default>false</default>
+                <label>Pending PA Appeal</label>
+            </value>
+            <value>
+                <fullName>Product Acquisition Delay</fullName>
+                <default>false</default>
+                <label>Product Acquisition Delay</label>
+            </value>
+            <value>
+                <fullName>Unaffordable - Medicare Advantage</fullName>
+                <default>false</default>
+                <label>Unaffordable - Medicare Advantage</label>
+            </value>
+            <value>
+                <fullName>Unaffordable - Part D</fullName>
+                <default>false</default>
+                <label>Unaffordable - Part D</label>
+            </value>
+            <value>
+                <fullName>Uninsured</fullName>
+                <default>false</default>
+                <label>Uninsured</label>
+            </value>
+            <value>
+                <fullName>Uninsured - Alternate Coverage</fullName>
+                <default>false</default>
+                <label>Uninsured - Alternate Coverage</label>
+            </value>
+            <value>
+                <fullName>Uninsured - Income Above PAP</fullName>
+                <default>false</default>
+                <label>Uninsured - Income Above PAP</label>
+            </value>
+            <value>
+                <fullName>Uninsured - Income Below PAP</fullName>
+                <default>false</default>
+                <label>Uninsured - Income Below PAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

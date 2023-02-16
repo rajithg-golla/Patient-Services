@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked (disabled), this trigger will not update TCPA consent data on Account or Contact objects. --></help>
+    <label><!-- Disable TCPA Consent Processing Logic --></label>
+    <name>RelayDisableEventConsentTrigger__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- DEDSI Consumer --></label>
+        <name>DEDSI_Consumer_MVN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Patient record type --></description>
+        <label><!-- Patient --></label>
+        <name>HealthCloudGA__Patient</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Patient Referral --></label>
+        <name>HealthCloudGA__PatientReferral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Libtayo Marketing Consumer --></label>
+        <name>Libtayo_Marketing_Consumer_MVN</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must enter all caregiver information if the &apos;Caregiver as Primary Contact&apos; checkbox is selected. --></errorMessage>
+        <name>Caregiver_Details_Enforcement_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The participant must be consented prior to enrolling. --></errorMessage>
+        <name>DEDSI_Require_Consent_Before_Enroll_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enrollee must be over 18 years of age. --></errorMessage>
+        <name>Libtayo_Marketing_Must_Be_Over_18_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot enroll unless the consumer has given their consent. --></errorMessage>
+        <name>Libtayo_Marketing_Must_Consent_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate what other topics were discussed. --></errorMessage>
+        <name>Other_Topics_Discussed_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select &apos;Other&apos; if listing other discussion topics. --></errorMessage>
+        <name>Other_Topics_Prevention_MVN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please include at least one of Phone, Email, or Zip. --></errorMessage>
+        <name>Require_Contact_Information_MVN</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_Leads --></label>
+        <name>HealthCloudGA__Convert_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_DEDSI_Consent_MVN --></label>
+        <name>Send_DEDSI_Consent_MVN</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Specialist_Search_MVN --></label>
+        <name>Specialist_Search_MVN</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_SMS --></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,lightning:isUrlAddressable" controller="PJN_NewCarePlanChildRecordCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="sObjectName" type="String" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+</aura:component>

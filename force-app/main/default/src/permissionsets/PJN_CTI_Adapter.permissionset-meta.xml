@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>PJN_SoftphoneCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Permissions for CTI softphone adapter</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PJN - CTI Adapter</label>
+    <pageAccesses>
+        <apexPage>PJN_Softphone</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Condition Status --></label>
+    <name>HealthCloudGA__ConditionStatus__c</name>
+    <picklistValues>
+        <masterLabel>Asymptomatic</masterLabel>
+        <translation>Asymptomatisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asymptomatic - Declined to Participate</masterLabel>
+        <translation>Asymptomatisch – Teilnahme abgelehnt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cured</masterLabel>
+        <translation>Geheilt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluated - No Risk</masterLabel>
+        <translation>Ausgewertet – Kein Risiko</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Symptomatic</masterLabel>
+        <translation>Symptomatisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Symptomatic - Declined to Participate</masterLabel>
+        <translation>Symptomatisch – Teilnahme abgelehnt</translation>
+    </picklistValues>
+</CustomFieldTranslation>

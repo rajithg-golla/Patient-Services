@@ -1,0 +1,39 @@
+<template>
+    <span onnewmetric={refreshCounts}>
+        <!-- SHOW TYPES GRID -->
+        <template if:false={state.selectedType}>
+            <lightning-icon
+                class="back-button slds-m-right_small"
+                icon-name="action:back"
+                onclick={handleGroupBackClick}
+                size="x-small">
+            </lightning-icon>
+            <template if:true={group.data}>
+                <span class="slds-text-heading_medium">
+                    {group.data.fields.Name.value}
+                </span>
+            </template>
+            <c-pjn-metric-tiles items={metricTypes} ontileclicked={handleTypeClick}></c-pjn-metric-tiles>
+        </template>
+
+        <!-- SHOW SELECTED TYPE -->
+        <template if:true={state.selectedType}>
+            <lightning-icon
+                class="back-button slds-m-right_small"
+                icon-name="action:back"
+                onclick={handleTypeBackClick}
+                size="x-small">
+            </lightning-icon>
+            <span class="slds-text-heading_medium">
+                {state.selectedType.PJN_Metric_Group__r.Name} > {state.selectedType.Name}
+            </span>
+
+            <c-pjn-metric-type
+                metric-type={state.selectedType}
+                care-plan-id={carePlanId}
+                patient-id={patientId}
+                show-all-for-current-patient={showAllForCurrentPatient}>
+            </c-pjn-metric-type>
+        </template>
+    </span>
+</template>

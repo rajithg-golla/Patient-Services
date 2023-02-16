@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Scheduled_Treatment_MVN__c</fullName>
+    <description>Date of enrollee&apos;s first scheduled treatment.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>First Scheduled Treatment</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

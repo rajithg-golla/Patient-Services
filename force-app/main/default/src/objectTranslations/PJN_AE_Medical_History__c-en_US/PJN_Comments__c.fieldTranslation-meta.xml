@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element provides additional relevant information about the ‘medical condition’ that could not be captured otherwise in a structured data element. --></help>
+    <label><!-- Comments --></label>
+    <name>PJN_Comments__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,175 @@
+<template>
+    <lightning-card>
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <!-- <span class="slds-avatar slds-avatar_large"> -->
+                <lightning-icon class="slds-m-right_xsmall" icon-name="custom:custom28" size="small"></lightning-icon>
+                <!-- </span> -->
+            </div>
+            <div class="slds-media__body slds-text-heading_medium">
+                <p>Relay Experiences</p>
+            </div>
+            <template if:true={multiSelection}>
+                <div class="slds-float_right slds-p-horizontal_small">
+                    <lightning-button variant="brand" label={sendLabel} icon-name="utility:send"
+                        onclick={handleOnClick}></lightning-button>
+                </div>
+            </template>
+        </div>
+
+        <ul class="slds-list_horizontal slds-has-dividers_left slds-has-block-links_space slds-text-color_destructive">
+            <ul class="slds-list_horizontal slds-has-dividers_left slds-has-block-links_space">
+                <template for:each={errors} for:item="err">
+                    <li key={err} class="slds-item">{err}</li>
+                </template>
+            </ul>
+        </ul>
+
+        <template if:true={debugging}>
+            <lightning-card class="color-background-highlight">
+                <div class="slds-box">
+                    <div class="slds-text-title_caps">DEBUG</div>
+                    <br>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <b>Field</b>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <b>Object Field Name</b>
+                        </div>
+                        <div class="slds-col slds-size_4-of-8">
+                            <b>Value</b>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>CCID</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>{ccidFieldName}</span>
+                        </div>
+                        <div class="slds-col slds-size_4-of-8">
+                            <span>{ccid}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>Consent</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>{consentFieldName}</span>
+                        </div>
+                        <div class="slds-col slds-size_4-of-8">
+                            <span>{consent}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>First Name</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>{firstNameFieldName}</span>
+                        </div>
+                        <div class="slds-col slds-size_6-of-8">
+                            <span>{firstName}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>Last Name</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>{lastNameFieldName}</span>
+                        </div>
+                        <div class="slds-col slds-size_6-of-8">
+                            <span>{lastName}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>Mobile Phone</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-8">
+                            <span>{mobilePhoneFieldName}</span>
+                        </div>
+                        <div class="slds-col slds-size_6-of-8">
+                            <span>{mobilePhone}</span>
+                        </div>
+                    </div>
+                </div>
+            </lightning-card>
+        </template>
+
+        <!-- <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleSectionToggle}> -->
+        <lightning-accordion onsectiontoggle={handleSectionToggle}>
+            <template if:false={areExperiencesLoaded}>
+                <div class="slds-page-header__col-meta">
+                    <p class="slds-page-header__meta-text">Loading experiences...</p>
+                  </div>
+                <div role="status" class="slds-spinner slds-spinner_small">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </template>
+            <template for:each={journeys} for:item="journey">
+                <lightning-accordion-section key={journey.id} name={journey.id} label={journey.journeyLabel}>
+                    <!-- <div class="slds-text-title">{journey.live.description}</div> -->
+                    <template for:each={journey.live.triggerComponents} for:item="trigger">
+                        <div key={trigger.name} class="slds-box">
+                            <!-- <li key={journey.id} class="slds-item"> -->
+                            <c-journey-details key={trigger.name} journey={journey} trigger={trigger}
+                                current-ccid={ccid} multi-selection={multiSelection} read-only={readOnly}
+                                ontriggerselect={handleTriggerSelection} ontriggersend={handleTriggerSend}>
+                            </c-journey-details>
+                        </div>
+                        <!-- </li> -->
+                    </template>
+                </lightning-accordion-section>
+            </template>
+        </lightning-accordion>
+
+        <template if:true={isSending}>
+            <div role="status" class="slds-spinner slds-spinner_medium">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </template>
+
+        <template if:true={showModal}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 class="slds-text-heading_medium slds-hyphenate header-string">
+                            {confirmHeading}
+                        </h2>
+                        <p class="slds-text-title_caps slds-m-top_x-small">
+                            <lightning-formatted-name first-name={firstName} last-name={lastName}>
+                            </lightning-formatted-name>
+                            <lightning-formatted-phone class="slds-m-left_x-small" value={mobilePhone}>
+                            </lightning-formatted-phone>
+                        </p>
+                    </header>
+
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <ul class="slds-has-dividers_around-space">
+                            <template for:each={confirmTriggers} for:item="trigger">
+                                <li key={trigger.name} class="slds-item">
+                                    {trigger.nickname}
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <footer class="slds-modal__footer modal-hidden">
+                        <button class="slds-button slds-button_neutral" onclick={handleModalCancel}>Cancel</button>
+                        <button class="slds-button slds-button_brand" onclick={handleModalSend}>Send</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-card>
+</template>

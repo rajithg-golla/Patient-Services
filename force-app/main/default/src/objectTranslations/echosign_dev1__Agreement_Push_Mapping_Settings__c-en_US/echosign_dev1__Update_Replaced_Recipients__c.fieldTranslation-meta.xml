@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to mark the recipients as &apos;Replaced&apos; in case they are replaced by Sender from Manage Page. These recipients will be hidden from Agreement View Page. --></help>
+    <label><!-- Update Replaced Recipients --></label>
+    <name>echosign_dev1__Update_Replaced_Recipients__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Product_Quality_Complaint__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Relates the email to a PQC</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Relates the email to a PQC</inlineHelpText>
+    <label>Product Quality Complaint</label>
+    <referenceTo>PJN_Product_Quality_Complaint__c</referenceTo>
+    <relationshipLabel>Email Messages</relationshipLabel>
+    <relationshipName>PJN_Email_Messages</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

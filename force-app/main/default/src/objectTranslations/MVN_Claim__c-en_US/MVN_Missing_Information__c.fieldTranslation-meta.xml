@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Missing information required to process the reimbursement request. --></help>
+    <label><!-- Missing Information --></label>
+    <name>MVN_Missing_Information__c</name>
+    <picklistValues>
+        <masterLabel>CMS-1500 / CMS-1350 Claim Form</masterLabel>
+        <translation><!-- CMS-1500 / CMS-1350 Claim Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Mailing Address</masterLabel>
+        <translation><!-- Check Mailing Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Payable To</masterLabel>
+        <translation><!-- Check Payable To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date of Service</masterLabel>
+        <translation><!-- Date of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Explanation of Benefits</masterLabel>
+        <translation><!-- Explanation of Benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reimbursement Amount</masterLabel>
+        <translation><!-- Reimbursement Amount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

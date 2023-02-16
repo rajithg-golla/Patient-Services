@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Code_Discontinued__c</fullName>
+    <description>Patient status codes for Status = Discontinued</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Discontinued&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Requirement Not Met - Patient Residency&quot;,&quot;DC01&quot;,
+&quot;Unable to Reach Patient on Required Contact, Max Attempts&quot;,&quot;DC02&quot;,
+&quot;Unable to Reach Prescriber on Required Contact, Max Attempts&quot;,&quot;DC03&quot;,
+&quot;Patient Decision - Alternate Therapy&quot;,&quot;DC04&quot;,
+&quot;Patient Decision - Financial&quot;,&quot;DC05&quot;,
+&quot;Patient Decision - MyRare Only&quot;,&quot;DC06&quot;,
+&quot;Patient Decision - Other&quot;,&quot;DC07&quot;,
+&quot;Prescriber Decision - Alternate Therapy&quot;,&quot;DC08&quot;,
+&quot;Prescriber Decision - Financial&quot;,&quot;DC09&quot;,
+&quot;Prescriber Decision - Coverage Effort&quot;,&quot;DC11&quot;,
+&quot;Prescriber Decision - Other&quot;,&quot;DC13&quot;,
+&quot;Patient Medical Delay, Max Delay&quot;,&quot;DC15&quot;,
+&quot;No Route of Access&quot;,&quot;DC16&quot;,
+&quot;Patient Deceased&quot;,&quot;DC17&quot;,
+&quot;Patient Off Therapy&quot;,&quot;DC18&quot;,
+&quot;Other&quot;,&quot;DC19&quot;,
+&quot;Reported Reaction&quot;,&quot;DC20&quot;,
+&quot;Clinical Trial&quot;,&quot;DC21&quot;,
+&quot;Administration Barrier&quot;,&quot;DC22&quot;,
+&quot;No coverage: Appeals exhausted and PAP ineligible&quot;,&quot;DC23&quot;,
+null),
+null)</formula>
+    <label>Status Code - Discontinued</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

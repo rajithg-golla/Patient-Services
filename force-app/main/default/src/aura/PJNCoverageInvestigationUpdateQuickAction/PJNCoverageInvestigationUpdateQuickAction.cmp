@@ -1,0 +1,21 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+
+    <aura:html tag="style">
+        .slds-modal__container{
+            width: 90%;
+            max-width: 100rem;
+        }
+
+        .slds-modal__container .modal-body {
+            height: auto !important;
+            max-height: 100vh !important;
+        }
+    </aura:html>
+
+    <c:pjnCoverageInvestigationUpdater
+        investigationId="{!v.recordId}"
+        onclosemodal="{!c.closeModal}"
+        oncomplete="{!c.complete}"
+    />
+
+</aura:component>

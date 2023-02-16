@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked the current therapy status on the care plan will be set to the new therapy status on the event --></help>
+    <label><!-- Use Care Plan&apos;s current Therapy Status --></label>
+    <name>MVN_Use_Care_Plan_current_Therapy_Status__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Metric_Group__c</fullName>
+    <description>The group this type is categorized under</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The group this type is categorized under</inlineHelpText>
+    <label>Metric Group</label>
+    <referenceTo>PJN_Metric_Group__c</referenceTo>
+    <relationshipLabel>Metric Types</relationshipLabel>
+    <relationshipName>PJN_Metric_Types</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

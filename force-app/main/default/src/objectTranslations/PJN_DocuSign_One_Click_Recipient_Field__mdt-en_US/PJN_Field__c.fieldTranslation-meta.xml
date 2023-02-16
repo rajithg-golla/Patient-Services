@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The field to set in the generated URL. --></help>
+    <label><!-- Field --></label>
+    <name>PJN_Field__c</name>
+    <picklistValues>
+        <masterLabel>AccessCode</masterLabel>
+        <translation><!-- AccessCode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FirstName</masterLabel>
+        <translation><!-- FirstName --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LastName</masterLabel>
+        <translation><!-- LastName --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RecipientNote</masterLabel>
+        <translation><!-- RecipientNote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Role</masterLabel>
+        <translation><!-- Role --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RoutingOrder</masterLabel>
+        <translation><!-- RoutingOrder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMSAuthPhone</masterLabel>
+        <translation><!-- SMSAuthPhone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SignInPersonName</masterLabel>
+        <translation><!-- SignInPersonName --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SignNow</masterLabel>
+        <translation><!-- SignNow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

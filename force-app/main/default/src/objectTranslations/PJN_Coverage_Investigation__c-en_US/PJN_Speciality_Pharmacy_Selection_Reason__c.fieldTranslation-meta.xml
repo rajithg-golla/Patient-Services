@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Speciality Pharmacy Selection Reason --></label>
+    <name>PJN_Speciality_Pharmacy_Selection_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Patient Preferred</masterLabel>
+        <translation><!-- Patient Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payer Mandated</masterLabel>
+        <translation><!-- Payer Mandated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescriber Preferred</masterLabel>
+        <translation><!-- Prescriber Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Round-Robin</masterLabel>
+        <translation><!-- Round-Robin --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

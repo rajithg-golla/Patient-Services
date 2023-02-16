@@ -1,0 +1,179 @@
+<aura:component controller="PJN_PatientMergeCtrl">
+
+<!-- CONSTANTS -->
+<aura:attribute name="firstStep" type="Integer" default="1" access="PRIVATE"/>
+<aura:attribute name="lastStep" type="Integer" default="3" access="PRIVATE"/>
+<aura:attribute name="currentStep" type="Integer" default="1"/>
+
+<aura:attribute name="showModal" type="Boolean" default="false" />
+<aura:attribute name="isLoading" type="Boolean" default="false"/>
+
+<!-- DATA -->
+<aura:attribute name="selectedRecord" type="PJN_Data_Change_Request__c" />
+<!-- ACCOUNT -->
+<aura:attribute name="selectedAccountId" type="Id" />
+<aura:attribute name="accountList" type="Account[]" />
+<aura:attribute name="accountFieldList" type="String[]" />
+<!-- CARE PLAN -->
+<aura:attribute name="carePlanWrapList" type="PJN_PatientMergeCtrl.PJN_ChildObject" />
+<aura:attribute name="carePlanList" type="Case[]" />
+<aura:attribute name="carePlanIdsList" type="Id[]" />
+<aura:attribute name="carePlanFieldList" type="String[]" />
+<aura:attribute name="carePlanCardFieldList" type="String[]" />
+<aura:attribute name="selectedCarePlan" type="Case" />
+<aura:attribute name="selectedCarePlanIdList" type="Id[]" />
+<!-- CHILD RECORD -->
+<aura:attribute name="childRecordList" type="PJN_PatientMergeCtrl.PJN_ChildObject[]" />
+<aura:attribute name="selectedChildrenRecordMap" type="Map" default="{}"/>
+<aura:attribute name="hideProgressButtons" type="Boolean" default="false"/>
+<!-- ACCOUNT CHILD RECORD -->
+<aura:attribute name="selectedAccountChildrenRecordMap" type="Map" default="{}"/>
+
+<!-- CONTACT INFO -->
+<aura:attribute name="contactInfoList" type="PJN_PatientMergeCtrl.PJN_ChildObject" />
+<aura:attribute name="primaryContactInfoIdList" type="Id[]"/>
+
+<!-- FILES AND NOTES -->
+<aura:attribute name="mergedCarePlans" type="Map" default="{}"/>
+
+<!-- EVENTS -->
+<aura:registerEvent name="removeRowEvent" type="c:PJN_PatientMergeRemoveRowEvent" />
+
+<!-- HANDLERS -->
+<aura:handler name="init" action="{!c.handleInit}" value="{!this}" />
+<aura:handler name="change" value="{!v.selectedRecord}" action="{!c.handleInit}" />
+<aura:handler name="selectAccountEvent"
+                event="c:PJN_PatientMergeSelectAccountEvent"
+                action="{!c.handleSelectAccount}" />
+<aura:handler name="selectChildRecordEvent"
+                event="c:PJN_PatientMergeSelectChildRecordEvent"
+                action="{!c.handleSelectChildRecord}" />
+<aura:handler name="selectPrimaryContactInfoEvent"
+                event="c:PJN_PatientMergeSelectPrimaryContactInfoEvent"
+                action="{!c.handleSelectPrimary}" />
+<aura:handler name="hideButtonsEvent"
+                event="c:PJN_PatientMergeHideBackNextButtonsEvent"
+                action="{!c.hideProgressButtons}" />
+<aura:handler name="updateCarePlanListEvent"
+                event="c:PJN_PatientMergeUpdateCarePlanListEvent"
+                action="{!c.updateCarePlanList}" />
+<aura:handler event="c:PJN_PatientMergeSetMergedCarePlanIdsEvent"
+                action="{!c.setMergedCarePlanIds}" />
+
+<c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <div aura:id="patientMergeToolModal" class="{!v.showModal==true ? '' : 'slds-hide'}">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="header43" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container full-height">
+                <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon" title="Close" onclick="{!c.closeModal}">
+                                <lightning:icon class="slds-button__icon slds-button__icon_large" iconName="utility:close" size="small"/>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="header43" class="slds-text-heading_medium">
+                            {!$Label.c.PJN_Patient_Merge_Tool_Modal_Title}
+                        </h2>
+                </header>
+
+                <c:PJN_Loader isLoading="{!v.isLoading}" />
+
+                <!-- ******************************** -->
+                <!-- ***** SELECT MASTER PATIENT **** -->
+                <!-- ******************************** -->
+                <aura:if isTrue="{!v.currentStep == 1}">
+                    <div class="slds-modal__content slds-grow slds-p-around_medium full-height" id="modal-content-id-1">
+                        <h3 class="slds-section-title_divider">
+                            {!$Label.c.PJN_Patient_Merge_Tool_Choose_Master_Account_Screen}
+                        </h3>
+                        <c:PJN_PatientMergeToolSelectMasterAccount
+                            patient1="{!v.accountList[0]}"
+                            patient2="{!v.accountList[1]}"
+                            fieldset="{!v.accountFieldList}"
+                            selectedAccountId="{!v.selectedAccountId}"
+                        />
+                    </div>
+                </aura:if>
+
+                <!-- ********************************** -->
+                <!-- ***** SELECT MASTER CARE PLAN **** -->
+                <!-- ********************************** -->
+                <aura:if isTrue="{!v.currentStep == 2}">
+                    <div class="slds-modal__content slds-grow slds-p-around_medium full-height" id="modal-content-id-1">
+                        <h3 class="slds-section-title_divider">
+                            {!$Label.c.PJN_Patient_Merge_Tool_Choose_Care_Plan_Screen}
+                        </h3>
+                        <aura:if isTrue="{!!empty(v.carePlanList)}">
+                            <c:PJN_PatientMergeToolSelectCarePlan
+                                carePlanList="{!v.carePlanList}"
+                                fieldset="{!v.carePlanCardFieldList}"
+                                selectedCarePlan="{!v.selectedCarePlan}"
+                            />
+                        <aura:set attribute="else">
+                            <h2 class="slds-m-around_small">
+                                {!$Label.c.PJN_Patient_Merge_Tool_No_Care_Plan_Message}
+                            </h2>
+                        </aura:set>
+                        </aura:if>
+                    </div>
+                </aura:if>
+
+                <!-- ********************************************** -->
+                <!-- ***** REPARENT RECORDS TO MASTER ACCOUNT ***** -->
+                <!-- ********************************************** -->
+                <aura:if isTrue="{!v.currentStep == 3}">
+                    <div class="slds-modal__content slds-grow slds-p-around_medium full-height" id="modal-content-id-1">
+                        <h3 class="slds-section-title_divider">
+                            {!$Label.c.PJN_Patient_Merge_Tool_Choose_Contact_Information_Screen}
+                        </h3>
+                        <aura:if isTrue="{!or(!empty(v.carePlanWrapList.recordList),!empty(v.contactInfoList.recordList))}">
+                            <h2 class="slds-m-around_small">
+                                {!$Label.c.PJN_Patient_Merge_Tool_Reparent_Records_Explanation}
+                            </h2>
+                            <div class="contact-info-table">
+                                <aura:if isTrue="{!!empty(v.carePlanWrapList.recordList)}">
+                                <c:PJN_PatientMergeChildRecordTable
+                                    selectedAccountId="{!v.selectedAccountId}"
+                                    childRecord="{!v.carePlanWrapList}"
+                                    parentObjectName="Account"
+                                    selectedChildrenRecordMap="{!v.selectedAccountChildrenRecordMap}"
+                                />
+                                </aura:if>
+                                <aura:if isTrue="{!!empty(v.contactInfoList.recordList)}">
+                                <c:PJN_PatientMergeChildRecordTable
+                                    selectedAccountId="{!v.selectedAccountId}"
+                                    childRecord="{!v.contactInfoList}"
+                                    parentObjectName="Account"
+                                    selectedChildrenRecordMap="{!v.selectedAccountChildrenRecordMap}"
+                                />
+                                </aura:if>
+                            </div>
+                        <aura:set attribute="else">
+                            <h2 class="slds-m-around_small">
+                                {!$Label.c.PJN_Patient_Merge_Tool_No_Care_Plan_Or_Contact_Info_Message}
+                            </h2>
+                        </aura:set>
+                        </aura:if>
+                    </div>
+                </aura:if>
+
+
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.handlePrevious}" disabled="{!v.hideProgressButtons}">
+                        {!(v.currentStep==v.firstStep) ? $Label.c.PJN_Patient_Merge_Tool_Cancel_Button : $Label.c.PJN_Patient_Merge_Tool_Back_Button}
+
+                    </button>
+                    <lightning:progressIndicator currentStep="{!'' + v.currentStep}" type="base" variant="base">
+                        <lightning:progressStep label="{!$Label.c.PJN_Patient_Merge_Tool_Choose_Master_Account_Screen}" value="1"/>
+                        <lightning:progressStep label="{!$Label.c.PJN_Patient_Merge_Tool_Choose_Care_Plan_Screen}" value="2"/>
+                        <lightning:progressStep label="{!$Label.c.PJN_Patient_Merge_Tool_Choose_Contact_Information_Screen}" value="3"/>
+                    </lightning:progressIndicator>
+                    <button class="slds-button slds-button_brand" onclick="{!c.handleNext}" disabled="{!v.hideProgressButtons}">
+                        {!(v.currentStep==v.lastStep) ? $Label.c.PJN_Patient_Merge_Tool_Finish_Button : $Label.c.PJN_Patient_Merge_Tool_Next_Button}
+                    </button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+</aura:component>

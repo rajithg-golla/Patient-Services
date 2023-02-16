@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Lorsque cette case est cochée, Document Cloud envoie le document au numéro de fax du contact. Si ce numéro n’est pas renseigné, Document Cloud envoie le document à l’adresse électronique du contact.</help>
+    <label><!-- Send written signatures to fax number --></label>
+    <name>echosign_dev1__PreferFax__c</name>
+</CustomFieldTranslation>

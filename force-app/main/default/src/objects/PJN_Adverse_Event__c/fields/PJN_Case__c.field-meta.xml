@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The related interaction that found this AE.  A lookup so that security and archival can be controlled separately from the case as AEs are very sensitive.</description>
+    <externalId>false</externalId>
+    <label>Interaction</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Adverse Events</relationshipLabel>
+    <relationshipName>PJN_Adverse_Events</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Post Chatter updates for Adobe Sign agreements on the Agreement record. --></help>
+    <label><!-- Post on Agreement Record --></label>
+    <name>echosign_dev1__Agreement_Record_Post__c</name>
+</CustomFieldTranslation>

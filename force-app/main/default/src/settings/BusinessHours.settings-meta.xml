@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>DEDSI BusinessHours</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>21:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>21:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Evkeeza Business Hours</name>
+        <thursdayEndTime>21:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>21:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>21:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Libtayo Consumer Marketing Business Hours</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Libtayo Surround Business Hours</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2022-12-26</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <businessHours>Default</businessHours>
+        <businessHours>Evkeeza Business Hours</businessHours>
+        <businessHours>Libtayo Consumer Marketing Business Hours</businessHours>
+        <businessHours>Libtayo Surround Business Hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-02</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <businessHours>Default</businessHours>
+        <businessHours>Evkeeza Business Hours</businessHours>
+        <businessHours>Libtayo Consumer Marketing Business Hours</businessHours>
+        <businessHours>Libtayo Surround Business Hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>New Years Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-09-21</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Test 2 Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-09-15</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Test Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-11-24</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <businessHours>Default</businessHours>
+        <businessHours>Evkeeza Business Hours</businessHours>
+        <businessHours>Libtayo Consumer Marketing Business Hours</businessHours>
+        <businessHours>Libtayo Surround Business Hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Thanksgiving</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-11-25</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <businessHours>Default</businessHours>
+        <businessHours>Evkeeza Business Hours</businessHours>
+        <businessHours>Libtayo Consumer Marketing Business Hours</businessHours>
+        <businessHours>Libtayo Surround Business Hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Thanksgiving - Day After</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-11-11</activityDate>
+        <businessHours>DEDSI BusinessHours</businessHours>
+        <businessHours>Default</businessHours>
+        <businessHours>Libtayo Consumer Marketing Business Hours</businessHours>
+        <businessHours>Libtayo Surround Business Hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Veterans’ Day</name>
+    </holidays>
+</BusinessHoursSettings>

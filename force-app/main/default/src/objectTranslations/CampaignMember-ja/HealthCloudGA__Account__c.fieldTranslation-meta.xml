@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Lightning プラットフォーム内で患者を表す個人取引先</help>
+    <label><!-- Account --></label>
+    <name>HealthCloudGA__Account__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

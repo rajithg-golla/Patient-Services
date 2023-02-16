@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Mapping Engine
+Purpose: Define date field value and target field for a Date Formula Mapping type. This is step 4 in setting up the mapping engine for case-related mapping.
+Metadata Relationship(s): Mapping
+Created by Mavens: Yes</description>
+    <label>Mapping Date Formula</label>
+    <pluralLabel>Mapping Date Formulas</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

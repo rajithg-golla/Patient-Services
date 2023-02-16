@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Test_Name__c</fullName>
+    <description>E2B (R2): B.3.1c, testname (100AN)
+
+E2B (R3): F.r.2.1 Test Name (free text)
+User Guidance: This data element captures a free text description of the test when an
+appropriate MedDRA code is unavailable.
+Conformance: Optional, but required if F.r.1 is populated and F.r.2.2b is not populated.
+Data Type: 250AN
+OID: None
+Value: Allowed Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures a free text description of the test when an
+appropriate MedDRA code is unavailable.</inlineHelpText>
+    <label>Test Name</label>
+    <length>250</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

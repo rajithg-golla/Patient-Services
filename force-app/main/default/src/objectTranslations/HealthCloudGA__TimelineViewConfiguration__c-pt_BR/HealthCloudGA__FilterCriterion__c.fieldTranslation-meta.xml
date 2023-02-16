@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Filter Criterion --></label>
+    <lookupFilter>
+        <errorMessage><!-- Record Type does not match Timeline type --></errorMessage>
+    </lookupFilter>
+    <name>HealthCloudGA__FilterCriterion__c</name>
+    <relationshipLabel><!-- Timeline View Configurations --></relationshipLabel>
+</CustomFieldTranslation>

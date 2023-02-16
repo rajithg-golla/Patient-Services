@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Shows the next upcoming date when an approved Prior Authorisation will expire. --></help>
+    <label><!-- Next PA Expiration Date --></label>
+    <name>PJN_Next_PA_Expiration_Date__c</name>
+</CustomFieldTranslation>

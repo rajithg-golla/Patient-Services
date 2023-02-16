@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Amount patient paid after primary and copay program. This is required for approved claims only. Rejected claims may or may not have this available. --></help>
+    <label><!-- Patient OOP --></label>
+    <name>MVN_Patient_OOP__c</name>
+</CustomFieldTranslation>

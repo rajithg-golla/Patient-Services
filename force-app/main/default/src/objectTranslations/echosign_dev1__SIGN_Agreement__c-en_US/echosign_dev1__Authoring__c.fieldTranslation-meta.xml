@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Preview the document or drag and drop form fields or signature fields on to the document before it is sent for signature. --></help>
+    <label><!-- Preview or Position Signature Fields --></label>
+    <name>echosign_dev1__Authoring__c</name>
+</CustomFieldTranslation>

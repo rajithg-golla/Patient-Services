@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Attempt_cannot_be_in_the_future</fullName>
+    <active>true</active>
+    <description>Ensures that the contact attempt is not in the future</description>
+    <errorConditionFormula>PJN_Attempt_Date_Time__c &gt; NOW()</errorConditionFormula>
+    <errorDisplayField>PJN_Attempt_Date_Time__c</errorDisplayField>
+    <errorMessage>Please choose a date/time that is in the past</errorMessage>
+</ValidationRule>

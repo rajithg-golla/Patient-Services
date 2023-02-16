@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Denial Reason --></label>
+    <name>MVN_Denial_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Eligibility Appeal Denied</masterLabel>
+        <translation><!-- Eligibility Appeal Denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Permanent US Resident</masterLabel>
+        <translation><!-- Not Permanent US Resident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Income Exceeds Guidelines</masterLabel>
+        <translation><!-- Patient Income Exceeds Guidelines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescription Coverage Available</masterLabel>
+        <translation><!-- Prescription Coverage Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unsupported Diagnosis</masterLabel>
+        <translation><!-- Unsupported Diagnosis --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

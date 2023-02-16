@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Temps total passé avec le patient dans la période de mesure pour la qualification des activités.</help>
+    <label><!-- Time Spent --></label>
+    <name>HealthCloudGA__TimeSpent__c</name>
+</CustomFieldTranslation>

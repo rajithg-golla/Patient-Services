@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If several reactions/events are in the report, use the age at the time of the first reaction/event. For fetal reactions/events,use the Gestation period when reaction/event was observed in the fetus. --></help>
+    <label><!-- Patient Age --></label>
+    <name>PJN_Patient_Age__c</name>
+</CustomFieldTranslation>

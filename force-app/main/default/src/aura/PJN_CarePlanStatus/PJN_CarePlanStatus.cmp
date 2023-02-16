@@ -1,0 +1,48 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,c:PJN_LightningOutIntf" access="global" controller="PJN_CarePlanStatusCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="carePlanFields" type="PJN_Care_Plan_Field__mdt[]" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="fields" type="String[]" default="Id,PJN_Program_DeveloperName__c"/>
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="record2" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="carePlan" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="queriedCarePlan" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+    <aura:attribute name="recordError2" type="String" description="An error message bound to force:recordData"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="change" value="{!v.carePlan}" action="{!c.onInit}"/>
+    <c:PJN_CarePlanUiUpdater carePlanId="{!v.recordId}" carePlanUpdated="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+    <force:recordData
+        aura:id="record"
+        fields="Id,PJN_Program_DeveloperName__c"
+        recordId="{!v.recordId}"
+        targetError="{!v.recordError}"
+        targetRecord="{!v.record}"
+        targetFields ="{!v.carePlan}"
+        mode="VIEW"/>
+    <aura:if isTrue="{!v.fields.length > 2}">
+        <force:recordData
+            aura:id="record"
+            fields="{!v.fields}"
+            recordId="{!v.recordId}"
+            targetError="{!v.recordError2}"
+            targetRecord="{!v.record2}"
+            targetFields ="{!v.queriedCarePlan}"
+            mode="VIEW"/>
+    </aura:if>
+
+    <!-- BODY -->
+    <aura:if isTrue="{!v.queriedCarePlan}">
+        <article class="slds-card slds-is-relative" style="padding: 1%;">
+            <c:PJN_Loader isLoading="{!v.isLoading}" />
+            <aura:iteration items="{!v.carePlanFields}" var="carePlanField">
+                <c:PJN_CarePlanField carePlanField="{!carePlanField}" record="{!v.queriedCarePlan}" context="{!v.context}" />
+            </aura:iteration>
+        </article>
+    </aura:if>
+</aura:component>

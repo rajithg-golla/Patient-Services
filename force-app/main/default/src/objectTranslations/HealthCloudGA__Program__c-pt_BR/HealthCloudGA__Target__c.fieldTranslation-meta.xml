@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Tempo previsto a ser concluído por paciente para o período de medição.</help>
+    <label><!-- Target --></label>
+    <name>HealthCloudGA__Target__c</name>
+</CustomFieldTranslation>

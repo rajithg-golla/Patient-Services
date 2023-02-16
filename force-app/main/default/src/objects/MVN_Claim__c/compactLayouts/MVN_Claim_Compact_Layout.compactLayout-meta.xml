@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Claim_Compact_Layout</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>MVN_Care_Plan__c</fields>
+    <fields>Name</fields>
+    <fields>MVN_Date_of_Service_Fill__c</fields>
+    <fields>MVN_Outcome_Transaction_Type__c</fields>
+    <fields>MVN_Closed_Processed_Date__c</fields>
+    <label>Claim Compact Layout</label>
+</CompactLayout>

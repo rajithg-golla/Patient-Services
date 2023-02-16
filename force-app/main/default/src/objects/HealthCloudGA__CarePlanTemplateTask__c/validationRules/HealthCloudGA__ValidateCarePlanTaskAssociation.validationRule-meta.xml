@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__ValidateCarePlanTaskAssociation</fullName>
+    <active>true</active>
+    <description>Associate the task with either a care plan template, problem, or goal</description>
+    <errorConditionFormula>AND( ISBLANK( HealthCloudGA__CarePlanTemplate__c ),
+                                    ISBLANK( HealthCloudGA__CarePlanTemplateGoal__c),
+                                    ISBLANK( HealthCloudGA__CarePlanTemplateProblem__c )
+                                    )</errorConditionFormula>
+    <errorMessage>Associate the task with either a care plan template, problem, or goal.</errorMessage>
+</ValidationRule>

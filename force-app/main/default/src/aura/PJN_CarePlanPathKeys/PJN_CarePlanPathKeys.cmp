@@ -1,0 +1,32 @@
+<aura:component implements="c:PJN_CarePlanPathCoachingIntf,c:PJN_LightningOutIntf" controller="PJN_CarePlanPathKeysCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlanPathKeysSetting" type="PJN_CarePlan_Path_Keys_Setting__mdt"/>
+    <aura:attribute name="fields" type="String[]" />
+    <aura:attribute name="columns" type="Integer" default="2"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler"/>
+
+    <aura:html tag="style">
+        .key-fields .slds-col {
+            {!'max-width:' + (1/v.columns)*100 + '%'};
+        }
+    </aura:html>
+    <!-- BODY -->
+    <div class="slds-path__keys">
+        <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
+            <h2>{!$Label.c.PJN_Care_Plan_UI_Key_Fields}</h2>
+        </div>
+        <lightning:recordForm
+            mode="{!(v.hasActions ? 'view' : 'readOnly')}"
+            recordId="{!v.problemRecord.HealthCloudGA__CarePlan__c}"
+            objectApiName="Case"
+            columns="{!v.columns}"
+            fields="{!v.fields}"
+            class="key-fields"
+        />
+    </div>
+</aura:component>

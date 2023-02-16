@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date that a check was dated (i.e., check number returned from bank) or the date on which an EFT trace number was generated at the bank. This information will be delivered in a file that comes after the initial claim record is delivered as this date is not known at the time of approval of a claim. Rejected claims will not ever get a date assigned in this field as no check or EFT payment will be made for rejected claims. Only claims with claim outcome = A (Approved) will ever have this field populated. --></help>
+    <label><!-- Payment Date --></label>
+    <name>MVN_Payment_Date__c</name>
+</CustomFieldTranslation>

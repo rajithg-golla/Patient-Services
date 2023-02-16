@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Include_Open_Data_Network__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Tick this checkbox to include the Open Data records searching, synchronising or downloading any record.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Tick this checkbox to include the Open Data records searching, synchronising or downloading any record.</inlineHelpText>
+    <label>Include Open Data Network?</label>
+    <type>Checkbox</type>
+</CustomField>

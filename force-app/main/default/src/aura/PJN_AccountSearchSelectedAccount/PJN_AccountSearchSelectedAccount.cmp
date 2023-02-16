@@ -1,0 +1,50 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <aura:attribute name="case" type="Case" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="icon" type="String" />
+    <aura:attribute name="caseField" type="String" />
+    <aura:attribute name="isUpdateable" type="Boolean" />
+
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <div class="slds-col slds-col_padded slds-size_1-of-4 slds-m-bottom_small">
+        <div class="slds-card">
+            <section role="dialog" aria-labelledby="noti52" aria-describedby="dialog-body-id-2">
+                <div class="slds-notification__target slds-notification__body" id="dialog-body-id-2">
+                    <div class="slds-media" style="height:50px;">
+                        <span class="slds-icon_container slds-icon-standard-event slds-media__figure" title="event">
+                            <lightning:icon iconName="{!v.icon}" size="small"/>
+                        </span>
+                        <div class="slds-media__body">
+                            <h2 class="slds-text-heading_small slds-m-bottom_xx-small" id="noti52">
+                                {!v.title}
+                            </h2>
+                            <p class="slds-grid">
+                                <a class="slds-col" onclick="{!c.onNavigateToRecord}">
+                                    {!v.name}
+                                </a>
+                                <aura:if isTrue="{!v.isUpdateable}">
+                                    <lightning:buttonIcon
+                                        iconName="utility:delete"
+                                        size="medium"
+                                        variant="bare"
+                                        alternativeText="Remove"
+                                        onclick="{!c.onRemove}"
+                                        class="{!'slds-col ' + (v.name ? 'slds-show' : 'slds-hide')}"
+                                    />
+                                </aura:if>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</aura:component>

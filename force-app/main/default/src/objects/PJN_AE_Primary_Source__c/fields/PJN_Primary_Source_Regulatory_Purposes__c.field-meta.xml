@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Primary_Source_Regulatory_Purposes__c</fullName>
+    <description>E2B (R2): NA
+
+E2B (R3): C.2.r.5 Primary Source for Regulatory Purposes
+User Guidance: This data element identifies which primary source to use for regulatory
+purposes and in case of multiple sources, it identifies the source of the
+World Wide Case Unique Identification number; this source should
+identify where the case occurred.
+The data element determines where the case will be reported as a
+‘domestic’ case and where the case will be reported as a ‘foreign’ case.
+Conformance Required for one and only one instance of this element.
+Data Type: 1N
+OID: None
+Value Allowed: 1=primary</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element identifies which primary source to use for regulatory
+purposes and in case of multiple sources.  Conformance Required for one and only one instance of this element.</inlineHelpText>
+    <label>Primary Source for Regulatory Purposes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

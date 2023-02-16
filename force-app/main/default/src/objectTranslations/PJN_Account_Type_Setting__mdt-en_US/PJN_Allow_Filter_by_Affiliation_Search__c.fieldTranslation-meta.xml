@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If true, when searching for accounts, the user can filter to those affiliated with the selected account of this type --></help>
+    <label><!-- Allow Filter by Affiliation Search --></label>
+    <name>PJN_Allow_Filter_by_Affiliation_Search__c</name>
+</CustomFieldTranslation>

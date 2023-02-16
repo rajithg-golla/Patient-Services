@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Route_of_Administration__c</fullName>
+    <description>E2B (R2): B.4.k.9, drugparadministration (3N)
+
+E2B (R3): G.k.4.r.11.1 Route of Administration (free text)
+Conformance: Optional
+Data Type: 60 AN
+OID: None
+Value Allowed: Free text
+nullFlavor: ASKU, NASK, UNK</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This section should be used in a parent-child or fetus report and linked to parent
+reports to indicate the route of administration to the parent.</inlineHelpText>
+    <label>Parent Route of Administration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Routes_of_Administration</valueSetName>
+    </valueSet>
+</CustomField>

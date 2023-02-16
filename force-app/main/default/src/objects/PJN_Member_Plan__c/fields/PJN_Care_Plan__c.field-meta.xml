@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Care_Plan__c</fullName>
+    <description>Patient care plan for which the member plan was captured.</description>
+    <externalId>false</externalId>
+    <label>Care Plan</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Member Plans</relationshipLabel>
+    <relationshipName>PJN_Member_Plans</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

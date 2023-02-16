@@ -1,0 +1,20 @@
+.midDot:after {
+    content: ' • ';
+}
+
+.midDot:last-of-type:after {
+    content: '';
+}
+
+.fileThumbnail {
+    height: auto;
+    min-width: 30px;
+    max-width: 30px;
+    max-height: 35px;
+}
+
+.recordFileHeader {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: var(--lwc-borderWidthThin,1px) solid rgb(201,201,201);
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Caregiver_Primary_Phone_Number__c</fullName>
+    <description>- Phone Number from Care Plan&apos;s Caregiver Account&apos;s Primary Phone Contact Information --&gt; CAREGIVER_PHONE_NUMBER,</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Caregiver Primary Phone Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>

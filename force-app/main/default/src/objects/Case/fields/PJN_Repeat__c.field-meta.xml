@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Repeat__c</fullName>
+    <defaultValue>(&quot;Doesn&apos;t Repeat&quot;)</defaultValue>
+    <description>Indicates whether to new activities should automatically be created when the original is closed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When set to &quot;Repeats&quot;, a new Activity will be created when the current one is closed.</inlineHelpText>
+    <label>Repeat</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Doesn&apos;t Repeat</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t Repeat</label>
+            </value>
+            <value>
+                <fullName>Repeats</fullName>
+                <default>false</default>
+                <label>Repeats</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

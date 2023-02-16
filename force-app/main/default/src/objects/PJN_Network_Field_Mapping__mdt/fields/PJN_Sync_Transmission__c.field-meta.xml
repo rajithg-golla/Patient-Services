@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Sync_Transmission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is sync allowed to be transmitted?</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Is sync allowed to be transmitted?</inlineHelpText>
+    <label>Sync Transmission</label>
+    <type>Checkbox</type>
+</CustomField>

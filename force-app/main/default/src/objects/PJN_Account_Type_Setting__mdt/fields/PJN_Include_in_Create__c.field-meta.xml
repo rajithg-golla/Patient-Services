@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Include_in_Create__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should this record type be included in the create modal on the account search screen?</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Should this record type be included in the create modal on the account search screen?</inlineHelpText>
+    <label>Include in Create?</label>
+    <type>Checkbox</type>
+</CustomField>

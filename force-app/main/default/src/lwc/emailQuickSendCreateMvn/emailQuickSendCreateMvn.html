@@ -1,0 +1,51 @@
+<template>
+    <lightning-record-edit-form 
+        object-api-name="Email_Quick_Send_MVN__c"
+        onsubmit={handleSubmit}
+        onsuccess={handleSuccess}
+    >
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="6">
+                <lightning-input-field field-name="To_Address_MVN__c" value={email}></lightning-input-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6">
+                <lightning-input-field field-name="From_Address_MVN__c" value=""></lightning-input-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <lightning-input-field 
+                    field-name="Email_Template_MVN__c" 
+                    onchange={handleTemplateChange}
+                ></lightning-input-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" if:true={currentEmailTemplate}>
+                <c-email-template-preview-mvn 
+                    template-developer-name={currentEmailTemplate}
+                    ontemplatefound={handleTemplateFound}
+                    ontemplatenotfound={handleTemplateNotFound}
+                ></c-email-template-preview-mvn>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <lightning-input-field field-name="Attachments_MVN__c" value=""></lightning-input-field>
+            </lightning-layout-item>
+                
+            <lightning-layout-item size="12" class="slds-m-top_xx-large slds-text-align_center">
+                <lightning-button
+                    type="submit"
+                    label={labels.SEND_BUTTON}
+                    variant="brand"
+                    class="slds-m-horizontal_xx-small"
+                    disabled={disableSave}
+                ></lightning-button>
+                <lightning-button
+                    label={labels.CANCEL_BUTTON}
+                    onclick={closeQuickAction}
+                    class="slds-m-horizontal_xx-small"
+                ></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-record-edit-form>
+</template>

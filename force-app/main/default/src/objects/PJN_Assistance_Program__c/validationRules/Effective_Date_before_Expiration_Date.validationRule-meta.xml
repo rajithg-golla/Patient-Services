@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date_before_Expiration_Date</fullName>
+    <active>true</active>
+    <description>Ensure the Expiration Date is not before the Effective Date.</description>
+    <errorConditionFormula>PJN_Expiration_Date__c &lt; PJN_Effective_Date__c</errorConditionFormula>
+    <errorDisplayField>PJN_Expiration_Date__c</errorDisplayField>
+    <errorMessage>Expiration Date cannot be before the Effective Date.</errorMessage>
+</ValidationRule>

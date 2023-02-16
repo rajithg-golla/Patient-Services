@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Height__c</fullName>
+    <description>E2B (R2): B.1.10.5, parentheight (3N)
+
+E2B (R3): D.10.5 Height (cm) of Parent
+Conformance: Optional
+Data Type: 3N
+OID: None
+Value Allowed: Numeric</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Height of parent in cm</inlineHelpText>
+    <label>Parent Height (cm)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

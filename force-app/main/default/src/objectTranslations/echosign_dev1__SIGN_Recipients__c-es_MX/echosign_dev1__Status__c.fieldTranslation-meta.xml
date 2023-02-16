@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>echosign_dev1__Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation><!-- Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation>Aprobado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>Rechazado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delegated</masterLabel>
+        <translation><!-- Delegated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivered</masterLabel>
+        <translation><!-- Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form-Filled</masterLabel>
+        <translation><!-- Form-Filled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recalled</masterLabel>
+        <translation><!-- Recalled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replaced</masterLabel>
+        <translation>Sustituido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared</masterLabel>
+        <translation><!-- Shared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed</masterLabel>
+        <translation>Firmado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Acceptance</masterLabel>
+        <translation><!-- Waiting for Acceptance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Approval</masterLabel>
+        <translation>Esperando aprobación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Authoring</masterLabel>
+        <translation><!-- Waiting for Authoring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Delegation</masterLabel>
+        <translation><!-- Waiting for Delegation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Delivery</masterLabel>
+        <translation><!-- Waiting for Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Faxin</masterLabel>
+        <translation><!-- Waiting for Faxin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Form-Filling</masterLabel>
+        <translation><!-- Waiting for Form-Filling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Review</masterLabel>
+        <translation><!-- Waiting for Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Signature</masterLabel>
+        <translation>Esperando firma electrónica</translation>
+    </picklistValues>
+</CustomFieldTranslation>

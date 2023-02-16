@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Reopen_with_Perm_Only</fullName>
+    <active>true</active>
+    <description>Only someone with the permission can re-open a Closed AE.</description>
+    <errorConditionFormula>AND(
+(TEXT(PRIORVALUE( PJN_Status__c )) = &quot;Closed&quot; || TEXT(PRIORVALUE( PJN_Status__c )) = &quot;Cancelled&quot;),
+NOT(TEXT( PJN_Status__c ) = &quot;Closed&quot; || TEXT(PJN_Status__c) =&quot;Cancelled&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Status__c</errorDisplayField>
+    <errorMessage>Only users with special permission can re-open closed or canceled AEs</errorMessage>
+</ValidationRule>

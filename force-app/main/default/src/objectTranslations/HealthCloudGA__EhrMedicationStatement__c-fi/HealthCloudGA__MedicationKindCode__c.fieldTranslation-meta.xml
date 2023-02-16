@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>tuote | pakkauskoodi</help>
+    <label><!-- Medication Kind Code --></label>
+    <name>HealthCloudGA__MedicationKindCode__c</name>
+</CustomFieldTranslation>

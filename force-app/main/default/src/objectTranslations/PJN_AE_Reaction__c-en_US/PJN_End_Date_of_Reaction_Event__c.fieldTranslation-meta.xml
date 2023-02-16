@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element captures the date the reaction is reported as resolved/recovered or resolved/recoveredwithsequelae. When multiple terms are reported and the reporter does not provide a specific stop date for each, populated with the end date of the last --></help>
+    <label><!-- End Date of Reaction/Event --></label>
+    <name>PJN_End_Date_of_Reaction_Event__c</name>
+</CustomFieldTranslation>

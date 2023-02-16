@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_and_Lock_Interaction</fullName>
+    <active>true</active>
+    <description>The case id cannot be blank or changed on an AE.</description>
+    <errorConditionFormula>ISCHANGED( PJN_Case__c ) || ISBLANK(PJN_Case__c)</errorConditionFormula>
+    <errorDisplayField>PJN_Case__c</errorDisplayField>
+    <errorMessage>All AEs must be tied to an Interaction and the Interaction cannot be changed</errorMessage>
+</ValidationRule>

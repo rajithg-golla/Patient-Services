@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Plan_MVN__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The care plan to which this agreement is associated.</description>
+    <externalId>false</externalId>
+    <label>Care Plan</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Agreements</relationshipLabel>
+    <relationshipName>Agreements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

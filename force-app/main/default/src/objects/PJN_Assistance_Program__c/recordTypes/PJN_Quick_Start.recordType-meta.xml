@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Quick_Start</fullName>
+    <active>false</active>
+    <compactLayoutAssignment>PJN_Assistance_Program_Compact_Layout</compactLayoutAssignment>
+    <description>An enrollment into the Quick Start assistance program.</description>
+    <label>Quick Start</label>
+    <picklistValues>
+        <picklist>MVN_Commercial_Private_Insurance__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Denial_Reason__c</picklist>
+        <values>
+            <fullName>Eligibility Appeal Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Permanent US Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Income Exceeds Guidelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prescription Coverage Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsupported Diagnosis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Document_Type__c</picklist>
+        <values>
+            <fullName>Federal Tax Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Stubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Security Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W-2 Forms</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Eligibility_Type__c</picklist>
+        <values>
+            <fullName>Exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functionally Uninsured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicare Part B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending PA Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uninsured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Enrollment_Successful__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Government_Sponsored_Program__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Has_Prescription__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Insurance__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_US_Resident__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Outcome__c</picklist>
+        <values>
+            <fullName>Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

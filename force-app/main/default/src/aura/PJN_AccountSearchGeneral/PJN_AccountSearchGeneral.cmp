@@ -1,0 +1,279 @@
+<aura:component
+    implements = "flexipage:availableForAllPageTypes,lightning:isUrlAddressable"
+    controller = "PJN_AccountSearchLightningUtil"
+    access     = "global"
+>
+    <aura:attribute name        = "activityId"
+                    type        = "String"
+                    description = "Provided when the case is known, like on a record page"
+                    access      = "public"
+    />
+    <aura:attribute name        = "hasBusinessAccounts"
+                    type        = "Boolean"
+                    default     = "true"
+                    description = "True when business account record types are to be displayed"
+                    access      = "public"
+    />
+    <aura:attribute name        = "returnUrl"
+                    type        = "String"
+                    description = "Provided when this component is invoked from a workspaceAPI method"
+                    access      = "private"
+    />
+    <aura:attribute name        = "phone"
+                    type        = "String"
+                    description = "Provided when this component is invoked from the CTI widget"
+                    access      = "private"
+    />
+    <aura:attribute name        = "incomingCall"
+                    type        = "Boolean"
+                    description = "Provided when this component is invoked from the CTI widget"
+                    access      = "private"
+    />
+    <aura:attribute name        = "account"
+                    type        = "Account"
+                    default     = "{RecordTypeId: ''}"
+                    description = "The account on this case"
+                    access      = "private"
+    />
+    <aura:attribute name        = "contactInfo"
+                    type        = "PJN_Contact_Information__c"
+                    default     = "{}"
+                    description = "Related contact information"
+                    access      = "private"
+    />
+    <aura:attribute name        = "case"
+                    type        = "Case"
+                    default     = "{Id: ''}"
+                    description = "The details of the selected case, when present"
+                    access      = "private"
+    />
+    <aura:attribute name        = "showNewAccountForm"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "True when the user has chosen to create a new account"
+                    access      = "private"
+    />
+    <aura:attribute name        = "isPersonSearch"
+                    type        = "Boolean"
+                    default     = "true"
+                    description = "True when the current search is for a person account"
+                    access      = "private"
+    />
+    <aura:attribute name        = "results"
+                    type        = "Object"
+                    description = "Search results"
+                    access      = "private"
+    />
+    <aura:attribute name        = "searching"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "Shows the spinner when set to True"
+                    access      = "private"
+    />
+    <aura:attribute name        = "loading"
+                    type        = "Boolean"
+                    default     = "true"
+                    description = "Shows the spinner when the component is initializing"
+                    access      = "private"
+    />
+    <aura:attribute name        = "searchPerformed"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "True when a search has been performed"
+                    access      = "private"
+    />
+    <aura:attribute name        = "selectedFileId"
+                    type        = "String"
+                    default     = ""
+                    description = "The Id of the file to be displayed with the form"
+                    access      = "private"
+    />
+    <aura:attribute name        = "caseFileOptions"
+                    type        = "List"
+                    default     = ""
+                    description = "Options controlling file display"
+                    access      = "private"
+    />
+    <aura:attribute name        = "resultToPreview"
+                    type        = "PJN_AccountSearchRslt"
+                    description = "Search results wrapper"
+                    access      = "private"
+    />
+    <aura:attribute name="carePlansAccount"
+        type="Account"
+        description="The account to get care plans for"
+    />
+
+    <aura:attribute name="addressesAccount"
+        type="Account"
+        description="The physician account to get care plans for"
+    />
+
+    <aura:registerEvent name="enrollmentRequestEvent" type="c:PJN_EnrollmentRequestEvent"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event = "c:PJN_AccountSearchRefreshCase" action = "{!c.retrieveCase}"/>
+
+    <lightning:workspaceAPI aura:id="workspace" />
+
+    <div class="account-search slds-p-around_none">
+        <lightning:layout horizontalAlign="center" verticalAlign="stretch" class="full-height container">
+            <lightning:layoutItem padding="horizontal-small" class="max-width">
+                <aura:if isTrue="{!v.carePlansAccount || v.addressesAccount}">
+                    <aura:if isTrue="{!v.carePlansAccount}">
+                        <c:PJN_AccountSearchCarePlanSelector
+                            account="{!v.carePlansAccount}"
+                            case="{!v.case}"
+                        />
+                    </aura:if>
+                    <aura:if isTrue="{!v.addressesAccount}">
+                        <c:PJN_AccountSearchContactInfo
+                            account="{!v.addressesAccount}"
+                            case="{!v.case}"
+                        />
+                    </aura:if>
+
+                    <aura:set attribute="else">
+                        <div class="{! 'slds-align_absolute-center ' + (v.loading ? 'slds-show' : 'slds-hide')}">
+                            <lightning:spinner alternativeText="Loading" size="large" />
+                        </div>
+                        <div style="padding-top: .75rem;">
+                            <aura:if isTrue="{!!v.showNewAccountForm}">
+                                <!-- Hide the following when creating a new account -->
+                                <aura:if isTrue="{!(v.case.Id)}">
+                                    <!-- Present the account selection options when we're on a case -->
+                                    <div class="slds-grid slds-grid_pull-padded">
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Patient"
+                                            name      = "{!v.case.Account.Name}"
+                                            icon      = "standard:user"
+                                            caseField = "AccountId"
+                                        />
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Caregiver"
+                                            name      = "{!v.case.PJN_Caregiver__r.Name}"
+                                            icon      = "custom:custom1"
+                                            caseField = "PJN_Caregiver__c"
+                                        />
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Treatment Site"
+                                            name      = "{!v.case.MVN_Treatment_Site__r.Name}"
+                                            icon      = "standard:account"
+                                            caseField = "MVN_Treatment_Site__c"
+                                        />
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Consumer"
+                                            name      = "{!v.case.MVN_Consumer__r.Name}"
+                                            icon      = "custom:custom15"
+                                            caseField = "MVN_Consumer__c"
+                                        />
+                                    </div>
+                                    <div class="slds-grid slds-grid_pull-padded">
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Physician"
+                                            name      = "{!v.case.PJN_Physician__r.Name}"
+                                            icon      = "custom:custom94"
+                                            caseField = "PJN_Physician__c"
+                                        />
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Staff"
+                                            name      = "{!v.case.PJN_Staff__r.Name}"
+                                            icon      = "custom:custom84"
+                                            caseField = "PJN_Staff__c"
+                                        />
+                                        <c:PJN_AccountSearchSelectedAccount
+                                            case      = "{!v.case}"
+                                            title     = "Organization"
+                                            name      = "{!v.case.MVN_Organization__r.Name}"
+                                            icon      = "standard:employee_organization"
+                                            caseField = "MVN_Organization__c"
+                                        />
+                                    </div>
+                                </aura:if>
+
+                                <div class="slds-text-align_center slds-m-bottom_xx-small">
+                                    <aura:if isTrue="{!v.case.Id}">
+                                        <!-- When opened as a tab, provide the ability to return to the original tab -->
+                                        <lightning:button
+                                            variant  = "neutral"
+                                            onclick  = "{!c.returnToCase}"
+                                            class    = "slds-m-top_medium"
+                                        >
+                                            Return To Case
+                                        </lightning:button>
+                                    </aura:if>
+
+                                    <aura:if isTrue="{! and(v.case.Id.length &gt; 0, !v.case.ParentId)}">
+                                        <!-- Provide option to enroll patient when no care plan has been selected yet -->
+                                        <lightning:button
+                                            variant  = "brand"
+                                            disabled = "{!!v.case.AccountId}"
+                                            onclick  = "{!c.enrollPatient}"
+                                            class    = "slds-m-top_medium"
+                                        >
+                                            Enroll Patient
+                                        </lightning:button>
+                                    </aura:if>
+                                </div>
+
+                                <c:PJN_AccountSearchForm
+                                    account             = "{!v.account}"
+                                    contactInfo         = "{!v.contactInfo}"
+                                    isPersonSearch      = "{!v.isPersonSearch}"
+                                    results             = "{!v.results}"
+                                    searching           = "{!v.searching}"
+                                    searchPerformed     = "{!v.searchPerformed}"
+                                    hasBusinessAccounts = "{!v.hasBusinessAccounts}"
+                                    phone = "{!v.phone}"
+                                    incomingCall = "{!v.incomingCall}"
+                                />
+                                <c:PJN_AccountSearchDisplayResults
+                                    case               = "{!v.case}"
+                                    isPersonSearch     = "{!v.isPersonSearch}"
+                                    results            = "{!v.results}"
+                                    showNewAccountForm = "{!v.showNewAccountForm}"
+                                    searching          = "{!v.searching}"
+                                    searchPerformed    = "{!v.searchPerformed}"
+                                    selectedResult     = "{!v.resultToPreview}"
+                                    account            = "{!v.account}"
+                                    carePlansAccount   = "{!v.carePlansAccount}"
+                                    addressesAccount   = "{!v.addressesAccount}"
+                                />
+                                <aura:set attribute="else">
+                                    <c:PJN_AccountSearchNewAccountWizard
+                                        showNewAccountForm = "{!v.showNewAccountForm}"
+                                        account            = "{!v.account}"
+                                        contactInfo        = "{!v.contactInfo}"
+                                        isPersonSearch     = "{!v.isPersonSearch}"
+                                        case               = "{!v.case}"
+                                        addressesAccount   = "{!v.addressesAccount}"
+                                    />
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                    </aura:set>
+                </aura:if>
+            </lightning:layoutItem>
+
+            <!-- Display the file preview when a file is present on the case -->
+            <aura:if isTrue="{!v.activityId}">
+                <lightning:layoutItem
+                    padding = "horizontal-small"
+                    class   = "{!'max-width full-height ' + (v.caseFileOptions.length ? 'slds-show' : 'slds-hide')}"
+                >
+                    <c:PJN_CaseFilesPreview
+                        caseId         = "{!v.activityId}"
+                        selectedFileId = "{!v.selectedFileId}"
+                        fileOptions    = "{!v.caseFileOptions}"
+                    />
+                </lightning:layoutItem>
+            </aura:if>
+        </lightning:layout>
+    </div>
+</aura:component>

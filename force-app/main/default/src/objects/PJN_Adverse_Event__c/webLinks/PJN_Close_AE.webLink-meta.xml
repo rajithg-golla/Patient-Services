@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Close_AE</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Close AE</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/36.0/connection.js&quot;)}
+
+var myAE = new sforce.SObject(&quot;PJN_Adverse_Event__c&quot;);
+myAE.Id = &quot;{!PJN_Adverse_Event__c.Id}&quot;;
+myAE.PJN_Status__c = &quot;Closed&quot;;
+
+try{
+var result = sforce.connection.update([myAE]);
+
+if(result[0].success == &apos;false&apos;){
+if(result[0].errors.message != undefined){
+alert(result[0].errors.message);
+}else{
+if(result[0].errors[0].message != undefined){
+alert(result[0].errors[0].message);
+}
+}
+}else{
+window.location = &apos;/{!PJN_Adverse_Event__c.Id}?isdtp=vw&apos;;
+}
+}catch(error){
+alert(error.faultString);
+}</url>
+</WebLink>

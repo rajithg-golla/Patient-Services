@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The order this field shows up on selected requester search fields. --></help>
+    <label><!-- Quick Search Field Order --></label>
+    <name>PJN_Quick_Search_Field_Order__c</name>
+</CustomFieldTranslation>

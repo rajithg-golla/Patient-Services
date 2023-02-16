@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Denial Reason --></label>
+    <name>PJN_Denial_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Lab Results</masterLabel>
+        <translation><!-- Lab Results --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter of Medical Necessity</masterLabel>
+        <translation><!-- Letter of Medical Necessity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Information</masterLabel>
+        <translation><!-- Missing Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New to Market</masterLabel>
+        <translation><!-- New to Market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiographic Evidence</masterLabel>
+        <translation><!-- Radiographic Evidence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist Rx</masterLabel>
+        <translation><!-- Specialist Rx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Step Edit</masterLabel>
+        <translation><!-- Step Edit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Country__c</fullName>
+    <description>Country for the AE. Used for sharing.
+
+E2B Mapping: A.1.1, primarysourcecountry, 2A</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Country for the AE.</inlineHelpText>
+    <label>Primary Country</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>HealthCloudGA__Countries</valueSetName>
+    </valueSet>
+</CustomField>

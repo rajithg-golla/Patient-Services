@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Description_Discontinued__c</fullName>
+    <description>Status Description for Status = Discontinued</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Discontinued&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Requirement Not Met - Patient Residency&quot;,&quot;Patient does not reside in the United States or territories&quot;,
+&quot;Unable to reach Patient on required contact, Max Attempts&quot;,&quot;Maximum attempts exhausted for contacting patient&quot;,
+&quot;Unable to reach Prescriber on required contact, Max Attempts&quot;,&quot;Maximum attempts exhausted for contacting prescriber&quot;,
+&quot;Patient Decision - Alternate Therapy&quot;,&quot;Patient on alternate treatment therapy&quot;,
+&quot;Patient Decision - Financial&quot;,&quot;Patient unable to afford out of pocket expense&quot;,
+&quot;Patient Decision - MyRare Only&quot;,&quot;Patient has opted out of patient support services, but still on treatment&quot;,
+&quot;Patient Decision - Other&quot;,&quot;Patient unwilling to started treatment, other&quot;,
+&quot;Prescriber Decision - Alternate Therapy&quot;,&quot;Patient on alternate treatment therapy&quot;,
+&quot;Prescriber Decision - Financial&quot;,&quot;Patient unable to afford out of pocket expense&quot;,
+&quot;Prescriber Decision - Coverage Effort&quot;,&quot;&quot;,
+&quot;Prescriber Decision - Other&quot;,&quot;Patient unwilling to started treatment, other&quot;,
+&quot;Patient Medical Delay, Max Delay&quot;,&quot;Hospitalization, LTC, and other medical reason a patient could not start treatment&quot;,
+&quot;No Route of Access&quot;,&quot;Appeal options exhausted and over criteria for PAP&quot;,
+&quot;Patient Deceased&quot;,&quot;Patient deceased&quot;,
+&quot;Patient Off Therapy&quot;,&quot;Patient no longer in therapy&quot;,
+&quot;Other&quot;,&quot;Other&quot;,
+&quot;Reported Reaction&quot;,&quot;Patient Stopped therapy due to reported  Reaction&quot;,
+&quot;Clinical Trial&quot;,&quot;Patient is entering a clinical trial for a different medication&quot;,
+&quot;Administration Barrier&quot;,&quot;Patient refused treatment, could not locate vein access to infuse patient&quot;,
+&quot;No coverage: Appeals exhausted and PAP ineligible&quot;,&quot;Replaces No Route of Access sub status - Appeal options exhausted and over income criteria for PAP&quot;,
+null),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Description - Discontinued</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

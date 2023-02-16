@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelayConsent__c</fullName>
+    <description>This field receives any consent write backs from Relay Network (e.g. Stop notifications) for the customer (CCID).</description>
+    <externalId>false</externalId>
+    <label>Relay Consent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stop</fullName>
+                <default>false</default>
+                <label>Stop</label>
+            </value>
+            <value>
+                <fullName>Express</fullName>
+                <default>false</default>
+                <label>Express</label>
+            </value>
+            <value>
+                <fullName>Written</fullName>
+                <default>false</default>
+                <label>Written</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

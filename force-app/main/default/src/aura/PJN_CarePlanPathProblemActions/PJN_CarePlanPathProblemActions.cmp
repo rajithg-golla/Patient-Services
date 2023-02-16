@@ -1,0 +1,37 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanPathProblemActionsCtrl">
+    <!-- ATTRIBUTES-->
+    <aura:attribute name="problemRecord" type="HealthCloudGA__CarePlanProblem__c" access="public" />
+    <aura:attribute name="awaitingCompletion" type="Boolean" access="public" />
+    <aura:attribute name="programProblem" type="PJN_Program_Problem__mdt" access="private" />
+    <aura:attribute name="isSelected" type="Boolean" default="false" access="private"/>
+    <aura:attribute name="variantPlay" type="String" default="base" access="private"/>
+    <aura:attribute name="variantSkip" type="String" default="base" access="private"/>
+    <aura:attribute name="variantDelete" type="String" default="base" access="private"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="change" value="{!v.isSelected}" action="{!c.onSelectChange}"/>
+    <aura:handler event="c:PJN_CarePlanPathProblemSelection" action="{!c.onHandleProblemSelection}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <span class="slds-path__title slds-hide" style="overflow:visible">
+        <aura:if isTrue="{!and(v.problemRecord.PJN_CarePlan_Path_Status__c == 'incomplete', v.programProblem.PJN_Is_Startable__c)}">
+            <a onclick="{!c.onPlayProblem}" onmouseover="{!c.onHoverPlay}" onmouseout="{!c.onHoverOut}">
+                <lightning:icon class="slds-button__icon slds-button__icon_left" iconName="utility:play" size="xx-small" iconClass="dark" variant="{!v.variantPlay}"/>
+            </a>
+        </aura:if>
+        <aura:if isTrue="{!and(v.problemRecord.PJN_CarePlan_Path_Status__c != 'complete', v.programProblem.PJN_Is_Skippable__c)}">
+            <a onclick="{!c.onSkipProblem}" onmouseover="{!c.onHoverSkip}" onmouseout="{!c.onHoverOut}">
+                <lightning:icon class="slds-button__icon slds-button__icon_left" iconName="utility:internal_share" size="xx-small" variant="{!v.variantSkip}"/>
+            </a>
+        </aura:if>
+        <aura:if isTrue="{!and(v.problemRecord.PJN_CarePlan_Path_Status__c == 'incomplete', v.programProblem.PJN_Is_Removable__c)}">
+            <a onclick="{!c.onDeleteProblem}" onmouseover="{!c.onHoverDelete}" onmouseout="{!c.onHoverOut}">
+                <lightning:icon class="slds-button__icon slds-button__icon_left" iconName="utility:delete" size="xx-small" variant="{!v.variantDelete}"/>
+            </a>
+        </aura:if>
+    </span>
+</aura:component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__Configuration_Target__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the timelines where you want users to see these fields.</inlineHelpText>
+    <label>Configuration Target</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Health Cloud Console App</fullName>
+                <default>false</default>
+                <label>Health Cloud Console App</label>
+            </value>
+            <value>
+                <fullName>Timeline For Health Cloud Empower</fullName>
+                <default>false</default>
+                <label>Timeline For Health Cloud Empower</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

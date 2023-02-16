@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Account</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>PJN_SObject_Record_Type__c</columns>
+    <columns>PJN_Field_API_Name__c</columns>
+    <columns>PJN_External_Field_Name__c</columns>
+    <columns>PJN_Required_for_DCR_Transmission__c</columns>
+    <columns>PJN_DCR_Transmission__c</columns>
+    <columns>PJN_Sync_Transmission__c</columns>
+    <columns>PJN_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PJN_Network_Object__c</field>
+        <operation>equals</operation>
+        <value>PJN_Account</value>
+    </filters>
+    <label>Account</label>
+    <language>en_US</language>
+</ListView>

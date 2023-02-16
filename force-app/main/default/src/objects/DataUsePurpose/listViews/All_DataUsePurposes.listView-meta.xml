@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_DataUsePurposes</fullName>
+    <columns>Name</columns>
+    <columns>PJN_External_Id__c</columns>
+    <columns>PJN_Effective_Months__c</columns>
+    <columns>MVN_Effective_Months_MD__c</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Data Use Purposes</label>
+</ListView>

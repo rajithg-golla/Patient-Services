@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: File Rollup to Care Plan
+Purpose: Identifies which Care Plan-related sObjects store Files that should be rolled up to the Care Plan. Files loaded to an object record defined here are automatically associated to the Care Plan record, thereby making the file visible on the Care Plan as well as on the original (related) record.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>File Rollup Setting</label>
+    <pluralLabel>File Rollup Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staging Claim</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staging Claims</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Used for tracking Medical Copay claims. --></description>
+        <label><!-- Copay Medical --></label>
+        <name>MVN_Copay_Medical</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for tracking Pharmacy Copay claims. --></description>
+        <label><!-- Copay Pharmacy --></label>
+        <name>MVN_Copay_Pharmacy</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

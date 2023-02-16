@@ -1,0 +1,23 @@
+<aura:component>
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="records" type="List" />
+    <aura:attribute name="fields" type="List" />
+    <aura:attribute name="rows" type="List[]"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <lightning:tile label="{!v.title}">
+        <div class="slds-tile__detail">
+            <table>
+                <aura:iteration items="{!v.rows}" var="row">
+                    <tr>
+                        <aura:iteration items="{!row}" var="value">
+                            <td>{!value}</td>
+                        </aura:iteration>
+                    </tr>
+                </aura:iteration>
+            </table>
+        </div>
+    </lightning:tile>
+
+</aura:component>

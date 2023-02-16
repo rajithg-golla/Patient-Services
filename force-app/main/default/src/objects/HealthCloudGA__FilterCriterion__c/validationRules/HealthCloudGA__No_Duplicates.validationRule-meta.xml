@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__No_Duplicates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR( ISNEW(), ISCHANGED( Name )), NOT( ISBLANK (VLOOKUP( $ObjectType.HealthCloudGA__FilterCriterion__c.Fields.Name ,  $ObjectType.HealthCloudGA__FilterCriterion__c.Fields.Name ,  Name ))))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Another filter list already uses this name. Select a unique name.</errorMessage>
+</ValidationRule>

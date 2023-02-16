@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The subject of the email to send. e.g. Re: Opportunity Name: {!Opportunity.Name}. Maps to &quot;CES&quot; --></help>
+    <label><!-- Custom Email Subject --></label>
+    <name>PJN_Custom_Email_Subject__c</name>
+</CustomFieldTranslation>

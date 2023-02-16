@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Enrollment Wizard
+Purpose: Define enrollment wizard settings by program developer name. This is the first step in setting up the Enrollment Wizard.
+Metadata Relationship(s): Enrollment Wizard Step
+Created by Mavens: Yes</description>
+    <label>Enrollment Wizard Setting</label>
+    <pluralLabel>Enrollment Wizard Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

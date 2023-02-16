@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Consent_Data_Use_Purpose_MVN__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Data Use Purpose record used to generate a marketing consent record on application of the care plan.</description>
+    <externalId>false</externalId>
+    <label>Marketing Consent Data Use Purpose</label>
+    <referenceTo>DataUsePurpose</referenceTo>
+    <relationshipLabel>Care Plan Templates (Marketing)</relationshipLabel>
+    <relationshipName>Care_Plan_Templates_Marketing</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

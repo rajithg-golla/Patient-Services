@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Disqualification --></label>
+    <name>HealthCloudGA__ReasonForDisqualification__c</name>
+    <picklistValues>
+        <masterLabel>Another agency is involved</masterLabel>
+        <translation>סוכנות אחרת מעורבת</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD declines to sign orders</masterLabel>
+        <translation>הרופא מסרב לחתום על צווים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient is outside coverage area</masterLabel>
+        <translation>המטופל מחוץ לאזור הכיסוי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient isn’t eligible for insurance</masterLabel>
+        <translation>המטופל לא זכאי לביטוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient refuses services</masterLabel>
+        <translation>המטופל מסרב לשירותים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral was canceled</masterLabel>
+        <translation>ההפניה בוטלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services aren’t needed</masterLabel>
+        <translation>השירותים המבוקשים לא נחוצים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services can’t be provided</masterLabel>
+        <translation>לא ניתן לספק את השירותים המבוקשים</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Libtayo_Marketing_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Libtayo Marketing</label>
+        <sharedTo>
+            <roleAndSubordinates>Libtayo_Marketing_MVN</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Libtayo Marketing Care Plan</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Libtayo_ReadOnly_MVN</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Libtayo Read Only</label>
+        <sharedTo>
+            <group>MVN_Libtayo_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Libtayo Marketing Care Plan</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing rule to share cases related to the Evkeeza program with the Evkeeza Public Group</description>
+        <label>Evkeeza</label>
+        <sharedTo>
+            <group>MVN_EVK</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK_Call_QA_Case</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing rule to share cases related to the Evkeeza program with the Evkeeza Call QA Public Group</description>
+        <label>Evkeeza</label>
+        <sharedTo>
+            <group>MVN_EVK_Call_QA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK_Call_QA_Request</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing rule to share cases Request records with the Evkeeza Public Group</description>
+        <label>Evkeeza</label>
+        <sharedTo>
+            <group>MVN_EVK_Call_QA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK_RBM</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing for the RBM group to read Care Plan record type cases</description>
+        <label>EVK RBM</label>
+        <sharedTo>
+            <group>MVN_EVK_RBM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CarePlan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>MVN_RBM_Criteria_Check__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_EVK_Request</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing rule to share cases Request records with the Evkeeza Public Group</description>
+        <label>Evkeeza Request</label>
+        <sharedTo>
+            <group>MVN_EVK</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_Evkeeza_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Evkeeza Read Only</label>
+        <sharedTo>
+            <group>MVN_EVK_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>PJN_Program_DeveloperName__c</field>
+            <operation>equals</operation>
+            <value>MVN_EVK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MVN_Evkeeza_Read_Only2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Evkeeza Read Only</label>
+        <sharedTo>
+            <group>MVN_EVK_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_Case_Sharing_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares all cases owned by users in the DEDSI role hierarchy to all other DEDSI users.</description>
+        <label>DEDSI Case Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>DEDSI_MVN</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DEDSI_Nurse_Educators_Group_MVN</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DEDSI Nurse Educators</label>
+        <sharedTo>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>MVN_DEDSI_Nurse_Educators</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

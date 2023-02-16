@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Identifierar systemet som skapade posten och har rätt att uppdatera den. Blir som standard Health1 för manuellt skapade poster.</help>
+    <label><!-- Source System --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

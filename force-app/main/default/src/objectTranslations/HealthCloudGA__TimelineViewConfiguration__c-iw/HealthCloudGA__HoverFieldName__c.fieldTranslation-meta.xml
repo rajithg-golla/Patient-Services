@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>הזן עד 7 שמות של שדות הקשורים לאובייקט זה, מופרדים בפסיקים. פרטי השדות מוצגים כשהמשתמש מציב את סמן הכבר מעל אובייקט בציר הזמן.</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

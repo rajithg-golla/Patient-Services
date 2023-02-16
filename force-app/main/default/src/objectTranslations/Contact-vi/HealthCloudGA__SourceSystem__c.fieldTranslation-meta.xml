@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Xác định hệ thống đã tạo hồ sơ và sở hữu quyền cập nhật đối với hồ sơ đó. Mặc định là Sức Khỏe 1 cho các hồ sơ tạo thủ công.</help>
+    <label><!-- Source System --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

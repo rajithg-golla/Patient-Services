@@ -1,0 +1,39 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="PJN_DocuSignOneClickCtrl">
+    <aura:attribute name="errorMessage" type="String" default="" />
+    <aura:attribute name="docuSignParams" type="String" />
+    <aura:attribute name="host" type="String" default="" />
+
+    <lightning:workspaceAPI aura:id="workspaceAPI"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <div class="slds-text-heading_medium slds-align_absolute-center">
+        <aura:if isTrue="{!v.errorMessage}">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_warning" role="status">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Warning Icon">
+                        <lightning:icon iconName="utility:warning" alternativeText="error"/>
+                    </span>
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small ">{!v.errorMessage}</h2>
+                    </div>
+                </div>
+            </div>
+
+            <aura:set attribute="else">
+                {!$Label.c.PJN_D1C_Generating_DocuSign_URL}
+                <div class="demo-only demo--inverse" style="height:6rem">
+                    <div role="status" class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+            </aura:set>
+        </aura:if>
+    </div>
+
+    <aura:if isTrue="{! v.docuSignParams }">
+        <iframe src="{! '/apex/PJN_DocuSignOneClick?host=https://' + v.host }" style="display:none;"/>
+    </aura:if>
+</aura:component>

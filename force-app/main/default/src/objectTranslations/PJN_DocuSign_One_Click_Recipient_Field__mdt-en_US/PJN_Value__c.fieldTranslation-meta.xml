@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A hard coded value to set in the URL for the configured field. If Source Field is set this field is ignored. --></help>
+    <label><!-- Value --></label>
+    <name>PJN_Value__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Confirmed Acquisition Channel --></label>
+    <name>MVN_Confirmed_Acquisition_Channel__c</name>
+    <picklistValues>
+        <masterLabel>Buy and Bill</masterLabel>
+        <translation><!-- Buy and Bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialty Pharmacy</masterLabel>
+        <translation><!-- Specialty Pharmacy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

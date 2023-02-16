@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PJN Muting Group</label>
+    <mutingPermissionSets>PJN_Muting_Group_Muted</mutingPermissionSets>
+    <permissionSets>HealthCloudGA__HealthCloudPermissionSetLicense</permissionSets>
+    <permissionSets>HealthCloudGA__HealthCloudStandard</permissionSets>
+    <permissionSets>MVN_Regeneron_Manager_Permissions</permissionSets>
+    <permissionSets>MVN_Restatements</permissionSets>
+    <permissionSets>PJN_Assistance_Programs</permissionSets>
+    <permissionSets>PJN_Base_Permissions</permissionSets>
+    <permissionSets>PJN_Coverage_Investigation</permissionSets>
+    <permissionSets>PJN_Customer_Permissions</permissionSets>
+    <permissionSets>PJN_Editable_Permissions</permissionSets>
+    <permissionSets>PJN_Medical_History</permissionSets>
+    <permissionSets>PJN_PAP_eIncome_Verification</permissionSets>
+    <permissionSets>force__DocumentChecklist</permissionSets>
+    <permissionSets>force__HealthCloudMemberServices</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

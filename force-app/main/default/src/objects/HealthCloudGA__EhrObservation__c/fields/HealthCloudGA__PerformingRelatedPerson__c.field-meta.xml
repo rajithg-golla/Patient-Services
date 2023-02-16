@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__PerformingRelatedPerson__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Related person who performed the observation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Related person who performed the observation</inlineHelpText>
+    <label>Performing Related Person</label>
+    <referenceTo>HealthCloudGA__EhrRelatedPerson__c</referenceTo>
+    <relationshipLabel>EHR Observations (Performing RelatedPersion)</relationshipLabel>
+    <relationshipName>EhrObservations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

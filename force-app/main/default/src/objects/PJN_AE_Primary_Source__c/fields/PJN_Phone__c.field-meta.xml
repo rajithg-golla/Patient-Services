@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Phone__c</fullName>
+    <description>E2B (R2): NA
+
+E2B (R3): C.2.r.2.7 Reporter’s Telephone
+User Guidance: This data element captures the reporter&apos;s telephone number, including the
+country code and any extension.
+Numbers should be entered in a fashion that allows for international
+dialling (e.g. +cc) and not include any domestic trunk prefix.
+The phone number should not include domestic international dialing
+prefixes (also known as country exit codes, such as 00 in Europe, 011 in
+US, 010 in Japan).Begin with the International Telecommunications
+Union plus sign (+) notation followed by the country code appropriate for
+the location of the telephone number.
+Additional visual separators for human readability are not required. If
+used these characters should be limited to dashes ‘-‘ or dots ‘.’.
+Conformance: Optional
+Data Type: 33AN
+OID: None
+Value Allowed: Free text, nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures the reporter&apos;s telephone number, including the
+country code and any extension.
+Numbers should be entered in a fashion that allows for international
+dialling (e.g. +cc) and not include any domestic trunk prefix.</inlineHelpText>
+    <label>Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>

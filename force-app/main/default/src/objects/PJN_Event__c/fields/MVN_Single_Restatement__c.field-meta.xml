@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Single_Restatement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set to true to indicate that the restatement should only apply to this record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to true to indicate that the restatement should only apply to this record.</inlineHelpText>
+    <label>Single Restatement</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

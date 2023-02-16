@@ -1,0 +1,11 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="PJN_SPRoundRobinCtrl">
+
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <aura:handler name="init" value="{! this }" action="{! c.assign }"/>
+
+    <div class="slds-is-relative slds-align_absolute-center" style="height:200px">
+        <lightning:spinner alternativeText="Loading" variant="brand" size="large" />
+        Assigning
+    </div>
+</aura:component>

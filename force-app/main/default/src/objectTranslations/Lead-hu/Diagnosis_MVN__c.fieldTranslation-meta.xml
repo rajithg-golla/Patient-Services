@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Diagnosis upon entry into the program.
+Leave blank if the person has not been diagnosed. --></help>
+    <label><!-- Diagnosis --></label>
+    <name>Diagnosis_MVN__c</name>
+    <picklistValues>
+        <masterLabel>BCC</masterLabel>
+        <translation><!-- BCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSCC</masterLabel>
+        <translation><!-- CSCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSCLC</masterLabel>
+        <translation><!-- NSCLC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

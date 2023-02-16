@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Value as submitted by the pharmacy. Total number of refills authorized, or 0 if none. --></help>
+    <label><!-- Number Of Refills --></label>
+    <name>MVN_Number_Of_Refills__c</name>
+</CustomFieldTranslation>

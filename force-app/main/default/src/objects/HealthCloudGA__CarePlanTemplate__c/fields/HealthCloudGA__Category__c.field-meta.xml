@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home Health</fullName>
+                <default>false</default>
+                <label>Home Health</label>
+            </value>
+            <value>
+                <fullName>Endocrinology and Metabolism</fullName>
+                <default>false</default>
+                <label>Endocrinology and Metabolism</label>
+            </value>
+            <value>
+                <fullName>Wellness</fullName>
+                <default>false</default>
+                <label>Wellness</label>
+            </value>
+            <value>
+                <fullName>Disease Management</fullName>
+                <default>false</default>
+                <label>Disease Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

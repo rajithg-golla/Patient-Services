@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The value to test for when evaluating the Additional Filter Field to determine whether this record can be used. --></help>
+    <label><!-- Additional Filter Value --></label>
+    <name>PJN_Additional_Filter_Value__c</name>
+</CustomFieldTranslation>

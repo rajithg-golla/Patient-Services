@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableAccountScoreEnabled>false</enableAccountScoreEnabled>
+    <enableCareMgmtSlackAccess>false</enableCareMgmtSlackAccess>
+    <enableClinicalDataModel>false</enableClinicalDataModel>
+    <enableCustomFlowsOnCycleCount>false</enableCustomFlowsOnCycleCount>
+    <enableCustomFlowsOnExpiryPage>false</enableCustomFlowsOnExpiryPage>
+    <enableDiscoveryFrameworkMetadata>false</enableDiscoveryFrameworkMetadata>
+    <enableDpeProviderSearchSettingsOrgPref>false</enableDpeProviderSearchSettingsOrgPref>
+    <enableEnhancedQuestionCreation>true</enableEnhancedQuestionCreation>
+    <enableExistingHealthCloudOrg>false</enableExistingHealthCloudOrg>
+    <enableIndustriesAssessment>false</enableIndustriesAssessment>
+    <enableMedicalDeviceEnabled>false</enableMedicalDeviceEnabled>
+    <enableMedicationManagementEnabled>false</enableMedicationManagementEnabled>
+    <enableMulesoftFhirR4Apis>false</enableMulesoftFhirR4Apis>
+    <enableMultipleCareProgramEnrolleeOrgPref>false</enableMultipleCareProgramEnrolleeOrgPref>
+    <enablePatientAppointmentSchedulingOrgPref>false</enablePatientAppointmentSchedulingOrgPref>
+    <enablePatientServicesOrchestration>false</enablePatientServicesOrchestration>
+    <enableProviderSearchSyncOrgPref>false</enableProviderSearchSyncOrgPref>
+    <enableTimelinePref>false</enableTimelinePref>
+    <enableUMPayerAppAccessOrgPreference>false</enableUMPayerAppAccessOrgPreference>
+    <enableVisitCalendarSync>false</enableVisitCalendarSync>
+    <enableVisitInventoryEnabled>false</enableVisitInventoryEnabled>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
+</IndustriesSettings>

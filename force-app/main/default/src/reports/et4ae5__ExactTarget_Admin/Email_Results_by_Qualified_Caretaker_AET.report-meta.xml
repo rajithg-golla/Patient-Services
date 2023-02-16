@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96969685</developerName>
+        <masterLabel>Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>QC BCC Get to Know Libtayo Surround</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Setting treatment expectations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Focusing on the Caregiver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC BCC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <value>Caretaker BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>QC CSCC Get to Know Libtayo Surround</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Setting treatment expectations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Focusing on the Caregiver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC CSCC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <value>Caretaker CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>QC NSCLC Get to Know Libtayo Surround</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Setting treatment expectations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC Focusing on the Caregiver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QC NSCLC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <value>Caretaker NSCLC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63850534</developerName>
+        <masterLabel>Unqualified Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ BCC LIBTAYO for BCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ CSCC LIBTAYO for CSCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ NSCLC LIBTAYO for NSCLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified NSCLC</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Clicked__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Opened__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__NumberOfUniqueClicks__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__HardBounce__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>QC</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96969685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Email Results by Qualified Caretaker</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$et4ae5__IndividualEmailResult__c@et4ae5__IndividualEmailResult__c.Account_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>et4ae5__IndividualEmailResult__c.et4ae5__DateSent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

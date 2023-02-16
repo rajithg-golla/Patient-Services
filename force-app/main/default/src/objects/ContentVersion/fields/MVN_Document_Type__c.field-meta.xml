@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Document_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>StartForm</fullName>
+                <default>false</default>
+                <label>Start Form</label>
+            </value>
+            <value>
+                <fullName>SummaryOfBenefits</fullName>
+                <default>false</default>
+                <label>Summary Of Benefits</label>
+            </value>
+            <value>
+                <fullName>ExplanationOfBenefits</fullName>
+                <default>false</default>
+                <label>Explanation Of Benefits</label>
+            </value>
+            <value>
+                <fullName>PayerPADanial</fullName>
+                <default>false</default>
+                <label>Payer PA Denial</label>
+            </value>
+            <value>
+                <fullName>PayerAppealDenial</fullName>
+                <default>false</default>
+                <label>Payer Appeal Denial</label>
+            </value>
+            <value>
+                <fullName>InsuranceMedicalCard</fullName>
+                <default>false</default>
+                <label>Insurance Medical Card</label>
+            </value>
+            <value>
+                <fullName>InsurancePrescriptionCard</fullName>
+                <default>false</default>
+                <label>Insurance Prescription Card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

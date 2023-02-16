@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>의료 보험 CCM 프로그램에 대해 환자가 속한 단계를 나타냅니다.</help>
+    <label><!-- Stage --></label>
+    <name>HealthCloudGA__Stage__c</name>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>거부됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation>프로세스 참여</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Program</masterLabel>
+        <translation>프로그램 참여</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potential</masterLabel>
+        <translation>잠재적</translation>
+    </picklistValues>
+</CustomFieldTranslation>

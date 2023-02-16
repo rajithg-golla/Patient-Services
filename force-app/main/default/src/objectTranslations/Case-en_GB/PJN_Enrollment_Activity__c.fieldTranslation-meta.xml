@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The source enrollment activity that initiated the creation of a care plan. --></help>
+    <label><!-- Enrollment Activity --></label>
+    <name>PJN_Enrollment_Activity__c</name>
+    <relationshipLabel><!-- Cases --></relationshipLabel>
+</CustomFieldTranslation>

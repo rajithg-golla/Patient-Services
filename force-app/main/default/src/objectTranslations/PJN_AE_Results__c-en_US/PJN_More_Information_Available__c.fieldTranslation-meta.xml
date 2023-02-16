@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance This data element indicates if more information is held by the sender
+about the test and test result. For example, ‘true’ means that more
+documentation is available upon request e.g. ECG strips, chest X-ray. --></help>
+    <label><!-- More Information Available --></label>
+    <name>PJN_More_Information_Available__c</name>
+</CustomFieldTranslation>

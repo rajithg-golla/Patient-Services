@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>上書きロジックを適用した後の患者に適用される最終的な HCC コード。</help>
+    <label><!-- HCC Codes --></label>
+    <name>HealthCloudGA__HCCCodes__c</name>
+</CustomFieldTranslation>

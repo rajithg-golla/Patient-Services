@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hospitalization Status --></label>
+    <name>HealthCloudGA__HospitalizationStatus__c</name>
+    <picklistValues>
+        <masterLabel>Admitted</masterLabel>
+        <translation>Được Nhập Viện</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Admitted</masterLabel>
+        <translation>Không Được Nhập Viện</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation>Không Xác Định</translation>
+    </picklistValues>
+</CustomFieldTranslation>

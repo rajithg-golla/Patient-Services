@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Coverage_Investigation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to the Coverage Investigation which the Prior Authorization is related to.</description>
+    <externalId>false</externalId>
+    <label>Coverage Investigation</label>
+    <referenceTo>PJN_Coverage_Investigation__c</referenceTo>
+    <relationshipLabel>Prior Authorizations</relationshipLabel>
+    <relationshipName>Prior_Authorizations</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

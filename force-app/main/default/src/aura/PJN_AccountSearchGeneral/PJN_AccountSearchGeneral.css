@@ -1,0 +1,19 @@
+.THIS .account-search {
+    background-color: white;
+    padding: 1rem;
+    border-radius: .25rem;
+    height: 100% !important;
+}
+
+.THIS .max-width {
+    width: 100%;
+}
+
+.THIS .full-height, .THIS.full-height {
+    height: 100%;
+}
+
+.THIS .container {
+    background: white;
+    border-radius: 5px;
+}

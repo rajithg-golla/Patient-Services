@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The key which is used to match a case to a ZTT record. --></help>
+    <label><!-- Key --></label>
+    <name>PJN_Key__c</name>
+</CustomFieldTranslation>

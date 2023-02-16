@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Program_Participants_MVN</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Birth_Date_MVN__pc</columns>
+    <columns>HUB_ID_MVN__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Libtayo_Marketing_Program_Participant_MVN,PersonAccount.Program_Participant_MVN</value>
+    </filters>
+    <label>All Program Participants</label>
+</ListView>

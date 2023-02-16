@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El mes en el que se aplica el cálculo de tiempo.</help>
+    <label><!-- Month --></label>
+    <name>HealthCloudGA__Month__c</name>
+</CustomFieldTranslation>

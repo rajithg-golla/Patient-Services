@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Dosing_Info__c</fullName>
+    <description>Dosing information as specified by the prescriber on the prescription.</description>
+    <externalId>false</externalId>
+    <label>Dosing Info</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Once a day</fullName>
+                <default>false</default>
+                <label>Once a day</label>
+            </value>
+            <value>
+                <fullName>Once every other day</fullName>
+                <default>false</default>
+                <label>Once every other day</label>
+            </value>
+            <value>
+                <fullName>Twice a day</fullName>
+                <default>false</default>
+                <label>Twice a day</label>
+            </value>
+            <value>
+                <fullName>Three times a day</fullName>
+                <default>false</default>
+                <label>Three times a day</label>
+            </value>
+            <value>
+                <fullName>Four times a day</fullName>
+                <default>false</default>
+                <label>Four times a day</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

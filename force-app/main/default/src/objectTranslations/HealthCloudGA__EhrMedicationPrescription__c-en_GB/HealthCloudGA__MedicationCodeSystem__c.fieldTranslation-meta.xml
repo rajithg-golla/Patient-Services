@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>System for Code that identifies this medication</help>
+    <label><!-- Medication Code System --></label>
+    <name>HealthCloudGA__MedicationCodeSystem__c</name>
+</CustomFieldTranslation>

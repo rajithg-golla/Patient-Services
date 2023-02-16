@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this option to show API Name for every field and relationship of the salesforce objects while setting data mapping and merge mapping --></help>
+    <label><!-- Show Fields API Name --></label>
+    <name>echosign_dev1__Show_Fields_API_Name__c</name>
+</CustomFieldTranslation>

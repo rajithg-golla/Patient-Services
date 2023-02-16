@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Fax_Compact_Layout</fullName>
+    <fields>PJN_Fax__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>PJN_Account__c</fields>
+    <fields>PJN_Primary__c</fields>
+    <label>Fax Compact Layout</label>
+</CompactLayout>

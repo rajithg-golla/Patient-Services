@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Additional Guidance Needed</fullName>
+        <default>false</default>
+        <label>Additional Guidance Needed</label>
+    </customValue>
+    <customValue>
+        <fullName>Assigned to Self</fullName>
+        <default>false</default>
+        <label>Assigned to Self</label>
+    </customValue>
+    <customValue>
+        <fullName>Copyright Material Needed</fullName>
+        <default>false</default>
+        <label>Copyright Material Needed</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Response Needed</fullName>
+        <default>false</default>
+        <label>Custom Response Needed</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial Owner</fullName>
+        <default>false</default>
+        <label>Initial Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Transferred</fullName>
+        <default>false</default>
+        <label>Case Transferred</label>
+    </customValue>
+    <customValue>
+        <fullName>No Content Found</fullName>
+        <default>false</default>
+        <label>No Content Found</label>
+    </customValue>
+    <customValue>
+        <fullName>Out of Office</fullName>
+        <default>false</default>
+        <label>Out of Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Reopened</fullName>
+        <default>false</default>
+        <label>Reopened</label>
+    </customValue>
+    <customValue>
+        <fullName>Returned to Case Owner</fullName>
+        <default>false</default>
+        <label>Returned to Case Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Review</fullName>
+        <default>false</default>
+        <label>Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer from Queue</fullName>
+        <default>false</default>
+        <label>Transfer from Queue</label>
+    </customValue>
+    <customValue>
+        <fullName>Translation Needed</fullName>
+        <default>false</default>
+        <label>Translation Needed</label>
+    </customValue>
+    <customValue>
+        <fullName>Workload</fullName>
+        <default>false</default>
+        <label>Workload</label>
+    </customValue>
+    <description>Contains the list of reasons for an Escalation or Trasnfer</description>
+    <masterLabel>Escalation/Transfer Reason</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

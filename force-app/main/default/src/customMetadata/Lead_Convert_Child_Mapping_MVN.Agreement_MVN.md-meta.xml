@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Agreement</label>
+    <protected>false</protected>
+    <values>
+        <field>Account_Lookup_Field_MVN__c</field>
+        <value xsi:type="xsd:string">echosign_dev1__Account__c</value>
+    </values>
+    <values>
+        <field>Care_Plan_Lookup_Field_MVN__c</field>
+        <value xsi:type="xsd:string">Care_Plan_MVN__c</value>
+    </values>
+    <values>
+        <field>Lead_Child_Object_Relationship_MVN__c</field>
+        <value xsi:type="xsd:string">echosign_dev1__Agreements4__r</value>
+    </values>
+</CustomMetadata>

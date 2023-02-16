@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Next_Activity__c</fullName>
+    <description>The calculated date to which the next activities Due Date will be set. Can be overridden using the Override Next Activity field.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+   TEXT(PJN_Repeat__c) = &quot;Doesn&apos;t Repeat&quot;,
+   null,
+   IF(
+      ISBLANK( PJN_Override_Next_Activity__c ),
+      HealthCloudGA__DueDate__c  + (PJN_Repeat_Every__c  *  CASE(TEXT(PJN_Cadence__c), &apos;Day&apos;, 1, &apos;Week&apos;, 7, &apos;Month&apos;, 30, 0)) +
+        CASE(WEEKDAY(HealthCloudGA__DueDate__c  +   PJN_Repeat_Every__c),
+             1, 1,
+             7, -1,
+             0 
+        ),
+      PJN_Override_Next_Activity__c
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Activity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

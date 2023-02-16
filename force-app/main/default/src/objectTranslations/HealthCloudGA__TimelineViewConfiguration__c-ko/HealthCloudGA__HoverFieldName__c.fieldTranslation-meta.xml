@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>이 개체와 관련된 최대 7개의 쉼표로 구분된 필드 이름을 입력하십시오. 사용자가 일정표에서 개체를 가리키면 필드 세부 정보가 표시됩니다.</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>אם השם שווה אפס או ריק, הוא מתמלא ב-GivenName1__c + FamilyName1__c, אחרת הוא מתמלא בערך של &apos;שם&apos;</help>
+    <label><!-- Calculated Name --></label>
+    <name>HealthCloudGA__CalculatedName__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+.THIS .pdf-preview-wrapper {
+    height: 100%;
+    overflow: scroll;
+}
+
+.THIS .max-width {
+    width: 100%;
+}
+
+.THIS .full-height {
+    height: 100% !important;
+}
+
+.THIS iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.THIS.selector-margin {
+    margin-top: -18px;
+    margin-bottom: 10px;
+}

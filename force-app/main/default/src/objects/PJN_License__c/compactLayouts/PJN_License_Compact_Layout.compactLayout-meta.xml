@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_License_Compact_Layout</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>Name</fields>
+    <fields>PJN_Status__c</fields>
+    <fields>PJN_Type__c</fields>
+    <label>License Compact Layout</label>
+</CompactLayout>

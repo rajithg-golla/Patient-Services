@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to attach PDF of each supporting document uploaded by participants to the agreement record after agreement transaction is completed. --></help>
+    <label><!-- Add Supporting Files --></label>
+    <name>echosign_dev1__Add_Supporting_Files__c</name>
+</CustomFieldTranslation>

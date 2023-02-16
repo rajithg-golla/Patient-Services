@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_to_Submit_Product</fullName>
+    <active>true</active>
+    <description>A product is required to submit a PQC.</description>
+    <errorConditionFormula>AND(
+!ISBLANK( PJN_Date_Time_Submitted__c ),
+ISBLANK( PJN_Product__c )
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Product__c</errorDisplayField>
+    <errorMessage>You must specify a Product to submit the PQC.</errorMessage>
+</ValidationRule>

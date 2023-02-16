@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>порошок| таблетки| коробка + понятное название</help>
+    <label><!-- Dispense Medication Product Form Label --></label>
+    <name>HealthCloudGA__DispenseMedicationProductFormLabel__c</name>
+</CustomFieldTranslation>

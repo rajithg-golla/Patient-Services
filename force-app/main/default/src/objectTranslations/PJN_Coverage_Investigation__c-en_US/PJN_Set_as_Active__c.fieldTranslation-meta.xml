@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Triggers an update to the Care Plan to set this Coverage Investigation as the Active Investigation --></help>
+    <label><!-- Set as Active on Care Plan --></label>
+    <name>PJN_Set_as_Active__c</name>
+</CustomFieldTranslation>

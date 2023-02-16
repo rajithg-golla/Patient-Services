@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Country_Drug_Obtained__c</fullName>
+    <description>E2B (R2): obtaindrugcountry, B.4.k.2.3 (2A)
+
+E2B (R3): G.k.2.4 Identification of the Country Where the Drug Was Obtained
+Conformance: Optional
+Data Type: 2A
+OID: 1.0.3166.1.2.2
+Value Allowed: ISO 3166-1 alpha-2, EU</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This data element captures the country where the medicinal was obtained.</inlineHelpText>
+    <label>Country Drug Obtained</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>HealthCloudGA__Countries</valueSetName>
+    </valueSet>
+</CustomField>

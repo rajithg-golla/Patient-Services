@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sensitivity Test3 --></label>
+    <name>HealthCloudGA__SensitivityTest3__c</name>
+    <relationshipLabel><!-- EHR Allergy Intolerances (Sensitivity Test3) --></relationshipLabel>
+</CustomFieldTranslation>

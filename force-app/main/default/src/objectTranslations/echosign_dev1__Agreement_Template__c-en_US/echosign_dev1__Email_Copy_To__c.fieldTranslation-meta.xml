@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Send copies of the agreement to the specified email addresses. --></help>
+    <label><!-- Email Copy To --></label>
+    <name>echosign_dev1__Email_Copy_To__c</name>
+</CustomFieldTranslation>

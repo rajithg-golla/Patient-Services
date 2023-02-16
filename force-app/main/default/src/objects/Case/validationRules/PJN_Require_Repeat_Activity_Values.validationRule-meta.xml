@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_Repeat_Activity_Values</fullName>
+    <active>true</active>
+    <description>When Repeat is set to &quot;Repeats&quot;, requires values in the related repeat activity fields, &quot;Cadence&quot; and &quot;Repeat Every.</description>
+    <errorConditionFormula>AND( TEXT(PJN_Repeat__c)  = &quot;Repeats&quot;, OR( ISBLANK(PJN_Repeat_Every__c), ISBLANK( TEXT(PJN_Cadence__c) )))</errorConditionFormula>
+    <errorMessage>When marking an Activity to repeat, provide values for &quot;Repeat Every&quot; and &quot;Cadence&quot;.</errorMessage>
+</ValidationRule>

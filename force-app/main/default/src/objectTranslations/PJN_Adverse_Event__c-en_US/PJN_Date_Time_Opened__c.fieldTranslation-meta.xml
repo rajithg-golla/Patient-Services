@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element has the function of a timestamp and represents the
+equivalent of a version number for the ICSR. --></help>
+    <label><!-- Date/Time Opened --></label>
+    <name>PJN_Date_Time_Opened__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Coverage_Investigation_Status__c</fullName>
+    <description>Pulls the status of the Coverage Investigation through to the Item. Used for filtering in some process automation and also to display in Member Plan related lists.</description>
+    <externalId>false</externalId>
+    <formula>TEXT( PJN_Coverage_Investigation__r.PJN_Status__c )</formula>
+    <label>Coverage Investigation Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

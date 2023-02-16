@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Unknown indicates that a rechallenge was done, but it is unknown if the event recurred. This segment should not be completed if it is unknown whether a rechallenge was done. --></help>
+    <label><!-- Did Reaction Recur on Readministration? --></label>
+    <name>PJN_Reaction_Recur_on_Readministration__c</name>
+</CustomFieldTranslation>

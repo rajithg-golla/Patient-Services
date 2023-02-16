@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Указывает на компенсацию за отчетный период для одного пациента по конкретной программе (например, государственная программа медицинской помощи престарелым)</help>
+    <label><!-- Rate --></label>
+    <name>HealthCloudGA__Rate__c</name>
+</CustomFieldTranslation>

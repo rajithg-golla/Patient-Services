@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica se il paziente è un nuovo paziente Medicare o un vecchio iscritto.</help>
+    <label><!-- New Patient --></label>
+    <name>HealthCloudGA__NewPatient__c</name>
+</CustomFieldTranslation>

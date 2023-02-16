@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the reporter&apos;s organization’s name. --></help>
+    <label><!-- Organization --></label>
+    <name>PJN_Organization__c</name>
+</CustomFieldTranslation>

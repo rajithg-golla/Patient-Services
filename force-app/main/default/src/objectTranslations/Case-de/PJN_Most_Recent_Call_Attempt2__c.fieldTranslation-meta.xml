@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date/time of the most recent call attempt related to this case --></help>
+    <label><!-- Most Recent Call Attempt --></label>
+    <name>PJN_Most_Recent_Call_Attempt2__c</name>
+</CustomFieldTranslation>

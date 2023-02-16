@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Cumulative_Dose_First_Reaction_Num__c</fullName>
+    <description>E2B (R2): B.4.k.5.6, drugcumulativedosagenumb (10N)
+
+E2B (R3): G.k.5a Cumulative Dose to First Reaction (number)
+Conformance: Optional, but required if G.k.5b is populated.
+Data Type: 10N
+OID: None
+Value Allowed: Numeric</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The cumulative dose
+provided is the total dose administered until the first sign, symptom, or reaction.</inlineHelpText>
+    <label>Cumulative Dose to First Reaction (Num)</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

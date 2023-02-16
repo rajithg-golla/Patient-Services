@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Medical judgment should be exercised in completing this section. Information pertinent to understanding the case is desired, such as diseases, conditions such as pregnancy, surgical procedures, and psychological trauma. --></help>
+    <label><!-- Disease/Surgical Procedure/Etc. --></label>
+    <name>PJN_Disease_Surgical_Procedure_Etc__c</name>
+</CustomFieldTranslation>

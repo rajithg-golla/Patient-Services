@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Patient_Prescription_File_Sent_Date__c</fullName>
+    <description>Sent Date from Patient&apos;s Enrollment Form --&gt; PATIENT_PRESCRIPTION_FILE_SENT_DATE,</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Patient Prescription File Sent Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

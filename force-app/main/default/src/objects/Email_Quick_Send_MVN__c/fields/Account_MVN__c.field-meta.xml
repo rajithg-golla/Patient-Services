@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_MVN__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The account this email belongs to. This may be set by sending an email to an account or, by trigger, when the account is created through a lead conversion.</description>
+    <externalId>false</externalId>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Email Quick Sends</relationshipLabel>
+    <relationshipName>Email_Quick_Sends_MVN</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>설명 상태를 지정하는 코드입니다. 일반적으로 진행 중이거나 완료입니다.</help>
+    <label><!-- Status Code --></label>
+    <name>HealthCloudGA__StatusCode__c</name>
+    <picklistValues>
+        <masterLabel>completed</masterLabel>
+        <translation>완료됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>entered-in-error</masterLabel>
+        <translation>잘못 입력됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>in-progress</masterLabel>
+        <translation>진행 중</translation>
+    </picklistValues>
+</CustomFieldTranslation>

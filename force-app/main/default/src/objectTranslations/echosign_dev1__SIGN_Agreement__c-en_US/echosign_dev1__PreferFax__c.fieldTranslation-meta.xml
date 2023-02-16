@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checking this box, Adobe Sign  will send the document to the Contact&apos;s Fax number. If the Contact&apos;s Fax Number is empty, Adobe Sign will send the document to the Contact&apos;s Email address. --></help>
+    <label><!-- Send written signatures to fax number --></label>
+    <name>echosign_dev1__PreferFax__c</name>
+</CustomFieldTranslation>

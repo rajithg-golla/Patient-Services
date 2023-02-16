@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Care plan record type developer name to which this mapping belongs --></help>
+    <label><!-- Care Plan Record Type Name --></label>
+    <name>Care_Plan_Record_Type_DeveloperName_MVN__c</name>
+</CustomFieldTranslation>

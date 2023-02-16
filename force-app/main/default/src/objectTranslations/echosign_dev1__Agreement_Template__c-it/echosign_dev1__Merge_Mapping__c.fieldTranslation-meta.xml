@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Seleziona questa opzione per unire i campi Salesforce nell&apos;accordo Adobe Sign prima di inviarlo per la firma.</help>
+    <label><!-- Merge Mapping --></label>
+    <name>echosign_dev1__Merge_Mapping__c</name>
+    <relationshipLabel><!-- Agreement Templates --></relationshipLabel>
+</CustomFieldTranslation>

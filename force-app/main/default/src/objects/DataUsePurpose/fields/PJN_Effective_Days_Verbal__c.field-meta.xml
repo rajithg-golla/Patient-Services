@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Effective_Days_Verbal__c</fullName>
+    <description>Number of days for which verbal opt-in consent of this type is valid.</description>
+    <externalId>false</externalId>
+    <label>Effective Days (Verbal)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Dispense_As_Written_Formula__c</fullName>
+    <description>Displays the description for each of the Dispense As Written codes.</description>
+    <externalId>false</externalId>
+    <formula>CASE(MVN_Dispense_As_Written__c,
+&quot;0&quot;, &quot;No product selection indicated&quot;,
+&quot;1&quot;, &quot;Substitution not allowed by prescriber&quot;,
+&quot;2&quot;, &quot;Substitution allowed – patient requested product dispensed&quot;,
+&quot;3&quot;, &quot;Substitution allowed – pharmacy requested product dispensed&quot;,
+&quot;4&quot;, &quot;Substitution allowed – generic drug not in stock&quot;,
+&quot;5&quot;, &quot;Substitution allowed – brand drug dispensed as generic&quot;,
+&quot;6&quot;, &quot;Undefined (not in general use; reserved for future use&quot;,
+&quot;7&quot;, &quot;Substitution not allowed – brand drug mandated by law/regulation&quot;,
+&quot;8&quot;, &quot;Substitution not allowed – generic drug available in marketplace&quot;,
+&quot;&quot;, &quot;&quot;,
+&quot;Invalid &apos;Dispense As Written&apos; Choice&quot;)</formula>
+    <label>Dispense As Written</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notification Type --></label>
+    <name>echosign_dev1__Notification_Type__c</name>
+    <picklistValues>
+        <masterLabel>AUTO_UPDATE</masterLabel>
+        <translation><!-- AUTO_UPDATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALLBACK</masterLabel>
+        <translation><!-- CALLBACK --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

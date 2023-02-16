@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SObject --></label>
+    <name>MVN_SObject__c</name>
+    <picklistValues>
+        <masterLabel>Activity</masterLabel>
+        <translation><!-- Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Care Plan Problem</masterLabel>
+        <translation><!-- Care Plan Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fulfillment Request</masterLabel>
+        <translation><!-- Fulfillment Request --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

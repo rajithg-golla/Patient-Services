@@ -1,0 +1,53 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanProblemCasesCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlan" type="Object" />
+    <aura:attribute name="carePlanProblem" type="HealthCloudGA__CarePlanProblem__c" />
+    <aura:attribute name="cases" type="PJN_CarePlanCaseWrapper[]" />
+    <aura:attribute name="activityRecordTypeId" type="Id" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="change" value="{!v.carePlanProblem}" action="{!c.onInit}"/>
+    <aura:handler name="change" value="{!v.carePlan}" action="{!c.onInit}"/>
+    <lightning:workspaceAPI aura:id="workspace" />
+    <aura:handler event="lightning:tabFocused" action="{!c.onInit}" />
+    <aura:handler event="force:refreshView" action="{!c.onInit}" />
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="problemSelectionEvent" type="c:PJN_CarePlanPathProblemSelection"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <article aura:id="caseTimeline" class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a onclick="{!c.onSelectProblem}" class="slds-card__header-link slds-truncate">
+                            <span>{!v.carePlanProblem.detail.Name}</span>
+                        </a>
+                    </h2>
+                </div>
+                <aura:if isTrue="{!v.carePlanProblem.detail.PJN_CarePlan_Path_Status__c == 'current' || v.carePlanProblem.detail.PJN_CarePlan_Path_Status__c == null}">
+                    <div class="slds-no-flex">
+                        <button onclick="{!c.onNewCase}" class="slds-button slds-button_neutral">{!$Label.c.PJN_Care_Plan_Timeline_New_Case}</button>
+                    </div>
+                </aura:if>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <ul class="slds-timeline">
+                <aura:iteration items="{!v.cases}" var="case">
+                    <c:PJN_CarePlanTimelineProblemCase caseWrapper="{!case}" programDeveloperName="{!v.carePlan.PJN_Program_DeveloperName__c}" context="{!v.context}"/>
+                </aura:iteration>
+                <aura:if isTrue="{!v.cases.length == 0}">
+                    <div class="slds-text-color_weak slds-m-left_xx-large">
+                        {!$Label.c.PJN_No_Activities}
+                    </div>
+                </aura:if>
+            </ul>
+        </div>
+    </article>
+</aura:component>

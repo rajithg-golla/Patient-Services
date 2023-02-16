@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Country_Where_Reaction_Occurred__c</fullName>
+    <description>E2B (R2): moved from A.1.2 (AE Object)
+
+E2B (R3): Identification of the Country Where the Reaction / Event Occurred
+Conformance: Optional
+Data Type: 2A
+OID: 1.0.3166.1.2.2
+Value Allowed: ISO 3166-1 alpha-2, EU</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This data element captures the country where the reaction occurred.</inlineHelpText>
+    <label>Country Where Reaction/Event Occurred</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>HealthCloudGA__Countries</valueSetName>
+    </valueSet>
+</CustomField>

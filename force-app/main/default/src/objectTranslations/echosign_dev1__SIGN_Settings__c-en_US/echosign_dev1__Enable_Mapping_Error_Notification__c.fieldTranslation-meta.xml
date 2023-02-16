@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to send the Salesforce admin email notifications when there are merge mapping or data mapping execution errors. --></help>
+    <label><!-- Enable Mapping Error Notification --></label>
+    <name>echosign_dev1__Enable_Mapping_Error_Notification__c</name>
+</CustomFieldTranslation>

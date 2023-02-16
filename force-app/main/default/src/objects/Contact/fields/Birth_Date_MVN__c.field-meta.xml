@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Birth_Date_MVN__c</fullName>
+    <description>Use instead of standard Birthdate field for two reasons:
+1. The standard field can be encrypted
+2. This is mapped in lead conversion, and lead conversion cannot map custom fields to standard fields</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Birth Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

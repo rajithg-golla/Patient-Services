@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Patient responsibility (after primary; before copay). This is required for approved claims only. Rejected claims may or may not have this available. --></help>
+    <label><!-- Copay Before Benefit Applied --></label>
+    <name>MVN_Copay_Before_Benefit_Applied__c</name>
+</CustomFieldTranslation>

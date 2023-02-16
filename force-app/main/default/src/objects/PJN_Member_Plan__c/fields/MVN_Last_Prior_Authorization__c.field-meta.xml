@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Last_Prior_Authorization__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Most recently created or updated Prior Authorization for the Member Plan.</description>
+    <externalId>false</externalId>
+    <label>Last Prior Authorization</label>
+    <referenceTo>PJN_Prior_Authorization__c</referenceTo>
+    <relationshipLabel>Member Plans</relationshipLabel>
+    <relationshipName>Member_Plans</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

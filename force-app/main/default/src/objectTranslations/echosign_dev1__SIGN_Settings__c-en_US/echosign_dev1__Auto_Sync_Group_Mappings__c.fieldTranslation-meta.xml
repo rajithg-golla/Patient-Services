@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to automatically move users to the correct Adobe Sign groups when their Salesforce user profiles are updated. --></help>
+    <label><!-- Auto-Sync Group Mappings --></label>
+    <name>echosign_dev1__Auto_Sync_Group_Mappings__c</name>
+</CustomFieldTranslation>

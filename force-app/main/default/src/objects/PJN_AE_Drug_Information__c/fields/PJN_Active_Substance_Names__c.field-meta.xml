@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Active_Substance_Names__c</fullName>
+    <description>E2B (R2): B.4.k.2.2, activesubstancename (100AN)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: The International Nonproprietary Names (INN) for Pharmaceutical Substances or
+drug substance name or drug identification code should be provided if no name exists. For
+combination products, each active ingredient should be specified.</inlineHelpText>
+    <label>Active Substance Names</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <template for:each={items} for:item="item">
+            <div class="slds-col slds-size_1-of-5 slds-p-around_small"
+                key={item.detail.Id}
+                onclick={handleTileClick}
+                data-id={item.detail.Id}>
+
+                <div class="slds-align_absolute-center slds-box slds-box_xx-small slds-text-title_caps slds-is-relative">
+                    <span class={item.class}>
+                        {item.detail.Name}
+                    </span>
+                    <template if:true={item.count}>
+                        <div class="top-right slds-is-absolute">
+                            <lightning-icon
+                                icon-name="action:check"
+                                size="xx-small">
+                            </lightning-icon>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

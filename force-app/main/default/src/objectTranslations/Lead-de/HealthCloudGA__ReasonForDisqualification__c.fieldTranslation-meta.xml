@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Disqualification --></label>
+    <name>HealthCloudGA__ReasonForDisqualification__c</name>
+    <picklistValues>
+        <masterLabel>Another agency is involved</masterLabel>
+        <translation>Beteiligung einer anderen Einrichtung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD declines to sign orders</masterLabel>
+        <translation>Arzt lehnt Unterzeichnung von Aufträgen ab</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient is outside coverage area</masterLabel>
+        <translation>Patient befindet sich außerhalb des Versorgungsgebiets</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient isn’t eligible for insurance</masterLabel>
+        <translation>Patient hat keinen Versicherungsanspruch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient refuses services</masterLabel>
+        <translation>Patient lehnt Services ab</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral was canceled</masterLabel>
+        <translation>Überweisung wurde abgesagt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services aren’t needed</masterLabel>
+        <translation>Angeforderte Services sind nicht erforderlich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services can’t be provided</masterLabel>
+        <translation>Angeforderte Services können nicht bereitgestellt werden</translation>
+    </picklistValues>
+</CustomFieldTranslation>

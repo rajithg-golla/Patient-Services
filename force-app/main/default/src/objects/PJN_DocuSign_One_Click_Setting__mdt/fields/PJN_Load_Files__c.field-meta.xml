@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Load_Files__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether to Load Files. When ON, all files attached to the Salesforce Object are added to the envelope.&lt;br&gt;Maps to property &quot;LF&quot;.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Indicates whether to Load Files. When ON, all files attached to the Salesforce Object are added to the envelope.&lt;br&gt;Maps to property &quot;LF&quot;.</inlineHelpText>
+    <label>Load Files</label>
+    <type>Checkbox</type>
+</CustomField>

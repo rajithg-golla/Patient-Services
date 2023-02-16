@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Medical History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Medical History</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Maternal and paternal medical history. --></description>
+        <label><!-- Family History --></label>
+        <name>MVN_Family_History</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other History --></label>
+        <name>MVN_Other_History</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Previous or current medications taken by the patient. --></description>
+        <label><!-- Prior/Current Treatment --></label>
+        <name>MVN_Prior_Current_Treatment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Current or historic allergies or intolerances which have affected the patient. --></description>
+        <label><!-- Allergy/Intolerance --></label>
+        <name>PJN_Allergy</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Medications taken or being taken by the patient during their therapy. --></description>
+        <label><!-- Concurrent Medication --></label>
+        <name>PJN_Concurrent_Medication</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Capture a biometric data point --></description>
+        <label><!-- Metric --></label>
+        <name>PJN_Metric</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Vaccinations received --></description>
+        <label><!-- Vaccination --></label>
+        <name>PJN_Vaccination</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

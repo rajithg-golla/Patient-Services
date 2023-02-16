@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>상태 레이블 필드 값이 &apos;해결됨&apos;과 같지 않은 경우 true를 반환하고, 그렇지 않으면 false를 반환합니다.</help>
+    <label><!-- IsVisibleOnPatientCard --></label>
+    <name>HealthCloudGA__IsVisibleOnPatientCard__c</name>
+</CustomFieldTranslation>

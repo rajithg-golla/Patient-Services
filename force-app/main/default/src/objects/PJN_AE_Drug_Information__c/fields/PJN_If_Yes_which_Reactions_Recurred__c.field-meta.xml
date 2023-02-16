@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_If_Yes_which_Reactions_Recurred__c</fullName>
+    <description>E2B (R2): B.4.k.17.2b, drugrecuraction (250AN)
+
+E2B (R3): NA</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Unknown indicates that a rechallenge was done, but it is unknown if the event
+recurred. This segment should not be completed if it is unknown whether a rechallenge was done.</inlineHelpText>
+    <label>If Yes, which Reactions Recurred?</label>
+    <length>250</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

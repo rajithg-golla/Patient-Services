@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Consent_Given</name>
+        <label>Send Email - Consent Given</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <actionName>Case.MVN_Send_Email_to_RBM_and_MS_Sales_Consent_Given</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Create_Email_Message_Record</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_No_Consent</name>
+        <label>Send Email - No Consent</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <actionName>Case.MVN_Send_Email_to_RBM_and_MS_Sales_No_Consent</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Create_Email_Message_Record</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>To decide which email template to send out based on if consent is given.</description>
+        <name>Consent_Check</name>
+        <label>Consent Check</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Consent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MVN_HIPAA_Consent__r.PJN_Data_Use_Purpose_Formula__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Authorization to Disclose/Use Health Information</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_HIPAA_Consent__r.PJN_Privacy_Consent_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Opt In</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PJN_Program_DeveloperName__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MVN_EVK</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Consent_Given</targetReference>
+            </connector>
+            <label>Yes Consent</label>
+        </rules>
+        <rules>
+            <name>No_Consent</name>
+            <conditionLogic>(1 AND 2 AND 3) OR (3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MVN_HIPAA_Consent__r.PJN_Privacy_Consent_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Opt In</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_HIPAA_Consent__r.PJN_Data_Use_Purpose_Formula__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Authorization to Disclose/Use Health Information</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PJN_Program_DeveloperName__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MVN_EVK</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_HIPAA_Consent_Status__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_No_Consent</targetReference>
+            </connector>
+            <label>No Consent</label>
+        </rules>
+    </decisions>
+    <description>Sends email to RBM and MS Sales when all three fields (RBM, MS Sales and MS Sales Email) are populated upon creation of Case or when updated. Two different email templates based on Consent given. Two email addresses are always Bcc&apos;d (Director for RBM and National Sales Director)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>EmailBody</name>
+        <dataType>String</dataType>
+        <expression>IF( {!$Record.MVN_HIPAA_Consent_Status__c} = &quot;Opt In&quot;,
+ &quot;myRARE enrollment received from &quot; &amp; {!$Record.MVN_Organization__r.Name} &amp; &quot;, Prescriber &quot; &amp; {!$Record.MVN_Physician_FirstName__c} &amp; &quot; &quot; &amp; {!$Record.MVN_Physician_LastName__c} &amp; &quot;. &quot; &amp;{!$Record.MVN_Organization_Address__c} &amp; &quot;.  PT ID &quot; &amp; {!$Record.MVN_Patient_Id__c} &amp; BR() &amp; &quot; Regards, &quot; &amp; BR() &amp; &quot;myRARE Support Team&quot;, 
+
+&quot;myRARE enrollment received from &quot; &amp; {!$Record.MVN_Organization__r.Name} &amp; &quot;, Prescriber &quot; &amp; {!$Record.MVN_Physician_FirstName__c} &amp; &quot; &quot; &amp; {!$Record.MVN_Physician_LastName__c} &amp; &quot;. &quot; &amp;{!$Record.MVN_Organization_Address__c} &amp; &quot;. &quot; &amp; BR() &amp; &quot; Regards, &quot; &amp; BR() &amp; &quot;myRARE Support Team&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>OrganizationAddress</name>
+        <dataType>String</dataType>
+        <expression>{!Get_Organization.BillingCity} + &quot;, &quot; + {!Get_Organization.BillingState} + &quot; &quot; + {!Get_Organization.BillingPostalCode}</expression>
+    </formulas>
+    <formulas>
+        <name>ToAddress</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.MVN_Case_National_Sales_Director_Email__c} &amp; &quot;,&quot; &amp; {!$Record.MVN_Case_RBM_Director_Email__c} &amp; &quot;,&quot; &amp; {!$Record.MVN_Case_RD_Email__c} &amp; &quot;,&quot; &amp; {!$Record.MVN_Sales_Email__c} &amp; &quot;,&quot; &amp; {!$Record.MVN_RBM_User__r.Email}</expression>
+    </formulas>
+    <interviewLabel>Send Email to RBM and MS Sales {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Email to RBM and MS Sales</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Email_Message_Record</name>
+        <label>Create Email Message Record</label>
+        <locationX>314</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>Care_Plan_Created_Date__c</field>
+            <value>
+                <elementReference>$Record.Parent.CreatedDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MVN_Message_Filter__c</field>
+            <value>
+                <stringValue>Enrollment Email</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>myRARE enrollment received</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TextBody</field>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>ToAddress</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Organization</name>
+        <label>Get Organization</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Organization_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.MVN_Organization__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Organization_Address</name>
+        <label>Update Organization Address</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Consent_Check</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>MVN_Organization_Address__c</field>
+            <value>
+                <elementReference>OrganizationAddress</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Organization</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.RecordType.DeveloperName} = &quot;CarePlan&quot; &amp;&amp;
+!ISBLANK({!$Record.MVN_RBM_User__c}) &amp;&amp;
+!ISBLANK({!$Record.MVN_Sales_Name__c}) &amp;&amp; 
+!ISBLANK({!$Record.MVN_Sales_Email__c}) &amp;&amp;
+!ISBLANK({!$Record.MVN_Start_Form_Received_Date__c})</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

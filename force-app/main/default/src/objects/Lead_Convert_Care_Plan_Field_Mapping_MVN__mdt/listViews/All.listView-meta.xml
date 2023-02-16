@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>MasterLabel</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>Care_Plan_Record_Type_Namespace_Pref_MVN__c</columns>
+    <columns>Care_Plan_Record_Type_DeveloperName_MVN__c</columns>
+    <columns>DeveloperName</columns>
+    <columns>Text_Value_MVN__c</columns>
+    <columns>Lead_Field_Name_MVN__c</columns>
+    <columns>Care_Plan_Field_Name_MVN__c</columns>
+    <columns>Is_Active_MVN__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

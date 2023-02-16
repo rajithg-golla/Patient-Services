@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Identifica en qué programa está inscrito el paciente.</help>
+    <label><!-- Program --></label>
+    <name>HealthCloudGA__Program__c</name>
+    <relationshipLabel><!-- Program Patient Affiliation --></relationshipLabel>
+</CustomFieldTranslation>

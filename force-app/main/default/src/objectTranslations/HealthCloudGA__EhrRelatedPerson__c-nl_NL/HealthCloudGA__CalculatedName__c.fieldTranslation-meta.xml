@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>als Name null of blanco is, wordt deze ingevuld met GivenName1__c + FamilyName1__c; als dit niet het geval is, wordt deze ingevuld met Name</help>
+    <label><!-- Calculated Name --></label>
+    <name>HealthCloudGA__CalculatedName__c</name>
+</CustomFieldTranslation>

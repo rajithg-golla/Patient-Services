@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Set_as_Shipping__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates this record should be set as the shipping address. A trigger will manage this update.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates this record should be set as the address where product should be shipped for a patient.</inlineHelpText>
+    <label>Set as Shipping</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

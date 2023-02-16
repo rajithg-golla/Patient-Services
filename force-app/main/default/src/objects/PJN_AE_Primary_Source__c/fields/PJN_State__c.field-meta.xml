@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_State__c</fullName>
+    <description>E2B (R2): A.2.1.2e, reporterstate (40AN)
+
+E2B (R3): C.2.r.2.5 Reporter’s State or Province
+User Guidance: This data element captures the reporter&apos;s State or Province.
+Conformance: Optional
+Data Type: 40AN
+OID: None
+Value Allowed: Free text, nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures the reporter&apos;s State or Province.</inlineHelpText>
+    <label>State</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

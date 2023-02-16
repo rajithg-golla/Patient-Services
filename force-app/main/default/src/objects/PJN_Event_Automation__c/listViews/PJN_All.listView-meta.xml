@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_All</fullName>
+    <columns>NAME</columns>
+    <columns>PJN_Program__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>PJN_New_CM_Status__c</columns>
+    <columns>PJN_New_CM_Sub_Status__c</columns>
+    <columns>PJN_Update_CM_Status_Values__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

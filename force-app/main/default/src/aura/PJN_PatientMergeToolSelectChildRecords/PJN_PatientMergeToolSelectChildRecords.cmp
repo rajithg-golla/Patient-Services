@@ -1,0 +1,42 @@
+<aura:component>
+    <aura:attribute name="masterCarePlanId" type="Id" />
+    <aura:attribute name="selectedCarePlanIdList" type="Id[]" />
+    <aura:attribute name="childRecordList" type="PJN_PatientMergeCtrl.PJN_ChildObject[]" />
+    <aura:attribute name="selectedChildrenRecordMap" type="Map" />
+
+    <aura:registerEvent name="selectChildRecordEvent" type="c:PJN_PatientMergeSelectChildRecordEvent" />
+    <aura:registerEvent name="mergeChildRecordsEvent" type="c:PJN_PatientMergeMergeChildRecordsEvent" />
+    <aura:registerEvent name="hideButtonsEvent" type="c:PJN_PatientMergeHideBackNextButtonsEvent" />
+    <aura:registerEvent name="setMergedCarePlanIdsEvent" type="c:PJN_PatientMergeSetMergedCarePlanIdsEvent" />
+
+    <div class="slds-align_absolute-center slds-m-top_xxx-small">
+        <lightning:button
+            variant="brand"
+            label="Back"
+            title="Back"
+            onclick="{!c.displayMergeCarePlanScreen}"
+        />
+        <lightning:button
+            variant="brand"
+            label="{!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_And_Back_Button}"
+            title="{!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_And_Back_Button}"
+            onclick="{!c.mergeChildRecords}"
+        />
+    </div>
+
+    <lightning:layout multipleRows="true">
+    <aura:iteration items="{!v.childRecordList}" var="childRecord">
+        <aura:if isTrue="{!childRecord.recordList.length > 0}">
+            <lightning:layoutItem padding="around-small" size="12">
+                <c:PJN_PatientMergeChildRecordTable
+                    masterCarePlanId="{!v.masterCarePlanId}"
+                    childRecord="{!childRecord}"
+                    parentObjectName="Case"
+                    selectedChildrenRecordMap="{!v.selectedChildrenRecordMap}"
+                />
+            </lightning:layoutItem>
+        </aura:if>
+    </aura:iteration>
+    </lightning:layout>
+
+</aura:component>

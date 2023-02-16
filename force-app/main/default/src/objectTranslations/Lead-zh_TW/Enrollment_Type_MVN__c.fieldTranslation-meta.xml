@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Enrollment Type --></label>
+    <name>Enrollment_Type_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Caregiver</masterLabel>
+        <translation><!-- Caregiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negative Screening Result</masterLabel>
+        <translation><!-- Negative Screening Result --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient</masterLabel>
+        <translation><!-- Patient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive But Low Indication</masterLabel>
+        <translation><!-- Positive But Low Indication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Screening Result</masterLabel>
+        <translation><!-- Positive Screening Result --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

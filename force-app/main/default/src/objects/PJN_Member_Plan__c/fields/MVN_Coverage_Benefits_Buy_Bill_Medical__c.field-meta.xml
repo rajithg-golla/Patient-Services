@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Coverage_Benefits_Buy_Bill_Medical__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Coverage Benefits - Buy &amp; Bill Medical</label>
+    <referenceTo>PJN_Coverage_Benefit__c</referenceTo>
+    <relationshipLabel>Member Plans (Buy &amp; Bill Medical Coverage Benefits)</relationshipLabel>
+    <relationshipName>Member_Plans_Buy_Bill_Medical</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

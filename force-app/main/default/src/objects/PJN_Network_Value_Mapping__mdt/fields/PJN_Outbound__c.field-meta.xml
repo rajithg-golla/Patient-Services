@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Outbound__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does this map from Salesforce to Veeva Network?</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Outbound?</label>
+    <type>Checkbox</type>
+</CustomField>

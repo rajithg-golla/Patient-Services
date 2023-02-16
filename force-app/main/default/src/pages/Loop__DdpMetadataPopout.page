@@ -1,0 +1,3 @@
+<apex:page id="DdpMetadataPopout" controller="Loop.DdpMetadataPopoutController">
+    <c:PopoutWrapper contentComponentName="DdpMetadata" contentComponentParams="{!ddpMetadataParamsJSON}" popoutTitle="{!$Label.loop__docgenmetadata_label}"/>
+</apex:page>

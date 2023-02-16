@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Additional_Filter_Value_Required</fullName>
+    <active>true</active>
+    <description>When an Additional Filter Field is indicated the Additional Filter Value is required</description>
+    <errorConditionFormula>NOT( 
+ ISBLANK( PJN_Additional_Filter_Field__c ) 
+)
+&amp;&amp;
+ISBLANK( PJN_Additional_Filter_Value__c )</errorConditionFormula>
+    <errorDisplayField>PJN_Additional_Filter_Value__c</errorDisplayField>
+    <errorMessage>A filter value is required when an Additional Filter Field is set</errorMessage>
+</ValidationRule>

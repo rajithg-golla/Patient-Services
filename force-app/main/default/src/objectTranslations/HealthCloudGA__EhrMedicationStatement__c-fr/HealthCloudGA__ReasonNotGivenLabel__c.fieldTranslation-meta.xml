@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Nom convivial du code de motif ou de l&apos;indication de délivrance de la prescription</help>
+    <label><!-- Reason Not Given Label --></label>
+    <name>HealthCloudGA__ReasonNotGivenLabel__c</name>
+</CustomFieldTranslation>

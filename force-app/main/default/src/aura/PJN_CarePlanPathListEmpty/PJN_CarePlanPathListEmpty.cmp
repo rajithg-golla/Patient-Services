@@ -1,0 +1,15 @@
+<aura:component implements="c:PJN_LightningOutIntf" >
+    <!-- BODY -->
+    <div class="slds-card slds-m-around--small">
+        <div class="slds-illustration slds-illustration_large">
+            <div class="slds-align_absolute-center">
+                <div class="empty-state-container slds-text-align_center">
+                    <img src="/projRes/ui-home-private/emptyStates/noAssistant.svg" aria-hidden="true" alt="" />
+                    <div class="empty-state-message slds-m-top_medium">
+                        {!$Label.c.PJN_No_Care_Plans}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

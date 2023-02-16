@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Pulver | Tabletten | Schachtel + System</help>
+    <label><!-- Dispense Medication Product Form System --></label>
+    <name>HealthCloudGA__DispenseMedicationProductFormSystem__c</name>
+</CustomFieldTranslation>

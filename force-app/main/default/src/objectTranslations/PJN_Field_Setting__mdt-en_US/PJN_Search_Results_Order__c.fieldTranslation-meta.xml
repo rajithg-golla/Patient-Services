@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates the order this field should appear in search results on the Account Search. --></help>
+    <label><!-- Search Results Order --></label>
+    <name>PJN_Search_Results_Order__c</name>
+</CustomFieldTranslation>

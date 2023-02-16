@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Document Type --></label>
+    <name>MVN_Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Appeal Approval Letter</masterLabel>
+        <translation><!-- Appeal Approval Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal Denial Letter</masterLabel>
+        <translation><!-- Appeal Denial Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal Form</masterLabel>
+        <translation><!-- Appeal Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal Letter</masterLabel>
+        <translation><!-- Appeal Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim Information</masterLabel>
+        <translation><!-- Claim Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Documents</masterLabel>
+        <translation><!-- Clinical Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consent Form</masterLabel>
+        <translation><!-- Consent Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Documents</masterLabel>
+        <translation><!-- Financial Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Cards</masterLabel>
+        <translation><!-- Insurance Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Information</masterLabel>
+        <translation><!-- Insurance Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter of Medical Necessity</masterLabel>
+        <translation><!-- Letter of Medical Necessity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Approval Letter</masterLabel>
+        <translation><!-- PA Approval Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Denial Letter</masterLabel>
+        <translation><!-- PA Denial Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Form</masterLabel>
+        <translation><!-- PA Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAP Appeal Documents</masterLabel>
+        <translation><!-- PAP Appeal Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Authorization</masterLabel>
+        <translation><!-- Patient Authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Request Form</masterLabel>
+        <translation><!-- Product Request Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rx</masterLabel>
+        <translation><!-- Rx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Form</masterLabel>
+        <translation><!-- Start Form --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

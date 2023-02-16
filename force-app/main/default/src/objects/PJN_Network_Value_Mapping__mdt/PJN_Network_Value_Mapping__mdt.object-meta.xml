@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Data change request value mapping for those values which needs a transformation to go into Veeva Network</description>
+    <label>Network Value Mapping</label>
+    <pluralLabel>Network Value Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

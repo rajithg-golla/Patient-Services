@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date of Service recorded by myRARE for a reviewed Copay Medical Claim or for an Insurance Claim myRARE is providing support with. --></help>
+    <label><!-- Date of Service (myRARE) --></label>
+    <name>MVN_Date_of_Service_myRARE__c</name>
+</CustomFieldTranslation>

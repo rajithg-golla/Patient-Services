@@ -1,0 +1,99 @@
+<template>
+    <div class="modal-header slds-modal__header" data-aura-rendered-by="1596:0">
+        <h2 class="title slds-text-heading--medium slds-hyphenate">
+            {labels.MODAL_HEADER}
+        </h2>
+    </div>
+    <template if:true={submitting}>
+        <div class="slds-is-relative slds-align_absolute-center slds-text-heading--large submitting-spinner" style="">
+            <div class="slds-is-absolute spinner-label">{labels.SPINNER_LABEL}</div>
+            <lightning-spinner alternative-text={labels.SPINNER_LABEL} variant="brand" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={submitting}>
+        <template if:false={papEligibility}>
+            <template if:true={preview}>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">{labels.FIELD}</th>
+                            <th scope="col">{labels.VALUE}</th>
+                            <th scope="col">{labels.SOURCE}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={preview} for:item="row">
+                            <tr key={row.field}>
+                                <td data-label="Field">{row.label}</td>
+                                <td data-label="Value">{row.value}</td>
+                                <td data-label="Source">{row.source}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div class="slds-align_absolute-center slds-m-around_large">
+                    <button onclick={close} class="slds-button slds-button_neutral">{labels.CANCEL}</button>
+                    <button onclick={submit} class="slds-button slds-button_brand">{labels.SUBMIT}</button>
+                </div>
+            </template>
+        </template>
+        <template if:true={papEligibility}>
+            <template if:false={papEligibility.hasErrors}>
+                <div class="slds-text-heading--large slds-hyphenate slds-m-around_large">
+                    {labels.RESULT}
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-tile label={labels.HOUSEHOLD_SIZE_LABEL} type="media">
+                        <lightning-icon slot="media" icon-name="utility:people"></lightning-icon>
+                        <div class="slds-text-heading_small">
+                            {papEligibility.estimatedHouseholdSize}
+                        </div>
+                    </lightning-tile>
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-tile label={labels.HOUSEHOLD_INCOME_LABEL} type="media">
+                        <lightning-icon slot="media" icon-name="utility:money"></lightning-icon>
+                        <div class="slds-text-heading_small">
+                            {papEligibility.estimatedHouseholdIncome}
+                        </div>
+                    </lightning-tile>
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-tile label={labels.FED_POV_LVL_PCT_LABEL} type="media">
+                        <lightning-icon slot="media" icon-name="utility:percent"></lightning-icon>
+                        <div class="slds-text-heading_small">
+                            {papEligibility.federalPovertyLevelPercent}
+                        </div>
+                    </lightning-tile>
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-tile label={labels.OUTCOME_LABEL} type="media">
+                        <lightning-icon slot="media" icon-name="utility:outcome"></lightning-icon>
+                        <div class="slds-text-heading_small">
+                            {papEligibility.outcome}
+                        </div>
+                    </lightning-tile>
+                </div>
+                <div class="slds-align_absolute-center slds-m-around_large">
+                    <button onclick={complete} class="slds-button slds-button_brand">{labels.FINISH}</button>
+                </div>
+            </template>
+            <template if:true={papEligibility.hasErrors}>
+                <template for:each={papEligibility.errors} for:item="error">
+                    <lightning-formatted-rich-text
+                        key={error.message}
+                        value={error.message}
+                    ></lightning-formatted-rich-text>
+                </template>
+            </template>
+        </template>
+        <template if:true={error}>
+            <div class="slds-text-heading_medium slds-text-align_center slds-box">
+                {labels.ERROR}
+                <div class="slds-text-body_regular slds-text-color_error">
+                    {error.body.message}
+                </div>
+            </div>
+        </template>
+    </template>
+</template>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Effective_Months_MD__c</fullName>
+    <description>Number of months for which written opt-in consent of this type is valid for the state of Maryland, which has unique consent expiration requirements.</description>
+    <externalId>false</externalId>
+    <label>Effective Months (MD)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

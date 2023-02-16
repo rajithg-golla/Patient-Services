@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Numerator of a ratio of two Quantity values - a numerator and a denominator</help>
+    <label><!-- Rate Numerator --></label>
+    <name>HealthCloudGA__RateNumerator__c</name>
+</CustomFieldTranslation>

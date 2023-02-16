@@ -1,0 +1,9 @@
+<aura:documentation>
+	<aura:description>Documentation of PJN_CarePlanPath.</aura:description>
+	<aura:example name="SimpleUsage" ref="c:PJN_CarePlanPath" label="Simple usage">
+		<p>A simple example:
+        <code>
+            PJN_CarePlanPath
+        </code></p>
+	</aura:example>
+</aura:documentation>

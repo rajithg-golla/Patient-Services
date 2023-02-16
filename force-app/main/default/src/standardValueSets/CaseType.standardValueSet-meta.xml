@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New Enrollment</fullName>
+        <default>false</default>
+        <label>New Enrollment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound</fullName>
+        <default>false</default>
+        <label>Inbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance Request</fullName>
+        <default>false</default>
+        <label>Insurance Request</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type --></label>
+    <name>PJN_Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>MVN_Consumer</masterLabel>
+        <translation><!-- MVN_Consumer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MVN_Treatment_Site</masterLabel>
+        <translation><!-- MVN_Treatment_Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJN_Caregiver</masterLabel>
+        <translation><!-- PJN_Caregiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJN_Organization</masterLabel>
+        <translation><!-- PJN_Organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJN_Patient</masterLabel>
+        <translation><!-- PJN_Patient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJN_Physician</masterLabel>
+        <translation><!-- PJN_Physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJN_Staff</masterLabel>
+        <translation><!-- PJN_Staff --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

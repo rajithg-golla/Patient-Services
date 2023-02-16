@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- e.g., tablets, capsules, syrup --></help>
+    <label><!-- Dosage Form --></label>
+    <name>PJN_Dosage_Form__c</name>
+</CustomFieldTranslation>

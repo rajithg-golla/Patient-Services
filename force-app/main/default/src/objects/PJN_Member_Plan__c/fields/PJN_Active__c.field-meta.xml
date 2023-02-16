@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Active__c</fullName>
+    <description>Formula checkbox to indicate whether or not a patient&apos;s member plan record matches either the PJN_Primary_Member_Plan__c, PJN_Secondary_Member_Plan__c, or PJN_Tertiary_Member_Plan__c case field value. If so, value is set to TRUE which means the record is currently an active primary, secondary or tertiary member plan for a patient.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(PJN_Coverage_Order__c, &quot;Primary&quot;),
+Id = PJN_Care_Plan__r.PJN_Primary_Member_Plan__c,
+IF(ISPICKVAL(PJN_Coverage_Order__c, &quot;Secondary&quot;),
+Id = PJN_Care_Plan__r.PJN_Secondary_Member_Plan__c,
+IF(ISPICKVAL(PJN_Coverage_Order__c, &quot;Tertiary&quot;),
+Id = PJN_Care_Plan__r.PJN_Tertiary_Member_Plan__c,
+False
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

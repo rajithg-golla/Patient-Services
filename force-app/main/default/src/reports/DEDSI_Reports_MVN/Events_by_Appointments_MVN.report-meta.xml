@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign.Appointments__r$Account_MVN__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Appointments__r$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.Appointments__r$Appointment_Date_MVN__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.Appointments__r$Missed_Appointment_Reason_MVN__c</field>
+    </columns>
+    <description>Lists events and details of the program participant appointments related to them.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign.Appointments__r$Attended_MVN__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Events by Appointments</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaign_Events_with_Appointments_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

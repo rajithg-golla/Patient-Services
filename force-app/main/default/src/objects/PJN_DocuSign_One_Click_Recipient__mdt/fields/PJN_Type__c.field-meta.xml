@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Type__c</fullName>
+    <description>The Type of Recipient as defined in DocuSign documentation</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The Type of Recipient as defined in DocuSign documentation</inlineHelpText>
+    <label>Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calling Individual</fullName>
+                <default>true</default>
+                <label>Calling Individual</label>
+            </value>
+            <value>
+                <fullName>Signing Group</fullName>
+                <default>false</default>
+                <label>Signing Group</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

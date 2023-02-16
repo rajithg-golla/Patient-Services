@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="relay">
+  <apiVersion>47.0</apiVersion>
+  <isExposed>true</isExposed>
+  <masterLabel>Experience List</masterLabel>
+  <targets>
+    <target>lightning__RecordPage</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__RecordPage">
+      <property name="journeyFilter" type="String" label="Experience Filter" description="Filter experience list by the specified labels. Spearate each label with |"/>
+      <property name="dynamicFilterFieldName" type="String" label="Experience Filter Field" description="Enter the name of the SF field that contains dynamic lables for filtering."/>
+      <property name="launchWithApi" type="String" label="Launch with" datasource="Onboarding,Messaging,Read Only" description="This property determines which Relay API to use when launching the experience."/>
+      <property name="deactivatePreviousConnections" type="Boolean" label="Deactivate Previous Connections" default="true"/>
+      <property name="multiSelection" type="Boolean" label="Enable mutli selection" default="false"/>
+      <property name="ccidFieldName" type="String" label="CCID Field" default="RelayCCID__c"/>
+      <property name="consentFieldName" type="String" label="Consent Field" default="RelayConsent__c"/>
+      <property name="mobilePhoneFieldName" type="String" label="Mobile Phone Field" default="MobilePhone"/>
+      <property name="firstNameFieldName" type="String" label="First Name Field" default="FirstName"/>
+      <property name="lastNameFieldName" type="String" label="Last Name Field" default="LastName"/>
+      <property name="dateOfBirthFieldName" type="String" label="Date of Birth Field" default="Birthdate"/>      
+      <property name="secondaryAccountIdFieldName" type="String" label="Secondary Account ID Field" default=""/>      
+      <property name="addressStreetFieldName" type="String" label="Address Street Field" default=""/>
+      <property name="addressCityFieldName" type="String" label="Address City Field" default=""/>
+      <property name="addressStateCodeFieldName" type="String" label="Address State Code Field" default=""/>
+      <property name="addressPostalCodeFieldName" type="String" label="Address Postal Code Field" default=""/>
+      <property name="addressFieldName" type="String" label="Not used" default=""/>
+      <property name="debugging" type="Boolean" label="Enable debugging" default="false"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

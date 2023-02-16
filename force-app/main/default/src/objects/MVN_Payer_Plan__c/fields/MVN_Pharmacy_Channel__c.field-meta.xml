@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Pharmacy_Channel__c</fullName>
+    <description>Payer master customized Pharmacy Benefit Type field requested by Regeneron (Includes ADAP, Cash, CHIP, Commercial, Elderly, FFS Medicaid, HIX, Managed Medicaid, Medicare Part D, Mix, Non-Benefit, Special Needs, Workers Comp)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Pharmacy Channel</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

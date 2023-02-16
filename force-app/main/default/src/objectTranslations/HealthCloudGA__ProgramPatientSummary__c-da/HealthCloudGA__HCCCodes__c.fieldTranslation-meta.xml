@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De endelige HCC-koder, der er anvendelige for patienten efter anvendelse af tilsidesættende logik.</help>
+    <label><!-- HCC Codes --></label>
+    <name>HealthCloudGA__HCCCodes__c</name>
+</CustomFieldTranslation>

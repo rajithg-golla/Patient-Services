@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Affiliation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affiliations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This affiliation is mastered and cannot be changed. If this relationship no longer exist, please update the status to Inactve. --></errorMessage>
+        <name>PJN_Mastered_Affiliation</name>
+    </validationRules>
+</CustomObjectTranslation>

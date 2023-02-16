@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Therapy_Covered__c</fullName>
+    <description>Displays the Therapy Covered value from the Member Plan.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( PJN_Member_Plan__r.PJN_Therapy_Covered__c, &apos;&apos; ), 
+    &quot;Pending&quot;,
+    TEXT(PJN_Member_Plan__r.PJN_Therapy_Covered__c)
+)</formula>
+    <label>Therapy Covered?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Account Search (Select Account); Case Team Member assignation
+Purpose: For the Account Search on a Case, when selecting a related Account, depending on the account record type that relationship must be stored in a specific field on the Case, which this CMT record defines. For the Case Team Member assignation, this CMT also defines the case team role given to that Account on the Case Team and the reciprocal and inverse roles if required.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>Case Field Configuration</label>
+    <pluralLabel>Case Field Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

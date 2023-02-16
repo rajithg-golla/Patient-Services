@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Specifies which Apex class is used to parse each type of HL7 segment</description>
+    <label>HL7 Parser Mapping</label>
+    <pluralLabel>HL7 Parser Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

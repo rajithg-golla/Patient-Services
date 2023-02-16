@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מחזיר True אם &apos;אינדיקטור סירוב&apos; = False וגם &apos;תאריך תפוגה&apos; &gt; Now()‎, אחרת מחזיר False</help>
+    <label><!-- IsVisibleOnPatientCard --></label>
+    <name>HealthCloudGA__IsVisibleOnPatientCard__c</name>
+</CustomFieldTranslation>

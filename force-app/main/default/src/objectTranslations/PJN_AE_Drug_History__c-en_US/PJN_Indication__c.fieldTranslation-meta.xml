@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If applicable, MedDRA terms should be used in the indication. --></help>
+    <label><!-- Indication --></label>
+    <name>PJN_Indication__c</name>
+</CustomFieldTranslation>

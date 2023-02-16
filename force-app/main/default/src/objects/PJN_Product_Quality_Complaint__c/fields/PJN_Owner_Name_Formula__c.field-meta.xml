@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Owner_Name_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(BEGINS(OwnerId, &quot;00G&quot;), Owner:Queue.Name,
+IF(!ISBLANK(Owner:User.FirstName),Owner:User.FirstName, &quot;&quot;) &amp;
+IF(!ISBLANK(Owner:User.MiddleName), &quot; &quot; &amp; Owner:User.MiddleName, &quot;&quot;) &amp;
+IF(!ISBLANK(Owner:User.LastName), &quot; &quot; &amp; Owner:User.LastName, &quot;&quot;) &amp;
+IF(!ISBLANK(Owner:User.Suffix), &quot; &quot; &amp; Owner:User.Suffix, &quot;&quot;))</formula>
+    <label>Owner Name Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

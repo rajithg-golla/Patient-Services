@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Libtayo_Marketing_Must_Consent_MVN</fullName>
+    <active>true</active>
+    <description>Enforces that a Libtayo enrollment cannot take place unless the user verifies that the consumer has provided their consent.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Libtayo_Marketing_Consumer_MVN&quot; &amp;&amp;
+ISPICKVAL( Status , &quot;Enrolled&quot; ) &amp;&amp;
+!ISPICKVAL( Consumer_has_consented_to_the_prog_MVN__c , &quot;Yes&quot; ) &amp;&amp;
+ISPICKVAL( LeadSource, &quot;Website&quot;)</errorConditionFormula>
+    <errorMessage>Cannot enroll unless the consumer has given their consent.</errorMessage>
+</ValidationRule>

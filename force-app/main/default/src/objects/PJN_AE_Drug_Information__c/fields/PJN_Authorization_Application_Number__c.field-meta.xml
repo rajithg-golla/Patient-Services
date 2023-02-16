@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Authorization_Application_Number__c</fullName>
+    <description>E2B (R2): B.4.k.4.1, drugauthorizationnumb (35AN)
+
+E2B (R3): G.k.3.1 Authorisation / Application Number
+Conformance: Optional
+Data Type: 35 AN
+OID: 2.16.840.1.113883.3.989.2.1.3.4
+Value Allowed: Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>If relevant and known, the name of the holder should be provided with the
+authorization number in the country where the drug was obtained when the case report is sent to that
+country. These items apply to both applications and authorizations.</inlineHelpText>
+    <label>Authorization/Application Number</label>
+    <length>35</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

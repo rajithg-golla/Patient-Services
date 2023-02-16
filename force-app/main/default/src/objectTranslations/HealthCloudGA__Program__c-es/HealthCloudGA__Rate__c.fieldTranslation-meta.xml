@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica el reembolso del periodo de valoración de un único paciente para el programa específico (por ejemplo, el programa de Control de afecciones crónicas de Medicare).</help>
+    <label><!-- Rate --></label>
+    <name>HealthCloudGA__Rate__c</name>
+</CustomFieldTranslation>

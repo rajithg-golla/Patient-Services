@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El valor de esta configuración. Consulte la documentación para obtener valores y formatos recomendados.</help>
+    <label><!-- Setting Value --></label>
+    <name>HealthCloudGA__SettingValue__c</name>
+</CustomFieldTranslation>

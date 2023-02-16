@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Status stamped when Cases are sent to PJN with a Completed status. --></help>
+    <label><!-- Case Sync Complete Status --></label>
+    <name>PJN_Case_Sync_Complete_Status__c</name>
+</CustomFieldTranslation>

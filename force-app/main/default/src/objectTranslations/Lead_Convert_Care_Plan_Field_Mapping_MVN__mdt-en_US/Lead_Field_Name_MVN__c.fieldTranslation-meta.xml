@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead field name to map value from --></help>
+    <label><!-- Lead Field Name --></label>
+    <name>Lead_Field_Name_MVN__c</name>
+</CustomFieldTranslation>

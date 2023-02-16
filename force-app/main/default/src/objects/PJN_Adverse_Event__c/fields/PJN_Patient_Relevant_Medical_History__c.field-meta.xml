@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Patient_Relevant_Medical_History__c</fullName>
+    <description>E2B (R2): B.1.7.2, patientmedicalhistorytext (10000AN)
+
+E2B (R3): D.7.2 Text for Relevant Medical History and Concurrent Conditions (not including reaction / event)
+Conformance: Optional, but required if Section D.7.1 is null.
+Data Type: 10000AN
+OID: None
+Value Allowed:
+Free text
+nullFlavor: MSK, ASKU, NASK, UNK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>Text for relevant medical history and concurrent conditions of patient (not including reaction/event).</inlineHelpText>
+    <label>Patient Relevant Medical History</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

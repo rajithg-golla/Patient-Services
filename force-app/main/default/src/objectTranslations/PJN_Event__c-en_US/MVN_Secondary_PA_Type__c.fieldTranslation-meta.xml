@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Secondary PA Type --></label>
+    <name>MVN_Secondary_PA_Type__c</name>
+    <picklistValues>
+        <masterLabel>Appeal - 1st Level</masterLabel>
+        <translation><!-- Appeal - 1st Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal - 2nd Level</masterLabel>
+        <translation><!-- Appeal - 2nd Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal - 3rd Level</masterLabel>
+        <translation><!-- Appeal - 3rd Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal - External Review</masterLabel>
+        <translation><!-- Appeal - External Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal - Formal Grievance</masterLabel>
+        <translation><!-- Appeal - Formal Grievance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal - Peer-to-Peer</masterLabel>
+        <translation><!-- Appeal - Peer-to-Peer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initial</masterLabel>
+        <translation><!-- Initial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reauthorization</masterLabel>
+        <translation><!-- Reauthorization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

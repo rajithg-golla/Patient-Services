@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Must_Be_Program_Product</fullName>
+    <active>true</active>
+    <description>Product selected for a prescription must belong to the program a patient is being enrolled for.</description>
+    <errorConditionFormula>NOT(ISBLANK(  PJN_Product__c  ))
+
+&amp;&amp;
+
+(  PJN_Product__r.CareProgram.PJN_Program_DeveloperName__c   &lt;&gt;   PJN_Care_Plan__r.PJN_Program_DeveloperName__c  )</errorConditionFormula>
+    <errorMessage>Product must belong to the program a patient is being enrolled for.</errorMessage>
+</ValidationRule>

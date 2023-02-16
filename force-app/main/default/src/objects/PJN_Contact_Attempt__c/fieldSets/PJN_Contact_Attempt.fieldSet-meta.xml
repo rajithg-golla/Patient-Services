@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Contact_Attempt</fullName>
+    <description>Contact Attempt button on Cases.</description>
+    <displayedFields>
+        <field>PJN_Attempt_Date_Time__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>PJN_Outcome__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Contact Attempt</label>
+</FieldSet>

@@ -1,0 +1,83 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <aura:attribute name        = "hasBusinessAccounts"
+                    type        = "Boolean"
+                    default     = "false"
+                    description = "True when business account record types are to be displayed"
+                    access      = "public"
+    />
+    <aura:attribute name        = "personRecordTypes"
+                    type        = "List"
+                    description = "Person record types configured in metadata"
+                    access      = "private"
+    />
+    <aura:attribute name        = "businessRecordTypes"
+                    type        = "List"
+                    description = "Business record types configured in metadata"
+                    access      = "private"
+    />
+    <aura:attribute name        = "selectedAccountType"
+                    type        = "String"
+                    default     = "Person"
+                    description = "Corresponds to the record type selected by the user"
+                    access      = "private"
+    />
+    <aura:attribute name        = "selectedRecordTypes"
+                    type        = "List"
+                    description = "Array of record type ids (either a single one or all)"
+                    access      = "private"
+    />
+    <aura:attribute name        = "selectedRecordType"
+                    type        = "String"
+                    default     = ""
+                    description = "The currently selected record type Id (or blank for 'All')"
+                    access      = "private"
+    />
+
+    <aura:registerEvent name="recordTypeChangeEvent" type="c:PJN_AccountSearchRecordTypeEvent"/>
+
+    <aura:handler name="init"   value="{! this}"                 action="{! c.init}"/>
+    <aura:handler name="change" value="{! v.selectedRecordType}" action="{! c.setSelectedTypes}" />
+
+    <aura:method name        = "isPersonAccountSelected"
+                 action      = "{!c.isPersonAccountSelected}"
+                 description = "Return true when the most recent selection is a person account"
+    />
+
+    <aura:method name        = "getSelectedRecordTypes"
+                 action      = "{!c.getSelectedRecordTypes}"
+                 description = "Return the list of selected record type Ids"
+    />
+
+    <lightning:tabset selectedTabId="{! v.selectedAccountType}" >
+        <lightning:tab
+            label    = "Person Accounts"
+            id       = "Person"
+            iconName = "utility:user"
+            onactive = "{! c.setPersonActive}"
+        >
+            <lightning:radioGroup
+                name     = "personTypeSelection"
+                options  = "{! v.personRecordTypes }"
+                value    = "{! v.selectedRecordType }"
+                type     = "button"
+            />
+        </lightning:tab>
+
+        <aura:if isTrue="{! v.hasBusinessAccounts}">
+            <lightning:tab
+                label    = "Business Accounts"
+                id       = "Business"
+                iconName = "utility:groups"
+                onactive = "{! c.setBusinessActive}"
+            >
+                <lightning:radioGroup
+                    name     = "businessTypeSelection"
+                    options  = "{! v.businessRecordTypes }"
+                    value    = "{! v.selectedRecordType }"
+                    type     = "button"
+                />
+            </lightning:tab>
+        </aura:if>
+    </lightning:tabset>
+
+</aura:component>

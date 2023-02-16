@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Date_of_Awareness__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <description>Captures the date of first awareness for the AE.
+
+E2B (R2): A.1.6a, receivedateformat (3N)  --&gt; Value should be 102 AND A.1.6b, receivedate (8N) --&gt; convert to CCYYMMDD
+
+E2B (R3):  C.1.4 Date Report Was First Received from Source
+User Guidance: For organisations transmitting an initial case, this data element should be
+the date when the information was received from the primary source and
+fulfilling the 4 minimum criteria, as described in the Section 3.3.1.
+When retransmitting information received from another regulatory agency
+or another company or any other secondary source, C.1.4 should be the
+date the retransmitter first received the information.
+Conformance: Required
+Data Type: Date / Time
+OID: None
+Value Allowed: See Appendix II for further information.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: For organisations transmitting an initial case, this data element should be
+the date when the information was received from the primary source and
+fulfilling the 4 minimum criteria.</inlineHelpText>
+    <label>Date of Awareness</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

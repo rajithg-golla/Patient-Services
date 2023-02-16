@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Represents the date a claim is either rejected or closed and approved and a payment request made to a financial institution. --></help>
+    <label><!-- Claim Closed Date --></label>
+    <name>MVN_Claim_Closed_Date__c</name>
+</CustomFieldTranslation>

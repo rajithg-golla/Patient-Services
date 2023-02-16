@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>เมื่อทำเครื่องหมายเลือกที่ช่องนี้ Adobe Sign จะส่งเอกสารไปยังหมายเลขโทรสารของผู้ติดต่อ ถ้าเว้นว่างหมายเลขโทรสารของผู้ติดต่อ Adobe Sign จะส่งเอกสารไปยังอีเมล์แอดเดรสของผู้ติดต่อแทน</help>
+    <label><!-- Send written signatures to fax number --></label>
+    <name>echosign_dev1__PreferFax__c</name>
+</CustomFieldTranslation>

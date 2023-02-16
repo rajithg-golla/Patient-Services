@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Service --></label>
+    <name>HealthCloudGA__TypeOfService__c</name>
+    <picklistValues>
+        <masterLabel>2nd Opinion</masterLabel>
+        <translation>2nd Opinion</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation</masterLabel>
+        <translation>Consultation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up</masterLabel>
+        <translation>Follow up</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lab Services</masterLabel>
+        <translation>Lab Services</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please specify in comments)</masterLabel>
+        <translation>Other (please specify in comments)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology Services</masterLabel>
+        <translation>Radiology Services</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>Surgery</translation>
+    </picklistValues>
+</CustomFieldTranslation>

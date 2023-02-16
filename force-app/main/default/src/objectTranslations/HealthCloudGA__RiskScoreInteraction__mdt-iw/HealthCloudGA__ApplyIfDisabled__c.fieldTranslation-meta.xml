@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>True כאשר ציון תוספת זה חל אם המטופל נכה ובעל תנאים נוספים.</help>
+    <label><!-- Apply If Disabled --></label>
+    <name>HealthCloudGA__ApplyIfDisabled__c</name>
+</CustomFieldTranslation>

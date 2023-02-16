@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>이 진료 갭을 종료함으로써 발생하는 잠재적인 비용입니다.</help>
+    <label><!-- Financial Value --></label>
+    <name>HealthCloudGA__FinancialValue__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,23 @@
+<template>
+    <template if:true={missingInfoFields}>
+        <div class="slds-card slds-m-top_medium slds-p-around_medium">
+            <h2 slot="title" class="slds-card__header-title">
+                <span class="slds-card__header-link slds-truncate">
+                    {missingInfoFieldsTitle}
+                </span>
+            </h2>
+            <template if:true={missingInfoFieldsEmpty}>
+                {missingInfoNoFieldsFound}
+            </template>
+            <template if:false={missingInfoFieldsEmpty}>
+                <ul class="slds-m-around_medium">
+                    <template for:each={missingInfoFields} for:item="missingInfoField">
+                        <li key={missingInfoField}>
+                            {missingInfoField}
+                        </li>
+                    </template>
+                </ul>
+            </template>
+        </div>
+    </template>
+</template>

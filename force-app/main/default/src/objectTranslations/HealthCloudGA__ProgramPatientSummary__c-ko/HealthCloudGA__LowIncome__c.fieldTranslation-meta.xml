@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>환자가 저소득 기준에 속하는지 여부를 나타냅니다.</help>
+    <label><!-- Low Income --></label>
+    <name>HealthCloudGA__LowIncome__c</name>
+</CustomFieldTranslation>

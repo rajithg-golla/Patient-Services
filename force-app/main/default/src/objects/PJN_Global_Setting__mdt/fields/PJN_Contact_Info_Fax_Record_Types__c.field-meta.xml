@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Contact_Info_Fax_Record_Types__c</fullName>
+    <description>Semi-colon delimited list of all contact info fax record types.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Semi-colon delimited list of all contact info fax record types.</inlineHelpText>
+    <label>Contact Info Fax Record Types</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

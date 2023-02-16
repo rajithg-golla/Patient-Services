@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Specialty_Pharmacy__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Lookup to the Specialty Pharmacy which distributes drug for the Care Program.</description>
+    <externalId>false</externalId>
+    <label>Specialty Pharmacy</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Must select Account with the Pharmacy record type.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>PJN_Pharmacy</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Care Programs</relationshipLabel>
+    <relationshipName>Program_Specialty_Pharmacies</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

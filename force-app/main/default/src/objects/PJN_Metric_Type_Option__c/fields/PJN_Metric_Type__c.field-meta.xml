@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Metric_Type__c</fullName>
+    <description>The metric type this option is defined for</description>
+    <externalId>false</externalId>
+    <label>Metric Type</label>
+    <referenceTo>PJN_Metric_Type__c</referenceTo>
+    <relationshipLabel>Options</relationshipLabel>
+    <relationshipName>PJN_Metric_Type_Options</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

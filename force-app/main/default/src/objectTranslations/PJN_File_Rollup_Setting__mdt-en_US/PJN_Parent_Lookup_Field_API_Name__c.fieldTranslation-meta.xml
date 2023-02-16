@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The API name of the lookup field on this sObject to the Care Plan record --></help>
+    <label><!-- Parent Lookup Field API Name --></label>
+    <name>PJN_Parent_Lookup_Field_API_Name__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets the Account lookup based on the value on the Care Plan.</description>
+        <name>PJN_Set_Account_lookup</name>
+        <label>Set Account lookup</label>
+        <locationX>176</locationX>
+        <locationY>253</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Care_Plan__r.Account.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Runs PJN logic before the save of Assistance Program records which have been created or updated.</description>
+    <interviewLabel>Assistance Program Eligibility - PJN Before Create Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assistance Program - PJN Before Create Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PJN_Set_Account_lookup</targetReference>
+        </connector>
+        <object>PJN_Assistance_Program__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

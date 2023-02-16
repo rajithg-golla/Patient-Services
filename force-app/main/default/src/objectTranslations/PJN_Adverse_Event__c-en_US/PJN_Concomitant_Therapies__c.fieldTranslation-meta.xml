@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When this data element is set to ‘true’, details should be provided in the narrative Section. --></help>
+    <label><!-- Concomitant Therapies --></label>
+    <name>PJN_Concomitant_Therapies__c</name>
+</CustomFieldTranslation>

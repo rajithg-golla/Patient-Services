@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Code_Cancelled__c</fullName>
+    <description>Patient status codes for Status = Cancelled</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Cancelled&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Missing Information, Max Attempts&quot;,&quot;C01&quot;,
+&quot;Indication Criteria Not Met&quot;,&quot;C02&quot;,
+&quot;Requirement Not Met - Patient Residency&quot;,&quot;C03&quot;,
+&quot;Requirement Not Met - Prescriber License&quot;,&quot;C04&quot;,
+&quot;Unable to Reach Patient on Required Contact, Max Attempts&quot;,&quot;C05&quot;,
+&quot;Unable to Reach Prescriber on Required Contact, Max Attempts&quot;,&quot;C06&quot;,
+&quot;Patient Decision - Alternate Therapy&quot;,&quot;C07&quot;,
+&quot;Patient Decision - Financial&quot;,&quot;C08&quot;,
+&quot;Patient Decision - Other&quot;,&quot;C09&quot;,
+&quot;Prescriber Decision - Alternate Therapy&quot;,&quot;C10&quot;,
+&quot;Prescriber Decision - Financial&quot;,&quot;C11&quot;,
+&quot;Prescriber Decision - Coverage Effort&quot;,&quot;C12&quot;,
+&quot;Prescriber Decision - Other&quot;,&quot;C13&quot;,
+&quot;Patient Medical Delay, Max Delay&quot;,&quot;C14&quot;,
+&quot;No Route of Access&quot;,&quot;C15&quot;,
+&quot;Patient Deceased&quot;,&quot;C17&quot;,
+&quot;Other&quot;,&quot;C18&quot;,
+&quot;Clinical Trial&quot;,&quot;C19&quot;,
+&quot;No coverage: Appeals exhausted and PAP ineligible&quot;,&quot;C20&quot;,
+&quot;Patient does not want infusion&quot;,&quot;C21&quot;,
+&quot;Administration Barrier&quot;,&quot;C22&quot;,
+null),
+null)</formula>
+    <label>Status Code - Cancelled</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

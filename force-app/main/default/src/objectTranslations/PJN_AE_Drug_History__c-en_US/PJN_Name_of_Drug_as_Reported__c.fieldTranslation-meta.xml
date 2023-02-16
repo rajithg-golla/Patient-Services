@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This segment concerns drugs previously taken, but not those taken concomitantly or
+drugs that may have potentially been involved in the current reaction or event. Information concerning
+concomitant and other suspect drugs should be captured separately. --></help>
+    <label><!-- Name of Drug as Reported --></label>
+    <name>PJN_Name_of_Drug_as_Reported__c</name>
+</CustomFieldTranslation>

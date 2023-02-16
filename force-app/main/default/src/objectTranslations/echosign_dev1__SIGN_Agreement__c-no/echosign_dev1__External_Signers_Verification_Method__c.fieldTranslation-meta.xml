@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- External Signers Verification Method --></label>
+    <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Knowledge based authentication</masterLabel>
+        <translation>Kunnskapsbasert godkjenning (KBA)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password to sign agreement</masterLabel>
+        <translation>Passord for å signere avtale</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web identity authentication</masterLabel>
+        <translation>Bekreftelse av nettidentitet</translation>
+    </picklistValues>
+</CustomFieldTranslation>

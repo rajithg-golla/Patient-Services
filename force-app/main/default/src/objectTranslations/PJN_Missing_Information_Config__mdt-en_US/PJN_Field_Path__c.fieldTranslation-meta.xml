@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field API name path to verify the missing information. Eg: Account.FirstName or CaseNumber --></help>
+    <label><!-- Field Path --></label>
+    <name>PJN_Field_Path__c</name>
+</CustomFieldTranslation>

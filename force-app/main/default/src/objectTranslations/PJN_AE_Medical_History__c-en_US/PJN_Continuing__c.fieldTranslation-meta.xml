@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates if the ‘medical condition’ is known to be still present at the time of this report. --></help>
+    <label><!-- Continuing? --></label>
+    <name>PJN_Continuing__c</name>
+</CustomFieldTranslation>

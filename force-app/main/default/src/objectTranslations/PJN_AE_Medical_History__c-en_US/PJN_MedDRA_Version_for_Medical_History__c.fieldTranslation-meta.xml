@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If applicable, MedDRA terms should be used in the main description for disease or surgical procedures. --></help>
+    <label><!-- MedDRA Version for Medical History --></label>
+    <name>PJN_MedDRA_Version_for_Medical_History__c</name>
+</CustomFieldTranslation>

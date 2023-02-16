@@ -1,0 +1,38 @@
+<aura:component implements="force:hasRecordId">
+    <aura:attribute name="account" type="Account" />
+    <aura:attribute name="selected" type="Boolean"/>
+    <aura:attribute name="fieldset" type="String[]" />
+
+    <aura:attribute name="simpleAccount" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    
+    <!-- EVENTS -->
+    <aura:registerEvent name="selectAccountEvent" type="c:PJN_PatientMergeSelectAccountEvent" />
+
+    <aura:if isTrue="{!v.account}">
+        <div class="Record Details">
+            <lightning:card iconName="standard:person_account" 
+                variant="Narrow"
+                class="slds-card_boundary"> 
+                <aura:set attribute="title">
+                    <a onclick="{!c.openAccount}">{!v.account.Name}</a>
+                </aura:set>
+
+                <aura:set attribute="actions">
+                <lightning:button 
+                    label="{!(!v.selected) ? 'Select' : 'Selected'}"
+                    variant="{!(!v.selected) ? 'Neutral' : 'brand'}"
+                    onclick="{!c.handleAccountSelection}" />
+                </aura:set>
+                <lightning:recordViewForm recordId="{!v.account.Id}" objectApiName="Account">
+                    <div class="slds-form slds-form_horizontal slds-p-horizontal_medium">
+                        <aura:iteration items="{!v.fieldset}" var="field">
+                            <lightning:outputField fieldName="{!field}" />
+                        </aura:iteration>
+                    </div>
+                </lightning:recordViewForm>
+
+            </lightning:card>
+        </div>
+    </aura:if>
+</aura:component>

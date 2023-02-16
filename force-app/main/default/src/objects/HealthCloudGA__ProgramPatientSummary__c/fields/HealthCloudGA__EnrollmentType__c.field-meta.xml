@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__EnrollmentType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the Medicare enrollment type for the patient.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Medicare enrollment type for the patient.</inlineHelpText>
+    <label>Enrollment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dual</fullName>
+                <default>false</default>
+                <label>Dual</label>
+            </value>
+            <value>
+                <fullName>ESRD</fullName>
+                <default>false</default>
+                <label>ESRD</label>
+            </value>
+            <value>
+                <fullName>FBDual</fullName>
+                <default>false</default>
+                <label>FBDual</label>
+            </value>
+            <value>
+                <fullName>NonDual</fullName>
+                <default>false</default>
+                <label>NonDual</label>
+            </value>
+            <value>
+                <fullName>PBDual</fullName>
+                <default>false</default>
+                <label>PBDual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

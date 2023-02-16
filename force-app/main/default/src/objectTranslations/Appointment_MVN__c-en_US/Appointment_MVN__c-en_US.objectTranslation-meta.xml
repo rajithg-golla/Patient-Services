@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Appointment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Appointments</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Defines appointments related to Evkeeza --></description>
+        <label><!-- Evkeeza --></label>
+        <name>MVN_Evkeeza</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please indicate why the participant missed their appointment --></errorMessage>
+        <name>Require_Missed_Appointment_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the recommended treatment details --></errorMessage>
+        <name>Require_Other_Treatement_Details_MVN</name>
+    </validationRules>
+</CustomObjectTranslation>

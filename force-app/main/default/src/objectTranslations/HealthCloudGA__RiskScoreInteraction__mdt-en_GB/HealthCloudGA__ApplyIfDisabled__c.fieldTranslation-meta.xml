@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>True when this additive score is applied if the patient is disabled and has additional conditions.</help>
+    <label><!-- Apply If Disabled --></label>
+    <name>HealthCloudGA__ApplyIfDisabled__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The LoadDefaultContacts parameter determines if default contacts for the source object type are loaded These contacts will be loaded after the Custom Related Contacts recipients. --></help>
+    <label><!-- Load Default Contacts --></label>
+    <name>PJN_Load_Default_Contacts__c</name>
+</CustomFieldTranslation>

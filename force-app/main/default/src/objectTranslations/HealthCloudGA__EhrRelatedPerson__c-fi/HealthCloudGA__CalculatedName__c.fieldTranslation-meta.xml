@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Jos Nimi on null tai tyhjä, se täytetään arvoilla GivenName1__c + FamilyName1__c, muussa tapauksessa se täytetään Nimi-kentän arvolla</help>
+    <label><!-- Calculated Name --></label>
+    <name>HealthCloudGA__CalculatedName__c</name>
+</CustomFieldTranslation>

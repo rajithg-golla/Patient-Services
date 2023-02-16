@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Code voor reden voor coderingssysteem of indicatie voor het uitschrijven van het recept</help>
+    <label><!-- Reason System --></label>
+    <name>HealthCloudGA__ReasonSystem__c</name>
+</CustomFieldTranslation>

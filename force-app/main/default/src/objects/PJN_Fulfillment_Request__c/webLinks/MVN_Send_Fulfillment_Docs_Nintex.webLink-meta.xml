@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Send_Fulfillment_Docs_Nintex</fullName>
+    <availability>online</availability>
+    <description>Sends the attached fulfillment documents to Orsini via email</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Send Fulfillment Docs</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/loop__looplus?&amp;eid={!PJN_Fulfillment_Request__c.Id}&amp;caseId={!PJN_Fulfillment_Request__c.MVN_Care_Plan_Id__c}&amp;hidecontact=true&amp;filter={!PJN_Fulfillment_Request__c.PJN_Record_Type_Name__c}</url>
+</WebLink>

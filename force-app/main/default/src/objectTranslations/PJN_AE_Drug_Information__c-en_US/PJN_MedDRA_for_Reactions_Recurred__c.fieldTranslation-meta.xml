@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use MedDRA terms --></help>
+    <label><!-- MedDRA Version for Reactions Recurred --></label>
+    <name>PJN_MedDRA_for_Reactions_Recurred__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: A description of the documents held by the sender relevant to this ICSR
+(e.g. clinical records, hospital records, autopsy reports, ECG strips, chest
+X-ray, or photographs) should be listed individually in this data element. --></help>
+    <label><!-- List of Documents Held --></label>
+    <name>PJN_List_of_Documents_Held__c</name>
+</CustomFieldTranslation>

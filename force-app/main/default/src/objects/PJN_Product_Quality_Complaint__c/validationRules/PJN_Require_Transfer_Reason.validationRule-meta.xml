@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_Transfer_Reason</fullName>
+    <active>true</active>
+    <description>Must provide a transfer reason unless taking from a queue or assigning to yourself.</description>
+    <errorConditionFormula>ISCHANGED(OwnerId) &amp;&amp;
+ISBLANK(TEXT(PRIORVALUE(PJN_Transfer_Reason__c))) &amp;&amp;
+ISBLANK(TEXT(PJN_Transfer_Reason__c)) &amp;&amp;
+!(BEGINS(PRIORVALUE(OwnerId),&quot;00G&quot;)) &amp;&amp;
+!($User.Id = LEFT(OwnerId,15))</errorConditionFormula>
+    <errorDisplayField>PJN_Transfer_Reason__c</errorDisplayField>
+    <errorMessage>Must provide a transfer reason when changing owner</errorMessage>
+</ValidationRule>

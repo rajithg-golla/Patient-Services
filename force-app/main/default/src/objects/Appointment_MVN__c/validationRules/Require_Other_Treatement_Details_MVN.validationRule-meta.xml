@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Other_Treatement_Details_MVN</fullName>
+    <active>true</active>
+    <description>Other Treatment Details required if Other selected.</description>
+    <errorConditionFormula>ISPICKVAL( Recommended_Treatment_MVN__c , &quot;Other&quot;) &amp;&amp;
+ISBLANK( Other_Treatment_Details_MVN__c )</errorConditionFormula>
+    <errorDisplayField>Other_Treatment_Details_MVN__c</errorDisplayField>
+    <errorMessage>Please provide the recommended treatment details</errorMessage>
+</ValidationRule>

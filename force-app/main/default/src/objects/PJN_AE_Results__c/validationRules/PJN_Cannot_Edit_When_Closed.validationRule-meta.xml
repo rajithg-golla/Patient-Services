@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Cannot_Edit_When_Closed</fullName>
+    <active>true</active>
+    <description>Cannot edit when the related AE is closed</description>
+    <errorConditionFormula>PJN_AE_Closed__c &amp;&amp; PRIORVALUE(PJN_AE_Closed__c)</errorConditionFormula>
+    <errorMessage>Cannot edit closed Adverse Event Test Result records</errorMessage>
+</ValidationRule>

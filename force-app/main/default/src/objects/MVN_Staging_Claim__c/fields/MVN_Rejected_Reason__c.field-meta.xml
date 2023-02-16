@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Rejected_Reason__c</fullName>
+    <description>This is required for rejected claims only. This field will contain the text from the selected reject reason.
+Pertains only to claims with “Claims outcome” = R. all approved claims would be blank for this field. Values should represent the Integrichain program specific reject reasons that reside on our processing system. Approved claims will not have a value assigned to this field.
+
+Expected values:
+No patient responsibility, No eligible charges, Maximum benefit exceeded, DOS outside eligibility period, Timely filing, Missing claim form/check request form, Government payer, Missing EOB, Duplicate claim, Missing patient receipt, Primary payer denial, Insurance mismatch, Other</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Rejected Reason</label>
+    <length>50</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

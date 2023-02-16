@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If true then the custom recipient list will be defined using Custom Recipient records related to this record. Maps to &quot;CRL&quot;. --></help>
+    <label><!-- Use Custom Recipients --></label>
+    <name>PJN_Use_Custom_Recipients__c</name>
+</CustomFieldTranslation>

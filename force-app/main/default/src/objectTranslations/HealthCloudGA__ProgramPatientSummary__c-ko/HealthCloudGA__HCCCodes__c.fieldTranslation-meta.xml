@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>재정의 논리를 적용한 후 환자에게 적용할 수 있는 최종 HCC 코드입니다.</help>
+    <label><!-- HCC Codes --></label>
+    <name>HealthCloudGA__HCCCodes__c</name>
+</CustomFieldTranslation>

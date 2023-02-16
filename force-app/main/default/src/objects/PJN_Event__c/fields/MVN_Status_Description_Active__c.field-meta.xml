@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Description_Active__c</fullName>
+    <description>Status Description for Status = Active</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Active&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Treatment Confirmed&quot;, &quot;MyRare has confirmed that patient received treatment&quot;,
+&quot;Patient Support&quot;, &quot;Hub provided support to patient&quot;,
+&quot;Prescriber Support&quot;, &quot;Hub provided support to prescriber&quot;, 
+&quot;Transfer to SP IAP&quot;, &quot;Hub triaged IAP dispense to SP&quot;,
+&quot;Transfer to SP PAP&quot;, &quot;Hub triaged PAP dispense to SP&quot;, 
+&quot;Prior Authorization Support Start&quot;, &quot;PA support by Hub&quot;, 
+&quot;Prior Authorization Approved&quot;, &quot;PA was approved by payor&quot;, 
+&quot;Prior Authorization Denied&quot;, &quot;PA was denied by payor&quot;, 
+&quot;Appeal Support (1st Level)&quot;, &quot;PA was denied, Hub providing 1st Level support&quot;,
+&quot;Appeal Support (2nd Level)&quot;, &quot;PA was denied, Hub providing 2nd Level support&quot;,
+&quot;Appeal Support (3rd Level)&quot;, &quot;PA was denied, Hub providing 3rd Level support&quot;,
+&quot;Appeal Support (Peer-to-Peer)&quot;, &quot;PA was denied, Peer-to-Peer review&quot;,
+&quot;Appeal Approved&quot;, &quot;PA Appeal approved by payor&quot;,
+&quot;Appeal Denied&quot;, &quot;PA Appeal denied by payor&quot;, 
+&quot;PA/Appeal Support Max Attempts&quot;, &quot;PA/Appeal support has exhausted the maximum number of attempts&quot;,
+&quot;Claims Support&quot;, &quot;HCP Claims Support&quot;, 
+&quot;Copay Support&quot;, &quot;Patient Copay Support&quot;,
+null),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Description - Active</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Libtayo_Marketing_Care_Plan_Compact_Layout_MVN</fullName>
+    <fields>Subject</fields>
+    <fields>Account_Birth_Date_MVN__c</fields>
+    <fields>Status</fields>
+    <fields>Qualification_Status_MVN__c</fields>
+    <fields>Type</fields>
+    <fields>Origin</fields>
+    <label>Libtayo Marketing Care Plan Compact Layout</label>
+</CompactLayout>

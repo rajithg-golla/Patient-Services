@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Treatment__c</fullName>
+    <externalId>false</externalId>
+    <label>Treatment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Statin</fullName>
+                <default>false</default>
+                <label>Statin</label>
+            </value>
+            <value>
+                <fullName>PCSK9i</fullName>
+                <default>false</default>
+                <label>PCSK9i</label>
+            </value>
+            <value>
+                <fullName>Zetia (ezetimibe)</fullName>
+                <default>false</default>
+                <label>Zetia (ezetimibe)</label>
+            </value>
+            <value>
+                <fullName>Juxtapid (lomitapide)</fullName>
+                <default>false</default>
+                <label>Juxtapid (lomitapide)</label>
+            </value>
+            <value>
+                <fullName>Apheresis</fullName>
+                <default>false</default>
+                <label>Apheresis</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

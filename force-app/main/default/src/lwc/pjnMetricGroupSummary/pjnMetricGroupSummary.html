@@ -1,0 +1,10 @@
+<template>
+    <template if:true={latestMetrics}>
+        <lightning-datatable
+            key-field="Id"
+            data={latestMetrics}
+            columns={columns}
+            hide-checkbox-column>
+        </lightning-datatable>
+    </template>
+</template>

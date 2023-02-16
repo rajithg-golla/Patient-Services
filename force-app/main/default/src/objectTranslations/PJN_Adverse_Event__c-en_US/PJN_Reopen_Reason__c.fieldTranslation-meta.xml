@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Captures the reason the AE was reopened. --></help>
+    <label><!-- Reopen Reason --></label>
+    <name>PJN_Reopen_Reason__c</name>
+</CustomFieldTranslation>

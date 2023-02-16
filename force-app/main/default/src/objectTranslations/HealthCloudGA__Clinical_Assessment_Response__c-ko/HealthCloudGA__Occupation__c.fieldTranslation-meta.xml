@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Occupation --></label>
+    <name>HealthCloudGA__Occupation__c</name>
+    <picklistValues>
+        <masterLabel>Childcare worker</masterLabel>
+        <translation>보육교사</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical laboratory technologist or technician</masterLabel>
+        <translation>임상병리사 또는 임상병리기술사</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combined food preparation or serving worker, including fast food</masterLabel>
+        <translation>패스트푸드를 포함한 음식 준비 및 서빙 담당 직원</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dentist</masterLabel>
+        <translation>치과의사</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency management director</masterLabel>
+        <translation>비상 경영 이사</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency medical technician or paramedic</masterLabel>
+        <translation>응급구조사 또는 의료보조인</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health practitioner support technologist or technician</masterLabel>
+        <translation>의료 전문의 지원 기술자 또는 기사</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare support worker(including medical equipment preparer)</masterLabel>
+        <translation>의료 지원 담당자(의료 장비 준비자 포함)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>기타</translation>
+    </picklistValues>
+</CustomFieldTranslation>

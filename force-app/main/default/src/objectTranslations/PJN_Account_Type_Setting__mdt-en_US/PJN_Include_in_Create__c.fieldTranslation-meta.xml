@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Should this record type be included in the create modal on the account search screen? --></help>
+    <label><!-- Include in Create? --></label>
+    <name>PJN_Include_in_Create__c</name>
+</CustomFieldTranslation>

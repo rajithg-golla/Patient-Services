@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_DocuSign_One_Click_Recipient__c</fullName>
+    <description>The recipient this setting is defined for.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The recipient this setting is defined for.</inlineHelpText>
+    <label>DocuSign One Click Recipient</label>
+    <referenceTo>PJN_DocuSign_One_Click_Recipient__mdt</referenceTo>
+    <relationshipLabel>DocuSign One Click Recipient Field</relationshipLabel>
+    <relationshipName>DocuSign_One_Click_Recipient_Fields</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

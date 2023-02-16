@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Code, der den Status des Berichts angibt. Dieser lautet im Allgemeinen &quot;wird-ausgeführt&quot; oder &quot;abgeschlossen&quot;.</help>
+    <label><!-- Status Code --></label>
+    <name>HealthCloudGA__StatusCode__c</name>
+    <picklistValues>
+        <masterLabel>completed</masterLabel>
+        <translation>abgeschlossen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>entered-in-error</masterLabel>
+        <translation>irrtümlich-eingegeben</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>in-progress</masterLabel>
+        <translation>Wird-ausgeführt</translation>
+    </picklistValues>
+</CustomFieldTranslation>

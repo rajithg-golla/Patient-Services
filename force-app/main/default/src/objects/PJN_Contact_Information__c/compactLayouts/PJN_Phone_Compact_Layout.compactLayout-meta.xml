@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Phone_Compact_Layout</fullName>
+    <fields>PJN_Phone__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>PJN_Account__c</fields>
+    <fields>PJN_Primary__c</fields>
+    <fields>PJN_Is_Relay_Phone__c</fields>
+    <label>Phone Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,3 @@
+<apex:page readonly="true">
+    <apex:iframe src="{!$Resource.PJN_Docs}/index.html" height="1000" width="100%" frameborder="false" scrolling="true"/>
+</apex:page>

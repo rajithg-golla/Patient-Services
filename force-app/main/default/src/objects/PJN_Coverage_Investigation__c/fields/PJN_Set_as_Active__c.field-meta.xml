@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Set_as_Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Controlled by the PJN_ActiveCoverageInvestigationHdlr trigger handler.  When checked, kicks off the logic to set this record as the active on the parent care plan. This value will be reset to false to allow re-triggering of the logic.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Triggers an update to the Care Plan to set this Coverage Investigation as the Active Investigation</inlineHelpText>
+    <label>Set as Active on Care Plan</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Identifică sistemul sursă care a creat înregistrarea și care deține drepturi de a actualiza. Are valoarea implicită Health1 pentru înregistrările create manual.</help>
+    <label><!-- Source System --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

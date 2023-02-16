@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date and time the Event was sent to Veeva CRM. --></help>
+    <label><!-- Date Sent to Veeva CRM --></label>
+    <name>PJN_Date_Sent_to_Veeva_CRM__c</name>
+</CustomFieldTranslation>

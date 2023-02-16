@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Reason --></label>
+    <name>PJN_Cancellation_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Already completed</masterLabel>
+        <translation><!-- Already completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No longer needed</masterLabel>
+        <translation><!-- No longer needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage skipped</masterLabel>
+        <translation><!-- Stage skipped --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Related Address Fax Field --></label>
+    <name>PJN_Related_Address_Fax_Field__c</name>
+    <picklistValues>
+        <masterLabel>Fax_2_vod__c</masterLabel>
+        <translation><!-- Fax_2_vod__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fax_vod__c</masterLabel>
+        <translation><!-- Fax_vod__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

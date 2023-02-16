@@ -1,0 +1,32 @@
+<aura:component>
+    <aura:method
+        name        = "open"
+        action      = "{!c.openModal}"
+        description = "Build and display the modal using the parameters provided"
+    >
+        <aura:attribute name        = "header"
+                        type        = "string"
+                        default     = ""
+                        description = "Header text to display in the modal"
+        />
+        <aura:attribute name        = "componentName"
+                        type        = "string"
+                        default     = ""
+                        description = "Name of the component the modal is to contain"
+        />
+        <aura:attribute name        = "componentData"
+                        type        = "object"
+                        default     = "{}"
+                        description = "Map of attribute names and values to provide to the component"
+        />
+    </aura:method>
+
+    <aura:method name        = "close"
+                 action      = "{!c.closeModal}"
+                 description = "Reset parameters and close the modal"
+    />
+
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+
+</aura:component>

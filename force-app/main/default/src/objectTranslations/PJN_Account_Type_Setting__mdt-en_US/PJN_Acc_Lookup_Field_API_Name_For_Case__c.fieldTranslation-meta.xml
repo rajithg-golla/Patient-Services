@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Acc Lookup Field API Name For Case --></label>
+    <name>PJN_Acc_Lookup_Field_API_Name_For_Case__c</name>
+</CustomFieldTranslation>

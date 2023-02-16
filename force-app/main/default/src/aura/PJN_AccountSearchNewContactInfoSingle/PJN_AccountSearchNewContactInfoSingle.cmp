@@ -1,0 +1,45 @@
+<aura:component>
+    <aura:attribute name="fieldsetContactInfo" type="List" />
+    <aura:attribute name="contactInfoRecord" type="PJN_Contact_Information__c" />
+    <aura:attribute name="index" type="Integer" />
+    <aura:attribute name="recordTypesMap" type="Map" />
+    <aura:attribute name="fieldsetContactInfoMap" type="Map" />
+    <aura:attribute name="recTypeName" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:registerEvent name="editContactInfo" type="c:PJN_AccountSearchNewContactInfoEdit"/>
+    <aura:registerEvent name="removeContactInfo" type="c:PJN_AccountSearchNewContactInfoRemove"/>
+
+    <lightning:layoutItem padding="horizontal-small" flexibility="auto" size="4" class="flex-this slds-m-bottom_medium">
+        <lightning:card title="{!v.recTypeName}">
+            <aura:set attribute="actions">
+                <lightning:buttonIcon
+                    iconName="utility:edit"
+                    alternativeText="Edit"
+                    class="slds-m-left_xx-small"
+                    onclick="{!c.editRecord}">
+                </lightning:buttonIcon>
+                <lightning:buttonIcon
+                    iconName="utility:delete"
+                    alternativeText="Remove"
+                    class="slds-m-left_xx-small"
+                    onclick="{!c.removeContactInfoRec}">
+                </lightning:buttonIcon>
+            </aura:set>
+            <p class="slds-p-horizontal_small">
+            <lightning:layout horizontalAlign="left" verticalAlign="center" multipleRows="true">
+                <aura:iteration items="{!v.fieldsetContactInfo}" var="field">
+                    <lightning:layoutItem padding="horizontal-small" flexibility="auto" size="12">
+                        <c:PJN_ContactInfoLightningInput
+                            aura:id="contactInfoFieldId"
+                            contactInfoRecord="{!v.contactInfoRecord}"
+                            fieldSetting="{!field}"
+                            valueKey="{!field.PJN_Field_API_Name__c}" />
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </lightning:layout>
+            </p>
+        </lightning:card>
+    </lightning:layoutItem>
+</aura:component>

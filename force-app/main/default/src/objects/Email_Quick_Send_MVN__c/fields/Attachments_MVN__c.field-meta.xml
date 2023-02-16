@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachments_MVN__c</fullName>
+    <description>Files to be sent as attachments with the email.</description>
+    <externalId>false</externalId>
+    <label>Attachments</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Email_Template_MVN__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ASRS_DR_Fact_Sheet_MVN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ASRS_DR_Fact_Sheet_MVN</label>
+            </value>
+            <value>
+                <fullName>Diabetes_Fact_Sheet_MVN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diabetes Fact Sheet</label>
+            </value>
+            <value>
+                <fullName>Diabetic_Macular_Edema_MVN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diabetic Macular Edema</label>
+            </value>
+            <value>
+                <fullName>Diabetic_Retinopathy_Brochure_MVN</fullName>
+                <default>false</default>
+                <label>Diabetic Retinopathy Brochure</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Diabetic_Retinopathy_and_You_MVN</controllingFieldValue>
+            <valueName>Diabetic_Retinopathy_Brochure_MVN</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

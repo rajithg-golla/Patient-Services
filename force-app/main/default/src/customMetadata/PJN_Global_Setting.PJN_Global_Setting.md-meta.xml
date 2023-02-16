@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Global Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Account_Search_Account_Status__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Account_Search_Contact_Info_Status__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Account_Search_Handler_Classes__c</field>
+        <value xsi:type="xsd:string">MVN_AccountSearchHdlr,MVN_DataLakeCMSearchHdlr</value>
+    </values>
+    <values>
+        <field>PJN_Account_Search_Max_Results__c</field>
+        <value xsi:type="xsd:double">20.0</value>
+    </values>
+    <values>
+        <field>PJN_Contact_Info_Address_Record_Types__c</field>
+        <value xsi:type="xsd:string">PJN_Address</value>
+    </values>
+    <values>
+        <field>PJN_Contact_Info_Email_Record_Types__c</field>
+        <value xsi:type="xsd:string">PJN_Email</value>
+    </values>
+    <values>
+        <field>PJN_Contact_Info_Fax_Record_Types__c</field>
+        <value xsi:type="xsd:string">PJN_Fax</value>
+    </values>
+    <values>
+        <field>PJN_Contact_Info_Phone_Record_Types__c</field>
+        <value xsi:type="xsd:string">PJN_Phone</value>
+    </values>
+    <values>
+        <field>PJN_Create_DCR__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>PJN_Enable_Event_Automation__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>PJN_Include_Open_Data_Network__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>PJN_Network_API_Version__c</field>
+        <value xsi:type="xsd:string">v19.0</value>
+    </values>
+    <values>
+        <field>PJN_Network_Named_Credential__c</field>
+        <value xsi:type="xsd:string">PJN_Veeva_Network</value>
+    </values>
+    <values>
+        <field>PJN_Network_System__c</field>
+        <value xsi:type="xsd:string">PJN</value>
+    </values>
+    <values>
+        <field>PJN_Transaction_Log_Level__c</field>
+        <value xsi:type="xsd:string">All</value>
+    </values>
+    <values>
+        <field>PJN_Veeva_Network__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

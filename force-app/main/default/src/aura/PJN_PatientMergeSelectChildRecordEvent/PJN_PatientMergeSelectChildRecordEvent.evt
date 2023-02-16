@@ -1,0 +1,6 @@
+<aura:event type="COMPONENT" description="Select Record">
+    <aura:attribute name="masterCarePlanId" type="Id" />
+    <aura:attribute name="objectName" type="String" />
+    <aura:attribute name="selectedRecordList" type="Array" />
+    <aura:attribute name="parentObjectName" type="String" />
+</aura:event>

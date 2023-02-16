@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Missing Information --></label>
+    <name>MVN_Missing_Information__c</name>
+    <picklistValues>
+        <masterLabel>Authorization to Disclose/Use Health Information</masterLabel>
+        <translation><!-- Authorization to Disclose/Use Health Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete Prescription</masterLabel>
+        <translation><!-- Complete Prescription --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnosis Code</masterLabel>
+        <translation><!-- Diagnosis Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Address</masterLabel>
+        <translation><!-- Patient Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient BIN</masterLabel>
+        <translation><!-- Patient BIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Certifications</masterLabel>
+        <translation><!-- Patient Certifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Date of Birth</masterLabel>
+        <translation><!-- Patient Date of Birth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Gender</masterLabel>
+        <translation><!-- Patient Gender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Group Number</masterLabel>
+        <translation><!-- Patient Group Number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Household Size</masterLabel>
+        <translation><!-- Patient Household Size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Income</masterLabel>
+        <translation><!-- Patient Income --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Member ID</masterLabel>
+        <translation><!-- Patient Member ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Name</masterLabel>
+        <translation><!-- Patient Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Phone</masterLabel>
+        <translation><!-- Patient Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Weight</masterLabel>
+        <translation><!-- Patient Weight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Address</masterLabel>
+        <translation><!-- Physician Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Fax</masterLabel>
+        <translation><!-- Physician Fax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician NPI</masterLabel>
+        <translation><!-- Physician NPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Name</masterLabel>
+        <translation><!-- Physician Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Phone</masterLabel>
+        <translation><!-- Physician Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Signature</masterLabel>
+        <translation><!-- Physician Signature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Signature Date</masterLabel>
+        <translation><!-- Physician Signature Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Form</masterLabel>
+        <translation><!-- Start Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Site Name</masterLabel>
+        <translation><!-- Trial Site Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Site Study ID</masterLabel>
+        <translation><!-- Trial Site Study ID --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

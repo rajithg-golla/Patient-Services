@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- New External Member​ --></label>
+        <name>HealthCloudGA__QuickAddIndividual</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Merge Tool Account Fields --></label>
+        <name>PJN_Merge_Tool_Account_Fields</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a business or an organization --></description>
+        <label><!-- Business --></label>
+        <name>HealthCloudGA__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Household --></description>
+        <label><!-- Household --></label>
+        <name>HealthCloudGA__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents an Individual --></description>
+        <label><!-- Individual --></label>
+        <name>HealthCloudGA__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a Payer --></description>
+        <label><!-- Payer --></label>
+        <name>HealthCloudGA__IndustriesPayer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a site of care for a patient --></description>
+        <label><!-- Treatment Site --></label>
+        <name>MVN_Treatment_Site</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a healthcare organization where physicians and staff work --></description>
+        <label><!-- Organization --></label>
+        <name>PJN_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a specialty or preferred pharmacy from which patients receive product --></description>
+        <label><!-- Pharmacy --></label>
+        <name>PJN_Pharmacy</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Physician NPI must be 10 digits in length.  Please confirm NPI and save. --></errorMessage>
+        <name>PhysicianNPI10Digits</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_EchoSign --></label>
+        <name>echosign_dev1__Send_to_EchoSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

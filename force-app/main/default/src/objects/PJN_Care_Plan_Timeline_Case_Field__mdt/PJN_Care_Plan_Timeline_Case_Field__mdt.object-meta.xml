@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Care Plan Timeline
+Purpose: Define the fields to be displayed for each case in the care plan timeline, based on case Status.
+Metadata Relationship(s): Care Plan Timeline Case
+Created by Mavens: Yes</description>
+    <label>Care Plan Timeline Case Field</label>
+    <pluralLabel>Care Plan Timeline Case Fields</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

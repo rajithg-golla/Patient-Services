@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Jaar waarna de code niet langer geldig is.</help>
+    <label><!-- Valid Through --></label>
+    <name>HealthCloudGA__ValidThrough__c</name>
+</CustomFieldTranslation>

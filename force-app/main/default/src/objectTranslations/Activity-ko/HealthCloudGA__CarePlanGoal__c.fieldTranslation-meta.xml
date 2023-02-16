@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>이 과업이 지정되는 목표</help>
+    <label><!-- Goal --></label>
+    <name>HealthCloudGA__CarePlanGoal__c</name>
+    <relationshipLabel><!-- Activities --></relationshipLabel>
+</CustomFieldTranslation>

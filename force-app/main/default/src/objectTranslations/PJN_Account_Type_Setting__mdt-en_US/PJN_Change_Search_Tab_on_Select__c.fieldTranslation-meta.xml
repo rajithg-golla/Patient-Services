@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Should the system change the search tab between Person and Institution automatically after selecting a result? --></help>
+    <label><!-- Change Search Tab on Select --></label>
+    <name>PJN_Change_Search_Tab_on_Select__c</name>
+</CustomFieldTranslation>

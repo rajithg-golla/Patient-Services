@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Action_taken_with_Drug__c</fullName>
+    <description>E2B (R2): B.4.k.16, actiondrug (1N)
+
+E2B (R3): G.k.8 Action(s) Taken with Drug
+Conformance: Optional
+Data Type: 1N
+OID: 2.16.840.1.113883.3.989.2.1.1.15
+Value Allowed:
+Actions taken codes: 1=Drug withdrawn 2=Dose reduced 3=Dose increased 4=Dose not changed 0=Unknown
+9=Not applicable</description>
+    <externalId>false</externalId>
+    <inlineHelpText>These data, taken together with the outcome of the reaction, provide the information concerning dechallenge. &quot;Not applicable&quot; should be used in circumstances such as if the patient died or the treatment had been completed prior to the reaction or event.</inlineHelpText>
+    <label>Action taken with Drug</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

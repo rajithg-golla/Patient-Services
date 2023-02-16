@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Patient’s age calculated into age bands: 0 - 34,35-44,45-54,55-59,60-64,65-69,70-74,75-79,80-84,85-89,90-94, 95 and older. --></help>
+    <label><!-- Age Band --></label>
+    <name>HealthCloudGA__AgeBand__c</name>
+</CustomFieldTranslation>

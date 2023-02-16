@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Dialog_Direct_Required_Fields</fullName>
+    <active>true</active>
+    <description>Validation Rule which prevents a Fulfillment Request from being submitted without all required fields populated.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;PJN_Materials_Order&apos; &amp;&amp;
+ISPICKVAL(PJN_Fulfillment_Request_Status__c, &apos;Submitted&apos;)&amp;&amp;
+(( PJN_Patient__r.MVN_Age__c &gt;= 18 &amp;&amp;
+      ( ISBLANK(MVN_Patient_Id__c) ||
+        ISBLANK( PJN_Patient_First_Name__c ) ||
+        ISBLANK( PJN_Patient_Last_Name__c ) ||
+        ISBLANK( PJN_Patient_Address_Line_1__c ) ||
+        ISBLANK( PJN_Patient_City__c ) ||
+        ISBLANK( PJN_Patient_State__c ) ||
+        ISBLANK( PJN_Patient_Postal_Code__c ) ||
+        (!ISBLANK( PJN_Patient_Phone__c ) &amp;&amp;
+         ISBLANK( MVN_Patient_Phone_Type__c ))
+       )
+)||
+( PJN_Patient__r.MVN_Age__c &lt; 18 &amp;&amp;
+      ( ISBLANK( MVN_Patient_Id__c ) ||
+        ISBLANK( PJN_Caregiver_First_Name__c ) ||
+        ISBLANK( PJN_Caregiver_Last_Name__c ) ||
+        ISBLANK( MVN_Caregiver_Address_Line_1__c ) ||
+        ISBLANK( MVN_Caregiver_City__c ) ||
+        ISBLANK( MVN_Caregiver_State__c ) ||
+        ISBLANK( MVN_Caregiver_Postal_Code__c ) ||
+        (!ISBLANK( PJN_Caregiver_Phone__c ) &amp;&amp;
+         ISBLANK( MVN_Caregiver_Phone_Type__c ))
+       )
+))</errorConditionFormula>
+    <errorMessage>Please provide all required Patient or Caregiver Information in order to Submit. (Address, City, State, Postal Code, Phone and Phone Type)</errorMessage>
+</ValidationRule>

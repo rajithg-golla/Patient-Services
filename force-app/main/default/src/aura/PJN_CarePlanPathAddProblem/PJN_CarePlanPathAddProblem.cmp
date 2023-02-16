@@ -1,0 +1,19 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanPathAddProblemCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlanId" type="Id" />
+    <aura:attribute name="programDeveloperName" type="String" default="PJN_CLP"/>
+    <aura:attribute name="programProblems" type="PJN_Program_Problem__mdt[]" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <lightning:buttonMenu aura:id="menu" iconName="utility:add" onselect="{! c.onAddProblem }" menuAlignment="right">
+        <aura:iteration items="{!v.programProblems}" var="programProblem">
+            <lightning:menuItem label="{!programProblem.Label}" value="{!programProblem.DeveloperName}" />
+        </aura:iteration>
+    </lightning:buttonMenu>
+</aura:component>

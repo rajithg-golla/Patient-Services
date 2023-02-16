@@ -1,0 +1,26 @@
+<aura:component>
+    <aura:attribute name="patient1" type="Account" />
+    <aura:attribute name="patient2" type="Account" />
+    <aura:attribute name="fieldset" type="String[]" />
+    <aura:attribute name="selectedAccountId" type="Id" />
+
+    <aura:attribute name="isLoading" type="Boolean"/>
+
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6">
+            <c:PJN_PatientMergeAccountCard 
+                account="{!v.patient1}" 
+                fieldset="{!v.fieldset}"
+                selected="{!v.selectedAccountId == v.patient1.Id}"
+            />
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6">
+            <c:PJN_PatientMergeAccountCard 
+                account="{!v.patient2}" 
+                fieldset="{!v.fieldset}"
+                selected="{!v.selectedAccountId == v.patient2.Id}"
+            />
+        </lightning:layoutItem>
+    </lightning:layout>
+
+</aura:component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to mark the recipients as &apos;Delegated&apos; in case they are delegated by Signer/Sender. These recipients will be hidden from Agreement View Page. --></help>
+    <label><!-- Update Delegated Recipients --></label>
+    <name>echosign_dev1__Update_Delegated_Recipients__c</name>
+</CustomFieldTranslation>

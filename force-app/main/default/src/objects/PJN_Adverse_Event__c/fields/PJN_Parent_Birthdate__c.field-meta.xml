@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Birthdate__c</fullName>
+    <description>E2B (R2): B.1.10.2.1a, parentbirthdateformat (3N) --&gt; Value should be 102 AND B.1.10.2.1b, parentbirthdate (8N) --&gt; convert to CCYYMMDD
+
+E2B (R3): D.10.2.1 Date of Birth of Parent
+Conformance: Optional
+Data Type: Date / Time
+OID: None
+Value Allowed:
+nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>The date of birth should be used if the precise birthday is known; otherwise the age
+should be used.</inlineHelpText>
+    <label>Parent Birthdate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

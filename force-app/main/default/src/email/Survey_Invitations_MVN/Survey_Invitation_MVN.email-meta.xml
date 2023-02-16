@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent when program participant receives a survey</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Regeneron_Logo_MVN</letterhead>
+    <name>Survey Invitation</name>
+    <style>freeForm</style>
+    <subject>You had a diabetic eye screening. Now what?</subject>
+    <textOnly>A QUICK FOLLOW-UP SURVEY
+ABOUT YOUR EYE SCREENING FOR DIABETIC RETINOPATHY
+
+Thank you for taking part in our free screening.  Getting your eyes screened for diabetic retinopathy is a very important step in helping to prevent vision loss.
+Now that you have your results, we&apos;d like to follow up by asking you a few questions.  Please click the button below to take the survey.
+
+Go to the survey &gt;
+
+
+
+Screenings do not replace a diagnosis by your eye doctor.
+
+Since you have diabetes, it is important that you have a comprehensive dilated eye exam each year
+In the early stages of diabetic retinopathy, your eye doctor may see disease activity in your eye, even though you may not notice changes in your vision
+See your eye doctor right away if you have vision changes, such as blurriness or floaters (floating spots in your vision).  Continue to take steps to control your blood sugar.
+
+
+The information contained herein is provided for general educational purposes.  If you have any questions, talk to your doctor.
+
+Please DO NOT REPLY TO THIS EMAIL.  Regeneron Pharmaceuticals, Inc. will not receive this message if you reply.  If you have any questions regarding this email, please contact us at www.regeneron.com/contact.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates if the AE is currently escalated to another user. --></help>
+    <label><!-- Is Escalated --></label>
+    <name>PJN_Is_Escalated__c</name>
+</CustomFieldTranslation>

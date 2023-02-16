@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Treatment Confirmed</fullName>
+        <default>false</default>
+        <label>Treatment Confirmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Support</fullName>
+        <default>false</default>
+        <label>Patient Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Support</fullName>
+        <default>false</default>
+        <label>Prescriber Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to SP IAP</fullName>
+        <default>false</default>
+        <label>Transfer to SP IAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to SP PAP</fullName>
+        <default>false</default>
+        <label>Transfer to SP PAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Authorization Support Start</fullName>
+        <default>false</default>
+        <label>Prior Authorization Support Start</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Authorization Approved</fullName>
+        <default>false</default>
+        <label>Prior Authorization Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Authorization Denied</fullName>
+        <default>false</default>
+        <label>Prior Authorization Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Support (1st Level)</fullName>
+        <default>false</default>
+        <label>Appeal Support (1st Level)</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Support (2nd Level)</fullName>
+        <default>false</default>
+        <label>Appeal Support (2nd Level)</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Support (3rd Level)</fullName>
+        <default>false</default>
+        <label>Appeal Support (3rd Level)</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Support (Peer-to-Peer)</fullName>
+        <default>false</default>
+        <label>Appeal Support (Peer-to-Peer)</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Approved</fullName>
+        <default>false</default>
+        <label>Appeal Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Denied</fullName>
+        <default>false</default>
+        <label>Appeal Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>PA/Appeal Support Max Attempts</fullName>
+        <default>false</default>
+        <label>PA/Appeal Support Max Attempts</label>
+    </customValue>
+    <customValue>
+        <fullName>Claims Support</fullName>
+        <default>false</default>
+        <label>Claims Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Copay Support</fullName>
+        <default>false</default>
+        <label>Copay Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Adverse Event Reported (Call Transfer)</fullName>
+        <default>false</default>
+        <label>Adverse Event Reported (Call Transfer)</label>
+    </customValue>
+    <customValue>
+        <fullName>Adverse Event Reported (Form Submission)</fullName>
+        <default>false</default>
+        <label>Adverse Event Reported (Form Submission)</label>
+    </customValue>
+    <customValue>
+        <fullName>New Referral</fullName>
+        <default>false</default>
+        <label>New Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Information, Patient Outreach</fullName>
+        <default>false</default>
+        <label>Missing Information, Patient Outreach</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Information, HCP Outreach</fullName>
+        <default>false</default>
+        <label>Missing Information, HCP Outreach</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Information, RBM Outreach</fullName>
+        <default>false</default>
+        <label>Missing Information, RBM Outreach</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Welcome Call Attempted</fullName>
+        <default>false</default>
+        <label>Prescriber Welcome Call Attempted</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Welcome Call Completed</fullName>
+        <default>false</default>
+        <label>Prescriber Welcome Call Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Welcome Call Attempted</fullName>
+        <default>false</default>
+        <label>Patient Welcome Call Attempted</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Welcome Call Completed</fullName>
+        <default>false</default>
+        <label>Patient Welcome Call Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>Copay Card Enrolled</fullName>
+        <default>false</default>
+        <label>Copay Card Enrolled</label>
+    </customValue>
+    <customValue>
+        <fullName>Copay Card Not Eligible</fullName>
+        <default>false</default>
+        <label>Copay Card Not Eligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to SP CTTP</fullName>
+        <default>false</default>
+        <label>Transfer to SP CTTP</label>
+    </customValue>
+    <customValue>
+        <fullName>Benefits Investigation Start</fullName>
+        <default>false</default>
+        <label>Benefits Investigation Start</label>
+    </customValue>
+    <customValue>
+        <fullName>Benefits Investigation Completed</fullName>
+        <default>false</default>
+        <label>Benefits Investigation Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>Access Plan Pending Confirmation</fullName>
+        <default>false</default>
+        <label>Access Plan Pending Confirmation</label>
+    </customValue>
+    <customValue>
+        <fullName>Access Plan Confirmed</fullName>
+        <default>false</default>
+        <label>Access Plan Confirmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Pharmacy Review</fullName>
+        <default>false</default>
+        <label>Hospital Pharmacy Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to HCP B&amp;B</fullName>
+        <default>false</default>
+        <label>Transfer to HCP B&amp;B</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to SP Commercial</fullName>
+        <default>false</default>
+        <label>Transfer to SP Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>SD Order Confirmed (Verbal)</fullName>
+        <default>false</default>
+        <label>SD Order Confirmed (Verbal)</label>
+    </customValue>
+    <customValue>
+        <fullName>SD Order Confirmed (Data)</fullName>
+        <default>false</default>
+        <label>SD Order Confirmed (Data)</label>
+    </customValue>
+    <customValue>
+        <fullName>SP Shipment Confirmed</fullName>
+        <default>false</default>
+        <label>SP Shipment Confirmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Site of Care Delayed</fullName>
+        <default>false</default>
+        <label>Site of Care Delayed</label>
+    </customValue>
+    <customValue>
+        <fullName>Site of Care Changed</fullName>
+        <default>false</default>
+        <label>Site of Care Changed</label>
+    </customValue>
+    <customValue>
+        <fullName>Site of Care Cancelled</fullName>
+        <default>false</default>
+        <label>Site of Care Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Site of Care Ready</fullName>
+        <default>false</default>
+        <label>Site of Care Ready</label>
+    </customValue>
+    <customValue>
+        <fullName>Benefit Investigation COB</fullName>
+        <default>false</default>
+        <label>Benefit Investigation COB</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Authorization Support Queued</fullName>
+        <default>false</default>
+        <label>Prior Authorization Support Queued</label>
+    </customValue>
+    <customValue>
+        <fullName>Prior Authorization Support Unnecessary</fullName>
+        <default>false</default>
+        <label>Prior Authorization Support Unnecessary</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Onboarding</fullName>
+        <default>false</default>
+        <label>Pending Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Information, Max Attempts</fullName>
+        <default>false</default>
+        <label>Missing Information, Max Attempts</label>
+    </customValue>
+    <customValue>
+        <fullName>Indication Criteria Not Met</fullName>
+        <default>false</default>
+        <label>Indication Criteria Not Met</label>
+    </customValue>
+    <customValue>
+        <fullName>Requirement Not Met - Patient Residency</fullName>
+        <default>false</default>
+        <label>Requirement Not Met - Patient Residency</label>
+    </customValue>
+    <customValue>
+        <fullName>Requirement Not Met - Prescriber License</fullName>
+        <default>false</default>
+        <label>Requirement Not Met - Prescriber License</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable to Reach Patient on Required Contact, Max Attempts</fullName>
+        <default>false</default>
+        <label>Unable to Reach Patient on Required Contact, Max Attempts</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable to Reach Prescriber on Required Contact, Max Attempts</fullName>
+        <default>false</default>
+        <label>Unable to Reach Prescriber on Required Contact, Max Attempts</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Decision - Alternate Therapy</fullName>
+        <default>false</default>
+        <label>Patient Decision - Alternate Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Decision - Financial</fullName>
+        <default>false</default>
+        <label>Patient Decision - Financial</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Decision - MyRare Only</fullName>
+        <default>false</default>
+        <label>Patient Decision - MyRare Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Decision - Other</fullName>
+        <default>false</default>
+        <label>Patient Decision - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Decision - Alternate Therapy</fullName>
+        <default>false</default>
+        <label>Prescriber Decision - Alternate Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Decision - Financial</fullName>
+        <default>false</default>
+        <label>Prescriber Decision - Financial</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Decision - Coverage Effort</fullName>
+        <default>false</default>
+        <label>Prescriber Decision - Coverage Effort</label>
+    </customValue>
+    <customValue>
+        <fullName>Prescriber Decision - Other</fullName>
+        <default>false</default>
+        <label>Prescriber Decision - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Medical Delay, Max Delay</fullName>
+        <default>false</default>
+        <label>Patient Medical Delay, Max Delay</label>
+    </customValue>
+    <customValue>
+        <fullName>No Route of Access</fullName>
+        <default>false</default>
+        <label>No Route of Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Deceased</fullName>
+        <default>false</default>
+        <label>Patient Deceased</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Off Therapy</fullName>
+        <default>false</default>
+        <label>Patient Off Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Medical Delay</fullName>
+        <default>false</default>
+        <label>On Hold Medical Delay</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Step Therapy Required</fullName>
+        <default>false</default>
+        <label>On Hold Step Therapy Required</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Patient Travel</fullName>
+        <default>false</default>
+        <label>On Hold Patient Travel</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Genetic Testing</fullName>
+        <default>false</default>
+        <label>On Hold Genetic Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Prescriber Change</fullName>
+        <default>false</default>
+        <label>On Hold Prescriber Change</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinical Trial</fullName>
+        <default>false</default>
+        <label>Clinical Trial</label>
+    </customValue>
+    <customValue>
+        <fullName>No coverage: Appeals exhausted and PAP ineligible</fullName>
+        <default>false</default>
+        <label>No coverage: Appeals exhausted and PAP ineligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient does not want infusion</fullName>
+        <default>false</default>
+        <label>Patient does not want infusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Administration Barrier</fullName>
+        <default>false</default>
+        <label>Administration Barrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Reported Reaction</fullName>
+        <default>false</default>
+        <label>Reported Reaction</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold Hospital formulary/EMR build</fullName>
+        <default>false</default>
+        <label>On Hold Hospital formulary/EMR build</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Party Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>3rd Party Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Delay</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Delay</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Finance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Patient Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable to Contact Physician</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unable to Contact Physician</label>
+    </customValue>
+    <customValue>
+        <fullName>Ready to Ship</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ready to Ship</label>
+    </customValue>
+    <customValue>
+        <fullName>Hold Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hold Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Hold</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Treatment Delay</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Treatment Delay</label>
+    </customValue>
+    <customValue>
+        <fullName>Hold RTS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hold RTS</label>
+    </customValue>
+    <customValue>
+        <fullName>Reverification</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Reverification</label>
+    </customValue>
+    <customValue>
+        <fullName>Reauthorization</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Reauthorization</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance - Coverage Denied</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance - Coverage Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance - PA Denied</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance - PA Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance - Out of Network</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance - Out of Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance - Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>HCP Choice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HCP Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Culture Conversion</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Culture Conversion</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer Hub</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Transfer Hub</label>
+    </customValue>
+    <customValue>
+        <fullName>BI Complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BI Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>PA In Progress</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Approved</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Denied</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal In Progress</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Appeal In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Appeal Complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Appeal Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>PAP In Progress</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAP In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>PAP Complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAP Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Triaged to SP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Triaged to SP</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipment Scheduled</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Shipment Scheduled</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipment Delay</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Shipment Delay</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipped</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Shipped</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Update</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Update</label>
+    </customValue>
+    <customValue>
+        <fullName>Adverse Event</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Adverse Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Quality Complaint</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Product Quality Complaint</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Hold</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Patient Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Physician Hold</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Physician Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Choice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Patient Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Hospitalized</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Patient Hospitalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Physician Choice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Physician Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinical Results</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clinical Results</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Physician Information</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Missing Physician Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Program Initiation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Program Initiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer SP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Transfer SP</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing Patient Information</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Missing Patient Information</label>
+    </customValue>
+    <customValue>
+        <fullName>Unable to Contact Patient</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unable to Contact Patient</label>
+    </customValue>
+    <customValue>
+        <fullName>BI In Progress</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BI In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Symptomatic Relief</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Symptomatic Relief</label>
+    </customValue>
+    <customValue>
+        <fullName>Inventory Hold</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inventory Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Contact</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Patient Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Appeal Approved</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Appeal Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Appeal Missing Information</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Appeal Missing Information</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Appeal Submitted</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Appeal Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Appeal Started</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Appeal Started</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Missing Information</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Missing Information</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Started</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Started</label>
+    </customValue>
+    <customValue>
+        <fullName>PA Submitted</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PA Submitted</label>
+    </customValue>
+    <description>Sub Status picklist with Status as a controlling field. Used for Therapy Sub-Status fields.</description>
+    <masterLabel>Sub-Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

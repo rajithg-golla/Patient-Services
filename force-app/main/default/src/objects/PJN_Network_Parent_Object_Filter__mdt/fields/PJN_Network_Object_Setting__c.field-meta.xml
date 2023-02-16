@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Network_Object_Setting__c</fullName>
+    <description>Network Object Setting related</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Network Object Setting</label>
+    <referenceTo>PJN_Network_Object_Setting__mdt</referenceTo>
+    <relationshipLabel>Network Parent Object Filters</relationshipLabel>
+    <relationshipName>PJN_Network_Parent_Object_Filters</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Program_Interest_Must_Select_Call</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK( Program_Offered__c)) &amp;&amp; NOT(INCLUDES(Program_Interest__c, &quot;Not Interested&quot;)) &amp;&amp;  ISPICKVAL( Call_transferred_or_phone_provided__c, &quot;&quot; )</errorConditionFormula>
+    <errorDisplayField>Call_transferred_or_phone_provided__c</errorDisplayField>
+    <errorMessage>You must select whether the call was transferred or a phone number was provided</errorMessage>
+</ValidationRule>

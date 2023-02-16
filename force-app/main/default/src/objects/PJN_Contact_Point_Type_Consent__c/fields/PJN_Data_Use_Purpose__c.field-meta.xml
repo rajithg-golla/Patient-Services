@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Data_Use_Purpose__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup(Data Use Purpose).</description>
+    <externalId>false</externalId>
+    <label>Data Use Purpose</label>
+    <referenceTo>DataUsePurpose</referenceTo>
+    <relationshipName>PJN_Contact_Point_Type_Consent</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

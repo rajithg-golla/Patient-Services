@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__Dwelling__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Type of residence for the person.</description>
+    <externalId>false</externalId>
+    <label>Dwelling</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>House</fullName>
+                <default>false</default>
+                <label>House</label>
+            </value>
+            <value>
+                <fullName>Apartment</fullName>
+                <default>false</default>
+                <label>Apartment</label>
+            </value>
+            <value>
+                <fullName>Recreational Vehicle or Mobile Home</fullName>
+                <default>false</default>
+                <label>Recreational Vehicle or Mobile Home</label>
+            </value>
+            <value>
+                <fullName>Long-Term Care Facility</fullName>
+                <default>false</default>
+                <label>Long-Term Care Facility</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Skilled Nursing Facility</fullName>
+                <default>false</default>
+                <label>Skilled Nursing Facility</label>
+            </value>
+            <value>
+                <fullName>Board and Care or Assisted Living Facility</fullName>
+                <default>false</default>
+                <label>Board and Care or Assisted Living Facility</label>
+            </value>
+            <value>
+                <fullName>Multi-Family Dwelling</fullName>
+                <default>false</default>
+                <label>Multi-Family Dwelling</label>
+            </value>
+            <value>
+                <fullName>Hotel or Motel</fullName>
+                <default>false</default>
+                <label>Hotel or Motel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

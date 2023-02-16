@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Send_to_Veeva_CRM__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+!ISBLANK(PJN_Case__r.PJN_Physician__r.PJN_NPI__c), 
+RecordType.DeveloperName == &apos;PJN_Therapy_Status_Update&apos;, 
+ISBLANK(PJN_Veeva_CRM_Enrollment_Status__c),
+PJN_Case__r.MVN_HIPAA_Consent_Status__c == &apos;Opt In&apos;,
+PJN_Case__r.MVN_Clinical_Trial_Transition_Patient__c == false,
+PJN_New_Therapy_Status_Formula__c != &apos;Pending - Transfer to SP CTTP&apos;,
+PJN_New_Therapy_Status_Formula__c != &apos;Cancelled - Indication Criteria Not Met&apos;,
+NOT(ISPICKVAL(PJN_New_Therapy_Sub_Status__c, &apos;Patient Deceased&apos;))
+)</formula>
+    <label>Send to Veeva CRM Enrollment Integration</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Group --></label>
+    <name>HealthCloudGA__StatusGroup__c</name>
+    <picklistValues>
+        <masterLabel>Monitored</masterLabel>
+        <translation>監視</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Monitored</masterLabel>
+        <translation>未監視</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Test</masterLabel>
+        <translation>陽性検査</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready for Intake</masterLabel>
+        <translation>受入準備完了</translation>
+    </picklistValues>
+</CustomFieldTranslation>

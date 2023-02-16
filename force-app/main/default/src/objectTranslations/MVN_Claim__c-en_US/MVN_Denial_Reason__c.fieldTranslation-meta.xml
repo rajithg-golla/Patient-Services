@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Denial Reason --></label>
+    <name>MVN_Denial_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Expenses for supplies, procedures, or physician-related services</masterLabel>
+        <translation><!-- Expenses for supplies, procedures, or physician-related services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expenses incurred after annual benefit limit met</masterLabel>
+        <translation><!-- Expenses incurred after annual benefit limit met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expenses incurred after program term of eligibility end</masterLabel>
+        <translation><!-- Expenses incurred after program term of eligibility end --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expenses incurred more than 120 days prior to program approval</masterLabel>
+        <translation><!-- Expenses incurred more than 120 days prior to program approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-product-specific copays, co-insurance, or deductibles</masterLabel>
+        <translation><!-- Non-product-specific copays, co-insurance, or deductibles --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

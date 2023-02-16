@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>T_Discontinued_PrescriberDecisionFinanci</label>
+    <protected>false</protected>
+    <values>
+        <field>MVN_Days_Visible__c</field>
+        <value xsi:type="xsd:double">180.0</value>
+    </values>
+    <values>
+        <field>MVN_Program_Name__c</field>
+        <value xsi:type="xsd:string">MVN_EVK</value>
+    </values>
+    <values>
+        <field>MVN_Status__c</field>
+        <value xsi:type="xsd:string">Discontinued</value>
+    </values>
+    <values>
+        <field>MVN_Sub_Status__c</field>
+        <value xsi:type="xsd:string">Prescriber Decision - Financial</value>
+    </values>
+    <values>
+        <field>MVN_Type__c</field>
+        <value xsi:type="xsd:string">Therapy</value>
+    </values>
+</CustomMetadata>

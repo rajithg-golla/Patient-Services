@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_SP_Sub_Status__c</fullName>
+    <description>Global value picklist field has dependency on Status.</description>
+    <externalId>false</externalId>
+    <label>SP Sub-Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PJN_SP_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>PJN_Sub_Status</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Deceased</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

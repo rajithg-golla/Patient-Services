@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_EVK</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>PJN_Field_Path__c</columns>
+    <columns>PJN_Program__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PJN_Program__c</field>
+        <operation>equals</operation>
+        <value>MVN_EVK</value>
+    </filters>
+    <label>Evkeeza</label>
+    <language>en_US</language>
+</ListView>

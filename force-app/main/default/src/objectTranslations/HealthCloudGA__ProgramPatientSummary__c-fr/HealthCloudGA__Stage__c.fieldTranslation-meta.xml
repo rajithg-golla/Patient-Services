@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indique l&apos;étape à laquelle le patient se trouve dans le programme CCM d&apos;aide médicale.</help>
+    <label><!-- Stage --></label>
+    <name>HealthCloudGA__Stage__c</name>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>Refusé</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation>En cours</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Program</masterLabel>
+        <translation>Dans le programme</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potential</masterLabel>
+        <translation>Potentiel</translation>
+    </picklistValues>
+</CustomFieldTranslation>

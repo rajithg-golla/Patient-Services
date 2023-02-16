@@ -1,0 +1,122 @@
+<template>
+    <!--  **************************************************** -->
+    <!--  SHOW COMPONENT ON MODAL SCREEN FOR CARE PLAN WIDGET  -->
+    <!--  **************************************************** -->
+    <template if:true={showModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={handleModalClose} title={labels.CLOSE}>
+                    <lightning-icon icon-name="utility:close" variant="inverse"></lightning-icon>
+                    <span class="slds-assistive-text">{labels.CLOSE}</span>
+                </button>
+                <h2 id="modal-heading" class="slds-text-heading_medium">{heading}</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium min-120-px" id="modal-content">
+                <template if:true={newMedHistoryRecord}>
+                    <template if:true={sections}>
+                        <lightning-record-edit-form
+                            object-api-name={newMedHistoryRecord.apiName}
+                            onsubmit={handleSave}
+                            record-type-id={recordTypeId}
+                            onsuccess={handleSuccess}
+                            onerror={handleFormError}>
+
+                            <template for:each={sections} for:item="section">
+                                <div class="slds-grid slds-wrap" key={section.id}>
+                                    <template for:each={section.fields} for:item="field">
+                                        <div class="slds-col slds-size_1-of-2 slds-is-relative" key={field.apiName}>
+                                            <span class={field.errorClass}>
+                                                <template if:true={field.required}>
+                                                    <span class="required slds-is-absolute">*</span>
+                                                </template>
+                                                <lightning-input-field
+                                                    field-name={field.apiName}
+                                                    value={field.value}>
+                                                </lightning-input-field>
+                                                <template if:true={field.error}>
+                                                    <div class="errorMessage">
+                                                        {field.error}
+                                                    </div>
+                                                </template>
+                                            </span>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+
+                            <div class="slds-text-align_center slds-m-top_medium">
+                                <button class="slds-button slds-button_brand" type="submit" disabled={saveButtonDisabled}>{labels.SAVE}</button>
+                                <button class="slds-button slds-button_brand" type="submit" disabled={saveButtonDisabled} onclick={setAndNew}>{labels.SAVE_NEW}</button>
+                                <lightning-button variant="neutral" onclick={handleModalClose} label={labels.CANCEL} class="slds-m-left_xx-small"></lightning-button>
+                            </div>
+                        </lightning-record-edit-form>
+                    </template>
+                </template>
+                <template if:false={newMedHistoryRecord}>
+                    <div class="slds-is-relative min-120-px">
+                        <lightning-spinner alternative-text={labels.LOADING} size="large" variant="brand"></lightning-spinner>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!--  ************************************************ -->
+    <!--  SHOW COMPONENT ON CURRENT SCREEN FOR ENROLLMENT  -->
+    <!--  ************************************************ -->
+    <div if:false={showModal}>
+
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">{heading}</h2>
+        <div class="slds-m-left_small">
+            <template if:true={newMedHistoryRecord}>
+                <template if:true={sections}>
+                    <lightning-record-edit-form
+                        object-api-name={newMedHistoryRecord.apiName}
+                        onsubmit={handleSave}
+                        record-type-id={recordTypeId}
+                        onsuccess={handleSuccess}
+                        onerror={handleFormError}>
+
+                        <template for:each={sections} for:item="section">
+                            <div class="slds-grid slds-wrap" key={section.id}>
+                                <template for:each={section.fields} for:item="field">
+                                    <div class="slds-col slds-size_1-of-2 slds-is-relative" key={field.apiName}>
+                                        <span class={field.errorClass}>
+                                            <template if:true={field.required}>
+                                                <span class="required slds-is-absolute">*</span>
+                                            </template>
+                                            <lightning-input-field
+                                                field-name={field.apiName}
+                                                value={field.value}>
+                                            </lightning-input-field>
+                                            <template if:true={field.error}>
+                                                <div class="errorMessage">
+                                                    {field.error}
+                                                </div>
+                                            </template>
+                                        </span>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+
+                        <div class="slds-text-align_center slds-m-top_medium">
+                            <button class="slds-button slds-button_brand" type="submit" disabled={saveButtonDisabled}>{labels.SAVE}</button>
+                            <button class="slds-button slds-button_brand" type="submit" disabled={saveButtonDisabled} onclick={setAndNew}>{labels.SAVE_NEW}</button>
+                            <lightning-button variant="neutral" onclick={handleModalClose} label={labels.CANCEL} class="slds-m-left_xx-small"></lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                </template>
+            </template>
+        </div>
+        <template if:false={newMedHistoryRecord}>
+            <div class="slds-is-relative min-120-px">
+                <lightning-spinner alternative-text={labels.LOADING} size="large" variant="brand"></lightning-spinner>
+            </div>
+        </template>
+    </div>
+
+</template>

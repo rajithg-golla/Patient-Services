@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Missed_Appointment_Reason</fullName>
+    <active>true</active>
+    <description>Requires Missed Appointment Reason if Attended = No.</description>
+    <errorConditionFormula>ISPICKVAL( Attended_MVN__c , &quot;No&quot;) &amp;&amp;
+ISPICKVAL(  Missed_Appointment_Reason_MVN__c , &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Missed_Appointment_Reason_MVN__c</errorDisplayField>
+    <errorMessage>Please indicate why the participant missed their appointment</errorMessage>
+</ValidationRule>

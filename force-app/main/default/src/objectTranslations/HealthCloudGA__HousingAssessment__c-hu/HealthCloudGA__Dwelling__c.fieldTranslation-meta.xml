@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dwelling --></label>
+    <name>HealthCloudGA__Dwelling__c</name>
+    <picklistValues>
+        <masterLabel>Apartment</masterLabel>
+        <translation>Lakás</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board and Care or Assisted Living Facility</masterLabel>
+        <translation>Háziellátás vagy önálló lakhatást segítő létesítmény</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel or Motel</masterLabel>
+        <translation>Szálloda vagy motel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House</masterLabel>
+        <translation>Ház</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long-Term Care Facility</masterLabel>
+        <translation>Hosszú távú ellátási létesítmény</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Family Dwelling</masterLabel>
+        <translation>Többcsaládos lakóhely</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation>Ápolási intézmény</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Vehicle or Mobile Home</masterLabel>
+        <translation>Lakókocsi</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skilled Nursing Facility</masterLabel>
+        <translation>Szakképzett ápolási intézmény</translation>
+    </picklistValues>
+</CustomFieldTranslation>

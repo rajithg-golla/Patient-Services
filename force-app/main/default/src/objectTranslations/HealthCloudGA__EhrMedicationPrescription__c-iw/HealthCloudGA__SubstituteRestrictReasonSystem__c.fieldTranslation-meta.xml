@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>יש מגבלות על החלופה לתרופה? מערכת קידוד</help>
+    <label><!-- Substitute Restrict Reason System --></label>
+    <name>HealthCloudGA__SubstituteRestrictReasonSystem__c</name>
+</CustomFieldTranslation>

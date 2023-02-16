@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Plan_Template_External_ID_MVN__c</fullName>
+    <description>The external ID of the care plan template which should be assigned automatically by code.</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( Care_Plan_Template_Ext_ID_Override_MVN__c ) ),
+    Care_Plan_Template_Ext_ID_Override_MVN__c, /* return the override */
+    CASE( RecordType.DeveloperName,
+
+        /* DEDSI logic */
+        &quot;CarePlan&quot;,
+        CASE( Account.Screening_Results_on_Conversion_MVN__c,
+            &quot;Signs of DR&quot;, 
+            IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;Yes&quot; &amp;&amp; 
+                Account.Specialists_Shared_on_Conversion_MVN__c = &quot;Yes&quot;,
+                &quot;CPT-a0956000002t50X&quot;,
+                IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;Yes&quot; &amp;&amp; 
+                    Account.Specialists_Shared_on_Conversion_MVN__c = &quot;No&quot;,
+                    &quot;CPT-a0956000002t50N&quot;,
+                    IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;No&quot; &amp;&amp; 
+                        Account.Specialists_Shared_on_Conversion_MVN__c = &quot;Yes&quot;,
+                        &quot;CPT-a0956000002t50S&quot;, 
+                        IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;No&quot; &amp;&amp; 
+                            Account.Specialists_Shared_on_Conversion_MVN__c = &quot;No&quot;,
+                            &quot;CPT-a0956000002WMTv&quot;, 
+                            &quot;&quot;
+                        )
+                    )
+                )
+            ),
+            &quot;No Signs of DR&quot;,
+                IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;Yes&quot;,
+                    &quot;CPT-a09S000000DEWHkIAP&quot;,
+                    &quot;CPT-a0956000002nKd9&quot;
+                ), 
+                    &quot;Not Yet Screened&quot;,
+                IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;Yes&quot;,
+                    &quot;CPT-a09S000000DEWHpIAP&quot;,
+                    &quot;CPT-a0956000002nFSg&quot;
+                ), 
+                    &quot;Unknown&quot;,
+                IF( Account.Ed_Materials_Sent_on_Conversion_MVN__c = &quot;Yes&quot;,
+                    &quot;CPT-a09S000000DEWHpIAP&quot;,
+                    &quot;CPT-a0956000002nFSg&quot;
+                ),
+            &quot;&quot;
+        ),
+
+        /* Libtayo logic */
+        &quot;Libtayo_Marketing_Care_Plan_MVN&quot;,
+
+            CASE( TEXT( Qualification_Status_MVN__c ),
+
+                    /* Qualified */
+                    &quot;Qualified&quot;,
+                    CASE( TEXT( Type ),
+                    &quot;Patient&quot;,
+                        IF( ISPICKVAL( Origin, &quot;Libtayo Surround&quot; ),
+                            &quot;CPT-libtayo-marketing-qualified-surround-patient&quot;,
+                            IF( ISPICKVAL( Email_Opt_In_MVN__c, &quot;Yes&quot; ),
+                                &quot;CPT-libtayo-marketing-qualified-website-patient&quot;,
+                            &quot;CPT-libtayo-marketing-qualified-web-patient-mail&quot;
+                               )
+                           ),
+                    &quot;Caregiver&quot;, &quot;CPT-libtayo-marketing-qualified-caregiver&quot;,
+                    &quot;&quot;
+                ),
+
+                /* Unqualified */
+                &quot;Unqualified&quot;, &quot;CPT-libtayo-marketing-unqualified&quot;,
+
+            /* Default Qualification_Status__c */
+            &quot;&quot;
+        ),
+
+    /* Default RecordType.DeveloperName */
+    &quot;&quot;
+    )
+)</formula>
+    <label>Care Plan Template External ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<template>
+    <div style="display:none;">{recordId}</div>
+    <lightning-quick-action-panel title="Transform Document">
+    <lightning-datatable
+        key-field="Id"
+        data={files}
+        columns={columns}
+        hide-checkbox-column
+        onrowaction={handleRowAction}>
+    </lightning-datatable>
+    </lightning-quick-action-panel>
+</template>

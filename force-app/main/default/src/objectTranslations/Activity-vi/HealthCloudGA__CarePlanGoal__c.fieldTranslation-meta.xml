@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Mục tiêu nhiệm vụ này cần giải quyết</help>
+    <label><!-- Goal --></label>
+    <name>HealthCloudGA__CarePlanGoal__c</name>
+    <relationshipLabel><!-- Activities --></relationshipLabel>
+</CustomFieldTranslation>

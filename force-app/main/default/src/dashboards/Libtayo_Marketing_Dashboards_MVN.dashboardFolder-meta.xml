@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Libtayo_Marketing_MVN</sharedTo>
+        <sharedToType>RoleAndSubordinates</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>MVN_Libtayo_Read_Only</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>Libtayo Marketing Dashboards</name>
+</DashboardFolder>

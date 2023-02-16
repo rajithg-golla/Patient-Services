@@ -1,0 +1,3 @@
+<aura:interface description="Interface for Lightning Out">
+    <aura:attribute name="context" type="String" />
+</aura:interface>

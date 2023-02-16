@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Program_Federal_Poverty_Threshold__c</fullName>
+    <description>The eligibility threshold set for the federal poverty level for the program the parent care plan is linked to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The eligibility threshold set for the federal poverty level for the program the parent care plan is linked to.</inlineHelpText>
+    <label>Program Federal Poverty Threshold</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

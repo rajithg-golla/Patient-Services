@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Document Type --></label>
+    <name>MVN_Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Federal Tax Returns</masterLabel>
+        <translation><!-- Federal Tax Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay Stubs</masterLabel>
+        <translation><!-- Pay Stubs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real-Time Income Projector</masterLabel>
+        <translation><!-- Real-Time Income Projector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Security Benefits</masterLabel>
+        <translation><!-- Social Security Benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>W-2 Forms</masterLabel>
+        <translation><!-- W-2 Forms --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

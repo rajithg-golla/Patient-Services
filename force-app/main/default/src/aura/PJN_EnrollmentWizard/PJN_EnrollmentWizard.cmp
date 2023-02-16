@@ -1,0 +1,123 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" controller="PJN_EnrollmentWizardCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="programDeveloperName" type="String" />
+    <aura:attribute name="patientId" type="Id" />
+    <aura:attribute name="sourceCaseId" type="Id" />
+    <aura:attribute name="carePlanId" type="Id" />
+    <aura:attribute name="selectedFileId" type="Id" />
+    <aura:attribute name="steps" type="PJN_Enrollment_Wizard_Step__mdt[]"/>
+    <aura:attribute name="activeStep" type="PJN_Enrollment_Wizard_Step__mdt"/>
+    <aura:attribute name="displaySelectProgram" type="Boolean" default="false"/>
+    <aura:attribute name="activeProcesses" type="Integer" default="0" access="private"
+                    description = "Show spinner when the number of running processes is non-zero"/>
+    <aura:attribute name="dirtyStepMessage" type="String" default=""/>
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="enrollmenWizardEvent" type="c:PJN_EnrollmentWizardEvent"/>
+
+    <!-- HANDLERS -->
+    <aura:handler event="c:PJN_EnrollmentRequestEvent" action="{!c.onHandleEvent}"/>
+    <aura:handler event="c:PJN_EnrollmentWizardEvent"  action="{!c.onHandleEvent}"/>
+    <aura:handler event="c:PJN_EnrollmentWizardStepEvent" action="{!c.onStepEvent}"
+                  name="enrollmenWizardStepEvent"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+    <lightning:workspaceAPI aura:id="workspace" />
+
+    <!-- BODY -->
+    <div aura:id="enrollmentWizard" class="slds-hide">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="header43" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container full-height">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="{!c.onClose}">
+                            <lightning:icon class="slds-button__icon slds-button__icon_large" iconName="utility:close" size="small"/>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="header43" class="slds-text-heading_medium">
+                        {!$Label.c.PJN_Enrollment_Screen_Title}
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content slds-grow slds-p-around_medium full-height" id="modal-content-id-1">
+                    <div class="{! 'slds-align_absolute-center ' + (v.activeProcesses ? 'slds-show' : 'slds-hide')}">
+                        <lightning:spinner alternativeText="Loading" size="large" />
+                    </div>
+                    <div class="slds-grid slds-glutters_small full-height">
+
+                        <div class="slds-col max-width full-height slds-m-around_small">
+                            <aura:if isTrue="{!v.displaySelectProgram}">
+                                <c:PJN_EnrollmentWizardSelectProgramScreen
+                                    programDeveloperName="{!v.programDeveloperName}"/>
+                            <aura:set attribute="else">
+                                <c:PJN_EnrollmentWizardStep
+                                    aura:id="wizardStep"
+                                    activeStep="{!v.activeStep}"
+                                    carePlanId="{!v.carePlanId}"
+                                    sourceCaseId="{!v.sourceCaseId}"
+                                    dirtyStepMessage="{!v.dirtyStepMessage}"
+                                 />
+                            </aura:set>
+                            </aura:if>
+                        </div>
+
+                        <div class="slds-col slds-box max-width full-height slds-m-around_small">
+                            <aura:if isTrue="{!v.sourceCaseId}">
+                            <c:PJN_CaseFilesPreview
+                                caseId="{!v.sourceCaseId}"
+                                selectedFileId = "{!v.selectedFileId}"
+                            />
+                            </aura:if>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.onPrevious}" disabled="{!v.dirtyStepMessage.length}">
+                        {!(v.activeStep.PJN_Order__c==1 || v.displaySelectProgram) ?
+                            $Label.c.PJN_Enrollment_Cancel_Button :
+                            $Label.c.PJN_Enrollment_Previous_Button}
+                    </button>
+                    <aura:if isTrue="{!v.dirtyStepMessage.length}">
+                        <div class="slds-m-left--medium">
+                            <lightning:icon
+                                iconName="utility:warning"
+                                alternativeText="Unsaved changes!"
+                                variant="warning"
+                                size="medium"/>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.displaySelectProgram}">
+                        <button class="slds-button slds-button_brand" onclick="{!c.onCreateCarePlan}">
+                            {!$Label.c.PJN_Create_Care_Plan_Button}
+                        </button>
+                    <aura:set attribute="else">
+                        <lightning:progressIndicator currentStep="{!v.activeStep.PJN_Order__c}" type="base" variant="base">
+                            <aura:iteration items="{!v.steps}" var="step">
+                                <lightning:progressStep label="{!step.Label}" value="{!step.PJN_Order__c}"/>
+                            </aura:iteration>
+                        </lightning:progressIndicator>
+                        <aura:if isTrue="{!v.dirtyStepMessage.length}">
+                            <div class="slds-m-right--medium">
+                                <lightning:icon
+                                    iconName="utility:warning"
+                                    alternativeText="Unsaved changes!"
+                                    variant="warning"
+                                    size="medium"/>
+                            </div>
+                        </aura:if>
+                        <button class="slds-button slds-button_brand" onclick="{!c.onNext}" disabled="{!v.dirtyStepMessage.length}">
+                            {!(v.activeStep.PJN_Order__c==v.steps.length) ?
+                                $Label.c.PJN_Enrollment_Finish_Button :
+                                $Label.c.PJN_Enrollment_Next_Button}
+                        </button>
+                    </aura:set>
+                    </aura:if>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+</aura:component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indique si un patient est éligible pour l&apos;aide médicale.</help>
+    <label><!-- Medicaid Eligibility Status --></label>
+    <name>HealthCloudGA__MedicaidEligibilityStatus__c</name>
+</CustomFieldTranslation>

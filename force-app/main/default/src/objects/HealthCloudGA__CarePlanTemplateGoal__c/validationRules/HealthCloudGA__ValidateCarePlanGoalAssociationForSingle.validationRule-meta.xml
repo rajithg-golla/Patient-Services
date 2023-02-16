@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__ValidateCarePlanGoalAssociationForSingle</fullName>
+    <active>true</active>
+    <description>Associate the goal with only one record</description>
+    <errorConditionFormula>AND( NOT(ISBLANK( HealthCloudGA__CarePlanTemplateProblem__c )), NOT(ISBLANK( HealthCloudGA__CarePlanTemplate__c )) )</errorConditionFormula>
+    <errorMessage>Associate the goal with only one record.</errorMessage>
+</ValidationRule>

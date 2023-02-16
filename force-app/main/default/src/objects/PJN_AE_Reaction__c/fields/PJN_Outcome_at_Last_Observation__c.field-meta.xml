@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Outcome_at_Last_Observation__c</fullName>
+    <description>E2B (R2): B.2.i.8, reactionoutcome (1N)
+
+E2B (R3): E.i.7 Outcome of Reaction / Event at the Time of Last Observation
+Conformance: Required
+Data Type: 1N
+OID: 2.16.840.1.113883.3.989.2.1.1.11
+Value Allowed:
+1 = recovered/resolved
+2 = recovering/resolving
+3 = not recovered/not resolved/ongoing 4 = recovered/resolved with sequelae
+5 = fatal
+0 = unknown</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In case of irreversible congenital anomalies, the choice not recovered/not resolved/ongoing should be used. For other irreversible medical conditions, recovered/resolved with sequelae should be used.
+Fatal should be used when death is possibly related.</inlineHelpText>
+    <label>Outcome at Last Observation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>0</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

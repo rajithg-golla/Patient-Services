@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If relevant and known, the name of the holder should be provided with the
+authorization number in the country where the drug was obtained when the case report is sent to that
+country. These items apply to both applications and authorizations. --></help>
+    <label><!-- Authorization/Application Number --></label>
+    <name>PJN_Authorization_Application_Number__c</name>
+</CustomFieldTranslation>

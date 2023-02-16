@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__FilterCriterion__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Filter Criterion</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Record Type does not match Timeline type</errorMessage>
+        <filterItems>
+            <field>HealthCloudGA__FilterCriterion__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Timeline</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>HealthCloudGA__FilterCriterion__c</referenceTo>
+    <relationshipLabel>Timeline View Configurations</relationshipLabel>
+    <relationshipName>Timeline_View_Configurations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" >
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium" >{!$Label.c.MVN_CRX_Enroll_Copay_Sending}</h4>
+    </div>
+    <c:mvnConnectiveRxEnrollment recordId="{!v.recordId}" onclose="{!c.closeQA}"> </c:mvnConnectiveRxEnrollment>
+</aura:component>

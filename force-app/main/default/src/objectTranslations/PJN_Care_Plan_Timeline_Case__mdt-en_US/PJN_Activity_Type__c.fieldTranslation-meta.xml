@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity Type --></label>
+    <name>PJN_Activity_Type__c</name>
+    <picklistValues>
+        <masterLabel>cancelled</masterLabel>
+        <translation><!-- cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>closed</masterLabel>
+        <translation><!-- closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>open</masterLabel>
+        <translation><!-- open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>planned</masterLabel>
+        <translation><!-- planned --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

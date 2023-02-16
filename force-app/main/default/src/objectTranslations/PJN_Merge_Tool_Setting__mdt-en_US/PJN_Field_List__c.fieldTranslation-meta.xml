@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- List of fields to be displayed. --></help>
+    <label><!-- Field List --></label>
+    <name>PJN_Field_List__c</name>
+</CustomFieldTranslation>

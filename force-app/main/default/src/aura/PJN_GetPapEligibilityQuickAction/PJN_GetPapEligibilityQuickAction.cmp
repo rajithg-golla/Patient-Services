@@ -1,0 +1,7 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <c:pjnGetPapEligibility
+        recordId="{!v.recordId}"
+        oncomplete="{!c.reload}"
+        onclose="{!c.close}"
+    ></c:pjnGetPapEligibility>
+</aura:component>

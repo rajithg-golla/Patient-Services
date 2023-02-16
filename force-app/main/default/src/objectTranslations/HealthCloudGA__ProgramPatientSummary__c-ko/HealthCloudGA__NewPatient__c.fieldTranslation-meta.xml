@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>환자가 의료 보험 환자인지 또는 지속적인 등록자인지를 나타냅니다.</help>
+    <label><!-- New Patient --></label>
+    <name>HealthCloudGA__NewPatient__c</name>
+</CustomFieldTranslation>

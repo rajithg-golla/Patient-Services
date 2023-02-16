@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_New_Product_Quality_Complaint</fullName>
+    <availability>online</availability>
+    <description>Opens NewCaseChildObjectCtrl to create a new Product Quality Complaint linked to the current case.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Product Quality Complaint</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/NewCaseChildObject?caseId={!Case.Id}&amp;object=PJN_Product_Quality_Complaint__c&amp;caseField=PJN_Case__c</url>
+</WebLink>

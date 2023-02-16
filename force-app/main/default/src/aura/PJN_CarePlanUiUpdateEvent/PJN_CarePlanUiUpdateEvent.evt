@@ -1,0 +1,1 @@
+<aura:event type="COMPONENT" description="Event that indicates the care plan has been updated and the ui should change accordinglyy"/>

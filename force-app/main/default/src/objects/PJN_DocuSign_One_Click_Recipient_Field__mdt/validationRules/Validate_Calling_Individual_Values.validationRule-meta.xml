@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Calling_Individual_Values</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(PJN_DocuSign_One_Click_Recipient__r.PJN_Type__c) == &apos;Calling Individual&apos;
+&amp;&amp;
+( 
+  CASE(TEXT(PJN_Field__c), 
+    &apos;Email&apos;, &apos;false&apos;,
+    &apos;FirstName&apos;, &apos;false&apos;,
+    &apos;LastName&apos;, &apos;false&apos;,
+    &apos;Role&apos;, &apos;false&apos;,
+    &apos;SignInPersonName&apos;, &apos;false&apos;,
+    &apos;RoutingOrder&apos;, &apos;false&apos;,
+    &apos;AccessCode&apos;, &apos;false&apos;,
+    &apos;SMSAuthPhone&apos;, &apos;false&apos;,
+    &apos;RecipientNote&apos;, &apos;false&apos;,
+    &apos;SignNow&apos;, &apos;false&apos;,
+    &apos;LoadDefaultContacts&apos;, &apos;false&apos;,
+    &apos;true&apos;
+  ) = &apos;true&apos;
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Field__c</errorDisplayField>
+    <errorMessage>Selected Field is not valid for a Calling Individual recipient Type</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Treatment --></label>
+    <name>MVN_Treatment__c</name>
+    <picklistValues>
+        <masterLabel>Apheresis</masterLabel>
+        <translation><!-- Apheresis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juxtapid (lomitapide)</masterLabel>
+        <translation><!-- Juxtapid (lomitapide) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCSK9i</masterLabel>
+        <translation><!-- PCSK9i --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statin</masterLabel>
+        <translation><!-- Statin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zetia (ezetimibe)</masterLabel>
+        <translation><!-- Zetia (ezetimibe) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

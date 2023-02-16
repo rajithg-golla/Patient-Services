@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Prescription for Clinical Trial Transition Manufacturer-Provided Product (no cost to patient). --></help>
+    <label><!-- Clinical Trial Transition Product --></label>
+    <name>MVN_Clinical_Trial_Transition_Product__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Identifie le système qui a créé l&apos;enregistrement et qui détient les droits de mise à jour. Applique par défaut Health1 pour les enregistrements créés manuellement.</help>
+    <label><!-- SourceSystem --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

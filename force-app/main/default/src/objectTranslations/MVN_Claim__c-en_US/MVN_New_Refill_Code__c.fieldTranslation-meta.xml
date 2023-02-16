@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Value as submitted by the pharmacy. 0 = New, otherwise it’s the refill number. --></help>
+    <label><!-- New Refill Code --></label>
+    <name>MVN_New_Refill_Code__c</name>
+</CustomFieldTranslation>

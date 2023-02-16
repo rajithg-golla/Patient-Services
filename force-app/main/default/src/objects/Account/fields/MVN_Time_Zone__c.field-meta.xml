@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Time_Zone__c</fullName>
+    <description>Time zone calculated by the system based on the account&apos;s primary address state.</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_Primary_Address__r.PJN_State__c, 
+&quot;HI&quot;,&quot;PST&quot;, 
+&quot;AK&quot;,&quot;PST&quot;, 
+&quot;WA&quot;,&quot;PST&quot;, 
+&quot;OR&quot;,&quot;PST&quot;, 
+&quot;CA&quot;,&quot;PST&quot;, 
+&quot;NV&quot;,&quot;PST&quot;, 
+&quot;MT&quot;,&quot;MST&quot;, 
+&quot;WY&quot;,&quot;MST&quot;, 
+&quot;ID&quot;,&quot;MST&quot;, 
+&quot;UT&quot;,&quot;MST&quot;, 
+&quot;CO&quot;,&quot;MST&quot;, 
+&quot;NM&quot;,&quot;MST&quot;, 
+&quot;AZ&quot;,&quot;MST&quot;, 
+&quot;ND&quot;,&quot;CST&quot;, 
+&quot;MN&quot;,&quot;CST&quot;, 
+&quot;WI&quot;,&quot;CST&quot;, 
+&quot;SD&quot;,&quot;CST&quot;, 
+&quot;IA&quot;,&quot;CST&quot;, 
+&quot;IL&quot;,&quot;CST&quot;, 
+&quot;KY&quot;,&quot;CST&quot;, 
+&quot;TN&quot;,&quot;CST&quot;, 
+&quot;AL&quot;,&quot;CST&quot;, 
+&quot;MS&quot;,&quot;CST&quot;, 
+&quot;AR&quot;,&quot;CST&quot;, 
+&quot;MO&quot;,&quot;CST&quot;, 
+&quot;LA&quot;,&quot;CST&quot;, 
+&quot;TX&quot;,&quot;CST&quot;, 
+&quot;OK&quot;,&quot;CST&quot;, 
+&quot;KS&quot;,&quot;CST&quot;, 
+&quot;NE&quot;,&quot;CST&quot;, 
+&quot;MI&quot;,&quot;EST&quot;, 
+&quot;OH&quot;,&quot;EST&quot;, 
+&quot;IN&quot;,&quot;EST&quot;, 
+&quot;GA&quot;,&quot;EST&quot;, 
+&quot;FL&quot;,&quot;EST&quot;, 
+&quot;SC&quot;,&quot;EST&quot;, 
+&quot;NC&quot;,&quot;EST&quot;, 
+&quot;VA&quot;,&quot;EST&quot;, 
+&quot;WV&quot;,&quot;EST&quot;, 
+&quot;PA&quot;,&quot;EST&quot;, 
+&quot;DC&quot;,&quot;EST&quot;, 
+&quot;MD&quot;,&quot;EST&quot;, 
+&quot;DE&quot;,&quot;EST&quot;, 
+&quot;NJ&quot;,&quot;EST&quot;, 
+&quot;NY&quot;,&quot;EST&quot;, 
+&quot;VT&quot;,&quot;EST&quot;, 
+&quot;ME&quot;,&quot;EST&quot;, 
+&quot;NH&quot;,&quot;EST&quot;, 
+&quot;RI&quot;,&quot;EST&quot;, 
+&quot;CT&quot;,&quot;EST&quot;, 
+&quot;MA&quot;,&quot;EST&quot;, 
+&quot;&quot;)</formula>
+    <inlineHelpText>Time zone calculated by the system based on the account&apos;s primary address state.</inlineHelpText>
+    <label>Time Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>藥物替代品、學名/藥物名冊 + 易用名稱的任何限制</help>
+    <label><!-- Substitute Restrict Reason Label --></label>
+    <name>HealthCloudGA__SubstituteRestrictReasonLabel__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Service --></label>
+    <name>HealthCloudGA__TypeOfService__c</name>
+    <picklistValues>
+        <masterLabel>2nd Opinion</masterLabel>
+        <translation>Drugo mnenje</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation</masterLabel>
+        <translation>Posvetovanje</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up</masterLabel>
+        <translation>Nadaljnja oskrba</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lab Services</masterLabel>
+        <translation>Laboratorijske storitve</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please specify in comments)</masterLabel>
+        <translation>Drugo (navedite v komentarjih)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology Services</masterLabel>
+        <translation>Radiološke storitve</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>Operacija</translation>
+    </picklistValues>
+</CustomFieldTranslation>

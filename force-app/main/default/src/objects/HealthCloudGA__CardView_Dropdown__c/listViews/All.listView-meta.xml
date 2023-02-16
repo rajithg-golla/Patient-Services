@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>HealthCloudGA__CategoryLabel__c</columns>
+    <columns>HealthCloudGA__Category__c</columns>
+    <columns>HealthCloudGA__DefaultSubtab__c</columns>
+    <columns>HealthCloudGA__Param_String__c</columns>
+    <columns>HealthCloudGA__Rec_Open_Type__c</columns>
+    <columns>HealthCloudGA__Sub_Category__c</columns>
+    <columns>HealthCloudGA__SubcategoryLabel__c</columns>
+    <columns>HealthCloudGA__SubtabSortOrder__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

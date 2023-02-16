@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Code_Pending__c</fullName>
+    <description>Patient status codes for Status = Pending</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Pending&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;New Referral&quot;,&quot;P01&quot;,
+&quot;Missing Information, Patient Outreach&quot;,&quot;P03&quot;,
+&quot;Missing Information, HCP Outreach&quot;,&quot;P04&quot;,
+&quot;Missing Information, RBM Outreach&quot;,&quot;P05&quot;,
+&quot;Prescriber Welcome Call Attempted&quot;,&quot;P10&quot;,
+&quot;Prescriber Welcome Call Completed&quot;,&quot;P11&quot;,
+&quot;Patient Welcome Call Attempted&quot;,&quot;P12&quot;,
+&quot;Patient Welcome Call Completed&quot;,&quot;P13&quot;,
+&quot;Copay Card Enrolled&quot;,&quot;P14&quot;,
+&quot;Copay Card Not Eligible&quot;,&quot;P15&quot;,
+&quot;Transfer to SP CTTP&quot;,&quot;P16&quot;,
+&quot;Benefits Investigation Start&quot;,&quot;P17&quot;,
+&quot;Benefits Investigation Completed&quot;,&quot;P18&quot;,
+&quot;Access Plan Pending Confirmation&quot;,&quot;P19&quot;,
+&quot;Access Plan Confirmed&quot;,&quot;P20&quot;,
+&quot;Transfer to HCP B&amp;B&quot;,&quot;P21&quot;,
+&quot;Transfer to SP Commercial&quot;,&quot;P22&quot;,
+&quot;Transfer to SP PAP&quot;,&quot;P23&quot;,
+&quot;Prior Authorization Support Start&quot;,&quot;P24&quot;,
+&quot;Prior Authorization Approved&quot;,&quot;P25&quot;,
+&quot;Prior Authorization Denied&quot;,&quot;P26&quot;,
+&quot;Appeal Support (1st Level)&quot;,&quot;P27&quot;,
+&quot;Appeal Support (2nd Level)&quot;,&quot;P28&quot;,
+&quot;Appeal Support (3rd Level)&quot;,&quot;P29&quot;,
+&quot;Appeal Support (Peer-to-Peer)&quot;,&quot;P30&quot;,
+&quot;Appeal Approved&quot;,&quot;P31&quot;,
+&quot;Appeal Denied&quot;,&quot;P32&quot;,
+&quot;PA/Appeal Support Max Attempts&quot;,&quot;P33&quot;,
+&quot;SD Order Confirmed (Verbal)&quot;,&quot;P34&quot;,
+&quot;SD Order Confirmed (Data)&quot;,&quot;P35&quot;,
+&quot;SP Shipment Confirmed&quot;,&quot;P36&quot;,
+&quot;Site of Care Delayed&quot;,&quot;P38&quot;,
+&quot;Site of Care Changed&quot;,&quot;P39&quot;,
+&quot;Site of Care Cancelled&quot;,&quot;P40&quot;,
+&quot;Site of Care Ready&quot;,&quot;P41&quot;,
+&quot;Benefit Investigation COB&quot;,&quot;P42&quot;,
+&quot;Prior Authorization Support Queued&quot;,&quot;P43&quot;,
+&quot;Prior Authorization Support Unnecessary&quot;,&quot;P44&quot;,
+&quot;Pending Onboarding&quot;,&quot;P45&quot;,
+&quot;Hospital Pharmacy Review&quot;,&quot;P54&quot;,
+&quot;On Hold Medical Delay&quot;, &quot;P55&quot;,
+&quot;On Hold Step Therapy Required&quot;, &quot;P56&quot;,
+&quot;On Hold Patient Travel&quot;, &quot;P57&quot;,
+&quot;On Hold Genetic Testing&quot;, &quot;P58&quot;,
+&quot;On Hold Prescriber Change&quot;, &quot;P59&quot;,
+&quot;On Hold Hospital formulary/EMR build&quot;, &quot;P60&quot;,
+null),
+null)</formula>
+    <label>Status Code - Pending</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

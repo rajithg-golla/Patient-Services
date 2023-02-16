@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Apex-klassenavn, der skal bruges til parse</help>
+    <label><!-- Parser Name --></label>
+    <name>HealthCloudGA__ParserName__c</name>
+</CustomFieldTranslation>

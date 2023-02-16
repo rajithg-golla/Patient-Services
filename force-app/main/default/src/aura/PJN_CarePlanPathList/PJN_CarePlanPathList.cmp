@@ -1,0 +1,23 @@
+<aura:component implements="c:PJN_LightningOutIntf" controller="PJN_CarePlanPathListCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="patientId" type="Id" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="careplans" type="Case[]"/>
+    <aura:attribute name="allCarePlanSettingsByProgramDeveloperName" type="Map"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <aura:if isTrue="{!and(v.careplans, v.allCarePlanSettingsByProgramDeveloperName)}">
+        <aura:iteration items="{!v.careplans}" var="careplan">
+            <c:PJN_CarePlanPathListItem careplan="{!careplan}" allCarePlanSettingsByProgramDeveloperName="{!v.allCarePlanSettingsByProgramDeveloperName}" context="{!v.context}"/>
+        </aura:iteration>
+        <aura:if isTrue="{!v.careplans.length == 0}">
+            <c:PJN_CarePlanPathListEmpty />
+        </aura:if>
+    </aura:if>
+</aura:component>

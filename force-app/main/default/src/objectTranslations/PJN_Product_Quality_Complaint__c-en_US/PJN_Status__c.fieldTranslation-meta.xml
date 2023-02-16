@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates the state of the Product Quality Complaint. The record will be locked when closed and will be locked and removed from reporting when cancelled. --></help>
+    <label><!-- Status --></label>
+    <name>PJN_Status__c</name>
+</CustomFieldTranslation>

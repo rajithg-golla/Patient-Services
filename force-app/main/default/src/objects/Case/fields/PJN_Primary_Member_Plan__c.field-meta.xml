@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Primary_Member_Plan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to a patient&apos;s primary active member plan.</description>
+    <externalId>false</externalId>
+    <label>Primary Member Plan</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>PJN_Member_Plan__c.PJN_Coverage_Order__c</field>
+            <operation>equals</operation>
+            <value>Primary</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>PJN_Member_Plan__c.PJN_Patient__r.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>PJN_Member_Plan__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>CarePlansPrimary</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

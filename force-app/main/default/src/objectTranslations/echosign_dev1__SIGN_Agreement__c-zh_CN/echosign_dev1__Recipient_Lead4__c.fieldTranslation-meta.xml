@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Additional Recipient 3 (Lead) --></label>
+    <name>echosign_dev1__Recipient_Lead4__c</name>
+    <relationshipLabel><!-- Related Agreements (3) --></relationshipLabel>
+</CustomFieldTranslation>

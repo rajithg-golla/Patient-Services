@@ -1,0 +1,95 @@
+<html style="overflow-y: hidden;">
+<head>
+        <style>
+        .fax-header {font-family:Tahoma,Arial,Helvetica,sans-serif; font-size: 48pt}
+        td {font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:11pt}
+        td.underlined {border-bottom: 1pt solid black; }
+        </style>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto; font-family:Arial,Helvetica,sans-serif;"><span style="font-size:48px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>FAX</b></span></span><br />
+
+<table cellpadding="1" cellspacing="2" width="100%">
+	<tbody>
+		<tr>
+			<td>First Name:</td>
+			<td class="underlined">{!Lead.FirstName}</td>
+			<td>Last Name:</td>
+			<td colspan="3" class="underlined">{!Lead.LastName}</td>
+		</tr>
+		<tr>
+			<td>Birth Date:</td>
+			<td class="underlined">{!Lead.HealthCloudGA__BirthDate__c}</td>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td class="underlined">{!Lead.Street}</td>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="15%">City:</td>
+			<td width="35%" class="underlined">{!Lead.City}</td>
+			<td width="15%">State:</td>
+			<td width="10%" class="underlined">{!Lead.State}</td>
+			<td width="15%">ZIP:</td>
+			<td width="10%" class="underlined">{!Lead.PostalCode}</td>
+		</tr>
+		<tr>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td class="underlined">{!Lead.Email}</td>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Phone:</td>
+			<td class="underlined">{!Lead.Phone}</td>
+			<td>Type:</td>
+			<td colspan="3" class="underlined">{!Lead.Phone_Type_MVN__c}</td>
+		</tr>
+		<tr>
+			<td colspan="2">&nbsp;</td>
+			<td>Voicemail?:</td>
+			<td colspan="4" class="underlined">{!Lead.Voice_Messages_OK_MVN__c}</td>
+		</tr>
+		<tr>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Indication:</td>
+			<td class="underlined">{!Lead.HealthCloudGA__Diagnosis__c}</td>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Status:</td>
+			<td class="underlined">{!Lead.Treatment_Status_MVN__c}</td>
+			<td>Infusion Start Known?:</td>
+			<td colspan="3" class="underlined">{!Lead.Treatment_Start_Date_Known_MVN__c}</td>
+		</tr>
+		<tr>
+			<td>Approx. Last Infusion:</td>
+			<td class="underlined">{!Lead.Last_Treatment_Date_MVN__c}</td>
+			<td>First Sched. Infusion:</td>
+			<td colspan="3" class="underlined">{!Lead.First_Scheduled_Treatment_MVN__c}</td>
+		</tr>
+		<tr>
+			<td>Phone Opt In?:</td>
+			<td class="underlined">{!Lead.Phone_Opt_In_MVN__c}</td>
+			<td>Starter Kit?:</td>
+			<td colspan="3" class="underlined">{!Lead.Patient_Starter_Kit_MVN__c}</td>
+		</tr>
+                <tr>
+                      <td>Mail Opt In?:</td>
+		      <td class="underlined">{!Lead.Mail_Opt_In_MVN__c}</td>
+                      <td>Health Cloud System ID:</td>
+		      <td class="underlined">{!Lead.Health_Cloud_System_ID_MVN__c}</td>
+                </tr>
+	</tbody>
+</table>
+</body>
+</html>

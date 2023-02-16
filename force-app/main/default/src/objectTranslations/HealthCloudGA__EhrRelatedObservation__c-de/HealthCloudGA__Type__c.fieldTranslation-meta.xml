@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>HealthCloudGA__Type__c</name>
+    <picklistValues>
+        <masterLabel>derived-from</masterLabel>
+        <translation>abgeleitet-von</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>has-component</masterLabel>
+        <translation>Hat-Komponente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>has-member</masterLabel>
+        <translation>Hat-Mitglied</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>interfered-by</masterLabel>
+        <translation>beeinflusst-durch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>qualified-by</masterLabel>
+        <translation>qualifiziert-durch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>replaces</masterLabel>
+        <translation>ersetzt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sequel-to</masterLabel>
+        <translation>Fortsetzung-von</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the reporter&apos;s telephone number, including the
+country code and any extension.
+Numbers should be entered in a fashion that allows for international
+dialling (e.g. +cc) and not include any domestic trunk prefix. --></help>
+    <label><!-- Phone --></label>
+    <name>PJN_Phone__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__AccountProblem_Validation</fullName>
+    <active>true</active>
+    <description>Account lookup on Problem matches the Case.AccountID if not null</description>
+    <errorConditionFormula>AND( NOT(ISBLANK( HealthCloudGA__Account__c )),  NOT(HealthCloudGA__Account__c = HealthCloudGA__CarePlan__r.AccountId) )</errorConditionFormula>
+    <errorDisplayField>HealthCloudGA__Account__c</errorDisplayField>
+    <errorMessage>The lookup to Account needs to match the lookup to Account on Case.</errorMessage>
+</ValidationRule>

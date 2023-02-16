@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>PJN_DocuSignOneClickCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PJN_DocuSignOneClickMetadata</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PJN_DocuSignRecipient</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Grants access to classes and pages used by Docusign OneClick module.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PJN - DocuSign OneClick</label>
+    <pageAccesses>
+        <apexPage>PJN_DocuSignOneClick</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

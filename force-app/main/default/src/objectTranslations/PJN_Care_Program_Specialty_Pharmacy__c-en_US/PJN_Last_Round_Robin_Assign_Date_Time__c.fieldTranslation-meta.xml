@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The last time this specialty pharmacy was assigned for the related program. --></help>
+    <label><!-- Last Round Robin Assign Date/Time --></label>
+    <name>PJN_Last_Round_Robin_Assign_Date_Time__c</name>
+</CustomFieldTranslation>

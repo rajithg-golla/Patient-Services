@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <c:leadConsentMvn
+        recordId="{!v.recordId}"
+        onclosequickaction="{!c.closeQuickAction}"
+    />
+</aura:component>

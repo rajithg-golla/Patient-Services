@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_My_Voice_Calls</fullName>
+    <columns>Name</columns>
+    <columns>CallType</columns>
+    <columns>CallDisposition</columns>
+    <columns>Caller</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>Recipient</columns>
+    <columns>ToPhoneNumber</columns>
+    <columns>Owner</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Voice Calls (Regeneron)</label>
+</ListView>

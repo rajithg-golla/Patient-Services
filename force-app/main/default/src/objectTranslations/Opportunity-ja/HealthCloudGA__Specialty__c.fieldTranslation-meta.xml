@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialty --></label>
+    <name>HealthCloudGA__Specialty__c</name>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>心臓病学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurosurgery</masterLabel>
+        <translation>神経外科学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oncology</masterLabel>
+        <translation>腫瘍科</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orthopedics</masterLabel>
+        <translation>整形外科</translation>
+    </picklistValues>
+</CustomFieldTranslation>

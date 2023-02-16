@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>https://regeneronhealthcaresolutions.my.salesforce.com/hvcc/amz/index.html</adapterUrl>
+    <customSettings>{&quot;reqTimeout&quot;:&quot;5000&quot;,&quot;reqStandbyUrl&quot;:&quot;https://domain:port/softphone&quot;,&quot;reqCallCenterType&quot;:&quot;SCVOOTBTelephony&quot;,&quot;reqSoftphoneHeight&quot;:&quot;300&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;500&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Lightning&quot;}</customSettings>
+    <displayName>Evkeeza Contact Center</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://regeneronhealthcaresolutions.my.salesforce.com/hvcc/amz/index.html</value>
+        </items>
+        <items>
+            <label>Use CTI API</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>300</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>500</value>
+        </items>
+        <items>
+            <label>Salesforce Compatibility Mode</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Lightning</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Telephony Provider</label>
+            <name>reqTelephonyProvider</name>
+            <value>AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>Instance Name</label>
+            <name>reqInstanceName</name>
+            <value>MVNEvkeezaContact00D3h0000066T3z</value>
+        </items>
+        <items>
+            <label>Relay State</label>
+            <name>reqRelayState</name>
+            <value>https://us-west-2.console.aws.amazon.com/connect/federate/062c45d0-2a85-47fe-ba92-4e890ea59bf8</value>
+        </items>
+        <items>
+            <label>Identity URL</label>
+            <name>reqIdentityUrl</name>
+            <value>https://regeneronhealthcaresolutions.my.salesforce.com/idp/login?app=0sp3h000000fyCn</value>
+        </items>
+        <items>
+            <label>Telephony Integration Certificate</label>
+            <name>reqTelephonyIntegrationCertificate</name>
+            <value>-----BEGIN CERTIFICATE-----
+MIICyTCCAjKgAwIBAgIJRSpRQobrcmo3MA0GCSqGSIb3DQEBBQUAMIGCMQswCQYD
+VQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDVNhbiBGcmFuY2lzY28xFzAV
+BgNVBAoTDnNhbGVzZm9yY2UuY29tMRswGQYDVQQDExJ3d3cuc2FsZXNmb3JjZS5j
+b20xGDAWBgNVBAsTDzAwRDNoMDAwMDA2NlQzejAeFw0yMjA5MDYxMjA0NDJaFw0y
+MzA5MDYxMjA0NDJaMIGCMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNV
+BAcTDVNhbiBGcmFuY2lzY28xFzAVBgNVBAoTDnNhbGVzZm9yY2UuY29tMRswGQYD
+VQQDExJ3d3cuc2FsZXNmb3JjZS5jb20xGDAWBgNVBAsTDzAwRDNoMDAwMDA2NlQz
+ejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA13QLQ2dkCH/fK9/I1X0Q5O4x
+uWTJVvCDfrTpyPehtFSHtlxf4rZofj0PceUnMIOdSGwS2wNyTPQN8B8IfUBr+TWI
+A1Qg752BdBaXaVE1mo6NAS3smxRa6Rqf1lkRJybyo4gVKv4QWJmcclXKOrfB5biH
+tvUxMk91b7ctwagDLZsCAwEAAaNFMEMwDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMC
+AvQwJgYDVR0RBB8wHYYbaHR0cDovL2V4YW1wbGUub3JnL3dlYmlkI21lMA0GCSqG
+SIb3DQEBBQUAA4GBAMxeQxeMEJ/BERDk9mQr7RTP7HWjOreOwnPaZ63F6Mqhg4Sf
+cSRmgQckovHLwaVQzuWxuUy5n2f/i18+M4payLgIXvIJ8OTRttcU4YYW2+k1SkGm
+GzmHtkRbAxc0ZjkYcarEV/rsrJo55wMScgjtd+NPS8mLZRckAMKGY3Xt9qUt
+-----END CERTIFICATE-----</value>
+        </items>
+        <items>
+            <label>Region</label>
+            <name>reqRegion</name>
+            <value>us-west-2</value>
+        </items>
+        <items>
+            <label>Connected App Id</label>
+            <name>reqConnectedAppId</name>
+            <value>0H43h000000x02M</value>
+        </items>
+        <items>
+            <label>Instance Id</label>
+            <name>reqInstanceId</name>
+            <value>062c45d0-2a85-47fe-ba92-4e890ea59bf8</value>
+        </items>
+        <items>
+            <label>Instance Service Role</label>
+            <name>reqInstanceServiceRole</name>
+            <value>arn:aws:iam::012907070956:role/aws-service-role/connect.amazonaws.com/AWSServiceRoleForAmazonConnect_ucVkBxRqBTbhszsrRQrN</value>
+        </items>
+        <items>
+            <label>Settings Relay State</label>
+            <name>reqSettingsRelayState</name>
+            <value>https://us-west-2.console.aws.amazon.com/connect/federate/062c45d0-2a85-47fe-ba92-4e890ea59bf8</value>
+        </items>
+        <items>
+            <label>Stack Id</label>
+            <name>reqStackId</name>
+            <value>arn:aws:cloudformation:us-west-2:012907070956:stack/MVNEvkeezaContact-SCVContactCenterStack/e2071890-0ce6-11ec-9a18-06b6e9e70973</value>
+        </items>
+        <items>
+            <label>Instance Recording Role</label>
+            <name>reqInstanceRecordingRole</name>
+            <value>arn:aws:iam::012907070956:role/MVNEvkeezaContact-ConnectCallRole</value>
+        </items>
+        <items>
+            <label>Telephony Integration Keypair Expiration Date</label>
+            <name>reqTelephonyIntegrationKeyPairExpDate</name>
+            <value>06/09/2023 12:04:40</value>
+        </items>
+        <items>
+            <label>Rest API Connected App Id</label>
+            <name>reqRestApiConnectedAppId</name>
+            <value>0H43h000000x02N</value>
+        </items>
+        <items>
+            <label>Cloud Formation template version</label>
+            <name>reqVersion</name>
+            <value>9.1</value>
+        </items>
+        <label>Service Voice Settings</label>
+        <name>reqHvcc</name>
+    </sections>
+    <version>9.1</version>
+</CallCenter>

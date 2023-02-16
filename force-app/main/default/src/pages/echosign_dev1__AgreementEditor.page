@@ -1,0 +1,56 @@
+<apex:page standardController="echosign_dev1__SIGN_Agreement__c" 
+    sidebar="{! IF( NOT ISNULL( $CurrentPage.parameters.showheadersidebar), $CurrentPage.parameters.showheadersidebar, 'true' ) }" 
+    showHeader="{! IF( NOT ISNULL( $CurrentPage.parameters.showheadersidebar), $CurrentPage.parameters.showheadersidebar, 'true' ) }">
+    <apex:includeScript value="/lightning/lightning.out.js" />
+
+    <apex:slds />
+    
+    <apex:includeLightning />
+    
+    <apex:variable var="agreementId" value="{! IF( NOT ISNULL( $CurrentPage.parameters.id), $CurrentPage.parameters.id, '' ) }"/>
+    <apex:variable var="templateId" value="{! IF( NOT ISNULL( $CurrentPage.parameters.templateId), $CurrentPage.parameters.templateId, '' ) }"/>
+    <apex:variable var="masterId" value="{! IF( NOT ISNULL( $CurrentPage.parameters.masterId), $CurrentPage.parameters.masterId, '' ) }"/>
+    <apex:variable var="actionName" value="{! IF( NOT ISNULL( $CurrentPage.parameters.onloadAction), $CurrentPage.parameters.onloadAction, '' ) }"/>
+
+    <div id="lightning" />
+
+    <script>
+    	var isLightning = (typeof sforce != 'undefined') && (sforce != null) && (sforce.one != null);
+    	var appName = "echosign_dev1:AgreementEditorBridge";
+		var isLightningOut = true;
+		
+    	var agreementId = '{!HTMLENCODE(agreementId) }' == '' ? null : '{!HTMLENCODE(agreementId) }';
+    	var templateId = '{!HTMLENCODE(templateId)}' == '' ? null : '{!HTMLENCODE(templateId)}';
+    	var masterId = '{!HTMLENCODE(masterId)}' == '' ? null : '{!HTMLENCODE(masterId)}';
+    	var actionName = '{!HTMLENCODE(actionName)}' == '' ? null : '{!HTMLENCODE(actionName)}';
+        
+    	$Lightning.use(appName, function() {
+        	$Lightning.createComponent("echosign_dev1:AgreementEditor",
+          		{ "agreementId" : agreementId,
+                  "templateId" : templateId,
+                  "masterId" : masterId,
+                  "actionName" : actionName,
+				  "uiThemeDisplayed" : "{!$User.UIThemeDisplayed}",
+				  "isLightningOut" : isLightningOut },
+          		"lightning",
+          		function(cmp) {
+          		document.getElementById("outLoader").style.display = 'none';
+          	});
+        });
+    </script>
+
+    <div class="slds-scope">
+        <div id="outLoader" style="display: block;">
+            <div class="slds">
+                <div class="main slds-m-bottom_large" role="main">
+                    <div class="slds-grid slds-grid_align-center slds-m-vertical_xx-large">
+                        <div class="slds-spinner_large slds-m-vertical_xx-large">
+                            <img class="slds-m-vertical_xx-large" src="{!URLFOR($Resource.SLDS, '/images/spinners/slds_spinner_brand.gif')}" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</apex:page>

@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Update Care Plan List">
+    <aura:attribute name="carePlanList" type="Case[]" />
+</aura:event>

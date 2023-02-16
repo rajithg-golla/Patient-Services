@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box if you want this merge mapping to run by default for all agreements sent. You can override the default if you specify a different merge mapping to use with a specific agreement or agreement template. --></help>
+    <label><!-- Default Merge Mapping? --></label>
+    <name>echosign_dev1__Default__c</name>
+</CustomFieldTranslation>

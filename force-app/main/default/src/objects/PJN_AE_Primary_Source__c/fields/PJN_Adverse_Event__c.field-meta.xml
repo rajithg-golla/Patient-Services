@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Adverse_Event__c</fullName>
+    <description>The parent AE record that the contact is related to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The parent AE record that the contact is related to.</inlineHelpText>
+    <label>Adverse Event</label>
+    <referenceTo>PJN_Adverse_Event__c</referenceTo>
+    <relationshipLabel>AE Primary Sources</relationshipLabel>
+    <relationshipName>PJN_AE_Contacts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

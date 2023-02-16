@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>המזהה של מדד סוכנות המקור עבור פער טיפול זה.</help>
+    <label><!-- Source Agency Measure ID --></label>
+    <name>HealthCloudGA__SourceAgencyMeasureID__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A – Approved Claim, R – Rejected Claim --></help>
+    <label><!-- Claim Outcome --></label>
+    <name>MVN_Claim_Outcome__c</name>
+</CustomFieldTranslation>

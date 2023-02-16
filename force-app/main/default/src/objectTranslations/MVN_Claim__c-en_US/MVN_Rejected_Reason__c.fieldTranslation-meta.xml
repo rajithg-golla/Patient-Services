@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is required for rejected claims only. This field will contain the text from the selected rejection reason. --></help>
+    <label><!-- Rejected Reason --></label>
+    <name>MVN_Rejected_Reason__c</name>
+</CustomFieldTranslation>

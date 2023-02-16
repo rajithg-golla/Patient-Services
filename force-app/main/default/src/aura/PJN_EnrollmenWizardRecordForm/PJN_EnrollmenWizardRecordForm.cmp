@@ -1,0 +1,108 @@
+<aura:component implements="c:PJN_EnrollmentWizardStepIntf" controller="PJN_EnrollmentWizardRecordFormCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="sObjectType" type="String"/>
+    <aura:attribute name="recordId" type="Id" default="null"/>
+    <aura:attribute name="recordTypeId" type="Id" default="null"/>
+    <aura:attribute name="sourceCaseId" type="Id" />
+    <aura:attribute name="fields" type="PJN_Enrollment_Field_Set__mdt[]" />
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="carePlanFieldName" type="String"/>
+    <aura:attribute name="isSaving" type="Boolean" default="true" access="private"
+                    description = "Show spinner when the form is being saved" />
+    <aura:attribute name="formIsDirty" type="Boolean" default="false" />
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="enrollmenWizardStepEvent" type="c:PJN_EnrollmentWizardStepEvent"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="c:PJN_EnrollmentWizardRecordFormRefreshEvent" action="{!c.onRefreshEvent}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <div class="{! 'slds-align_absolute-center ' + (v.isSaving ? 'slds-show' : 'slds-hide')}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </div>
+
+    <aura:if isTrue="{!v.title}">
+        <h3 class="slds-section-title_divider">
+            {!(v.recordId == 'null' ? $Label.c.PJN_New_Record_Header : $Label.c.PJN_Edit_Record_Header) + ' ' + v.title}
+        </h3>
+    </aura:if>
+
+    <!-- BODY -->
+    <aura:if isTrue="{!v.sObjectType!=null}">
+        <aura:if isTrue="{!v.recordId=='null'}">
+            <lightning:recordEditForm
+                aura:id="formCreator"
+                objectApiName="{!v.sObjectType}"
+                recordTypeId="{!v.recordTypeId}"
+                onsuccess="{!c.onSuccess}"
+                onsubmit="{!c.onSubmit}"
+                onerror="{!c.onError}"
+            >
+                <lightning:messages />
+                <lightning:layout multipleRows="true">
+                    <aura:iteration items="{!v.fields}" var="field">
+                        <lightning:layoutItem size="6" flexibility="auto">
+                            <lightning:inputField required="{!field.PJN_Is_Required__c}" aura:id="field" fieldName="{!field.PJN_Field_API_Name__c}" onchange="{!c.onChange}"/>
+                        </lightning:layoutItem>
+                    </aura:iteration>
+                </lightning:layout>
+                <lightning:layout horizontalAlign="center">
+                    <div class="slds-m-vertical_medium slds-text-body_small slds-text-color_weak">
+                        <!-- We use this hidden span to align buttons in the center considering the unsaved changes label-->
+                        <span class="slds-hidden">{!$Label.c.PJN_Unsaved_Changes}</span>
+                        <lightning:button type="cancel" name="cancel" label="Cancel" onclick="{!c.onCancel}"/>
+                        <lightning:button variant="brand" type="submit" name="save" label="Save" />
+                        <span class="{! 'slds-m-left_medium ' + (v.formIsDirty ? 'slds-visible' : 'slds-hidden')}">
+                            <lightning:icon
+                                iconName="utility:warning"
+                                alternativeText="Unsaved changes!"
+                                variant="warning"
+                                size="x-small"/>
+                            {!$Label.c.PJN_Unsaved_Changes}
+                        </span>
+                    </div>
+                </lightning:layout>
+            </lightning:recordEditForm>
+        <aura:set attribute="else">
+            <lightning:recordEditForm
+                aura:id="formEditor"
+                recordId="{!v.recordId}"
+                objectApiName="{!v.sObjectType}"
+                recordTypeId="{!v.recordTypeId}"
+                onsuccess="{!c.onSuccess}"
+                onsubmit="{!c.onSubmit}"
+                onerror="{!c.onError}"
+            >
+                <lightning:messages />
+                <lightning:layout multipleRows="true">
+                    <aura:iteration items="{!v.fields}" var="field">
+                        <lightning:layoutItem size="6" flexibility="auto">
+                            <lightning:inputField required="{!field.PJN_Is_Required__c}" aura:id="field" fieldName="{!field.PJN_Field_API_Name__c}" onchange="{!c.onChange}"/>
+                        </lightning:layoutItem>
+                    </aura:iteration>
+                </lightning:layout>
+                <lightning:layout horizontalAlign="center">
+                    <div class="slds-m-vertical_medium slds-text-body_small slds-text-color_weak">
+                        <!-- We use this hidden span to align buttons in the center considering the unsaved changes label-->
+                        <span class="slds-hidden">{!$Label.c.PJN_Unsaved_Changes}</span>
+                        <lightning:button type="cancel" name="cancel" label="Cancel" onclick="{!c.onCancel}"/>
+                        <lightning:button variant="brand" type="submit" name="save" label="Save" />
+                        <span class="{! 'slds-m-left_medium ' + (v.formIsDirty ? 'slds-visible' : 'slds-hidden')}">
+                            <lightning:icon
+                                iconName="utility:warning"
+                                alternativeText="Unsaved changes!"
+                                variant="warning"
+                                size="x-small"/>
+                            {!$Label.c.PJN_Unsaved_Changes}
+                        </span>
+                    </div>
+                </lightning:layout>
+            </lightning:recordEditForm>
+        </aura:set>
+        </aura:if>
+    </aura:if>
+</aura:component>

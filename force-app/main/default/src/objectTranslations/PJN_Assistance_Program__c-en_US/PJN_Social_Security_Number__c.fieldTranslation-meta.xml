@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Social Security Number value sent to the Financial Clearing House for a PAP Eligibility Request --></help>
+    <label><!-- Social Security Number --></label>
+    <name>PJN_Social_Security_Number__c</name>
+</CustomFieldTranslation>

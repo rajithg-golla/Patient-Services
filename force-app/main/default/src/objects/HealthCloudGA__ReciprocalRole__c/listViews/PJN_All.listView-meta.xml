@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_All</fullName>
+    <columns>NAME</columns>
+    <columns>HealthCloudGA__InverseRole__c</columns>
+    <columns>HealthCloudGA__InverseRelationship__c</columns>
+    <columns>PJN_External_ID__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>HealthCloudGA__RelationshipType__c</columns>
+    <columns>HealthCloudGA__CreateInverseRole__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>PJN_All</label>
+</ListView>

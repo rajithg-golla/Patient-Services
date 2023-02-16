@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Disqualification --></label>
+    <name>HealthCloudGA__ReasonForDisqualification__c</name>
+    <picklistValues>
+        <masterLabel>Another agency is involved</masterLabel>
+        <translation>另一家機構參與</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD declines to sign orders</masterLabel>
+        <translation>MD 拒絕簽署訂單</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient is outside coverage area</masterLabel>
+        <translation>病患不受保險給付</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient isn’t eligible for insurance</masterLabel>
+        <translation>病患不符合保險資格</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient refuses services</masterLabel>
+        <translation>病患拒絕服務</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral was canceled</masterLabel>
+        <translation>已取消轉介</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services aren’t needed</masterLabel>
+        <translation>對要求的服務沒有需求</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested services can’t be provided</masterLabel>
+        <translation>無法提供要求的服務</translation>
+    </picklistValues>
+</CustomFieldTranslation>

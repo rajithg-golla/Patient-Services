@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Time the record has been sent to the MDM system for approval. --></help>
+    <label><!-- Sent Datetime --></label>
+    <name>PJN_Sent_Datetime__c</name>
+</CustomFieldTranslation>

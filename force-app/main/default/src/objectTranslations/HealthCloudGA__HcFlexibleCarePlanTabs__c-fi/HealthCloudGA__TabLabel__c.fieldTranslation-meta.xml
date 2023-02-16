@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Jos otsikossasi on nimitilan etuliite, käytä muotoa Otsikon_Nimitila.Otsikon_Nimi. Muussa tapauksessa käytä muotoa c.Otsikon_Nimi.</help>
+    <label><!-- Tab Label --></label>
+    <name>HealthCloudGA__TabLabel__c</name>
+</CustomFieldTranslation>

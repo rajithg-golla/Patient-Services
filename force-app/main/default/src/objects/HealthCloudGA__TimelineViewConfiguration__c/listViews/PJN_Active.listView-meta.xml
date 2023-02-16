@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Active</fullName>
+    <columns>NAME</columns>
+    <columns>HealthCloudGA__DetailField__c</columns>
+    <columns>HealthCloudGA__PositionField__c</columns>
+    <columns>HealthCloudGA__HoverFieldName__c</columns>
+    <columns>HealthCloudGA__FilterCriterion__c</columns>
+    <columns>HealthCloudGA__ObjectCategory__c</columns>
+    <columns>HealthCloudGA__GraphicalIcon__c</columns>
+    <columns>HealthCloudGA__SortOrder__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>HealthCloudGA__Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active</label>
+</ListView>

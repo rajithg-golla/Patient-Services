@@ -1,0 +1,4 @@
+myRARE enrollment received from {!Case.MVN_Organization__c}, Prescriber {!Case.MVN_Physician_FirstName__c} {!Case.MVN_Physician_LastName__c}. {!Case.MVN_Organization_Address__c}.
+
+Regards,
+myRARE Support Team

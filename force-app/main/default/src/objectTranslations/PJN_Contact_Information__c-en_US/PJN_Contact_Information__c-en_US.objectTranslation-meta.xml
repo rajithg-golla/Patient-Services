@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contact Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contact Information</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Merge Tool Contact Info Fields --></label>
+        <name>PJN_Merge_Tool_Contact_Info_Fields</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Defines address contact information --></description>
+        <label><!-- Address --></label>
+        <name>PJN_Address</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines email contact information --></description>
+        <label><!-- Email --></label>
+        <name>PJN_Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines fax contact information --></description>
+        <label><!-- Fax --></label>
+        <name>PJN_Fax</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines phone contact information --></description>
+        <label><!-- Phone --></label>
+        <name>PJN_Phone</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Fax number must contain 10 digits unformatted or in the (999) 999-9999 format. --></errorMessage>
+        <name>MVN_Fax_Number_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone number must contain 10 digits unformatted or in the (999) 999-9999 format. --></errorMessage>
+        <name>MVN_Phone_Number_Length</name>
+    </validationRules>
+</CustomObjectTranslation>

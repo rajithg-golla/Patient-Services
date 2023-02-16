@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Claim</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Child_SObject_API_Name__c</field>
+        <value xsi:type="xsd:string">MVN_Claim__c</value>
+    </values>
+    <values>
+        <field>PJN_Field_API_Name_To_Care_Plan__c</field>
+        <value xsi:type="xsd:string">MVN_Care_Plan__c</value>
+    </values>
+    <values>
+        <field>PJN_Field_API_Name_to_Account__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Field_List__c</field>
+        <value xsi:type="xsd:string">Name, MVN_Care_Plan_Number__c, MVN_Record_Type_Name__c, MVN_Date_of_Service_Fill__c, MVN_Claim_Id_Auth_Number__c, MVN_Outcome_Transaction_Type__c, MVN_Closed_Processed_Date__c, CreatedDate</value>
+    </values>
+    <values>
+        <field>PJN_Order__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+</CustomMetadata>

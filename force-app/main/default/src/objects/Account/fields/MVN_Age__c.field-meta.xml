@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( MVN_Birthdate__c ) ) ,
+  IF( DATE( 2000 , MONTH( MVN_Birthdate__c  ) , DAY( MVN_Birthdate__c  ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+     YEAR (Today()) - YEAR ( MVN_Birthdate__c ),
+     YEAR (Today()) - YEAR ( MVN_Birthdate__c ) -1 ),
+  null)</formula>
+    <label>Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

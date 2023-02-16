@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Educational_Materials_Sent_MVN__c</fullName>
+    <description>Indicates if educational materials have been sent to the participant at the time of enrollment. Used to determine the appropriate care plan template to apply.</description>
+    <externalId>false</externalId>
+    <label>Educational Materials Sent</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No_MVN</valueSetName>
+    </valueSet>
+</CustomField>

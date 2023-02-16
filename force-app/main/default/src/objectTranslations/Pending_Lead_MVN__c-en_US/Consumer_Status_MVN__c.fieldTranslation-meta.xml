@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Consumer Status --></label>
+    <name>Consumer_Status_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Consented</masterLabel>
+        <translation><!-- Consented --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declined Consent</masterLabel>
+        <translation><!-- Declined Consent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enrolled</masterLabel>
+        <translation><!-- Enrolled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interaction</masterLabel>
+        <translation><!-- Interaction --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

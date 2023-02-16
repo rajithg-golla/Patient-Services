@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-m-around_large" onnewmetric={handleNewMetric}>
+        <lightning-tabset>
+            <lightning-tab label={labels.SUMMARY} value="summary">
+                <c-pjn-metrics-summary
+                    care-plan-id={carePlanId}
+                    patient-id={patientId}
+                    onshowgroupdetail={handleShowGroupDetail}
+                    show-all-for-current-patient={showAllForCurrentPatient}>
+                </c-pjn-metrics-summary>
+            </lightning-tab>
+            <lightning-tab label={labels.DETAILS} value="details">
+                <c-pjn-metric-groups
+                    care-plan-id={carePlanId}
+                    patient-id={patientId}
+                    show-all-for-current-patient={showAllForCurrentPatient}>
+                </c-pjn-metric-groups>
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+</template>

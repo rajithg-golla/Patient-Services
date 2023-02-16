@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Priority --></label>
+    <name>HealthCloudGA__Priority__c</name>
+    <picklistValues>
+        <masterLabel>ASAP</masterLabel>
+        <translation>Mahdollisimman pian</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routine</masterLabel>
+        <translation>Rutiini</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stat</masterLabel>
+        <translation>Heti</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urgent</masterLabel>
+        <translation>Kiireinen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

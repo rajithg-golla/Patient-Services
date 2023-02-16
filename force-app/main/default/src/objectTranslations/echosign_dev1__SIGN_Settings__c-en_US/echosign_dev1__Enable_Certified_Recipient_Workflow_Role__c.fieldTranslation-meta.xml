@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Recipients marked as certified recipients acknowledge the document. They may be required to enter data into fields. --></help>
+    <label><!-- Enable Certified Recipient Role --></label>
+    <name>echosign_dev1__Enable_Certified_Recipient_Workflow_Role__c</name>
+</CustomFieldTranslation>

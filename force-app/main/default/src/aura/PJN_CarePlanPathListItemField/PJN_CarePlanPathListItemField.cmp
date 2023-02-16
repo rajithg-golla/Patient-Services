@@ -1,0 +1,26 @@
+<aura:component implements="c:PJN_LightningOutIntf">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="careplan" type="Case"/>
+    <aura:attribute name="allCareplanSettingField" type="PJN_All_Care_Plan_Setting_Field__mdt"/>
+    <aura:attribute name="label" type="String"/>
+    <aura:attribute name="value" type="String"/>
+    <aura:attribute name="recordId" type="Id"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- BODY -->
+    <lightning:layoutItem class="slds-page-header__detail-block slds-m-right--small slds-m-bottom--small" size="2">
+        <div class="slds-text-title slds-truncate" title="{!v.label}">{!v.label}</div>
+        <div class="slds-truncate">
+            <aura:if isTrue="{!v.allCareplanSettingField.PJN_Link_Record_Id_Field_API_Name__c}">
+                <a onclick="{!c.onNavigateToCarePlan}">
+                    {!v.value}
+                </a>
+                <aura:set attribute="else">
+                    {!v.value}
+                </aura:set>
+            </aura:if>
+        </div>
+    </lightning:layoutItem>
+</aura:component>

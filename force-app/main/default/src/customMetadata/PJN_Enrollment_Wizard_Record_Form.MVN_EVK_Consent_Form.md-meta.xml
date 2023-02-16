@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EVK - Consent Form</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Care_Plan_Lookup_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Care_Plan__c</value>
+    </values>
+    <values>
+        <field>PJN_Edit_Care_Plan_Record_Form__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>PJN_Enrollment_Wizard_Component__c</field>
+        <value xsi:type="xsd:string">MVN_EVK_Consent_Form_Component</value>
+    </values>
+    <values>
+        <field>PJN_RecordType_DeveloperName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_SObject_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Contact_Point_Type_Consent__c</value>
+    </values>
+</CustomMetadata>

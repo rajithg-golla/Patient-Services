@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>在個別物件模型中建立記錄時同步化「帳戶」和「連絡人」欄位。</help>
+    <label><!-- Sync Individual System Fields --></label>
+    <name>HealthCloudGA__SyncIndividualSystemFields__c</name>
+</CustomFieldTranslation>

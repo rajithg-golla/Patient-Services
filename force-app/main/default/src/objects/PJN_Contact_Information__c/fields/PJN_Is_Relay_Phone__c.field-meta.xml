@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Is_Relay_Phone__c</fullName>
+    <description>Indicates this record has been selected as the phone number to be used for Relay Network SMS communications.</description>
+    <externalId>false</externalId>
+    <formula>PJN_Account__r.PJN_Relay_Phone__c == Id</formula>
+    <inlineHelpText>Indicates this record has been selected as the phone number to be used for Relay Network SMS communications.</inlineHelpText>
+    <label>Relay Phone</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Drug_Copay_Coinsurance__c</fullName>
+    <description>Displays the SP Prescription Drug Copay/Coinsurance value if Coverage Type is Pharmacy and the SP Medical Copay/Coinsurance value if Coverage Type is Medical. Used for SP triage.</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_Coverage_Type__c, 
+&quot;Pharmacy&quot;, MVN_Coverage_Benefits_SP_Prescription__r.MVN_Drug_Copay_Coinsurance__c, 
+&quot;Medical&quot;, MVN_Coverage_Benefits_SP_Medical__r.MVN_Drug_Copay_Coinsurance__c,
+null)</formula>
+    <label>Drug Copay/Coinsurance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

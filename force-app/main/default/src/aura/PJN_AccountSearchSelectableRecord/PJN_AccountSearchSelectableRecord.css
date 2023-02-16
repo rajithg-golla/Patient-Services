@@ -1,0 +1,14 @@
+/* Adjustments to the "neutral" variant */
+.THIS .square-button {
+    padding-right: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .3rem;
+}
+
+.THIS .centered-area {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}

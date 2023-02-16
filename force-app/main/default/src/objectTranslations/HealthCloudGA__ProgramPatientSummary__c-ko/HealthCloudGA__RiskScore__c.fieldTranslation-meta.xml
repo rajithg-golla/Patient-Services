@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>환자에 대해 계산된 HCC 위험 점수입니다.</help>
+    <label><!-- Risk Score --></label>
+    <name>HealthCloudGA__RiskScore__c</name>
+</CustomFieldTranslation>

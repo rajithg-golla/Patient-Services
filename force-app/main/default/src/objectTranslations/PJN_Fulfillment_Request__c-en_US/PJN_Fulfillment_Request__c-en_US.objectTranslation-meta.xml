@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fulfillment Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fulfillment Requests</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Defines a request to enroll a patient in commercial copay --></description>
+        <label><!-- Copay Enrollment --></label>
+        <name>MVN_Copay_Enrollment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a request to process a patient&apos;s copay medical claim --></description>
+        <label><!-- Copay Medical Claim --></label>
+        <name>MVN_Copay_Medical_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a submitted request to enroll a patient in commercial copay --></description>
+        <label><!-- Copay - Submitted --></label>
+        <name>MVN_Copay_Submitted</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a submitted request to triage an order to a patient&apos;s specialty pharmacy --></description>
+        <label><!-- SP Triage - Submitted --></label>
+        <name>MVN_SP_Triage_Submitted</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a request to send materials to a patient --></description>
+        <label><!-- Materials Order --></label>
+        <name>PJN_Materials_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a request to triage an order to a patient&apos;s specialty pharmacy --></description>
+        <label><!-- SP Triage --></label>
+        <name>PJN_SP_Triage</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Address Validation can only be set to Yes – Validated after it has failed Address Validation.  Please Save as blank and Submit Fulfillment Request --></errorMessage>
+        <name>Address_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The following is required in order to submit the Copay Enrollment: Copay Savings Assistance Program with an Eligible Outcome. --></errorMessage>
+        <name>MVN_Copay_Enrollment_Required_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The following is required in order to submit the Copay Medical Claim for processing: Claim Date of Service, Eligible Claim Review Outcome, Private/Commercial Plan Type, completed BV, and HIPAA Consent. --></errorMessage>
+        <name>MVN_Copay_Medical_Required_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide all required Patient or Caregiver Information in order to Submit. (Address, City, State, Postal Code, Phone and Phone Type) --></errorMessage>
+        <name>MVN_Dialog_Direct_Required_Fields</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MVN_Fax_Claim --></label>
+        <name>MVN_Fax_Claim</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MVN_Send_Fulfillment_Docs_Nintex --></label>
+        <name>MVN_Send_Fulfillment_Docs_Nintex</name>
+    </webLinks>
+</CustomObjectTranslation>

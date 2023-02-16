@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to hide the opportunity lookup option for draft agreements. --></help>
+    <label><!-- Hide Opportunity Lookup --></label>
+    <name>echosign_dev1__Disable_Opportunity_Lookup__c</name>
+</CustomFieldTranslation>

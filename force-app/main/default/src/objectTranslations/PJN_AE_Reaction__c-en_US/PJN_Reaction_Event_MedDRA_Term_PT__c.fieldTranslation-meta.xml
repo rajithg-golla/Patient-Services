@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reaction/Event MedDRA Term (PT) --></label>
+    <name>PJN_Reaction_Event_MedDRA_Term_PT__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- API Name of the field that defines the relationship with the care plan. --></help>
+    <label><!-- Field API Name To Care Plan --></label>
+    <name>PJN_Field_API_Name_To_Care_Plan__c</name>
+</CustomFieldTranslation>

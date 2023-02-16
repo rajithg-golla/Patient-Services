@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In order to create or edit a record with this field on it the user must provide a value for this field --></help>
+    <label><!-- Required for Save --></label>
+    <name>PJN_Required_for_Save__c</name>
+</CustomFieldTranslation>

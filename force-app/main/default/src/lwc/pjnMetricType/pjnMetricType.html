@@ -1,0 +1,55 @@
+<template>
+    <template if:true={loading}>
+        <div class="slds-is-relative min-120-px">
+            <lightning-spinner alternative-text={labels.LOADING} size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={loading}>
+        <div class="slds-m-top_large description">{metricType.PJN_Description__c}</div>
+
+        <c-pjn-capture-metric
+            care-plan-id={carePlanId}
+            patient-id={patientId}
+            metric-type-id={metricTypeId}
+            onnewmetric={refreshList}>
+        </c-pjn-capture-metric>
+
+        <template if:true={metrics.length}>
+            <template if:true={lastEntryMenuOptions.length}>
+                <div class="slds-text-align_right slds-p-horizontal_small slds-p-vertical_x-small slds-is-relative">
+                    <span style="position: absolute;right: 10px;top: -40px;">
+                        <lightning-button-menu alternative-text="Show menu" icon-name="utility:down" onselect={handleLastEntryMenuSelect}>
+                            <template for:each={lastEntryMenuOptions} for:item="lastEntryMenuOption">
+                                <lightning-menu-item key={lastEntryMenuOption.value} value={lastEntryMenuOption.value} icon-name={lastEntryMenuOption.iconName} label={lastEntryMenuOption.label}></lightning-menu-item>
+                            </template>
+                        </lightning-button-menu>
+                    </span>
+                </div>
+            </template>
+
+            <lightning-button-group class="slds-m-vertical_medium" if:true={displayTrend}>
+                <lightning-button label={labels.LIST} class="list" variant={listBrand} onclick={setShowList}></lightning-button>
+                <lightning-button label={labels.TREND} class="trend" variant={trendBrand} onclick={setShowTrend}></lightning-button>
+            </lightning-button-group>
+
+            <div class="slds-m-top_large" if:true={showList}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={metrics}
+                    columns={columns}
+                    hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+
+            <template if:true={displayTrend}>
+                <c-pjn-chart-metrics metrics={metrics} if:true={showTrend}></c-pjn-chart-metrics>
+            </template>
+        </template>
+
+        <template if:false={metrics.length}>
+            <div class="slds-text-align_center slds-p-around_large slds-text-title_caps">
+                {labels.NO_RECORDS}
+            </div>
+        </template>
+    </template>
+</template>

@@ -1,0 +1,6 @@
+<aura:event type="COMPONENT" description="Event template">
+    <aura:attribute name="next" type="Boolean" default="false"/>
+    <aura:attribute name="previous" type="Boolean" default="false"/>
+    <aura:attribute name="refresh" type="Boolean" default="false"/>
+    <aura:attribute name="recordId" type="Id" default="null"/>
+</aura:event>

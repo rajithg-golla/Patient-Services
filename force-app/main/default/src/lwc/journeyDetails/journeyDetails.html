@@ -1,0 +1,72 @@
+<template>
+  <!-- <p>{getIdFromParent}</p>
+  <p>{objectName}</p> -->
+  <!-- <p>{greeting}</p> -->
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_3-of-8">
+      <div class="slds-checkbox">
+        <label class="slds-checkbox" for={trigger.nickname}>
+          <input class="" type="checkbox" name="options" id={trigger.nickname} value={trigger.nickname}
+            checked={isSelected} onchange={handleSelectedChange} />
+
+
+          <template if:true={multiSelection}>
+            <span class="slds-checkbox_faux slds-m-bottom_xx-small"></span>
+          </template>
+
+          <span class="slds-text-heading_small slds-m-left_x-small" aria-describedby="notes">{trigger.nickname}</span>
+        </label>
+        <template if:true={hasTriggerNotes}>
+          <span class="lgc-bg slds-m-left_x-small">
+            <lightning-helptext content={trigger.notes}></lightning-helptext>
+          </span>
+        </template>
+        <!-- <span class="slds-text-heading_small slds-m-left_x-small" aria-describedby="notes"><a href="javascript:void(0)" aria-describedby="help">{trigger.nickname}</a></span>
+          <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="notes" style="position:absolute;top:-4px;left:35px">
+            <div class="slds-popover__body">{trigger.notes}</div>
+          </div> -->
+
+      </div>
+    </div>
+
+    <div class="slds-col slds-size_2-of-8">
+      <!-- <template if:false={isSent}>
+        <span class="slds-text-title_caps">not sent</span>
+      </template> -->
+      <!-- <template if:true={isSent}> -->
+        <span class="slds-text-title_caps slds-m-right_x-small">{sentStatus}</span>
+        <template if:true={hasSentNotes}>
+          <span class="lgc-bg">
+            <lightning-helptext content={sentNotes}></lightning-helptext>
+          </span>
+        </template>
+        <!-- <lightning-formatted-date-time value={lastTimeSent} month="short" day="2-digit" weekday="short" hour="2-digit"
+          minute="2-digit">
+        </lightning-formatted-date-time> -->
+      <!-- </template> -->
+    </div>
+
+    <div class="slds-col slds-size_2-of-8">
+      <!-- <template if:false={isOpened}>
+        <span class="slds-text-title_caps">not opened</span>
+      </template>
+      <template if:true={isOpened}> -->
+        <span class="slds-text-title_caps slds-m-right_x-small">{openedStatus}</span>
+        <!-- <lightning-formatted-date-time value={lastOpenedTime} month="short" day="2-digit" weekday="short" hour="2-digit"
+          minute="2-digit">
+        </lightning-formatted-date-time>
+      </template> -->
+    </div>
+
+    <template if:false={readOnly}>
+      <div class="slds-col slds-size_1-of-8">
+        <div class="slds-float_right slds-p-horizontal_small">
+          <lightning-button variant="neutral" label="Send" title="Send" icon-name="utility:send"
+            onclick={handleSendClick}></lightning-button>
+        </div>
+      </div>
+    </template>
+
+  </div>
+
+</template>

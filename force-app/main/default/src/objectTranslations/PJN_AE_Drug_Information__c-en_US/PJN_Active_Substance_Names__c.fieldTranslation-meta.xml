@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: The International Nonproprietary Names (INN) for Pharmaceutical Substances or
+drug substance name or drug identification code should be provided if no name exists. For
+combination products, each active ingredient should be specified. --></help>
+    <label><!-- Active Substance Names --></label>
+    <name>PJN_Active_Substance_Names__c</name>
+</CustomFieldTranslation>

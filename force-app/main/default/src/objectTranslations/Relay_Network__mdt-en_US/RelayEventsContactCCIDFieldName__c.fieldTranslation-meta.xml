@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The field name in the Contact object that contains the Relay CCID. If the Conact object does not need to contain the Relay CCID, then this can be left blank --></help>
+    <label><!-- Contact CCID Field Name --></label>
+    <name>RelayEventsContactCCIDFieldName__c</name>
+</CustomFieldTranslation>

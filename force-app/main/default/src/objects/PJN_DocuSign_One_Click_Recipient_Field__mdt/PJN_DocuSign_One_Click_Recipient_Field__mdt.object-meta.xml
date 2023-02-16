@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: DocuSign One Click
+Purpose: Defines the mappings for creating a DocuSign Recipient. This is step 3 in setting up the Docusign One Click custom metadata.
+Metadata Relationship(s): DocuSign One Click Recipient.
+Created by Mavens: Yes</description>
+    <label>DocuSign One Click Recipient Field</label>
+    <pluralLabel>DocuSign One Click Recipient Field</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

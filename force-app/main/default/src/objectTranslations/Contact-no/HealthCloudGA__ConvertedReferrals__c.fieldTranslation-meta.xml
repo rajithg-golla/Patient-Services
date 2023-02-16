@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Antall henvisninger de siste 6 månedene fra denne henvisende legen som har statusen &quot;Avsluttet-Konvertert&quot;.</help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

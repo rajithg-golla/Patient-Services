@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <description>Sets the Data Use Purpose External ID field on the Consent object.</description>
+        <name>Set_Data_Use_Purpose_Program_DeveloperName_MVN</name>
+        <label>Set Data Use Purpose Program DeveloperName</label>
+        <locationX>176</locationX>
+        <locationY>493</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Data_Use_Purpose_Program_DeveloperNa_MVN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Care_Programs_DeveloperName_MVN.PJN_Program_DeveloperName__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Copy the associated data use purpose&apos;s program&apos;s developer name onto the record so it can be used for validations, etc.</description>
+    <interviewLabel>Consent Set Program DeveloperName {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Consent Set Program DeveloperName</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the program developer name of the given care program</description>
+        <name>Get_Care_Programs_DeveloperName_MVN</name>
+        <label>Get Care Program&apos;s DeveloperName</label>
+        <locationX>176</locationX>
+        <locationY>373</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Data_Use_Purpose_Program_DeveloperName_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Data_Use_Purpose_Care_Plan_ID_MVN.PurposeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CareProgram</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>PJN_Program_DeveloperName__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the ID of the associated data use purpose&apos;s care plan</description>
+        <name>Get_Data_Use_Purpose_Care_Plan_ID_MVN</name>
+        <label>Get Data Use Purpose Care Plan ID</label>
+        <locationX>176</locationX>
+        <locationY>253</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Care_Programs_DeveloperName_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.PJN_Data_Use_Purpose__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>DataUsePurpose</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>PurposeId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Data_Use_Purpose_Care_Plan_ID_MVN</targetReference>
+        </connector>
+        <object>PJN_Contact_Point_Type_Consent__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

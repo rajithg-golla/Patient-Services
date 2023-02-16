@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Bruk dette feltet for å tvinge den grunnleggende Adobe Sign-avtalen og avanserte Adobe Sign-avtalesider til gjenoppbygge den relaterte mottakerlisten ved bruk av oppslagsfeltene i avtaleposten.</help>
+    <label><!-- Rebuild Recipient List --></label>
+    <name>echosign_dev1__Rebuild_Recipient_List__c</name>
+</CustomFieldTranslation>

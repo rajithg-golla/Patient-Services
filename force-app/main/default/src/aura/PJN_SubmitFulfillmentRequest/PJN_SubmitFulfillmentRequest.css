@@ -1,0 +1,6 @@
+.THIS .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;  
+}
+.THIS .slds-fade-in-open {
+    display:none !important;
+}

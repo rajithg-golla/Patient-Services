@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Coverage_Order_and_Dates_Required</fullName>
+    <active>true</active>
+    <description>Coverage Order, Effective Date and Expiration Date fields must be populated to mark Set as Active to TRUE.</description>
+    <errorConditionFormula>AND(
+PJN_Set_as_Active__c,
+OR(
+ISBLANK(TEXT(PJN_Coverage_Order__c)),
+ISNULL(PJN_Effective_Date__c),
+ISNULL(PJN_Expiration_Date__c)
+))</errorConditionFormula>
+    <errorMessage>Coverage Order, Effective Date and Expiration Date fields must be populated to mark Set as Active to TRUE.</errorMessage>
+</ValidationRule>

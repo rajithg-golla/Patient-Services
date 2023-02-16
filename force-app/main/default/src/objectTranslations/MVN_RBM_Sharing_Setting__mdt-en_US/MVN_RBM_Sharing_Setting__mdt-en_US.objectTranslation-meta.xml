@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RBM Sharing Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RBM Sharing Settings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A Status value is required if Sub-Status is not blank. --></errorMessage>
+        <name>MVN_Require_Status_for_Sub_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

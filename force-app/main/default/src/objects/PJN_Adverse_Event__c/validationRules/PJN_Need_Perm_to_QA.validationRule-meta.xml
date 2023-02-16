@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Need_Perm_to_QA</fullName>
+    <active>true</active>
+    <description>User needs permission to enter QA information</description>
+    <errorConditionFormula>ISCHANGED( PJN_QA_Summary__c )</errorConditionFormula>
+    <errorDisplayField>PJN_QA_Summary__c</errorDisplayField>
+    <errorMessage>Cannot edit without permission to QA</errorMessage>
+</ValidationRule>

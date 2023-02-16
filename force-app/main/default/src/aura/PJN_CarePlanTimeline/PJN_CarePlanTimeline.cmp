@@ -1,0 +1,40 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,c:PJN_LightningOutIntf" access="global" controller="PJN_CarePlanUICtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="variant" type="String" default="open" access="global"/>
+    <aura:attribute name="problems" type="PJN_CarePlanProblemWrapper[]"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="carePlan" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+
+    <!-- HANDLERS -->
+    <lightning:workspaceAPI aura:id="workspace" />
+    <aura:handler name="change" value="{!v.carePlan}" action="{!c.onInit}"/>
+    <c:PJN_CarePlanUiUpdater carePlanId="{!v.recordId}" carePlanUpdated="{!c.onInit}" />
+
+    <c:PJN_CarePlanUiUpdater carePlanId="{!v.recordId}" carePlanUpdated="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+    <force:recordData
+        aura:id="record"
+        fields="Id,AccountId,PJN_Program_DeveloperName__c"
+        recordId="{!v.recordId}"
+        targetError="{!v.recordError}"
+        targetRecord="{!v.record}"
+        targetFields ="{!v.carePlan}"
+        mode="VIEW"/>
+
+    <!-- BODY -->
+    <article class="slds-card slds-is-relative">
+        <c:PJN_Loader isLoading="{!v.isLoading}" />
+        <aura:if isTrue="{!v.carePlan}">
+            <aura:iteration items="{!v.problems}" var="problem">
+                <aura:if isTrue="{!problem.cases.length > 0 || problem.detail.Name == $Label.c.PJN_Additional_Activities}">
+                    <c:PJN_CarePlanTimelineProblemCases carePlan="{!v.carePlan}" carePlanProblem="{!problem}" context="{!v.context}"/>
+                </aura:if>
+            </aura:iteration>
+        </aura:if>
+    </article>
+</aura:component>

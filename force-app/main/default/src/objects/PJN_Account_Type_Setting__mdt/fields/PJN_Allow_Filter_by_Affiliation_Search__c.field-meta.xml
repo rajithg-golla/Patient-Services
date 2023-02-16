@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Allow_Filter_by_Affiliation_Search__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, when searching for accounts, the user can filter to those affiliated with the selected account of this type. e.g. if an Physician is selected then filter institutions to those the Physician is affiliated with.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If true, when searching for accounts, the user can filter to those affiliated with the selected account of this type</inlineHelpText>
+    <label>Allow Filter by Affiliation Search</label>
+    <type>Checkbox</type>
+</CustomField>

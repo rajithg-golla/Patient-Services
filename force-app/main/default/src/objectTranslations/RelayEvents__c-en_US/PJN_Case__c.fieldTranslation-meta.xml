@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The case this event originated from --></help>
+    <label><!-- Case --></label>
+    <name>PJN_Case__c</name>
+    <relationshipLabel><!-- Relay Events --></relationshipLabel>
+</CustomFieldTranslation>

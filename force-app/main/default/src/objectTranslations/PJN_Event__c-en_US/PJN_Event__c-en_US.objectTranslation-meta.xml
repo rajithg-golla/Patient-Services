@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Events</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Restatement Fields --></label>
+        <name>MVN_Restatement_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Coverage Investigation Update Screen --></label>
+        <name>PJN_Coverage_Investigation_Update_Screen</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Defines an event representing an update to the patient&apos;s pharmacy status and/or sub-status --></description>
+        <label><!-- Pharmacy Status Update --></label>
+        <name>MVN_Pharmacy_Status_Update</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a restatement to an event representing a known update in the patient&apos;s therapy status and/or sub-status --></description>
+        <label><!-- Therapy Status Restatement --></label>
+        <name>MVN_Therapy_Status_Restatement</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines an event representing a known physician change for a patient --></description>
+        <label><!-- Physician Change --></label>
+        <name>PJN_Physician_Change</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines an event representing how a patient is accessing therapy and the date periods. --></description>
+        <label><!-- Therapy Access --></label>
+        <name>PJN_Therapy_Access</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines an event representing a known update in the patient&apos;s therapy status and/or sub-status --></description>
+        <label><!-- Therapy Status Update --></label>
+        <name>PJN_Therapy_Status_Update</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter Restatement Dates or select the Single Restatement option. --></errorMessage>
+        <name>MVN_Enter_Restatement_Dates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Restatement End Date cannot be prior to Restatement Start Date --></errorMessage>
+        <name>MVN_Restatement_End_Date_Before_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Single Restatement flag can&apos;t be checked at the same time than Restatement Start and End Dates are present. --></errorMessage>
+        <name>MVN_Single_Restatement_And_Dates</name>
+    </validationRules>
+</CustomObjectTranslation>

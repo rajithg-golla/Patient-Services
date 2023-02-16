@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Description_Pending__c</fullName>
+    <description>Status Description for Status = Pending</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Pending&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;New Referral&quot;,	&quot;Enrollment received via PSF, CCTP Form, or verbal patient outreach&quot;,
+&quot;Missing Information, Patient Outreach&quot;,&quot;Required data field missing to enroll patient, outreach to patient&quot;,
+&quot;Missing Information, HCP Outreach&quot;,&quot;Required data field missing to enroll patient, outreach to HCP&quot;,
+&quot;Missing Information, RBM Outreach&quot;,&quot;Required data field missing to enroll patient, outreach to RBM&quot;,
+&quot;Prescriber Welcome Call Attempted&quot;,&quot;Welcome call attempt to prescriber&quot;,
+&quot;Prescriber Welcome Call Completed&quot;,&quot;Welcome call completed to prescriber&quot;,
+&quot;Patient Welcome Call Attempted&quot;,&quot;Welcome call attempt to patient&quot;,
+&quot;Patient Welcome Call Completed&quot;,&quot;Welcome call completed to patient&quot;,
+&quot;Copay Card Enrolled&quot;,&quot;Patient was  enrolled in the Copay Program&quot;,
+&quot;Copay Card Not Eligible&quot;,&quot;Patient was not eligible for enrollment&apos; in the Copay Program&quot;,
+&quot;Transfer to SP CTTP&quot;,&quot;Hub has transferred patient to SP for CTTP dispense&quot;,
+&quot;Benefits Investigation Start&quot;,&quot;Benefits investigation started at Hub&quot;,
+&quot;Benefits Investigation Completed&quot;,&quot;Benefits investigation completed at Hub&quot;,
+&quot;Access Plan Pending Confirmation&quot;,&quot;Hub is reviewing access plan options&quot;, 
+&quot;Access Plan Confirmed&quot;,&quot;Hub has confirmed access plan options&quot;,
+&quot;Transfer to HCP B&amp;B&quot;,&quot;Hub has transferred patient to HCP for commercial dispense under Buy &amp; Bill&quot;,
+&quot;Transfer to SP Commercial&quot;,&quot;Hub has transferred patient to SP for commercial dispense under AOB&quot;,
+&quot;Transfer to SP PAP&quot;,&quot;Hub has transferred patient to SP for PAP dispense&quot;,
+&quot;Prior Authorization Support Start&quot;,&quot;PA support by Hub&quot;,
+&quot;Prior Authorization Approved&quot;,&quot;PA was approved by payor&quot;,
+&quot;Prior Authorization Denied&quot;,&quot;PA was denied by payor&quot;,
+&quot;Appeal Support (1st Level)&quot;,&quot;PA was denied, Hub providing 1st Level support&quot;,
+&quot;Appeal Support (2nd Level)&quot;,&quot;PA was denied, Hub providing 2nd Level support&quot;,
+&quot;Appeal Support (3rd Level)&quot;,&quot;PA was denied, Hub providing 3rd Level support&quot;,
+&quot;Appeal Support (Peer-to-Peer)&quot;,&quot;PA was denied, Peer-to-Peer review&quot;,
+&quot;Appeal Approved&quot;,&quot;PA Appeal approved by payor&quot;,
+&quot;Appeal Denied&quot;,&quot;PA Appeal denied by payor&quot;,
+&quot;PA/Appeal Support Max Attempts&quot;,&quot;PA/Appeal support has exhausted the maximum number of attempts&quot;,
+&quot;SD Order Confirmed (verbal)&quot;,&quot;Hub has confirmed that HCP has ordered product via verbal&quot;,
+&quot;SD Order Confirmed (data)&quot;,&quot;Hub has confirmed that HCP has ordered product via 861 data&quot;,
+&quot;SP Shipment Confirmed&quot;,&quot;Hub has confirmed first shipment for existing PSF&quot;,
+&quot;Site of Care Delayed&quot;,&quot;Site of Care Not Ready to Receive Product&quot;,
+&quot;Site of Care Changed&quot;,&quot;Site of Care has changed to a new location&quot;,
+&quot;Site of Care Cancelled&quot;,&quot;Site of Care has been cancelled with no new site identified&quot;,
+&quot;Site of Care Ready&quot;,&quot;Site of Care is ready to access shipments and perform treatment&quot;,
+&quot;Benefit Investigation COB&quot;,&quot;Benefit Investigation detailed pharmacy/medical review and coordination of benefits&quot;,
+&quot;Prior Authorization Support Queued&quot;,&quot;HUB Prior Authorization support queued for HCP support&quot;,
+&quot;Prior Authorization Support Unnecessary&quot;,&quot;HUB Prior Authorization support unnecessary - not requested by HCP or SP Channel&quot;,
+&quot;Pending Onboarding&quot;,&quot;Pending Confirmation of first treatment or Site of Care delay&quot;,
+&quot;Hospital Pharmacy Review&quot;,&quot;Hospital System Completing Formulary Review&quot;,
+&quot;On Hold Medical Delay&quot;, &quot;On Hold Medical Delay&quot;,
+&quot;On Hold Step Therapy Required&quot;, &quot;On Hold Step Therapy Required&quot;,
+&quot;On Hold Patient Travel&quot;, &quot;On Hold Patient Travel&quot;,
+&quot;On Hold Genetic Testing&quot;, &quot;On Hold Genetic Testing&quot;,
+&quot;On Hold Prescriber Change&quot;, &quot;On Hold Prescriber Change&quot;,
+&quot;On Hold Hospital formulary/EMR build&quot;, &quot;Hospital formulary delay or EMR configuration-Build delay.&quot;,
+null),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Description - Pending</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

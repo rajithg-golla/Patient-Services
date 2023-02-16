@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Amount paid by the copay program. This is required for approved claims only. Rejected claims may or may not have this available. --></help>
+    <label><!-- Program Benefit --></label>
+    <name>MVN_Program_Benefit__c</name>
+</CustomFieldTranslation>

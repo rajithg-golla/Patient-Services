@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>If your label has a namespace prefix, use Label_Namespace.Label_Name. Otherwise, use c.Label_Name.</help>
+    <label><!-- Subcategory Label --></label>
+    <name>HealthCloudGA__SubcategoryLabel__c</name>
+</CustomFieldTranslation>

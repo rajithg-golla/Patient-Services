@@ -1,0 +1,14 @@
+<template>
+    <lightning-record-edit-form object-api-name={objectName}>
+        <div class="slds-grid slds-wrap">
+            <template for:each={fieldList} for:item="field">
+                <div class="slds-size_1-of-3 slds-col" key={field.fieldName}>
+                    <lightning-input-field
+                        field-name={field.fieldName}
+                        value={field.defaultValue}
+                    ></lightning-input-field>
+                </div>
+            </template>
+        </div>
+    </lightning-record-edit-form>
+</template>

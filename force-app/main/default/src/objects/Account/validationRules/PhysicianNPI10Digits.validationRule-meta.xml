@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhysicianNPI10Digits</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( ISNULL( PJN_NPI__c ) ) &amp;&amp; 
+(LEN( PJN_NPI__c ) &lt;&gt; 10) &amp;&amp;
+ RecordType.Name = &apos;Physician&apos; &amp;&amp;
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+    <errorDisplayField>PJN_NPI__c</errorDisplayField>
+    <errorMessage>Physician NPI must be 10 digits in length.  Please confirm NPI and save.</errorMessage>
+</ValidationRule>

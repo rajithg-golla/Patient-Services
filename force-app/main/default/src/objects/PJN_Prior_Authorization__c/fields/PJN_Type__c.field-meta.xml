@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Type__c</fullName>
+    <description>Type of prior authorization.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial</fullName>
+                <default>false</default>
+                <label>Initial</label>
+            </value>
+            <value>
+                <fullName>Appeal - 1st Level</fullName>
+                <default>false</default>
+                <label>Appeal - 1st Level</label>
+            </value>
+            <value>
+                <fullName>Appeal - 2nd Level</fullName>
+                <default>false</default>
+                <label>Appeal - 2nd Level</label>
+            </value>
+            <value>
+                <fullName>Appeal - 3rd Level</fullName>
+                <default>false</default>
+                <label>Appeal - 3rd Level</label>
+            </value>
+            <value>
+                <fullName>Appeal - Peer-to-Peer</fullName>
+                <default>false</default>
+                <label>Appeal - Peer-to-Peer</label>
+            </value>
+            <value>
+                <fullName>Appeal - External Review</fullName>
+                <default>false</default>
+                <label>Appeal - External Review</label>
+            </value>
+            <value>
+                <fullName>Appeal - Formal Grievance</fullName>
+                <default>false</default>
+                <label>Appeal - Formal Grievance</label>
+            </value>
+            <value>
+                <fullName>Reauthorization</fullName>
+                <default>false</default>
+                <label>Reauthorization</label>
+            </value>
+            <value>
+                <fullName>Appeal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Appeal</label>
+            </value>
+            <value>
+                <fullName>External Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>External Review</label>
+            </value>
+            <value>
+                <fullName>Formal Grievance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Formal Grievance</label>
+            </value>
+            <value>
+                <fullName>Peer-to-Peer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Peer-to-Peer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

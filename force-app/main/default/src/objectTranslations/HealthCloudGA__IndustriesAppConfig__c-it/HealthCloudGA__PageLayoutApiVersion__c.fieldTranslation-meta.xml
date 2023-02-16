@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ad esempio: v32.0</help>
+    <label><!-- Page Layout Api Version --></label>
+    <name>HealthCloudGA__PageLayoutApiVersion__c</name>
+</CustomFieldTranslation>

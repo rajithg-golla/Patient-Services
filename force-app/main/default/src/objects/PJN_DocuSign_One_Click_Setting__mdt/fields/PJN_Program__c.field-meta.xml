@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Program__c</fullName>
+    <description>The program this configuration belongs to.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The program this configuration belongs to.</inlineHelpText>
+    <label>Program</label>
+    <referenceTo>PJN_Program__mdt</referenceTo>
+    <relationshipLabel>DocuSign One Click Settings</relationshipLabel>
+    <relationshipName>DocuSign_One_Click_Settings</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

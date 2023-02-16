@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Testing Status --></label>
+    <name>HealthCloudGA__Testing_Status__c</name>
+    <picklistValues>
+        <masterLabel>Negative Test</masterLabel>
+        <translation>Αρνητικό τεστ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Test</masterLabel>
+        <translation>Θετικό τεστ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Results Pending</masterLabel>
+        <translation>Εκκρεμούν τα αποτελέσματα του τεστ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Scheduled</masterLabel>
+        <translation>Προγραμματισμένο τεστ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing Recommended</masterLabel>
+        <translation>Συνιστάται τεστ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation>Άγνωστο</translation>
+    </picklistValues>
+</CustomFieldTranslation>

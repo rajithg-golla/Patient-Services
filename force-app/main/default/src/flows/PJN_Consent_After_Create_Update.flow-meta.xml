@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Sets the record&apos;s Effective To field to the calculated formula value.</description>
+        <name>PJN_Set_Effective_To</name>
+        <label>Set Effective To</label>
+        <locationX>50</locationX>
+        <locationY>373</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Effective_To__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PJN_Effective_To_Formula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PJN_Update_Consent</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Assesses whether the consent record needs to have its Effective To value set.</description>
+        <name>PJN_Needs_Effective_To_Set</name>
+        <label>Needs Effective To Set?</label>
+        <locationX>182</locationX>
+        <locationY>253</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PJN_Needs_Effective_To_Set_Outcome</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PJN_Privacy_Consent_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Opt In</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PJN_Effective_From__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PJN_Effective_To__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PJN_Set_Effective_To</targetReference>
+            </connector>
+            <label>Needs Effective To Set</label>
+        </rules>
+    </decisions>
+    <description>Runs PJN logic after the save of any created or updated Consent record.</description>
+    <formulas>
+        <description>Calculates the record&apos;s Effective To date from its Effective From date and its related Data Use Purpose.</description>
+        <name>PJN_Effective_To_Formula</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record.PJN_Effective_From__c})) &amp;&amp; {!$Record.PJN_Capture_Source_Type__c} = &quot;Written&quot; &amp;&amp; NOT(ISBLANK({!$Record.PJN_Data_Use_Purpose__r.PJN_Effective_Months__c})),
+ADDMONTHS({!$Record.PJN_Effective_From__c}, {!$Record.PJN_Data_Use_Purpose__r.PJN_Effective_Months__c}),
+IF(
+NOT(ISBLANK({!$Record.PJN_Effective_From__c})) &amp;&amp; {!$Record.PJN_Capture_Source_Type__c} = &quot;Verbal&quot; &amp;&amp; NOT(ISBLANK({!$Record.PJN_Data_Use_Purpose__r.PJN_Effective_Days_Verbal__c})),
+{!$Record.PJN_Effective_From__c} + {!$Record.PJN_Data_Use_Purpose__r.PJN_Effective_Days_Verbal__c},
+NULL
+)
+)</expression>
+    </formulas>
+    <interviewLabel>Consent - PJN After Create Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Consent - PJN After Create Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update the consent record which passed through the flow.</description>
+        <name>PJN_Update_Consent</name>
+        <label>Update Consent</label>
+        <locationX>50</locationX>
+        <locationY>493</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>PJN_Needs_Effective_To_Set</targetReference>
+        </connector>
+        <object>PJN_Contact_Point_Type_Consent__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

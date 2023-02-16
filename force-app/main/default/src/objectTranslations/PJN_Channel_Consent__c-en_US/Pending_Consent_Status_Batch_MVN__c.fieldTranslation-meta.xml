@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Whether ChannelConsentStatusBatchMVN should process the channel consent. Set to true when the API can not be called immediately --></help>
+    <label><!-- Pending Consent Status Batch --></label>
+    <name>Pending_Consent_Status_Batch_MVN__c</name>
+</CustomFieldTranslation>

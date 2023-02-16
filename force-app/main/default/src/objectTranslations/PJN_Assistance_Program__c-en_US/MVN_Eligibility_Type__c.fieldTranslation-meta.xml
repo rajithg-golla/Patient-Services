@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Eligibility Type --></label>
+    <name>MVN_Eligibility_Type__c</name>
+    <picklistValues>
+        <masterLabel>Exception</masterLabel>
+        <translation><!-- Exception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Functionally Uninsured</masterLabel>
+        <translation><!-- Functionally Uninsured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Status Change</masterLabel>
+        <translation><!-- Insurance Status Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insured - Commercial</masterLabel>
+        <translation><!-- Insured - Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insured - Government</masterLabel>
+        <translation><!-- Insured - Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicare Part B</masterLabel>
+        <translation><!-- Medicare Part B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA/Appeal Processing</masterLabel>
+        <translation><!-- PA/Appeal Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending PA Appeal</masterLabel>
+        <translation><!-- Pending PA Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Acquisition Delay</masterLabel>
+        <translation><!-- Product Acquisition Delay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unaffordable - Medicare Advantage</masterLabel>
+        <translation><!-- Unaffordable - Medicare Advantage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unaffordable - Part D</masterLabel>
+        <translation><!-- Unaffordable - Part D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninsured</masterLabel>
+        <translation><!-- Uninsured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninsured - Alternate Coverage</masterLabel>
+        <translation><!-- Uninsured - Alternate Coverage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninsured - Income Above PAP</masterLabel>
+        <translation><!-- Uninsured - Income Above PAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninsured - Income Below PAP</masterLabel>
+        <translation><!-- Uninsured - Income Below PAP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

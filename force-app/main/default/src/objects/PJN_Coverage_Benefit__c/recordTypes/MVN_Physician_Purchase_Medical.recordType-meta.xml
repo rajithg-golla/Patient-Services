@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Physician_Purchase_Medical</fullName>
+    <active>true</active>
+    <description>Physician purchase option through major medical benefits.</description>
+    <label>Buy &amp; Bill - Medical</label>
+    <picklistValues>
+        <picklist>MVN_OOP_Deductible__c</picklist>
+        <values>
+            <fullName>Excludes Deductible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Includes Deductible</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Outcome__c</picklist>
+        <values>
+            <fullName>Covered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Covered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Product_Covered__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_PA_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

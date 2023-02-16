@@ -1,0 +1,24 @@
+<template>
+    <template if:true={emailTemplate}>
+        <lightning-layout multiple-rows class="slds-box slds-m-vertical_medium scroller">
+            <lightning-layout-item size="12">
+                <lightning-formatted-rich-text value={header}></lightning-formatted-rich-text>
+            </lightning-layout-item>
+        
+            <lightning-layout-item size="12">
+                <lightning-formatted-rich-text value={body}></lightning-formatted-rich-text>
+            </lightning-layout-item>
+        
+            <lightning-layout-item size="12">
+                <lightning-formatted-rich-text value={footer}></lightning-formatted-rich-text>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <template if:true={templateError}>
+        <lightning-layout multiple-rows class="slds-box slds-m-vertical_medium">
+            <div class="slds-text-color_destructive slds-text-align_center slds-size_1-of-1 slds-text-title_caps">
+                {labels.TEMPLATE_NOT_FOUND}
+            </div>
+        </lightning-layout>
+    </template>
+</template>

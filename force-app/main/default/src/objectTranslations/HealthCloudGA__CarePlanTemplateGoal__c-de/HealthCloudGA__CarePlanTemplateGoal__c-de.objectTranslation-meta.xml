@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ziel für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ziele für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ziel für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ziele für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ziels für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ziele für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ziel für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Zielen für die Versorgungsplanvorlage</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Name des Ziels der Versorgungsplanvorlag</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Associate the goal with either a care plan template or problem. --></errorMessage>
+        <name>HealthCloudGA__ValidateCarePlanGoalAssociation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Associate the goal with only one record. --></errorMessage>
+        <name>HealthCloudGA__ValidateCarePlanGoalAssociationForSingle</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The url of the public site that the Adobe webhook can call --></help>
+    <label><!-- Webhook Public Site --></label>
+    <name>Webhook_Public_Site_MVN__c</name>
+</CustomFieldTranslation>

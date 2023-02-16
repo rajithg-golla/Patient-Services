@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Post Chatter update when agreement is canceled. --></help>
+    <label><!-- Post when Agreement Canceled --></label>
+    <name>echosign_dev1__Agreement_Cancelled_Post__c</name>
+</CustomFieldTranslation>

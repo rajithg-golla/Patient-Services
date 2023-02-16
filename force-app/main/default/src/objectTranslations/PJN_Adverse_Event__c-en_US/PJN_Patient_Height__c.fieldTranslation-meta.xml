@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element captures the reported height of the patient in centimetres at the time of the event/reaction. --></help>
+    <label><!-- Patient Height (cm) --></label>
+    <name>PJN_Patient_Height__c</name>
+</CustomFieldTranslation>

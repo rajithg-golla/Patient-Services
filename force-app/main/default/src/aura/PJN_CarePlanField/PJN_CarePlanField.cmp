@@ -1,0 +1,39 @@
+<aura:component implements="c:PJN_LightningOutIntf">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlanField" type="PJN_Care_Plan_Field__mdt" />
+    <aura:attribute name="record" type="Id" />
+    <aura:attribute name="fieldValue" type="String" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+    <aura:handler name="change" value="{!v.record}" action="{!c.onInit}" />
+
+    <!-- BODY -->
+    <div class="slds-row">
+        <div class="slds-col" style="padding-bottom: 5px;">
+            <div class="slds-page-header">
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-title">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <span class="slds-icon_container">
+                                    <lightning:icon iconName="{!v.carePlanField.PJN_Icon_Name__c}" size="{!v.carePlanField.PJN_Icon_Size__c}"/>
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span class="slds-page-header__title slds-truncate">{!v.fieldValue}</span>
+                                    </h1>
+                                </div>
+                                </div>
+                                <p class="slds-page-header__name-meta">{!v.carePlanField.PJN_Field_Label__c}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

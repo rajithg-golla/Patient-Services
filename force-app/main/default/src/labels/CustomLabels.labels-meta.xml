@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Appointment_Creation_Task_Follow_Up_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appointment Creation - Task Follow-Up</shortDescription>
+        <value>Appointment Follow-Up</value>
+    </labels>
+    <labels>
+        <fullName>Appointment_Creation_Task_Reminder_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Appointment Creation - Task Reminder</shortDescription>
+        <value>Appointment Reminder</value>
+    </labels>
+    <labels>
+        <fullName>Email_Quick_Send_Cancel_Button_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Quick Send - Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Email_Quick_Send_Send_Button_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Quick Send - Send Button</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>Email_Quick_Send_Success_Message_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Quick Send Success Message</shortDescription>
+        <value>Email Sent!</value>
+    </labels>
+    <labels>
+        <fullName>Email_Quick_Send_Template_Not_Found_MVN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Quick Send - Template Not Found</shortDescription>
+        <value>Unable to locate template</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Channel</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Channel</shortDescription>
+        <value>psp</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Copay_Sending</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Copay Sending</shortDescription>
+        <value>Sending Copayment Request…</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Default_Association_Type</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Default Association Type</shortDescription>
+        <value>Consent</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Default_Benefit_Type</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Default Benefit Type</shortDescription>
+        <value>drug</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Default_Country</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Default Country</shortDescription>
+        <value>001</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Ins_Primary_Prescription</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Primary Prescription</shortDescription>
+        <value>primary prescription insurance</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Ins_Secondary_Prescription</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Secondary Prescription</shortDescription>
+        <value>secondary prescription insurance</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Insurance_Medical_Type</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Medical Type</shortDescription>
+        <value>Medical</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Insurance_Pharmacy_Type</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Pharmacy Type</shortDescription>
+        <value>Pharmacy</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Insurance_Primary_Medical</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Primary Medical</shortDescription>
+        <value>primary medical insurance</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Insurance_Secondary_Medical</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Insurance Secondary Medical</shortDescription>
+        <value>secondary medical insurance</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Enroll_Phone_Type</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Phone Type</shortDescription>
+        <value>phone</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Patient_Phone_Validation_error</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Patient:Phone:Validation Error</shortDescription>
+        <value>Patient Phone must have a maximum of 10 digits</value>
+    </labels>
+    <labels>
+        <fullName>MVN_CRX_Physician_Phone_Validation_error</fullName>
+        <categories>ConnectiveRx</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConnectiveRx:Enrollment:Physician:Phone:Validation Error</shortDescription>
+        <value>Physician Phone must have a maximum of 10 digits</value>
+    </labels>
+    <labels>
+        <fullName>MVN_DataLake_Items_Wrong_Format_Error_Message</fullName>
+        <categories>DataLake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DataLake Items Wrong Format Error Message</shortDescription>
+        <value>{0} items do not have a correct format.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_DataLake_No_Items_Error_Message</fullName>
+        <categories>DataLake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DataLake No Items Error Message</shortDescription>
+        <value>No Items parameter found in the response.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Missing_Files_Submitting_Fulfillment_Error_Message</fullName>
+        <categories>Fulfillment Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Files Submitting Fulfillment Error Message</shortDescription>
+        <value>Missing Files</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Missing_Required_Fields_Submitting_Fulfillment_Error_Message</fullName>
+        <categories>Fulfillment Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Required Fields Submitting Fulfillment Error Message</shortDescription>
+        <value>Missing Required fields: {0}</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Capture_Source</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Capture Source</shortDescription>
+        <value>myRARE</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Consent_Description</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Consent Description</shortDescription>
+        <value>The patient has submitted consent through myRARE. Review the updated Consent records and determine next steps, if applicable.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Consent_Status_Opt_In</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Consent Status Opt In</shortDescription>
+        <value>Opt In</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Consent_Subject</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Consent Subject</shortDescription>
+        <value>myRARE Consent</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Consent_Type</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Consent Type</shortDescription>
+        <value>Consent</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Copay_Description</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Copay Description</shortDescription>
+        <value>The patient has enrolled in copay through myRARE. Review the updated Consent and Assistance Program (Copay Savings) records and determine next steps, if applicable.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Copay_Subject</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Copay Subject</shortDescription>
+        <value>myRARE Copay Enrollment</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Copay_Type</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Copay Type</shortDescription>
+        <value>Copay</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Owner_Queue</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Owner Queue</shortDescription>
+        <value>MVN_MyRare_Enrollments</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_PAP_Description</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:PAP Description</shortDescription>
+        <value>The patient has submitted a request to enroll in PAP through myRARE. Review the updated Consent and Assistance Program (Patient Assistance Program) records and determine next steps, if applicable.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_PAP_Subject</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:PAP Subject</shortDescription>
+        <value>myRARE PAP Enrollment</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_PAP_Type</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:PAP Type</shortDescription>
+        <value>PAP</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_ProgramDevName</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:ProgramDevName</shortDescription>
+        <value>MVN_EVK</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Status_Open</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Status Open</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Supporting_Docs_Description</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Supporting Docs Description</shortDescription>
+        <value>The patient has submitted supporting documents through myRARE. Review the documents and determine next steps, if applicable.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Supporting_Docs_Subject</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Supporting Docs Subject</shortDescription>
+        <value>myRARE Supporting Documents</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Supporting_Docs_Type</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Supporting Docs Type</shortDescription>
+        <value>Supporting Documents</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Undefined_Type</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Undefined Type</shortDescription>
+        <value>Unknown</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Undefined_Type_Description</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Undefined Type Description</shortDescription>
+        <value>Undefined</value>
+    </labels>
+    <labels>
+        <fullName>MVN_MyRare_Enrollment_Undefined_Type_Subject</fullName>
+        <categories>MyRare</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MyRare:Enrollment:Undefined Type Subject</shortDescription>
+        <value>Undefined</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Patient_Status_Processed</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Patient:Status Processed</shortDescription>
+        <value>Processed</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Patient_Status_Submitted</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Patient:Status Submitted</shortDescription>
+        <value>Submitted</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Shipment_No_Patient_Or_CarePlan_Found</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Shipment: No Patient Or CarePlan Found</shortDescription>
+        <value>No Patient or CarePlan found for this SP Patient</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Shipment_No_Requests_Found</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Shipment: No Requests Found</shortDescription>
+        <value>No Request shipments were found in the request call to process.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Status_No_Patient_Or_CarePlan_Found</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Status: No Patient Or CarePlan Found</shortDescription>
+        <value>No Patient or CarePlan found for this hub patient</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Orsini_Status_No_Requests</fullName>
+        <categories>Orsini API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Orsini:Status: No Requests</shortDescription>
+        <value>No Request statuses were found in the request call to process.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_PAP_Renewal_Activity_Description</fullName>
+        <categories>MVN_PapRenewalActivityBatch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PAP Renewal Activity Description</shortDescription>
+        <value>Notify the HCP&apos;s office and patient that the patient will need to re-enroll into PAP.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_PAP_Renewal_Activity_Subject</fullName>
+        <categories>MVN_PapRenewalActivityBatch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PAP Renewal Activity Subject</shortDescription>
+        <value>PAP Renewal</value>
+    </labels>
+    <labels>
+        <fullName>MVN_PA_Reauthorization_Activity_Description</fullName>
+        <categories>MVN_PaReauthActivityBatch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PA Reauthorization Activity Description</shortDescription>
+        <value>Notify the HCP&apos;s office and patient that the patient&apos;s PA will need to be re-authorized.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_PA_Reauthorization_Activity_Subject</fullName>
+        <categories>MVN_PaReauthActivityBatch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PA Reauthorization Activity Subject</shortDescription>
+        <value>PA Reauthorization</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Restatement_RT_Success</fullName>
+        <categories>restatement</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Restatement RT Success</shortDescription>
+        <value>You may start the restatement process now.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Activity_Description</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Activity Description</shortDescription>
+        <value>Notify the HCP&apos;s office and/or patient of the processed claim&apos;s outcome.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Activity_Subject</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Activity Subject</shortDescription>
+        <value>Processed Claim Outcome</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Error_Copay_Not_Found</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Error Msg: Copay Assistance Not Found</shortDescription>
+        <value>Copay Assistance Program not found</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Error_Msg_Auth_Number_is_Blank</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Error Msg: Auth Number is Blank</shortDescription>
+        <value>No match found by Member Id, Original Claim Authorization Number is blank</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Error_Msg_Matching_Fields_Blank</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Error Msg: Matching Fields Blank</shortDescription>
+        <value>Match cannot be made because Original Claim Authorization Number and Member Id are both blank</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Error_Msg_Member_Id_is_Blank</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Error Msg: Member Id is Blank</shortDescription>
+        <value>Cannot find match because Member Id is blank</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Error_Msg_No_Auth_Match_Member_Id_Blank</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Error Msg: No Auth Match Member Id Blank</shortDescription>
+        <value>No match found by Original Claim Authorization Number, Member Id is Blank</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Status_Complete</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Status: Complete</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Staging_Claim_Conversion_Status_Error</fullName>
+        <categories>StagingClaimConversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Staging Claim Conversion Status: Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Transform_Document_Checklist_Name</fullName>
+        <categories>TransformDocument</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transform Document: Checklist Name</shortDescription>
+        <value>Document Checklist for {0} - {1}</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Transform_Document_Checklist_Status</fullName>
+        <categories>TransformDocument</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transform Document: Checklist Status</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Transform_Document_No_Found</fullName>
+        <categories>TransformDocument</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transform Document: No Found</shortDescription>
+        <value>No files found for this Request.</value>
+    </labels>
+    <labels>
+        <fullName>MVN_Transform_Document_Priority</fullName>
+        <categories>TransformDocument</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transform Document: Priority</shortDescription>
+        <value>ONE</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Access_Privileges_Veeva_Network_Error</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Access Privileges Veeva Network Error</shortDescription>
+        <value>Access Privileges Veeva Network Error</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Account_Search_No_Search_Terms_Message</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Search No Search Terms Message</shortDescription>
+        <value>Please, provide at least 2 search terms</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Account_Search_Too_Many_Results</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Search Too Many Reults Message</shortDescription>
+        <value>Your {0} search returned too many results. Please refine your criteria</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Account_not_found_in_Veeva_Network</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account not found in Veeva Network</shortDescription>
+        <value>Account not found in Veeva Network</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Additional_Activities</fullName>
+        <categories>PJN_CarePlanTimeline</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Additional Activities</shortDescription>
+        <value>Additional Activities</value>
+    </labels>
+    <labels>
+        <fullName>PJN_CCG_Non_Training_Kit</fullName>
+        <categories>PJN_FulfillmentCreator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCG Non-Training Kit</shortDescription>
+        <value>non-training kit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_CCG_Welcome_Pack</fullName>
+        <categories>PJN_FulfillmentCreator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCG Welcome Pack</shortDescription>
+        <value>welcome pack</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Cannot_be_Type_PO_Box</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot be Type PO Box</shortDescription>
+        <value>Your Fulfillment Request of type &quot;Mailing&quot; cannot be associated to an Account where the Primary Address is marked as type &quot;PO Box&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_Path_Problem</fullName>
+        <categories>CarePlan</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Care Plan Path Problem</shortDescription>
+        <value>Stage:</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_Selected_Success_Message</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Plan Selected Success Message</shortDescription>
+        <value>Care Plan successfully selected</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_Selection_Error_Message</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Plan Selection Error Message</shortDescription>
+        <value>Unable to set Care Plan</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_Timeline_New_Case</fullName>
+        <categories>CarePlan</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Care Plan Timeline New Case</shortDescription>
+        <value>New Activity</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_UI_Additional_Information</fullName>
+        <categories>Care Plan UI</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Plan Additional Information</shortDescription>
+        <value>Additional Information</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Care_Plan_UI_Key_Fields</fullName>
+        <categories>Care Plan UI</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Plan Key Fields Title</shortDescription>
+        <value>Key Fields</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Case_Quick_Close_Status</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case Quick Close Status</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Case_Quick_Open_Status</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case Quick Open Status</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Close_Case_Error_Already_Closed_Message</fullName>
+        <categories>Close Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Close Case Error Already Closed Message</shortDescription>
+        <value>This record has already been closed as {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Close_Case_Success_Message</fullName>
+        <categories>Close Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Close Case Success Message</shortDescription>
+        <value>Case Closed</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Confirm_Exit_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Confirm Exit Message</shortDescription>
+        <value>Do you really want to exit?</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Admin</fullName>
+        <categories>Admin</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Admin message</shortDescription>
+        <value>Something went wrong. Please contact your system administrator: {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Consent_DataUsePurpose_Exception</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Consent DataUsePurpose Exception</shortDescription>
+        <value>No Data Use Purpose record for Program Consent type found for this program.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Delete_Confirmation_Message</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Delete Confirmation Message</shortDescription>
+        <value>Do you really want to delete {0}?</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Delete_Success_Message</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Delete Success Message</shortDescription>
+        <value>Successfully deleted {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Exception_General_Message</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Exception General Message</shortDescription>
+        <value>Something went wrong. {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Opt_In_Success_Message</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Opt In Success Message</shortDescription>
+        <value>Successfully opted in to {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Opt_Out_Success_Message</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Opt Out Success Message</shortDescription>
+        <value>Successfully opted out of {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Delete_Action</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Delete Action</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Edit_Action</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Edit Action</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Opt_In_Action</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Opt In Action</shortDescription>
+        <value>Opt In</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Opt_Out_Action</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Opt Out Action</shortDescription>
+        <value>Opt Out</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Show_Details_Action</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Show Details Action</shortDescription>
+        <value>Show Details</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_Title</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget Title</shortDescription>
+        <value>Contact Information ({0})</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Contact_Information_Widget_View_All</fullName>
+        <categories>ContactInformation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Information Widget View All</shortDescription>
+        <value>View All</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Create</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Member_Plans</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Member Plans</shortDescription>
+        <value>Member Plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_New_CI</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Coverage Investigation</shortDescription>
+        <value>New Coverage Investigation</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Next</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_No_Member_Plans</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Member Plans</shortDescription>
+        <value>No Member Plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Previous</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Select_MP</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Member Plans Help Text</shortDescription>
+        <value>Select the member plans you will be using as part of this investigation</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Submit</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Type</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Coverage Investigation Type</shortDescription>
+        <value>Coverage Investigation Type</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Update</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Coverage_Investigation_Update_CI</fullName>
+        <categories>pjnCoverageInvestigationItemSelector</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update Coverage Investigation</shortDescription>
+        <value>Update Coverage Investigation</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Create_Care_Plan_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create Care Plan Button</shortDescription>
+        <value>Create Care Plan</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Creation_Record_Success_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Creation Record Success Message</shortDescription>
+        <value>The record has been created successfully</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Email_Param_Required</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Email Param Required</shortDescription>
+        <value>Email parameter is required for recipient type of Calling Individual but was not provided.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Error_Opening_Tab</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Error Opening Tab</shortDescription>
+        <value>An error has occurred opening the DocuSign envelope creation tab.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Generating_DocuSign_URL</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Generating DocuSign URL</shortDescription>
+        <value>Generating DocuSign URL...</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Signing_Group_Param_Required</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Signing Group Param Required</shortDescription>
+        <value>Signing Group parameter is required for recipient type of Signing Group but was not provided.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Unable_to_Find_Template</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Unable to Find Template</shortDescription>
+        <value>Unable to locate template id for template named {0}. Please check the configuration.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Unable_to_Locate_Setting</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Unable to Locate Setting</shortDescription>
+        <value>Unable to locate a DocuSign One Click Setting that matches this record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Unable_to_query_record</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Unable to query record</shortDescription>
+        <value>Unable to query the record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_D1C_Unknown_Error</fullName>
+        <categories>DocuSign One Click</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>D1C: Unknown Error</shortDescription>
+        <value>Unknown Error.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Default_Activity_Note_Title</fullName>
+        <categories>FilesAndNotes</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Default Activity Note Title</shortDescription>
+        <value>{0} - Note</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Default_Care_Plan_Note_Title</fullName>
+        <categories>FilesAndNotes</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Default Care Plan Note Title</shortDescription>
+        <value>Care Plan - Note</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Default_Note_Title</fullName>
+        <categories>FilesAndNotes</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Default Note Title</shortDescription>
+        <value>Note</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Delete_Confirmation_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirmation Message</shortDescription>
+        <value>Do you really want to delete this record?</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Deletion_Record_Success_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Deletion Record Success Message</shortDescription>
+        <value>The record has been deleted successfully</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Edit_Record_Header</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit Record Header</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Cancel_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Finish_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Finish Button</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Next_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Next Button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Previous_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Previous Button</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Screen_Title</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Screen Title</shortDescription>
+        <value>Enrollment</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Enrollment_Wizard_Exception_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enrollment Wizard Exception Message</shortDescription>
+        <value>Something went wrong. {0}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Error_Title_Notification</fullName>
+        <categories>Notification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Title Notification</shortDescription>
+        <value>ERROR</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Cancel</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Error</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap- Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Field</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Field</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Finish</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Finish</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Invalid_Phone</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Phone</shortDescription>
+        <value>Invalid Phone Number provided. Must be 10 digits (excluding leading 1)</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Invalid_SSN</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Phone</shortDescription>
+        <value>Invalid Social Security Number provided. Must be 9 digits</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Invalid_State</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Phone</shortDescription>
+        <value>Invalid State provided. Must be 2 characters</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Modal_Header</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Modal Header</shortDescription>
+        <value>Evaluate PAP Eligibility</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Outcome</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Outcome</shortDescription>
+        <value>Outcome</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Result</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Result</shortDescription>
+        <value>Result</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Source</shortDescription>
+        <value>Source</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Account_Primary_Addr</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap-Source-Account Primary Address</shortDescription>
+        <value>Account Primary Address</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Account_Primary_Phone</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap-Source-Account Primary Phone</shortDescription>
+        <value>Account Primary Phone</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Account_Record</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Source - Account Record</shortDescription>
+        <value>Account Record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Address_Lookup</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Source - Address Lookup</shortDescription>
+        <value>Address Lookup</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Phone_Lookup</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Source - Phone Lookup</shortDescription>
+        <value>Phone Lookup</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Source_Record</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Source - Record</shortDescription>
+        <value>Record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Spinner_Label</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Spinner_Label</shortDescription>
+        <value>Evaluating</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Submit</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Eval_PAP_Value</fullName>
+        <categories>Assistance Program Eligibility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate Pap - Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Fulfillment_Submission_Error_Already_Submited_Message</fullName>
+        <categories>Fulfillment Submission</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fulfillment Submission Error Already Submited Message</shortDescription>
+        <value>This record has already been submited.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Fulfillment_Submission_Success_Message</fullName>
+        <categories>Fulfillment Submission</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fulfillment Submission Success Message</shortDescription>
+        <value>Fulfillment Request Submitted</value>
+    </labels>
+    <labels>
+        <fullName>PJN_General_Errors</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Error(s)</shortDescription>
+        <value>General errors(s)</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Invalid_Session_Veeva_Network_Error</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Session Veeva Network Error</shortDescription>
+        <value>Invalid Session Veeva Network Error</value>
+    </labels>
+    <labels>
+        <fullName>PJN_List_Component_Delete_Action</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>List Component Delete Action</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>PJN_List_Component_Edit_Action</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>List Component Edit Action</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Load_Record_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Load Record Message</shortDescription>
+        <value>Record loaded for edit</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Materials_Consent</fullName>
+        <categories>Consent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Materials Consent</shortDescription>
+        <value>Materials Consent</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Close</fullName>
+        <categories>PJN_newMedicalHistoryRecord</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Delete_Last_Entry</fullName>
+        <categories>PJN_MetricType</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History Delete Last Entry</shortDescription>
+        <value>Delete Most Recent</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Delete_Warning</fullName>
+        <categories>PJN_MetricType</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History Delete Warning</shortDescription>
+        <value>Are you sure you want to delete the most recent entry?</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Details</fullName>
+        <categories>PJN_metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_List</fullName>
+        <categories>PJN_metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button Label - List</shortDescription>
+        <value>List</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_No_Records</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - No Records</shortDescription>
+        <value>No Records</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Page_X_of_Y</fullName>
+        <categories>PJN_medicalHistoryList</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Page X of Y</shortDescription>
+        <value>Page {0} of {1}</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Picklist_Select</fullName>
+        <categories>PJN_captureMetric</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Picklist Select</shortDescription>
+        <value>--Select--</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Provide_Date</fullName>
+        <categories>PJN_captureMetric</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Provide Date</shortDescription>
+        <value>Please provide a Date</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Provide_Value</fullName>
+        <categories>PJN_captureMetric</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Provide Value</shortDescription>
+        <value>Please provide a value</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Record_Created</fullName>
+        <categories>PJN_newMedicalHistoryRecord</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Record Created</shortDescription>
+        <value>Record Created</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Record_Created_Successfully</fullName>
+        <categories>PJN_newMedicalHistoryRecord</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Record Created Successfully</shortDescription>
+        <value>{0} record created successfully</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Summary</fullName>
+        <categories>PJN_metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - Summary</shortDescription>
+        <value>Summary</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_Trend</fullName>
+        <categories>PJN_metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Button Label - Trend</shortDescription>
+        <value>Trend</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Medical_History_View_Details</fullName>
+        <categories>PJN_metricsSummary</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical History - View Details</shortDescription>
+        <value>View Details</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Channel_Consent_Record</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Channel Consent Record</shortDescription>
+        <value>Primary address opted-out.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Enrollment_Form</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Enrollment Form</shortDescription>
+        <value>Missing Enrollment Form</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Fields</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Fields</shortDescription>
+        <value>Missing field(s)</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Information_Fields_Title</fullName>
+        <categories>MissingInformation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PJN Missing Information Fields Title</shortDescription>
+        <value>Missing Information Fields:</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Information_No_Fields_Found</fullName>
+        <categories>MissingInformation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PJN Missing Information No Fields Found</shortDescription>
+        <value>There is no missing information.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Missing_Lookups</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Lookups</shortDescription>
+        <value>Missing lookup(s)</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Network_Configuration_Error</fullName>
+        <categories>Network</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PJN_Network Configuration Error</shortDescription>
+        <value>There is an error with the Veeva Network configuration. Please contact your Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Network_Connection_Error</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Network Connection Error</shortDescription>
+        <value>Error occurred on connecting to Veeva Network</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Network_Result_Processing_Error</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Network Result Processing Error</shortDescription>
+        <value>Error occurred while processing results from Veeva Network</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Network_Search_Filter_Error</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Network Search Filter Error</shortDescription>
+        <value>Filters applied for Veeva Network search are invalid or not configured</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Network_Search_Result_Error</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Network Search Result Error</shortDescription>
+        <value>Invalid results returned by Veeva Network</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Add_Contact_Info_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Account Add Contact Information Button</shortDescription>
+        <value>Add Record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Add_Contact_Info_Card</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Contact Information Card</shortDescription>
+        <value>Add Contact Information</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Add_Contact_Info_Title</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Account Add Contact Information Title</shortDescription>
+        <value>{0} Contact Information</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Back_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Account Back Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Contact_Information_Title</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Account Contact Information Title</shortDescription>
+        <value>Contact Information</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Account_Save_Button</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Account Save Button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>PJN_New_Record_Header</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Record Header</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Account_DCR_Calling_Veeva_Network_Error</fullName>
+        <categories>PJN_NetworkChangeRequests</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Account DCR Calling Veeva Network Error</shortDescription>
+        <value>It can not call change request method without any Account DCR.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Activities</fullName>
+        <categories>PJN_CarePlanTimelineProblemCases</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Activities</shortDescription>
+        <value>No Activities</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Care_Plans</fullName>
+        <categories>PJN_All_Care_Plans</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Activities</shortDescription>
+        <value>No care plans available.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_DCR_Lines_Configured_Message</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No DCR Lines Configured - PJN_Message</shortDescription>
+        <value>You must have configured DCR Lines to execute this process.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Local_Setting_Configured_Message</fullName>
+        <categories>NetworkAPI</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Local Setting Configured - PJN_Message</shortDescription>
+        <value>You must have configured Local settings to execute this process.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Response_Retrieving_Change_Request_Error</fullName>
+        <categories>PJN_NetworkChangeRequests</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Response Retrieving Change Request Error</shortDescription>
+        <value>No response from Network retrieving change request.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Search_Response_From_Veeva_Network</fullName>
+        <categories>PJN_NetworkSearchRslt</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Search Response From Veeva Network</shortDescription>
+        <value>No search response from Veeva Network.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_No_Valid_Program_Error_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Valid Program Error Message</shortDescription>
+        <value>Please, enter a valid program</value>
+    </labels>
+    <labels>
+        <fullName>PJN_None</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Other_Veeva_Network_Error</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other Veeva Network Error</shortDescription>
+        <value>Trouble Connecting to Veeva Network</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Back_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Back Button</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Cancel_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Choose_Care_Plan_Screen</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merg Care Plan Screen</shortDescription>
+        <value>Merge Care Plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Choose_Child_Records_Screen</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Choose Child Records Screen</shortDescription>
+        <value>Choose Child Records</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Choose_Contact_Information_Screen</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Reparent To New Account Screen</shortDescription>
+        <value>Move Records to master account</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Choose_Master_Account_Screen</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Choose Master Account Screen</shortDescription>
+        <value>Choose Master Account</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Confirm_No_Merge</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Confirm No Care Plan Merge</shortDescription>
+        <value>Are you sure you want to proceed without merging care plans?</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Finish_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Finish Button</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Merge_Action</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merge Action</shortDescription>
+        <value>Merge</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Merge_Child_Records_And_Back_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merge Child Records And Back Button</shortDescription>
+        <value>Merge</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Merge_Child_Records_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merge Child Records Button</shortDescription>
+        <value>Merge Care Plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Merge_Child_Records_Explanation</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merge Child Records Explanation Message</shortDescription>
+        <value>Set the master care plan (the care plan that remains) and then select those other care plans you wish to merge into the master care plan</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Merge_Child_Records_Explanation_2</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Merge Child Records Explanation 2 Message</shortDescription>
+        <value>Select those child records you want to keep in the selected master care plan</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Modal_Title</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Modal Title</shortDescription>
+        <value>Patient Merge Tool</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Next_Button</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Next Button</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_No_Care_Plan_Message</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool No Care Plan Message</shortDescription>
+        <value>There are no Care Plans associated to any of these patients</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_No_Care_Plan_Or_Contact_Info_Message</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool No Care Plan Or Contact Info Message</shortDescription>
+        <value>There are no Care Plan or Contact Information records associated to any of these patients</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Reject_Action</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Reject Action</shortDescription>
+        <value>Reject</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Reparent_Records_Explanation</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Rparent Records Explanation Message</shortDescription>
+        <value>Select those records that should remain and be moved to the master account</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Select_Care_Plan_Error</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Select Care Plan Error</shortDescription>
+        <value>Please, select 2 or more care plans to merge, and 1 master care plan.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Select_Record_Error</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Select Record Error</shortDescription>
+        <value>You must select a record.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_Set_As_Primary_Action</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool Set As Primary Action</shortDescription>
+        <value>Set As Primary</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_Merge_Tool_View_Record_Action</fullName>
+        <categories>PatientMergeTool</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Patient Merge Tool View Record Action</shortDescription>
+        <value>View record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Patient_selected_success_message</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Patient selected success message</shortDescription>
+        <value>Patient successfully added</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Program_Screen_Title</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Program Screen Title</shortDescription>
+        <value>Program</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Recurring_Case_Origin</fullName>
+        <categories>PJN_RecurringCaseHdlr</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case origin for a recurring case</shortDescription>
+        <value>Recurring</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Recurring_Case_Repeats</fullName>
+        <categories>PJN_RecurringCaseHdlr</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case &quot;Repeat&quot; value when configured to be recurring</shortDescription>
+        <value>Repeats</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Retrieve_care_plans_error_message</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retrieve care plans error message</shortDescription>
+        <value>Unable to retrieve care plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Salesforce_Record_Type_Not_Configured_for_Veeva_Network_Record_Type_Error</fullName>
+        <categories>PJN_NetworkSearchRslt</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesforce Record Type Not Configured for Veeva Network Record Type Error</shortDescription>
+        <value>Salesforce record type {0} is not configured for Veeva Network record type {1} for SObject {2}.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Salesforce_Record_Type_Not_Mapped_for_Veeva_Network_Record_Type_Error</fullName>
+        <categories>PJN_NetworkSearchRslt</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesforce Record Type Not Mapped for Veeva Network Record Type Error</shortDescription>
+        <value>Record type {0} from Veeva Network is not mapped for {1}.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Select_Care_Plan_Button</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Care Plan Button</shortDescription>
+        <value>Create New Enrollment</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Select_Care_Plan_Explanation_Text</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Care Plan Explanation Text</shortDescription>
+        <value>If related to an existing enrollment, select the corresponding Care Plan.</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Select_Care_Plan_Title_Screen</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Care Plan Title Screen</shortDescription>
+        <value>Select Care Plan</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Select_Record_Type</fullName>
+        <categories>AccountSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Record Type</shortDescription>
+        <value>Select a Record Type</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Send_AE_Email</fullName>
+        <categories>AE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Send AE Email</shortDescription>
+        <value>Send AE Email</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Send_PQC_Email</fullName>
+        <categories>PQC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Send PQC Email</shortDescription>
+        <value>Send PQC Email</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Success_Title_Notification</fullName>
+        <categories>Notification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success Title Notification</shortDescription>
+        <value>SUCCESS</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Training_Consent</fullName>
+        <categories>Consent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Training Consent</shortDescription>
+        <value>Training Consent</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Unable_to_Submit_Request</fullName>
+        <categories>PJN_FulfillmentRequestValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unable to submit fulfillment request</shortDescription>
+        <value>Unable to submit fulfillment request</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Unsaved_Changes</fullName>
+        <categories>Enrollment Wizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unsaved Changes</shortDescription>
+        <value>Unsaved Changes</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Actions</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Actions</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Actions_Subheader</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Subheader</shortDescription>
+        <value>Fill out fields to update the Coverage Investigation, create a follow-up Case and/or create a Therapy Access record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Activity_Create_Header</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Activity Create Header</shortDescription>
+        <value>Create Follow-up Activity</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Activity_Create_Header_Sub</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Activity Create SubHeader</shortDescription>
+        <value>Create an activity when the next follow-up action is due, such as a Prior Auth expiration</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Assistance_Programs</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Assistance Programs</shortDescription>
+        <value>Assistance Programs</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Cancel</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Investigation_Action</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update Coverage Investigation</shortDescription>
+        <value>Update Coverage Investigation</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Investigation_Action_Sub</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update Investigation Sub Heading</shortDescription>
+        <value>Update values on the current Coverage Investigation once outcome decisions have been made</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Modal_Header</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Modal Header</shortDescription>
+        <value>Coverage Investigation and Therapy Access Updates</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Prior_Auths_Header</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Prior Authorizations</shortDescription>
+        <value>Prior Authorizations</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Therapy_Access_Header</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Therapy Access Record Crate</shortDescription>
+        <value>Create Therapy Access Record</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Therapy_Access_Header_Sub</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Therapy Access Record Crate Subheader</shortDescription>
+        <value>Record how the patient is accessing their therapy over a period of time</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Update_Member_Plans</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Member Plans</shortDescription>
+        <value>Member Plans</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_CI_Update_Save</fullName>
+        <categories>pjnCoverageInvestigationUpdater</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Update_Record_Success_Message</fullName>
+        <categories>EnrollmentWizard</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update Record Success Message</shortDescription>
+        <value>The record has been updated successfully</value>
+    </labels>
+    <labels>
+        <fullName>PJN_User_Locked_Out_Veeva_Network_Error</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Locked Out Veeva Network Error</shortDescription>
+        <value>User Locked Out Veeva Network Error</value>
+    </labels>
+    <labels>
+        <fullName>PJN_Veeva_Network_Inactive_User_Error</fullName>
+        <categories>Network API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Veeva Network Inactive User Error</shortDescription>
+        <value>Veeva Network Inactive User Error</value>
+    </labels>
+</CustomLabels>

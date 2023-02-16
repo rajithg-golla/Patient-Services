@@ -1,0 +1,29 @@
+<aura:component implements="c:PJN_LightningOutIntf">
+    <!-- ATTRIBUTES-->
+    <aura:attribute name="problemRecord" type="HealthCloudGA__CarePlanProblem__c" access="public" />
+    <aura:attribute name="hasActions" type="Boolean" default="true" />
+    <aura:attribute name="awaitingCompletion" type="Boolean" access="public" />
+    <aura:attribute name="variant" type="String" default="base" access="private"/>
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="problemSelectionEvent" type="c:PJN_CarePlanPathProblemSelection"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="c:PJN_CarePlanPathProblemSelection" action="{!c.onHandleProblemSelection}"/>
+
+    <!-- BODY -->
+    <li aura:id="problemItem" role="presentation" class="slds-path__item" onmouseover="{!c.onHoverProblem}" onmouseout="{!c.onHoverProblem}">
+        <a role="option" tabindex="-1" class="slds-path__link" >
+            <span class="slds-path__stage">
+                <lightning:icon iconName="utility:check" size="x-small"/>
+            </span>
+            <span style="width:75%;margin-left:5px;" class="slds-path__title" onclick="{!c.onSelectProblem}">
+                {!v.problemRecord.Name}
+            </span>
+            <aura:if isTrue="{!v.hasActions}">
+                <c:PJN_CarePlanPathProblemActions aura:id="hoverProblem" problemRecord="{!v.problemRecord}" context="{!v.context}" awaitingCompletion="{!v.awaitingCompletion}"/>
+            </aura:if>
+        </a>
+    </li>
+</aura:component>

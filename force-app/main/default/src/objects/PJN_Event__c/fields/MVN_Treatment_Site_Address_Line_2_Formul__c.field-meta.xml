@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Treatment_Site_Address_Line_2_Formul__c</fullName>
+    <description>Returns Treatment Site Address Line 2 if Treatment Site Type is NOT Home</description>
+    <externalId>false</externalId>
+    <formula>IF (
+MVN_Treatment_Site_Type_Formula__c == &apos;Home&apos;,
+null,
+MVN_Treatment_Site_Address_Line_2__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Treatment Site Address Line 2 Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code__c</fullName>
+    <description>Field used to select which product is sent to the fulfillment partner. 
+Created by Mavens 5-17-2022</description>
+    <externalId>false</externalId>
+    <label>Product Code Historical</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EVK.21.06.0024</fullName>
+                <default>false</default>
+                <label>Evkeeza Patient Information Packet</label>
+            </value>
+            <value>
+                <fullName>EVK.22.02.0015</fullName>
+                <default>false</default>
+                <label>Evkeeza Patient Welcome Kit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

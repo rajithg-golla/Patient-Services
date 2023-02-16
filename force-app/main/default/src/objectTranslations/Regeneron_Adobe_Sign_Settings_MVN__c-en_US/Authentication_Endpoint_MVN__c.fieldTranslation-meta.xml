@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The endpoint to call for authentication actions such as obtaining an access token --></help>
+    <label><!-- Authentication Endpoint --></label>
+    <name>Authentication_Endpoint_MVN__c</name>
+</CustomFieldTranslation>

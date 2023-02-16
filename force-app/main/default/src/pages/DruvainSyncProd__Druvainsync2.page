@@ -1,0 +1,5 @@
+<!-- visual force page-->
+
+<apex:page controller="DruvainSyncProd.ContactListCon" cache="true" action="{!fetchList}" contentType="application/octet-stream#Sample.csv"
+           showHeader="false" sidebar="true" standardStylesheets="true">{!str}
+</apex:page>

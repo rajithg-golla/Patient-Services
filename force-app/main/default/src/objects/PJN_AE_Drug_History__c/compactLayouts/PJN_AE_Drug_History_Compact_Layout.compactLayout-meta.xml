@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_AE_Drug_History_Compact_Layout</fullName>
+    <fields>PJN_Adverse_Event__c</fields>
+    <fields>PJN_Name_of_Drug_as_Reported__c</fields>
+    <fields>PJN_Start_Date__c</fields>
+    <fields>PJN_End_Date__c</fields>
+    <fields>PJN_Parent_History__c</fields>
+    <label>AE Drug History Compact Layout</label>
+</CompactLayout>

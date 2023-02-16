@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable the sender to also sign the agreement by selecting a signature order. --></help>
+    <label><!-- Sender Signature Order --></label>
+    <name>echosign_dev1__Signature_Order__c</name>
+    <picklistValues>
+        <masterLabel>Recipients sign first, then sender signs</masterLabel>
+        <translation><!-- Recipients sign first, then sender signs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sender signs first, then recipients sign</masterLabel>
+        <translation><!-- Sender signs first, then recipients sign --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

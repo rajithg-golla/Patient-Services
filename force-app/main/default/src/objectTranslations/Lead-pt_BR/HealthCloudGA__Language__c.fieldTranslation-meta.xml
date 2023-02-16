@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Language --></label>
+    <name>HealthCloudGA__Language__c</name>
+    <picklistValues>
+        <masterLabel>Arabic</masterLabel>
+        <translation>Árabe</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese</masterLabel>
+        <translation>Chinês</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation>Inglês</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French</masterLabel>
+        <translation>Francês</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>German</masterLabel>
+        <translation>Alemão</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korean</masterLabel>
+        <translation>Coreano</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish</masterLabel>
+        <translation>Espanhol</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tagalog</masterLabel>
+        <translation>Tagalog</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vietnamese</masterLabel>
+        <translation>Vietnamita</translation>
+    </picklistValues>
+</CustomFieldTranslation>

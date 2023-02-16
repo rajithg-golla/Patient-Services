@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element captures the MedDRA LLT most closely corresponding to the reaction/event as reported by the primary source. In the exceptional circumstance when a MedDRA term cannot be found, the sender should use clinical judgment to complete this item --></help>
+    <label><!-- Reaction/Event MedDRA Term (LLT) --></label>
+    <name>PJN_Reaction_Event_MedDRA_Term_LLT__c</name>
+</CustomFieldTranslation>

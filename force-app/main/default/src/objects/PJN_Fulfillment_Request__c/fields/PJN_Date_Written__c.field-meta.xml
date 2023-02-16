@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Date_Written__c</fullName>
+    <description>Formula to stamp the date written value from the patient&apos;s prescription record selected on the fulfillment request.</description>
+    <externalId>false</externalId>
+    <formula>PJN_Prescription__r.HealthCloudGA__DateWritten__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Written</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

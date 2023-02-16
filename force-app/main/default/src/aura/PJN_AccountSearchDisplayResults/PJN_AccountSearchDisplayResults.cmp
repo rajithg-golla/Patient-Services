@@ -1,0 +1,83 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <ltng:require scripts="{!$Resource.lodash}" />
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    <aura:attribute name="account"            type="Account" />
+    <aura:attribute name="results"            type="Object" />
+    <aura:attribute name="isPersonSearch"     type="Boolean" />
+    <aura:attribute name="displayableResults" type="Object" />
+    <aura:attribute name="resultsByAccountId" type="Object" />
+    <aura:attribute name="columns"            type="List"/>
+    <aura:attribute name="hideCheckboxes"     type="Boolean" default="true"/>
+    <aura:attribute name="case"               type="Case"/>
+    <aura:attribute name="showNewAccountForm" type="Boolean" />
+    <aura:attribute name="searching"          type="boolean" default="false" />
+    <aura:attribute name="searchPerformed"    type="boolean" default="false" />
+    <aura:attribute name="selectedResult"     type="PJN_AccountSearchRslt" />
+    <aura:attribute name="fieldUpdateability"  type="Object" />
+    <aura:attribute name="caseAcctLookupFields" type="Object" />
+    <aura:attribute name="creatableAccountRecordTypeIds" type="List" />
+    <aura:attribute name="canCreateNewAccount" type="Boolean" default="false" />
+
+    <aura:attribute name="carePlansAccount"
+                    type="Account"
+                    description="The account to get care plans for"
+    />
+    <aura:attribute name="addressesAccount"
+                    type="Account"
+                    description="The physician account to get care plans for"
+    />
+
+    <aura:handler name  ="init"            action="{! c.init }"          value="{! this }" />
+    <aura:handler name  ="change"          action="{!c.assembleResults}" value="{!v.results}" />
+
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <div class="slds-hide">
+        <!-- Workabound for search in tab: Load these here so they'll be available upon row selection actions the first time -->
+        <!-- <c:PJN_AccountSearchCarePlanSelector /> -->
+        <c:PJN_AccountSearchContactInfo />
+    </div>
+
+    <div class="{! 'slds-align_absolute-center ' + (v.searching ? 'slds-show' : 'slds-hide')}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </div>
+
+    <!-- Note: The modal header is set in the helper method creating the modal -->
+    <c:PJN_Modal aura:id = "modal" />
+
+    <span class="{! v.searching ? 'slds-hide' : 'slds-show'}">
+        <span class="{! v.searchPerformed ? 'slds-show' : 'slds-hide' }">
+            <aura:if isTrue="{!v.canCreateNewAccount}">
+                <div class="slds-align_absolute-center">
+                    <lightning:button
+                        label   = "New Account"
+                        class   = "slds-m-vertical_medium"
+                        variant = "brand"
+                        onclick = "{!c.displayNewForm}"
+                    />
+                </div>
+            </aura:if>
+
+            <div class="slds-text-heading_medium">Search Results</div>
+            <div class="slds-m-around_medium">
+                <aura:if isTrue="{!v.displayableResults.length}">
+                    <lightning:dataTable
+                        data               = "{! v.displayableResults}"
+                        columns            = "{! v.columns}"
+                        keyField           = "id"
+                        hideCheckboxColumn = "{! v.hideCheckboxes }"
+                        sortedBy           = "Name"
+                        onrowaction        = "{! c.handleRowAction }"
+                    />
+                    <aura:set attribute="else">
+                        No Records to Display
+                    </aura:set>
+                </aura:if>
+            </div>
+        </span>
+    </span>
+</aura:component>

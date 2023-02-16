@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Last_Name__c</fullName>
+    <description>E2B (R2): A.2.1.1d, reporterfamilyname (50AN)
+
+E2B (R3): C.2.r.1.4 Reporter’s Family Name
+User Guidance This data element captures the reporter&apos;s family name.
+Conformance: Optional
+Data Type: 60AN
+OID: None
+Value Allowed: Free text, nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance This data element captures the reporter&apos;s family name.</inlineHelpText>
+    <label>Last Name</label>
+    <length>60</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Consent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Consents</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Consent&apos;s data use purpose must belong to the same program as the care plan&apos;s program. --></errorMessage>
+        <name>DUP_Prog_Must_Equal_Care_Plan_Prog_MVN</name>
+    </validationRules>
+</CustomObjectTranslation>

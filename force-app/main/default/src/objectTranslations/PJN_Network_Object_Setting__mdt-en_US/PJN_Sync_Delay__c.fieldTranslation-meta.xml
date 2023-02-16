@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sync delay in minutes - No delay with value 0 --></help>
+    <label><!-- Sync Delay --></label>
+    <name>PJN_Sync_Delay__c</name>
+</CustomFieldTranslation>

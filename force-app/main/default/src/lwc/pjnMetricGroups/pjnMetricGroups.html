@@ -1,0 +1,24 @@
+<template>
+    <template if:true={loading}>
+        <div class="slds-is-relative min-50-px">
+            <lightning-spinner alternative-text={loadingLabel} size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={loading}>
+        <span onnewmetric={refreshCounts}>
+            <template if:false={state.selectedGroup}>
+                <c-pjn-metric-tiles items={metricGroups} ontileclicked={handleGroupClick} ></c-pjn-metric-tiles>
+            </template>
+
+            <template if:true={state.selectedGroup}>
+                <c-pjn-metric-types
+                    group-id={state.selectedGroup.Id}
+                    care-plan-id={carePlanId}
+                    patient-id={patientId}
+                    onbacktogroups={handleBackClick}
+                    show-all-for-current-patient={showAllForCurrentPatient}>
+                </c-pjn-metric-types>
+            </template>
+        </span>
+    </template>
+</template>

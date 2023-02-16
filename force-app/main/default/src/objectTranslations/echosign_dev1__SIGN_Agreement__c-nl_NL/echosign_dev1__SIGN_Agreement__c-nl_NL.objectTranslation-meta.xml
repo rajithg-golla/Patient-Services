@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Overeenkomst</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Overeenkomsten</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Additional Fields --></label>
+        <name>echosign_dev1__AdditionalFieldSet</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam overeenkomst</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- There is a maximum of 180 days before document expiration. --></errorMessage>
+        <name>echosign_dev1__Maximum_Expiration_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The signing deadline date must not be in the past. --></errorMessage>
+        <name>echosign_dev1__Signing_Deadline_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Positioning fields and signatures is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__WrittenWithoutPosition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Suggesting revisions is not possible with a written signature. --></errorMessage>
+        <name>echosign_dev1__Written_Without_Revisions</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Cancel_Agreement_Bulk --></label>
+        <name>echosign_dev1__Cancel_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement --></label>
+        <name>echosign_dev1__Delete_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Agreement_Bulk --></label>
+        <name>echosign_dev1__Delete_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshStatus --></label>
+        <name>echosign_dev1__RefreshStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendReminder --></label>
+        <name>echosign_dev1__SendReminder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Agreement_Bulk --></label>
+        <name>echosign_dev1__Send_Agreement_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Reminder_Bulk --></label>
+        <name>echosign_dev1__Send_Reminder_Bulk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendforSignature --></label>
+        <name>echosign_dev1__SendforSignature</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Agreement_Bulk --></label>
+        <name>echosign_dev1__Update_Agreement_Bulk</name>
+    </webLinks>
+</CustomObjectTranslation>

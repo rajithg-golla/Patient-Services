@@ -1,0 +1,94 @@
+<aura:component controller="PJN_PatientMergeCtrl">
+
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlanList" type="Case[]" />
+    <aura:attribute name="selectedCarePlans" type="Case[]" />
+    <aura:attribute name="fieldset" type="String[]" />
+    <aura:attribute name="selectedCarePlan" type="Case" />
+    <aura:attribute name="selectedCarePlanIdList" type="String[]" default="[]"/>
+    <aura:attribute name="masterCarePlanId" type="Id" />
+    <aura:attribute name="masterCarePlan" type="Case" />
+    <!-- SCREENS -->
+    <aura:attribute name="showCarePlanSelectionScreen" type="Boolean" default="true" />
+    <aura:attribute name="showChildRecordsSelectionScreen" type="Boolean" default="false" />
+    <aura:attribute name="disableMergeCarePlansButton" type="Boolean" default="true" />
+    <!-- CHILD RECORD -->
+    <aura:attribute name="childRecordList" type="PJN_PatientMergeCtrl.PJN_ChildObject[]" />
+    <aura:attribute name="selectedChildrenRecordMap" type="Map" default="{}"/>
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="hideButtonsEvent" type="c:PJN_PatientMergeHideBackNextButtonsEvent" />
+    <aura:registerEvent name="updateCarePlanListEvent" type="c:PJN_PatientMergeUpdateCarePlanListEvent" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="selectCarePlanEvent"
+                    event="c:PJN_PatientMergeSelectCarePlanEvent"
+                    action="{!c.handleSelectCarePlan}" />
+    <aura:handler event="c:PJN_PatientMergeSelectMasterCarePlanEvent"
+                    action="{!c.handleSelectMasterCarePlan}" />
+    <aura:handler name="mergeChildRecordsEvent"
+                    event="c:PJN_PatientMergeMergeChildRecordsEvent"
+                    action="{!c.handleMergeChildRecordsEvent}" />
+
+    <!-- ****************************** -->
+    <!-- ***** SELECT CARE PLAN ******* -->
+    <!-- ****************************** -->
+    <aura:if isTrue="{!v.showCarePlanSelectionScreen}">
+        <h2 class="slds-m-around_small">
+            {!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_Explanation}
+        </h2>
+        <div class="slds-align_absolute-center slds-m-top_small">
+            <lightning:button
+                variant="brand"
+                label="{!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_Button}"
+                title="{!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_Button}"
+                disabled="{!v.disableMergeCarePlansButton}"
+                onclick="{!c.displayChildRecords}"
+            />
+        </div>
+
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.carePlanList}" var="carePlan">
+                <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="6" largeDeviceSize="6">
+                    <c:PJN_PatientMergeCarePlanCard
+                        carePlan="{!carePlan}"
+                        fieldset="{!v.fieldset}"
+                    />
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+    </aura:if>
+
+    <!-- ********************************** -->
+    <!-- ***** SELECT CHILDREN RECORDS **** -->
+    <!-- ********************************** -->
+    <aura:if isTrue="{!v.showChildRecordsSelectionScreen}">
+        <div class="slds-modal__content slds-grow slds-p-around_medium full-height" id="modal-content-id-1">
+            <aura:if isTrue="{!v.masterCarePlan}">
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="12">
+                        <lightning:formattedUrl value="{!'/'+v.masterCarePlan.Id}" label="{!v.masterCarePlan.Subject+' '+v.masterCarePlan.CaseNumber+' (Master)'}"/>
+                    </lightning:layoutItem>
+                    <aura:iteration items="{!v.selectedCarePlans}" var="carePlan">
+                        <aura:if isTrue="{!(v.masterCarePlanId != carePlan.Id)}">
+                            <lightning:layoutItem size="12">
+                                <lightning:formattedUrl value="{!'/'+carePlan.Id}" label="{!carePlan.Subject+' '+carePlan.CaseNumber}"/>
+                            </lightning:layoutItem>
+                        </aura:if>
+                    </aura:iteration>
+                </lightning:layout>
+            </aura:if>
+
+            <h2 class="slds-m-vertical_small">
+                {!$Label.c.PJN_Patient_Merge_Tool_Merge_Child_Records_Explanation_2}
+            </h2>
+            <c:PJN_PatientMergeToolSelectChildRecords
+                masterCarePlanId="{!v.masterCarePlanId}"
+                selectedCarePlanIdList="{!v.selectedCarePlanIdList}"
+                childRecordList="{!v.childRecordList}"
+                selectedChildrenRecordMap="{!v.selectedChildrenRecordMap}"
+            />
+        </div>
+    </aura:if>
+
+</aura:component>

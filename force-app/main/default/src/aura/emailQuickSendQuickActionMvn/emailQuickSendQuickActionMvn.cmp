@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <c:emailQuickSendCreateMvn 
+        objectId="{!v.recordId}"
+        onclosequickaction="{!c.closeQuickAction}"/>
+</aura:component>

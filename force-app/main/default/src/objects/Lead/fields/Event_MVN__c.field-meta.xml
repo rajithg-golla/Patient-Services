@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_MVN__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Event at which the interaction occurred.</description>
+    <externalId>false</externalId>
+    <label>Event</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Consumers</relationshipLabel>
+    <relationshipName>Consumers_MVN</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

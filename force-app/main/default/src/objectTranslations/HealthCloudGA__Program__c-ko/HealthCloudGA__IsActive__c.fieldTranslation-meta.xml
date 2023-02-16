@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>레코드가 활성 상태인지 여부를 나타냅니다.</help>
+    <label><!-- Is Active --></label>
+    <name>HealthCloudGA__IsActive__c</name>
+</CustomFieldTranslation>

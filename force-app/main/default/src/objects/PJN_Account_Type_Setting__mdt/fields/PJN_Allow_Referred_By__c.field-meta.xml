@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Allow_Referred_By__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This record type can be added as the referred by account on the case.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This record type can be added as the referred by account on the case.</inlineHelpText>
+    <label>Allow Referred By</label>
+    <type>Checkbox</type>
+</CustomField>

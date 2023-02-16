@@ -1,0 +1,28 @@
+<template>
+    <div key={memberPlan.Id} if:true={showPriorAuthorizations}>
+        <div class="slds-text-heading_small">
+            {memberPlan.Name}
+        </div>
+
+        <lightning-datatable
+            key-field="Id"
+            data={memberPlan.PJN_Prior_Authorizations__r}
+            columns={columns}
+            hide-checkbox-column
+            onrowaction={addOrRemovePriorAuthorization}
+            if:true={memberPlan.PJN_Prior_Authorizations__r.length}
+        ></lightning-datatable>
+
+        <div
+            if:false={memberPlan.PJN_Prior_Authorizations__r.length}
+            class="slds-box slds-m-around_medium slds-align_absolute-center slds-text-heading_small slds-text-color_weak"
+            style="height:3rem;"
+        >
+            <lightning-icon
+                icon-name="utility:error"
+                class="slds-m-right_small"
+            ></lightning-icon>
+            {noRecordLabel}
+        </div>
+    </div>
+</template>

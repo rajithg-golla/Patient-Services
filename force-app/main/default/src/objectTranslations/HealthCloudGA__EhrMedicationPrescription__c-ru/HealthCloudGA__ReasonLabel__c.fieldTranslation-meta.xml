@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Понятное имя кода причины или показаний для написания рецепта.</help>
+    <label><!-- Reason Label --></label>
+    <name>HealthCloudGA__ReasonLabel__c</name>
+</CustomFieldTranslation>

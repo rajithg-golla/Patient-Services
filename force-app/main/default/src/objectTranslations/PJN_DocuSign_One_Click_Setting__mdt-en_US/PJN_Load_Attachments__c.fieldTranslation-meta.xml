@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicate whether to load attachments. When ON, all items in Attachments are added to the envelope. This parameter is typically used with the DocuSign Template option, because the documents are supplied by the template. Maps to &quot;LA&quot;. --></help>
+    <label><!-- Load Attachments --></label>
+    <name>PJN_Load_Attachments__c</name>
+</CustomFieldTranslation>

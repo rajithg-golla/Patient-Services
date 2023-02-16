@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ICD-10-CM Diagnosis Code --></label>
+    <name>MVN_ICD_10_CM_Diagnosis_Code__c</name>
+    <picklistValues>
+        <masterLabel>E78.01</masterLabel>
+        <translation><!-- E78.01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

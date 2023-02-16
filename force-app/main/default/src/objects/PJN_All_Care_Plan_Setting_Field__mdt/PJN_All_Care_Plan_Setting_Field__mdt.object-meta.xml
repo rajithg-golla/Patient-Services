@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: All Care Plans tab
+Purpose: Define the field and its order to be displayed on the All Care Plans tab.
+Metadata Relationship(s): All Care Plan Setting
+Created by Mavens: Yes</description>
+    <label>All Care Plan Setting Field</label>
+    <pluralLabel>All Care Plan Setting Fields</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

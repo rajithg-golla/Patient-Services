@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The API Name of the field on the SObject which can be referenced to test whether this record matches. --></help>
+    <label><!-- Additional Filter Field --></label>
+    <name>PJN_Additional_Filter_Field__c</name>
+</CustomFieldTranslation>

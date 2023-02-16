@@ -1,0 +1,67 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,c:PJN_LightningOutIntf" access="global" controller="PJN_CarePlanUICtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="isCollapsed" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="hasActions" type="Boolean" default="true" access="global"/>
+    <aura:attribute name="problems" type="HealthCloudGA__CarePlanProblem__c[]"/>
+    <aura:attribute name="activeProblem" type="HealthCloudGA__CarePlanProblem__c"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="carePlan" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="change" value="{!v.carePlan}" action="{!c.onInit}"/>
+    <aura:handler event="c:PJN_CarePlanPathProblemSelection" action="{!c.onHandleProblemSelection}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_CarePlanUiUpdater carePlanId="{!v.recordId}" carePlanUpdated="{!c.onInit}" />
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+    <force:recordData
+        aura:id="record"
+        fields="Id,PJN_Program_DeveloperName__c"
+        recordId="{!v.recordId}"
+        targetError="{!v.recordError}"
+        targetRecord="{!v.record}"
+        targetFields ="{!v.carePlan}"
+        mode="VIEW"/>
+
+    <!-- BODY -->
+    <article class="slds-card slds-is-relative slds-size_12-of-12">
+        <c:PJN_Loader isLoading="{!v.isLoading}" />
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-path slds-path_has-coaching">
+                <div class="slds-grid slds-path__track">
+                    <div class="slds-grid slds-path__scroller-container">
+                        <div class="slds-path__scroller" role="application">
+                            <div class="slds-path__scroller_inner">
+                                <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+                                    <aura:iteration items="{!v.problems}" var="problem">
+                                        <c:PJN_CarePlanPathProblem problemRecord="{!problem}" hasActions="{!v.hasActions}" context="{!v.context}" awaitingCompletion="{!v.isLoading}"/>
+                                    </aura:iteration>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-path__action">
+                        <aura:if isTrue="{!and(v.carePlan, v.hasActions)}">
+                            <c:PJN_CarePlanPathAddProblem carePlanId="{!v.recordId}" programDeveloperName="{!v.carePlan.PJN_Program_DeveloperName__c}" context="{!v.context}" />
+                        </aura:if>
+                    </div>
+                </div>
+                <aura:if isTrue="{!and(v.activeProblem, not(v.isCollapsed))}">
+                    <div class="slds-grid" style="padding-left: .75rem;">
+                        <div class="slds-col slds-size_12-of-12">
+                            <div class="slds-text-title_caps slds-m-right_small slds-m-top_x-small">
+                                <span>{!$Label.c.PJN_Care_Plan_Path_Problem + ' ' + v.activeProblem.Name}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-path__content" id="path-coaching-2">
+                        <c:PJN_CarePlanPathCoaching problemRecord="{!v.activeProblem}" hasActions="{!v.hasActions}" context="{!v.context}"/>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </article>
+</aura:component>

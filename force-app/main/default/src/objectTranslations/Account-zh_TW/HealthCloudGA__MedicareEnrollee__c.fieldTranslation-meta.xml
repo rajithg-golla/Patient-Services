@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>新成員或前一年延續的成員。</help>
+    <label><!-- Medicare Enrollee --></label>
+    <name>HealthCloudGA__MedicareEnrollee__c</name>
+    <picklistValues>
+        <masterLabel>Continued</masterLabel>
+        <translation>繼續</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Enrollee</masterLabel>
+        <translation>新註冊者</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The base endpoint to send all rest API calls to --></help>
+    <label><!-- REST API Endpoint --></label>
+    <name>REST_API_Endpoint_MVN__c</name>
+</CustomFieldTranslation>

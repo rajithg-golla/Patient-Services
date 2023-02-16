@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Account Search (New Account)
+Purpose: Defines the record-type specific fields that appear on the New Account screen after running Account Search.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>New Account Fields Setting</label>
+    <pluralLabel>New Account Fields Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

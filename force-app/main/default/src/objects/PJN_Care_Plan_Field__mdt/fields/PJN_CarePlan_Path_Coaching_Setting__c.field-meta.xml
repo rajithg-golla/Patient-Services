@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_CarePlan_Path_Coaching_Setting__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Add CarePlan Path Coaching Setting value if Care Plan Field related to Stage. Leave blank if related to Program.</inlineHelpText>
+    <label>CarePlan Path Coaching Setting</label>
+    <referenceTo>PJN_CarePlan_Path_Coaching_Setting__mdt</referenceTo>
+    <relationshipLabel>Care Plan Fields</relationshipLabel>
+    <relationshipName>PJN_Care_Plan_Fields</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

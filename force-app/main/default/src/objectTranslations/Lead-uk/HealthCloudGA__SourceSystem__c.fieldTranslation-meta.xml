@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Визначає систему, яка створила запис і має право його оновлення. За замовчуванням має значення Health1 для створених вручну записів.</help>
+    <label><!-- Source System --></label>
+    <name>HealthCloudGA__SourceSystem__c</name>
+</CustomFieldTranslation>

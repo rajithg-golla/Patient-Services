@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>CaseNumber</fields>
+    <fields>AccountId</fields>
+    <fields>ParentId</fields>
+    <fields>Status</fields>
+    <fields>Priority</fields>
+    <fields>HealthCloudGA__DueDate__c</fields>
+    <label>Case Compact Layout</label>
+</CompactLayout>

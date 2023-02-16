@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Outcome of the completeness and eligibility review of the medical copay claim prior to submission for processing by the copay vendor. --></help>
+    <label><!-- Review Outcome --></label>
+    <name>MVN_Review_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eligible</masterLabel>
+        <translation><!-- Eligible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ineligible</masterLabel>
+        <translation><!-- Ineligible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Information</masterLabel>
+        <translation><!-- Missing Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

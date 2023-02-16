@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Obscure the Name field so that it does not capture the associated submitter&apos;s information</description>
+        <name>Set_Name_MVN</name>
+        <label>Set Name</label>
+        <locationX>844</locationX>
+        <locationY>116</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Survey_MVN.Name</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Sets the Name field of the Survey Response record to the associated survey name.  The SurveyResponse.Name field was not encryptable with Platform Encryption at the time this flow was created, and the Name field contains the name value of the Response Submitter field, which is PII.  This flow serves to protect that PII by not populating the Name field with the submitter&apos;s name.</description>
+    <interviewLabel>Survey Response Set Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Survey Response Set Name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Retrieve the Survey Invitation record in order to retrieve the survey name off of the Survey record.
+Some custom automation sets the SurveyInvitation.Name field to the name of the survey, however when done with out-of-the-box tools, the invitation&apos;s name does not necessarily contain the survey name.  So, this flow does not use the invitation Name field to retrieve the survey name because it is not reliable.</description>
+        <name>Get_Survey_Invitation_MVN</name>
+        <label>Get Survey Invitation</label>
+        <locationX>444</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Survey_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.InvitationId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyInvitation</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SurveyId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the survey record in order to retrieve the Name field for concatenation</description>
+        <name>Get_Survey_MVN</name>
+        <label>Get Survey</label>
+        <locationX>647</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Name_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Survey_Invitation_MVN.SurveyId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Survey</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Survey_Invitation_MVN</targetReference>
+        </connector>
+        <object>SurveyResponse</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

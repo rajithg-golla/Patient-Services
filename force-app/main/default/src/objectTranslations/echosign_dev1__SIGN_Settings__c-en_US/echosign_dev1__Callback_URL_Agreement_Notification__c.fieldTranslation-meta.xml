@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This setting is the Secure Web Address copied from the Adobe Sign Callback Site which is set up for push agreement feature. Follow instructions in the installation and configuration guide. --></help>
+    <label><!-- Callback URL Agreement Notification --></label>
+    <name>echosign_dev1__Callback_URL_Agreement_Notification__c</name>
+</CustomFieldTranslation>

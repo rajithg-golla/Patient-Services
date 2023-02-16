@@ -1,0 +1,10 @@
+<design:component label="Medical History">
+    <design:attribute name="listRecordsPerPage" label="Number of rows per page" />
+    <design:attribute name="listInitialSortField" label="Initital field (api name) to sort rows by"/>
+    <design:attribute name="listInitialSortDirectiton" datasource="asc,desc" default="asc" label="Initital direction to sort rows by"/>
+    <design:attribute name="listShowAllForCurrentPatient" default="false" label="Show all Medical History for patient (any Care Plan)"/>
+    <design:attribute name="showModal" default="false" label="Show component on a modal window"/>
+    <sfdc:objects>
+        <sfdc:object>Case</sfdc:object>
+    </sfdc:objects>
+</design:component>

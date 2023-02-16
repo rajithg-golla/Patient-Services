@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Prescription_Compact_Layout</fullName>
+    <fields>PJN_Product_Name__c</fields>
+    <fields>Name</fields>
+    <fields>HealthCloudGA__Account__c</fields>
+    <fields>PJN_Care_Plan__c</fields>
+    <fields>PJN_Physician_Signature__c</fields>
+    <fields>PJN_Physician_Signature_Date__c</fields>
+    <fields>PJN_Primary__c</fields>
+    <label>Prescription Compact Layout</label>
+</CompactLayout>

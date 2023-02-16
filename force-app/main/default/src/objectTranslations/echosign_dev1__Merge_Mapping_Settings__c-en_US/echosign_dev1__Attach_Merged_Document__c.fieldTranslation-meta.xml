@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When an Adobe Sign merge mapping is used for an agreement, attach the merged document to the agreement record after the agreement is sent. --></help>
+    <label><!-- Attach Merged Document --></label>
+    <name>echosign_dev1__Attach_Merged_Document__c</name>
+</CustomFieldTranslation>

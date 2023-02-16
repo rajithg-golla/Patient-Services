@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Is_Active_Investigation__c</fullName>
+    <description>Indicates this record is the active investigation on the parent Care Plan</description>
+    <externalId>false</externalId>
+    <formula>PJN_Care_Plan__r.PJN_Active_Coverage_Investigation__c =  Id</formula>
+    <inlineHelpText>Indicates this record is the active investigation on the parent Care Plan</inlineHelpText>
+    <label>Is Active Investigation?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

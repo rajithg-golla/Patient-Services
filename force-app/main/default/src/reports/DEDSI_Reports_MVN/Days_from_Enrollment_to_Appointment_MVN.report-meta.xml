@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Appointments__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Appointments__r$Appointment_Date_MVN__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <aggregateTypes>Minimum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>Appointment_MVN__c.Appointment_Date_MVN__c - DATEVALUE(Account.CreatedDate)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Days between account creation and attended appointment date.</description>
+        <developerName>CDF1</developerName>
+        <label>Days from Enrollment to Appointment</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Calculates the number of days between a program participant being enrolled (account created date) and any appointment they have attended.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PersonAccount.Program_Participant_MVN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Appointments__r$Attended_MVN__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Days from Enrollment to Appointment</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Appointments_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Appointments__r$Appointment_Date_MVN__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

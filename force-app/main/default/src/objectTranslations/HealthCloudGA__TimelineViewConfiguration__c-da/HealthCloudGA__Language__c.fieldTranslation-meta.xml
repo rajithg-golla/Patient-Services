@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Language --></label>
+    <name>HealthCloudGA__Language__c</name>
+    <picklistValues>
+        <masterLabel>Chinese (Simplified)</masterLabel>
+        <translation>Kinesisk (forenklet)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese (Traditional)</masterLabel>
+        <translation>Kinesisk (traditionel)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danish</masterLabel>
+        <translation>Dansk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dutch</masterLabel>
+        <translation>Hollandsk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English (United Kingdom)</masterLabel>
+        <translation>Engelsk (UK)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English (United States)</masterLabel>
+        <translation>Engelsk (USA)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finnish</masterLabel>
+        <translation>Finsk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French</masterLabel>
+        <translation>Fransk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>German</masterLabel>
+        <translation>Tysk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Italian</masterLabel>
+        <translation>Italiensk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japanese</masterLabel>
+        <translation>Japansk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korean</masterLabel>
+        <translation>Koreansk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portuguese (Brazil)</masterLabel>
+        <translation>Portugisisk (Brasilien)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russian</masterLabel>
+        <translation>Russisk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish</masterLabel>
+        <translation>Spansk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish (Mexico)</masterLabel>
+        <translation>Spansk (Mexico)</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determines the order for searching for a matching Recipient Object. E.g. If the value of this setting is ‘Contact, Lead, User’,  we will first try finding a Contact with the recipient’s email address, then a Lead and then a User. --></help>
+    <label><!-- Recipient Lookup Order --></label>
+    <name>echosign_dev1__Recipient_Types__c</name>
+</CustomFieldTranslation>

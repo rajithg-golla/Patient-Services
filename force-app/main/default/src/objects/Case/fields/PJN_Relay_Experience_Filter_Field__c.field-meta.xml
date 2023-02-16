@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Relay_Experience_Filter_Field__c</fullName>
+    <description>Filter which Relay Experiences are displayed to a user in the Relay Network Experience List component. Can contain a list of experience filter labels with each label separate by the pipe symbol (|).
+For example, display &apos;Case Manager&apos; experiences if running user is Case Manager or &apos;Case Manager | Nurse Educator&quot; if running user is a Nurse Educator.</description>
+    <externalId>false</externalId>
+    <formula>&apos;sfdc&apos;</formula>
+    <label>Relay Experience Filter Field</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

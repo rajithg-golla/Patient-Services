@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sets the starting order to something other than 1 for a template. Maps to &quot;RSRO&quot; --></help>
+    <label><!-- Recipient Starting Routing Order --></label>
+    <name>PJN_Recipient_Starting_Routing_Order__c</name>
+</CustomFieldTranslation>

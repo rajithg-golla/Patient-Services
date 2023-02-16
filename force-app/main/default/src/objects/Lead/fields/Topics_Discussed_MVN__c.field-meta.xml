@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Topics_Discussed_MVN__c</fullName>
+    <description>Topics discussed with the participant during an interaction.</description>
+    <externalId>false</externalId>
+    <label>Topics Discussed</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diabetes</fullName>
+                <default>false</default>
+                <label>Diabetes</label>
+            </value>
+            <value>
+                <fullName>Diabetic Macular Edema</fullName>
+                <default>false</default>
+                <label>Diabetic Macular Edema</label>
+            </value>
+            <value>
+                <fullName>Diabetic Retinopathy</fullName>
+                <default>false</default>
+                <label>Diabetic Retinopathy</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

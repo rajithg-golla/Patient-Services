@@ -1,0 +1,23 @@
+<aura:component controller="PJN_EnrollmentWizardCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="activeStep" type="PJN_Enrollment_Wizard_Step__mdt" />
+    <aura:attribute name="carePlanId" type="Id" />
+    <aura:attribute name="sourceCaseId" type="Id" />
+    <aura:attribute name="dirtyStepMessage" type="String" default=""/>
+    <aura:attribute name="dirtyComponentMap" type="Map" default="{}" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="change" value="{!v.activeStep}" action="{!c.onActiveStepChange}"/>
+
+    <aura:handler name="change" value="{!v.dirtyComponentMap}" action="{!c.onDirtyComponentMapChange}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <div aura:id="componentContainer" class="slds-is-relative">
+        <c:PJN_Loader isLoading="{!v.isLoading}" />
+        {!v.body}
+    </div>
+</aura:component>

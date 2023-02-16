@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Gestation_Period_Unit__c</fullName>
+    <description>E2B (R2): B.4.k.10b, reactiongestationperiodunit (3N)
+
+E2B (R3): G.k.6b Gestation Period at Time of Exposure (unit)
+Conformance: Optional, but required if G.k.6a is populated.
+Data Type: 50AN
+OID: 2.16.840.1.113883.3.989.2.1.1.26
+Value Allowed: UCUM codes for Month, Week, and Day:{Trimester}</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use the gestational age at the time of the earliest exposure. Gestation period at time
+of exposure should be expressed by providing both a number and designation of units of days, weeks,
+months, or trimester.</inlineHelpText>
+    <label>Gestation Period (Unit)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Time_Units</valueSetName>
+    </valueSet>
+</CustomField>

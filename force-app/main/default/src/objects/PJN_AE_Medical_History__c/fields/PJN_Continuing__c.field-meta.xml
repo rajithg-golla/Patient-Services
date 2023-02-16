@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Continuing__c</fullName>
+    <description>E2B (R2): B.1.7.1d, patientmedicalcontinue (1N)
+E2B (R2): B.1.10.7.1d, parentmedicalcontinue (1N)
+
+E2B (R3): D.7.1.r.3 Continuing
+E2B (R3): D.10.7.1.r.3 Continuing
+Conformance: Optional
+Data Type: Boolean
+OID: None
+Value Allowed:
+false
+true
+nullFlavor: MSK, ASKU, NASK</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the ‘medical condition’ is known to be still present at the time of this report.</inlineHelpText>
+    <label>Continuing?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

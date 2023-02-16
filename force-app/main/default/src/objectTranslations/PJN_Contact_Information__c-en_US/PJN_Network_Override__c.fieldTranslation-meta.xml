@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This flag  when ticked indicates that the insert / edit is done by Veeva Network and that it shouldn&apos;t create a DCR --></help>
+    <label><!-- Override Lock --></label>
+    <name>PJN_Network_Override__c</name>
+</CustomFieldTranslation>

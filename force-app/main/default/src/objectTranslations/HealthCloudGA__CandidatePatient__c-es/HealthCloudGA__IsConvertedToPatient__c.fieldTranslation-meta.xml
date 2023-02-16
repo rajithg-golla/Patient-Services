@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Es verdadero si este paciente candidato se representa por un Registro de cuenta</help>
+    <label><!-- IsConvertedToPatient --></label>
+    <name>HealthCloudGA__IsConvertedToPatient__c</name>
+</CustomFieldTranslation>

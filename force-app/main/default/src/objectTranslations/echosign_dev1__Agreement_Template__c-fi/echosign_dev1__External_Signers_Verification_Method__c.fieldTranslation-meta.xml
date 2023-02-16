@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Varmista, että ulkoisten allekirjoittajien on ennen dokumentin allekirjoittamista varmennettava henkilöllisyytensä.</help>
+    <label><!-- External Signers Verification Method --></label>
+    <name>echosign_dev1__External_Signers_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Knowledge based authentication</masterLabel>
+        <translation>Knowledge Based Authentication (KBA)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password to sign agreement</masterLabel>
+        <translation>Sopimuksen allekirjoittamisen salasana</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web identity authentication</masterLabel>
+        <translation>Verkostoidentiteettitodennus</translation>
+    </picklistValues>
+</CustomFieldTranslation>

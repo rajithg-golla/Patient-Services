@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Due_Date_to_Creat_Task</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( ActivityDate )
+&amp;&amp;
+Owner:User.Profile.Name = &quot;Diabetic Retinopathy Program Specialist&quot;</errorConditionFormula>
+    <errorMessage>Please enter a Due Date before creating the task</errorMessage>
+</ValidationRule>

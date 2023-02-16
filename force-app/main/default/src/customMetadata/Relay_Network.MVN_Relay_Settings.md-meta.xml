@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Relay Settings</label>
+    <protected>true</protected>
+    <values>
+        <field>API_Key__c</field>
+        <value xsi:type="xsd:string">1d2ff090-1fe5-4b37-85c6-7e2dac6d5117</value>
+    </values>
+    <values>
+        <field>AccountConsentFieldName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Client_ID__c</field>
+        <value xsi:type="xsd:string">regeneron</value>
+    </values>
+    <values>
+        <field>ExtFields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>RelayApiUrl__c</field>
+        <value xsi:type="xsd:string">https://api.relayzone.com/platform/v3/api</value>
+    </values>
+    <values>
+        <field>RelayCCIDFieldName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>RelayConsentFieldName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>RelayDisableAccountTrigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>RelayDisableEventConsentTrigger__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>RelayDisableTaskEventing__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>RelayEventsAccountCCIDFieldName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>RelayEventsContactCCIDFieldName__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>RelayEventsDisableAccountLookup__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>RelayEventsDisableContactLookup__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>RelayMobilePhoneFieldName__c</field>
+        <value xsi:type="xsd:string">PJN_Relay_Phone_Number__c</value>
+    </values>
+</CustomMetadata>

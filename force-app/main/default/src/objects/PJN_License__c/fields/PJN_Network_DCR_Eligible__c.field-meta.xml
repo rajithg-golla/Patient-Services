@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Network_DCR_Eligible__c</fullName>
+    <description>Marks whether the record is eligible for DCR creation for Veeva Network</description>
+    <externalId>false</externalId>
+    <formula>NOT(ISPICKVAL(PJN_Status__c, &apos;Rejected By Network&apos;)) 
+&amp;&amp; ( PJN_Account__r.RecordType.DeveloperName  == &apos;PJN_Physician&apos; 
+    || PJN_Account__r.RecordType.DeveloperName == &apos;PJN_Organization&apos;) 
+&amp;&amp; NOT(ISPICKVAL( PJN_Account__r.PJN_Status__c , &apos;Rejected By Network&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Network DCR Eligible</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case_Team_Inverse_Role_Mapping__c</fullName>
+    <description>Together with Case Team Role Mapping this field is used to help identify the correct Reciprocal Role to assign when creating a contact to contact relationship</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Team Inverse Role Mapping</label>
+    <length>100</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

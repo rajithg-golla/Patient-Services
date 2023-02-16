@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Member Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Member Plans</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Coverage Investigation Add Screen --></label>
+        <name>PJN_Coverage_Investigation_Add_Screen</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Coverage Investigation Update Screen --></label>
+        <name>PJN_Coverage_Investigation_Update_Screen</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Coverage Order, Effective Date and Expiration Date fields must be populated to mark Set as Active to TRUE. --></errorMessage>
+        <name>PJN_Coverage_Order_and_Dates_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- MVN_Create_SOB --></label>
+        <name>MVN_Create_SOB</name>
+    </webLinks>
+</CustomObjectTranslation>

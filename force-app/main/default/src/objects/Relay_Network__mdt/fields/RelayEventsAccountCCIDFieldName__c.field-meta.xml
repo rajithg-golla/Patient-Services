@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelayEventsAccountCCIDFieldName__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The filed name in the Account object that contains the Relay CCID</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The filed name in the Account object that contains the Relay CCID</inlineHelpText>
+    <label>Account CCID Field Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

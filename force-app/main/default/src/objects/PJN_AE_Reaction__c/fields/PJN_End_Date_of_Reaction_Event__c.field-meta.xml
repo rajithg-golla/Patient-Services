@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_End_Date_of_Reaction_Event__c</fullName>
+    <description>E2B (R2): B.2.i.5.a, reactionenddateformat (3N) B.2.i.5.b, reactionenddate (12N)
+
+E2B (R3): E.i.5 Date of End of Reaction / Event
+Conformance: Optional
+Data Type: Date / Time
+OID: None
+Value Allowed:
+See Appendix II for further information. nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This data element captures the date the reaction is reported as resolved/recovered or resolved/recoveredwithsequelae. When multiple terms are reported and the reporter does not provide a specific stop date for each, populated with the end date of the last</inlineHelpText>
+    <label>End Date of Reaction/Event</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

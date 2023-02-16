@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_CarePlan_Path_Coaching_Setting__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>CarePlan Path Coaching Setting</label>
+    <referenceTo>PJN_CarePlan_Path_Coaching_Setting__mdt</referenceTo>
+    <relationshipLabel>CarePlan Path Keys Settings</relationshipLabel>
+    <relationshipName>PJN_CarePlan_Path_Keys_Settings</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

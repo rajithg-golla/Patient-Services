@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomConsumer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field created by Adobe to allow re-labeled Lead records to be used as recipients.</description>
+    <externalId>false</externalId>
+    <label>Consumer</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Agreements (Consumer)</relationshipLabel>
+    <relationshipName>Agreements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

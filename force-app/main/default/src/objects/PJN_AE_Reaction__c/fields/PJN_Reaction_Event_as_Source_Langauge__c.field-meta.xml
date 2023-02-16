@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Reaction_Event_as_Source_Langauge__c</fullName>
+    <description>E2B (R2): NA
+
+E2B (R3): E.i.1.1b Reaction / Event as Reported by the Primary Source Language
+Conformance: Optional, but required if E.i.1.1a is populated.
+Data Type: 3A
+OID: 2.16.840.1.113883.6.100
+Value Allowed: ISO 639-2/RA, alpha-3</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide the language used to describe the reaction/event</inlineHelpText>
+    <label>Reaction/Event as Source Langauge</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_Language</valueSetName>
+    </valueSet>
+</CustomField>

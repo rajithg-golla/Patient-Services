@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Recuento de las referencias enviadas en los últimos 6 meses por este facultativo referente que tienen un estado de “Cerradas-Convertidas”.</help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

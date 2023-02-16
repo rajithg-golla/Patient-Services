@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MDM Connection --></label>
+    <name>MVN_MDM_Connection__c</name>
+    <relationshipLabel><!-- MDM Object Settings --></relationshipLabel>
+</CustomFieldTranslation>

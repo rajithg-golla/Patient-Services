@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>MyRare:Consent</label>
+    <protected>false</protected>
+    <values>
+        <field>MVN_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>MVN_MDM_Connection__c</field>
+        <value xsi:type="xsd:string">MVN_MyRare</value>
+    </values>
+    <values>
+        <field>MVN_MDM_Object_Name__c</field>
+        <value xsi:type="xsd:string">consents</value>
+    </values>
+    <values>
+        <field>MVN_SObject_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Contact_Point_Type_Consent__c</value>
+    </values>
+</CustomMetadata>

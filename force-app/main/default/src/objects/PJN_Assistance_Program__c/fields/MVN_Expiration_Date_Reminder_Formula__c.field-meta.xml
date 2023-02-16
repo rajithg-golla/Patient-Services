@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Expiration_Date_Reminder_Formula__c</fullName>
+    <description>Field to calculate the PAP Renewal Due Date</description>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+OR(RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program&quot;, RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program_Locked&quot;),
+OR(ISPICKVAL(MVN_Eligibility_Type__c, &quot;Medicare Part B&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Unaffordable - Part D&quot;),ISPICKVAL(MVN_Eligibility_Type__c, &quot;Unaffordable - Medicare Advantage&quot;)),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+CASE(WEEKDAY(DATE(YEAR(PJN_Effective_Date__c), 12, 15)),
+1,DATE(YEAR(PJN_Effective_Date__c), 12, 15)-2,
+7,DATE(YEAR(PJN_Effective_Date__c), 12, 15)-1,
+DATE(YEAR(PJN_Effective_Date__c), 12, 15)),
+
+IF(
+AND(
+OR(RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program&quot;, RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program_Locked&quot;),
+OR(ISPICKVAL(MVN_Eligibility_Type__c, &quot;Uninsured&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Functionally Uninsured&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Exception&quot;)),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+CASE(WEEKDAY(PJN_Effective_Date__c+364),
+1,PJN_Effective_Date__c+348,
+7,PJN_Effective_Date__c+349,
+PJN_Effective_Date__c+350),null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Expiration Date Reminder</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

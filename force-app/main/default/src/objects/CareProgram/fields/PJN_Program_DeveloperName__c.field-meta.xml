@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Program_DeveloperName__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>true</externalId>
+    <label>Program DeveloperName</label>
+    <length>255</length>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

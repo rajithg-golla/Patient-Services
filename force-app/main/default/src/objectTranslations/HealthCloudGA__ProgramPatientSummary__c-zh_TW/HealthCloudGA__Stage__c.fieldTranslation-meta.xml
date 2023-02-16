@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>表示病患在 Medicare CCM 計畫中的階段。</help>
+    <label><!-- Stage --></label>
+    <name>HealthCloudGA__Stage__c</name>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation>拒絕</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation>進行中</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Program</masterLabel>
+        <translation>計畫中</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potential</masterLabel>
+        <translation>潛在</translation>
+    </picklistValues>
+</CustomFieldTranslation>

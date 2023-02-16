@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Caregiver Last Name on Conversion --></label>
+    <name>Caregiver_Last_Name_on_Conversion_MVN__c</name>
+</CustomFieldTranslation>

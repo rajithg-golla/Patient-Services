@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Prevent_Editing_Reopen_Reason</fullName>
+    <active>true</active>
+    <description>Prevents users from editing Reopen Reason unless reopening the AE in the same edit.</description>
+    <errorConditionFormula>ISCHANGED(PJN_Reopen_Reason__c) &amp;&amp;
+NOT(TEXT(PRIORVALUE(PJN_Status__c))=&quot;Closed&quot;
+||TEXT(PRIORVALUE(PJN_Status__c))=&quot;Cancelled&quot; )</errorConditionFormula>
+    <errorDisplayField>PJN_Reopen_Reason__c</errorDisplayField>
+    <errorMessage>Reopen Reason can only be assigned when reopening an AE.</errorMessage>
+</ValidationRule>

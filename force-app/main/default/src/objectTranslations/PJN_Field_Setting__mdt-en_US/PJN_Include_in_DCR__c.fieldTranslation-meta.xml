@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Include in DCR --></label>
+    <name>PJN_Include_in_DCR__c</name>
+    <picklistValues>
+        <masterLabel>Not Included</masterLabel>
+        <translation><!-- Not Included --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Insert</masterLabel>
+        <translation><!-- On Insert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Insert and Update</masterLabel>
+        <translation><!-- On Insert and Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Update</masterLabel>
+        <translation><!-- On Update --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

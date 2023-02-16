@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indique si le patient remplit les critères de revenu faible.</help>
+    <label><!-- Low Income --></label>
+    <name>HealthCloudGA__LowIncome__c</name>
+</CustomFieldTranslation>

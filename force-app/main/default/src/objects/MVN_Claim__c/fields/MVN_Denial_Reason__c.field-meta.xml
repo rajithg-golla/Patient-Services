@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Denial_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Denial Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Expenses incurred more than 120 days prior to program approval</fullName>
+                <default>false</default>
+                <label>Expenses incurred more than 120 days prior to program approval</label>
+            </value>
+            <value>
+                <fullName>Expenses incurred after program term of eligibility end</fullName>
+                <default>false</default>
+                <label>Expenses incurred after program term of eligibility end</label>
+            </value>
+            <value>
+                <fullName>Expenses incurred after annual benefit limit met</fullName>
+                <default>false</default>
+                <label>Expenses incurred after annual benefit limit met</label>
+            </value>
+            <value>
+                <fullName>Expenses for supplies, procedures, or physician-related services</fullName>
+                <default>false</default>
+                <label>Expenses for supplies, procedures, or physician-related services</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Non-product-specific copays, co-insurance, or deductibles</fullName>
+                <default>false</default>
+                <label>Non-product-specific copays, co-insurance, or deductibles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

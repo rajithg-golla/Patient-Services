@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When providing the age in decades,please note that, for example, the 7th decade refers to a person in their 60’s --></help>
+    <label><!-- Patient Age Unit --></label>
+    <name>PJN_Patient_Age_Unit__c</name>
+</CustomFieldTranslation>

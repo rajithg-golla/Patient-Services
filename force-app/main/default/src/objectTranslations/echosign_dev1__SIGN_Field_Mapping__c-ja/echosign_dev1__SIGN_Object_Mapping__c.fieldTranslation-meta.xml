@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Adobe Sign Object Mapping --></label>
+    <name>echosign_dev1__SIGN_Object_Mapping__c</name>
+    <relationshipLabel><!-- Adobe Sign Field Mappings --></relationshipLabel>
+</CustomFieldTranslation>

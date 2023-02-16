@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Primary__c</fullName>
+    <description>Formula checkbox to indicate whether or not a patient&apos;s prescription record matches the PJN_Primary_Prescription__c case field value. If so, value is set to TRUE which means the record is currently the primary prescription for a patient.</description>
+    <externalId>false</externalId>
+    <formula>Id = PJN_Care_Plan__r.PJN_Primary_Prescription__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

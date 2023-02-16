@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Record_Type__c</fullName>
+    <description>Displays the record type name.
+For PAP-locked, just display a UI friendly &apos;Patient Assistance Program&apos;.</description>
+    <externalId>false</externalId>
+    <formula>CASE(
+    RecordType.DeveloperName,
+    &apos;PJN_Patient_Assistance_Program_Locked&apos; , &apos;Patient Assistance Program&apos;, 
+    RecordType.Name)</formula>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

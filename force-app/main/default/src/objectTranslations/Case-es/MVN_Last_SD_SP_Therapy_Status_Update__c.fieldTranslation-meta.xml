@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last SD/SP Therapy Status Update --></label>
+    <name>MVN_Last_SD_SP_Therapy_Status_Update__c</name>
+</CustomFieldTranslation>

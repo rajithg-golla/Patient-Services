@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Medical_Channel__c</fullName>
+    <description>Payer master customized Medical Benefit Type field requested by Regeneron (Includes Commercial, Elderly, FFS Medicaid, Managed Medicaid, Medicare Advantage, Medicare Part A, Medicare Part B, Non-Benefit, Special Needs, Tricare/VA)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Medical Channel</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

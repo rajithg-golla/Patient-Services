@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Post private Chatter message to signer when an agreement needs the signer&apos;s signature. --></help>
+    <label><!-- Send Notifications to Sign Agreements --></label>
+    <name>echosign_dev1__Agreement_Sign_Message__c</name>
+</CustomFieldTranslation>

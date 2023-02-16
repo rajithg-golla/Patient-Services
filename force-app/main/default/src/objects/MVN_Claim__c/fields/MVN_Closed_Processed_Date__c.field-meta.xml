@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Closed_Processed_Date__c</fullName>
+    <description>Used in Claims related lists to display the value for Claim Closed Date or Date Processed stored across different fields depending on record type.</description>
+    <externalId>false</externalId>
+    <formula>CASE(RecordType.DeveloperName,
+&quot;MVN_Copay_Medical_Claim&quot;, MVN_Claim_Closed_Date__c,
+&quot;MVN_Copay_Pharmacy_Claim&quot;, MVN_Date_Processed__c,
+null)</formula>
+    <label>Closed / Processed Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

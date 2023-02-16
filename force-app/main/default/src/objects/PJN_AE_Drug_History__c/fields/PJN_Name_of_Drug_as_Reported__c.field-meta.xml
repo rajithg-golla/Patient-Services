@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Name_of_Drug_as_Reported__c</fullName>
+    <description>E2B (R2): B.1.8a, patientdrugname (100AN)
+E2B (R2): B.1.10.8a, parentdrugname (100AN)
+
+E2B (R3): D.8.r.1 Name of Drug as Reported
+E2B (R3): D.10.8.r.1 Name of Drug as Reported
+Conformance: Optional
+Data Type: 250AN
+OID: None
+Value Allowed: Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>This segment concerns drugs previously taken, but not those taken concomitantly or
+drugs that may have potentially been involved in the current reaction or event. Information concerning
+concomitant and other suspect drugs should be captured separately.</inlineHelpText>
+    <label>Name of Drug as Reported</label>
+    <length>250</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

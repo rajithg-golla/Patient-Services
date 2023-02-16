@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TaskType --></label>
+    <name>HealthCloudGA__TaskType__c</name>
+    <picklistValues>
+        <masterLabel>Administrative</masterLabel>
+        <translation>管理</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical</masterLabel>
+        <translation>臨床</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>その他</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncategorized</masterLabel>
+        <translation>未カテゴリ</translation>
+    </picklistValues>
+</CustomFieldTranslation>

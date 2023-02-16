@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>해당되는 경우 시간 측정에 대한 자격을 획득하는 사용자 유형입니다.</help>
+    <label><!-- User Role Field --></label>
+    <name>HealthCloudGA__UserRoleField__c</name>
+</CustomFieldTranslation>

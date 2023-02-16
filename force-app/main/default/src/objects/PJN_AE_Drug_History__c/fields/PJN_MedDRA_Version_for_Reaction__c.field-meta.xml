@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_MedDRA_Version_for_Reaction__c</fullName>
+    <description>E2B (R2): B.1.8g.1, patientdrgreactionmeddraversion (8AN)
+E2B (R2): B.1.10.8g.1, parentdrgreactionmeddraversion  (8AN)
+
+E2B (R3): D.8.r.7a MedDRA Version for Reaction
+E2B (R3): D.10.8.r.7a MedDRA Version for Reaction
+Conformance: Optional, but required if D.10.8.r.7b is populated.
+Data Type: 4AN
+OID: None
+Value Allowed: Numeric and ‘. ‘(dot)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>If applicable, MedDRA terms should be used in the reaction.</inlineHelpText>
+    <label>MedDRA Version for Reaction</label>
+    <length>4</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

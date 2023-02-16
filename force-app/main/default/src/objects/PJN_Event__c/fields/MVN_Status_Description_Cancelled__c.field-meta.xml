@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Status_Description_Cancelled__c</fullName>
+    <description>Status Description for Status = Cancelled</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Cancelled&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Missing Information, Max Attempts&quot;,&quot;Missing information required to complete enrollment, max attempts to patient, prescriber and/or RBM&quot;,
+&quot;Indication Criteria Not Met&quot;,&quot;ICD Code, Indication Confirmation or Underaged  - not eligible to start&quot;, 
+&quot;Requirement Not Met - Patient Residency&quot;,&quot;Patient does not reside in the United States or territories&quot;,
+&quot;Requirement Not Met - Prescriber License&quot;,&quot;Prescriber is not licensed to prescribe medication in the United States or territories&quot;,
+&quot;Unable to reach Patient on required contact, Max Attempts&quot;,&quot;Maximum attempts exhausted for contacting patient&quot;,
+&quot;Unable to reach Prescriber on required contact, Max Attempts&quot;,&quot;Maximum attempts exhausted for contacting prescriber&quot;,
+&quot;Patient Decision - Alternate Therapy&quot;,&quot;Patient on alternate treatment therapy&quot;,
+&quot;Patient Decision - Financial&quot;,&quot;Patient unable to afford out of pocket expense&quot;,
+&quot;Patient Decision - Other&quot;,&quot;Patient unwilling to started treatment, other&quot;,
+&quot;Prescriber Decision - Alternate Therapy&quot;,&quot;Patient on alternate treatment therapy&quot;,
+&quot;Prescriber Decision - Financial&quot;	,&quot;Patient unable to afford out of pocket expense&quot;,
+&quot;Prescriber Decision - Coverage Effort&quot;,&quot;Prescriber not willing to purse treatment due to payor hurdles&quot;,
+&quot;Prescriber Decision - Other&quot;,&quot;Patient unwilling to started treatment, other&quot;,
+&quot;Patient Medical Delay, Max Delay&quot;,&quot;Hospitalization, LTC, and other medical reason a patient could not start treatment&quot;,
+&quot;No Route of Access&quot;,&quot;Appeal options exhausted and over criteria for PAP&quot;,
+&quot;Patient Deceased&quot;,&quot;Patient deceased&quot;,
+&quot;Other&quot;,&quot;Other&quot;,
+&quot;Clinical Trial&quot;,&quot;Patient is entering a clinical trial for a different medication&quot;,
+&quot;No coverage: Appeals exhausted and PAP ineligible&quot;,&quot;Replaces No Route of Access sub status - Appeal options exhausted and over income criteria for PAP&quot;,
+&quot;Patient does not want infusion&quot;,&quot;Patient does not want infusion&quot;,
+&quot;Administration Barrier&quot;,&quot;Could not locate vein access to infuse patient&quot;,
+null),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Description - Cancelled</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

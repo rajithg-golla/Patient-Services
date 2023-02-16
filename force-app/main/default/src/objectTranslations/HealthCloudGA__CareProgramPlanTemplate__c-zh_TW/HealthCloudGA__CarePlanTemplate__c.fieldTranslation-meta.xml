@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Care Plan Template --></label>
+    <name>HealthCloudGA__CarePlanTemplate__c</name>
+    <relationshipLabel><!-- Care Program Plan Templates --></relationshipLabel>
+</CustomFieldTranslation>

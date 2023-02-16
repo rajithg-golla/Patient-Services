@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Include_in_Search__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates this record type should be included as a search parameter.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Indicates this record type should be included as a search parameter.</inlineHelpText>
+    <label>Include in Search</label>
+    <type>Checkbox</type>
+</CustomField>

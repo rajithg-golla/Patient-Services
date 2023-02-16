@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EVK - PA Stage Date Started</label>
+    <protected>false</protected>
+    <values>
+        <field>PJN_Days_To_Add__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>PJN_Formula__c</field>
+        <value xsi:type="xsd:string">TODAY</value>
+    </values>
+    <values>
+        <field>PJN_Mapping__c</field>
+        <value xsi:type="xsd:string">MVN_EVK_PA_Stage_Start_Dates</value>
+    </values>
+    <values>
+        <field>PJN_Source_Field_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>PJN_Target_Field_API_Name__c</field>
+        <value xsi:type="xsd:string">PJN_Date_Started__c</value>
+    </values>
+</CustomMetadata>

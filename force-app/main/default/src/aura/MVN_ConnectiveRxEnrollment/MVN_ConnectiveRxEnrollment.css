@@ -1,0 +1,15 @@
+.THIS .slds-modal {
+    visibility: hidden;
+    display: none;
+}
+.THIS .slds-backdrop {
+    display: none;
+}
+.THIS .toastMessage.forceActionsText {
+    white-space : pre-line !important;
+}
+.THIS .slds-spinner_container {
+    background: none;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use the gestational age at the time of the earliest exposure. Gestation period at time
+of exposure should be expressed by providing both a number and designation of units of days, weeks,
+months, or trimester. --></help>
+    <label><!-- Gestation Period at Time of Exposure --></label>
+    <name>PJN_Gestation_Period_at_Time_of_Exposure__c</name>
+</CustomFieldTranslation>

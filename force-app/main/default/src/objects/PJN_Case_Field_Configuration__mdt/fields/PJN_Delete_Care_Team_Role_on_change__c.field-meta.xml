@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Delete_Care_Team_Role_on_change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, the PJN_CaseCareTeamManager.cls trigger handler will delete the existing role for the case care team.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Delete Care Team Role on change</label>
+    <type>Checkbox</type>
+</CustomField>

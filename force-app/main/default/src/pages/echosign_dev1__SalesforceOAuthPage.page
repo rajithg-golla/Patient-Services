@@ -1,0 +1,2 @@
+<apex:page controller="echosign_dev1.SalesforceOAuthService" action="{!consumeAuthorizationCode}">
+</apex:page>

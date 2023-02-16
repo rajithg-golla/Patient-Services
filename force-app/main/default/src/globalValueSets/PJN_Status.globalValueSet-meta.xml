@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Discontinued</fullName>
+        <default>false</default>
+        <label>Discontinued</label>
+    </customValue>
+    <customValue>
+        <fullName>Treatment Complete</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Treatment Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>On Therapy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>On Therapy</label>
+    </customValue>
+    <description>Status field picklist value set, used for Therapy Status fields. 
+
+Pending: Status assigned to a patient&apos;s care plan confirming they are going through the program enrollment process (new or restart patient).
+
+On Therapy: Status assigned to a patient&apos;s care plan confirming they are fully approved for dispense and awaiting/currently receiving shipments.
+
+Treatment Complete: Status assigned to a patient&apos;s care plan confirming they have completed their treatment journey.
+
+Discontinued: Status assigned to a patient&apos;s care plan confirming they have previously enrolled in a program, but have either chosen or have been deemed ineligible to continue. 
+
+Cancelled: Status assigned to a patient&apos;s care plan confirming they have either chosen not to continue with enrollment, or have been deemed ineligible to continue.</description>
+    <masterLabel>Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Milestone_Discontinued__c</fullName>
+    <description>Patient journey milestone for Status = Discontinued</description>
+    <externalId>false</externalId>
+    <formula>CASE(PJN_New_Therapy_Status__c, &quot;Discontinued&quot;,
+CASE(PJN_New_Therapy_Sub_Status__c,
+&quot;Requirement Not Met - Patient Residency&quot;,&quot;OB&quot;,
+&quot;Unable to reach Patient on required contact, Max Attempts&quot;,&quot;OB&quot;,
+&quot;Unable to reach Prescriber on required contact, Max Attempts&quot;,&quot;OB&quot;,
+&quot;Patient Decision - Alternate Therapy&quot;,&quot;OB&quot;,
+&quot;Patient Decision - Financial&quot;,&quot;OB&quot;,
+&quot;Patient Decision - MyRare Only&quot;,&quot;OB&quot;,
+&quot;Patient Decision - Other&quot;,&quot;OB&quot;,
+&quot;Prescriber Decision - Alternate Therapy&quot;,&quot;OB&quot;,
+&quot;Prescriber Decision - Financial&quot;,&quot;OB&quot;,
+&quot;Prescriber Decision - Coverage Effort&quot;,&quot;OB&quot;,
+&quot;Prescriber Decision - Other&quot;,&quot;OB&quot;,
+&quot;Patient Medical Delay, Max Delay&quot;,&quot;OB&quot;,
+&quot;No Route of Access&quot;,&quot;OB&quot;,
+&quot;Patient Deceased&quot;,&quot;OB&quot;,
+&quot;Patient Off Therapy&quot;,&quot;OB&quot;,
+&quot;Other&quot;,&quot;OB&quot;,
+null),
+null)</formula>
+    <label>Milestone - Discontinued</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

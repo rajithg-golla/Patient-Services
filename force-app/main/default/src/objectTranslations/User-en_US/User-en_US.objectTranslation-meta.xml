@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- HcPatientInfoFields --></label>
+        <name>HealthCloudGA__HcPatientInfoFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HcTeamMemberInfoFields --></label>
+        <name>HealthCloudGA__HcTeamMemberInfoFields</name>
+    </fieldSets>
+    <webLinks>
+        <label><!-- Change_DS_Cred --></label>
+        <name>Loop__Change_DS_Cred</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_EchoSign_User --></label>
+        <name>echosign_dev1__Sync_EchoSign_User</name>
+    </webLinks>
+</CustomObjectTranslation>

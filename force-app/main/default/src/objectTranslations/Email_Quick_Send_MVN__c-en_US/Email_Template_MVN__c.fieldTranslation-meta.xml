@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Email Template --></label>
+    <name>Email_Template_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Appointment Reminder</masterLabel>
+        <translation><!-- Appointment Reminder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diabetic Retinopathy &amp; You</masterLabel>
+        <translation><!-- Diabetic Retinopathy &amp; You --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

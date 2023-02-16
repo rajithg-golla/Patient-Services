@@ -1,0 +1,20 @@
+.min-120-px {
+    min-height: 120px;
+}
+
+.required {
+    left: -0.25rem;
+    top: 0.25rem;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.errorMessage, .required {
+    color: rgb(194, 57, 52);
+}
+
+.errorMessage {
+    margin-top: -8px;
+    margin-left: 5px;;
+    font-size: 12px;
+}

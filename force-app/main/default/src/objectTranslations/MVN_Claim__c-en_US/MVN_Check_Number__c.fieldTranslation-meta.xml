@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only applicable for check payment. For checks, this number may be delivered in a subsequent record after the original record. --></help>
+    <label><!-- Check Number --></label>
+    <name>MVN_Check_Number__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Require_to_Close_Reconciliation</fullName>
+    <active>true</active>
+    <description>The AE Reconciliation number is required to close the AE</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(PJN_Status__c, &quot;Closed&quot;),
+ISBLANK( PJN_Reconciliation_Number__c )
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Reconciliation_Number__c</errorDisplayField>
+    <errorMessage>The AE Reconciliation number is required to close the AE</errorMessage>
+</ValidationRule>

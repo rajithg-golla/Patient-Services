@@ -1,0 +1,22 @@
+<aura:component implements="force:hasSObjectName" controller="PJN_RecordTypeSelectionCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="recordTypes" type="RecordType[]"/>
+    <aura:attribute name="selectedRecordTypeId" type="Id"/>
+    <aura:attribute name="noRecordTypeSelected" type="Boolean"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+
+    <!-- BODY -->
+    <aura:if isTrue="{!and(v.recordTypes,v.selectedRecordTypeId)}">
+        <lightning:select aura:id="recordTypeSelect" name="select" label="Select Record Type" required="true" value="{!v.selectedRecordTypeId}">
+            <aura:iteration items="{!v.recordTypes}" var="recordType">
+                <option value="{!recordType.Id}" selected="{!recordType.Id == v.selectedRecordTypeId}">{!recordType.Name}</option>
+            </aura:iteration>
+        </lightning:select>
+    </aura:if>
+</aura:component>

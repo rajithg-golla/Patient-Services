@@ -1,0 +1,13 @@
+<aura:component>
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="carePlanId" type="Id" required="true" />
+
+    <!-- EVENTS -->
+    <aura:registerEvent name="carePlanUpdated" type="c:PJN_CarePlanUiUpdateEvent"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- HELPERS -->
+    <lightning:empApi aura:id="empApi"/>
+</aura:component>

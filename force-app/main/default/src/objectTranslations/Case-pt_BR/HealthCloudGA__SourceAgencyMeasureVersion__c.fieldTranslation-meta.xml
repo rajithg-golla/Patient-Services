@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Versão da medida do ID da agência de origem para esta lacuna de atendimento.</help>
+    <label><!-- Source Agency Measure Version --></label>
+    <name>HealthCloudGA__SourceAgencyMeasureVersion__c</name>
+</CustomFieldTranslation>

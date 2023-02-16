@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Prevent_Due_Date_Modify</fullName>
+    <active>true</active>
+    <description>Prevents Due Date being modified after the original value is set. Users assigned &apos;Bypass validation&apos; can modify.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(PJN_Due_Date__c),
+NOT(ISCHANGED(PJN_Date_Time_Opened__c)),
+NOT(ISBLANK(PRIORVALUE(PJN_Due_Date__c)))
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Due_Date__c</errorDisplayField>
+    <errorMessage>Due Date can not be modified.</errorMessage>
+</ValidationRule>

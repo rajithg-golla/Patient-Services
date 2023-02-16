@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>cmcgeary@mavens.com</contactEmail>
+    <label>Relay Network</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:8000/callback</callbackUrl>
+        <certificate>MIIDgTCCAmkCFAhpdJXn3CHndrVha1F8N7EiNlMtMA0GCSqGSIb3DQEBCwUAMH0xCzAJBgNVBAYTAlVTMRUwEwYDVQQIDAxQZW5uc3lsdmFuaWExDzANBgNVBAcMBlJhZG5vcjEWMBQGA1UECgwNUmVsYXkgTmV0d29yazETMBEGA1UECwwKVGVjaG5vbG9neTEZMBcGA1UEAwwQcmVsYXluZXR3b3JrLmNvbTAeFw0yMjAzMDMxNDA2MzJaFw0yMzAzMDMxNDA2MzJaMH0xCzAJBgNVBAYTAlVTMRUwEwYDVQQIDAxQZW5uc3lsdmFuaWExDzANBgNVBAcMBlJhZG5vcjEWMBQGA1UECgwNUmVsYXkgTmV0d29yazETMBEGA1UECwwKVGVjaG5vbG9neTEZMBcGA1UEAwwQcmVsYXluZXR3b3JrLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMVOo6Mn6XS3UPgqSo514wng+GXDLyuCpJ6k/G5J/P5Zz1CxnmDmb85zHciZO0UuY3rNbAdo5QVISU5GUGOA283kpO94wPuxXbhuM9hq2wGeipgLo/XEWRAzsJu1mb7i/kb6r6Y/PXM0JNV7DIHL1YZfwbHsfBUM5c66Y2jKX0I/Cay1r8hXbAme5xygDqsYBV6Wi89Pg1A3JtN6SO7sPV8wlXPqm4eyiFgl8ZnmqTUG1XrNQaFIQCEwxNXvSokfYFsYNrpySjMqGugSZ9z0zqzg4jDICJ/Ez1Hccc02TfPjXDkeZEUO5yY6pzKgdg/84Y6ySDuntThoAEAq5Lnfu6UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAVOsQGxxLDqRupgGRNFeNiwUAtMEgZWGDimZ6OmQ/rdiJnr4kAOlWkg8ZSyoK9nxhYw7eQLDCGvxw4ruvMV7vAe+gio7FyHB5tvU1goMicLzdsFKw8PnNIHvmN3ODQEbfrQscREkPTCTE9TjNB2fTQzezrih9Z/hiU4+UxViufPVybohBBK6sPajGqpG8FC9CzGIURhN30UR18rkB+Ge0cGprKuiPd0UuyYpUWcSjoeGprfxXWYLVtA2rFFwaPz5wFvzCRhnMBuvPrAKCgW8amFbYZvRvukh3EM0CimVUHhTlX+kr6U2K7VsxBviRk0kLF8ZHLWmtkLBNS4oRkn6upQ==</certificate>
+        <consumerKey>3MVG9Kip4IKAZQEXH3QRISZ4gTLGEQQIBRssNkEuJLsoqFwiyW.u3q8bSiQKPSFGs73mYMnUw2h7MHNq7tiAe</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>Relay Network (Integration)</permissionSetName>
+</ConnectedApp>

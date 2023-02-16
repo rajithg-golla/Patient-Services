@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Life_Threatening__c</fullName>
+    <description>E2B (R2): A.1.5.2, seriousnesslifethreatening (1N)
+E2B (R3): Moved to E.i.3.2 (AE Reaction)</description>
+    <externalId>false</externalId>
+    <label>Life Threatening</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>PJN_AE_Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

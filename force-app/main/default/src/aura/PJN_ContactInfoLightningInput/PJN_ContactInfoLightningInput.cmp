@@ -1,0 +1,24 @@
+<aura:component controller="PJN_AccountSearchLightningUtil">
+    <aura:attribute name="type" type="String" default="text"/>
+    <aura:attribute name="contactInfoRecord" type="PJN_Contact_Information__c" />
+    <aura:attribute name="fieldSetting" type="PJN_New_Contact_Info_Fields_Setting__mdt" />
+    <aura:attribute name="valueKey" type="String" />
+    <aura:attribute name="label" type="String" />
+    <aura:attribute name="value" type="String" />
+    <aura:attribute name="class" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:if isTrue="{!and(v.fieldSetting, v.value != null)}">
+        <lightning:input
+            aura:id="lightningInputId"
+            type="{!v.type}"
+            label="{!v.label}"
+            value="{!v.value}"
+            checked="{!v.value}"
+            readonly="true"
+            disabled="true"
+
+        />
+    </aura:if>
+</aura:component>

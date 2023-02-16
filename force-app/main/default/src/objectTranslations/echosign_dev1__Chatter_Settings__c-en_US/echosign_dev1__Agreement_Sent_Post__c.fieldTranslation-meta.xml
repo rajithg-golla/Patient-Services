@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Post Chatter update when agreement is sent for signature/approval/acceptance/ form-filling/delivery. --></help>
+    <label><!-- Post when Agreement Sent --></label>
+    <name>echosign_dev1__Agreement_Sent_Post__c</name>
+</CustomFieldTranslation>

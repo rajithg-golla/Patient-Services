@@ -1,0 +1,6 @@
+<aura:interface description="Interface template">
+    <aura:attribute name="activeStep" type="PJN_Enrollment_Wizard_Step__mdt"/>
+    <aura:attribute name="activeComponent" type="PJN_Enrollment_Wizard_Component__mdt"/>
+    <aura:attribute name="carePlanId" type="Id"/>
+    <aura:attribute name="dirtyComponentMap" type="Map" />
+</aura:interface>

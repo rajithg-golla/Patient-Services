@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Числитель дроби состоящей из двух количественных значений - в числителе и знаменателе</help>
+    <label><!-- Rate Numerator --></label>
+    <name>HealthCloudGA__RateNumerator__c</name>
+</CustomFieldTranslation>

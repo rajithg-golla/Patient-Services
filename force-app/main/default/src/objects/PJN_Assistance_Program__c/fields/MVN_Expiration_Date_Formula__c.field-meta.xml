@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Expiration_Date_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+OR(RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program&quot;, RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program_Locked&quot;),
+OR(ISPICKVAL(MVN_Eligibility_Type__c, &quot;Medicare Part B&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Unaffordable - Part D&quot;), 
+ISPICKVAL(MVN_Eligibility_Type__c, &quot;Unaffordable - Medicare Advantage&quot;)),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+DATE(YEAR(PJN_Effective_Date__c), 12, 31),
+IF(
+AND(
+OR(RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program&quot;, RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program_Locked&quot;),
+OR(ISPICKVAL(MVN_Eligibility_Type__c, &quot;Uninsured&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Functionally Uninsured&quot;), ISPICKVAL(MVN_Eligibility_Type__c, &quot;Exception&quot;)),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+PJN_Effective_Date__c + 365,
+IF(
+AND(
+OR(RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program&quot;, RecordType.DeveloperName = &quot;PJN_Patient_Assistance_Program_Locked&quot;),
+ISPICKVAL(MVN_Eligibility_Type__c, &quot;Pending PA Appeal&quot;),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+PJN_Effective_Date__c + 90,
+IF(
+RecordType.DeveloperName = &quot;PJN_Copay&quot;,
+DATEVALUE(MVN_Copay_Expiration_Date__c),
+IF(
+AND(
+RecordType.DeveloperName = &quot;MVN_Interim_Access_Program&quot;,
+ISPICKVAL(MVN_Eligibility_Type__c, &quot;Product Acquisition Delay&quot;),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+PJN_Effective_Date__c + 30,
+IF(
+AND(
+RecordType.DeveloperName = &quot;MVN_Interim_Access_Program&quot;,
+OR(ISPICKVAL(MVN_Eligibility_Type__c, &quot;Insurance Status Change&quot;),ISPICKVAL(MVN_Eligibility_Type__c, &quot;PA/Appeal Processing&quot;)),
+NOT(ISNULL(PJN_Effective_Date__c)),
+ISPICKVAL(PJN_Outcome__c, &quot;Eligible&quot;)),
+PJN_Effective_Date__c + 182,
+null))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Expiration Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

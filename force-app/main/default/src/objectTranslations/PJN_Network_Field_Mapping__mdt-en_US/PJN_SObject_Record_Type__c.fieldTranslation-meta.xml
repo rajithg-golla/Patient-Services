@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SObject record type associated to this field mapping. &apos;ALL&apos; would be included in all record types. --></help>
+    <label><!-- SObject Record Type --></label>
+    <name>PJN_SObject_Record_Type__c</name>
+</CustomFieldTranslation>

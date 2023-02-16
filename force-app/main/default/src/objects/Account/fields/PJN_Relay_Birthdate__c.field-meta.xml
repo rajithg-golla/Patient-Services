@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Relay_Birthdate__c</fullName>
+    <description>Formatted birthdate field used for Relay Network integration.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(YEAR(PersonBirthdate))&amp;
+&quot;-&quot;&amp;
+TEXT(MONTH(PersonBirthdate))&amp;
+&quot;-&quot;&amp;
+TEXT(DAY(PersonBirthdate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Relay Birthdate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

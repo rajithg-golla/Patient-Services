@@ -1,0 +1,7 @@
+<design:component >
+    <design:attribute
+        name        = "hasBusinessAccounts"
+        label       = "Search Business Accounts?"
+        description = "Select this when search may be performed against business accounts"
+    />
+</design:component>

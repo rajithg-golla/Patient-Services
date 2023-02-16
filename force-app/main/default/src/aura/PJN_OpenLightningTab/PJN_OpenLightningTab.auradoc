@@ -1,0 +1,11 @@
+<aura:documentation>
+	<aura:description>
+        This component enables any lightning component implementing the lightning:isUrlAddressable
+        interface to be opened within a console application as a tab. It is configurable to specify
+        whether the tab is to be a primary or sub tab. The parent tab this component is placed upon
+        will also be passed, as both a url and tab Id, to the target component so that returning to
+        the parent tab may be managed. When this component is on a detail page, the record Id is also
+        provided to the target component, along with any custom parameters that have been configured
+        for this component via the app builder.
+    </aura:description>
+</aura:documentation>

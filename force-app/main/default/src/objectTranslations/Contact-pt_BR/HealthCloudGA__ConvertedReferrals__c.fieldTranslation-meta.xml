@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Contagem de encaminhamentos com o status de &quot;Fechado/Convertido&quot; submetidos por este médico nos últimos seis meses.</help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

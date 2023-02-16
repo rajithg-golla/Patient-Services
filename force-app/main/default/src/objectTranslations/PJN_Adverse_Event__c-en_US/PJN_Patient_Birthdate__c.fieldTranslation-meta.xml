@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A full precision date should be used (i.e., day, month, year). If the full date of birth is
+unknown, an approximate age can be used --></help>
+    <label><!-- Patient Birthdate --></label>
+    <name>PJN_Patient_Birthdate__c</name>
+</CustomFieldTranslation>

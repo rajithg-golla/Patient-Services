@@ -1,0 +1,17 @@
+<aura:component implements="c:PJN_CarePlanPathCoachingIntf,c:PJN_LightningOutIntf">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="problemRecord" type="HealthCloudGA__CarePlanProblem__c" />
+    <aura:attribute name="componentRecord" type="PJN_CarePlan_Path_Coaching_Setting__mdt" />
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onComponentChange}" />
+
+    <!-- HELPERS -->
+    <aura:dependency resource="c:PJN_CarePlanPathKeys"/>
+    <aura:dependency resource="c:PJN_CarePlanPathGuidance"/>
+
+    <!-- BODY -->
+    <div aura:id="componentContainer">
+        {!v.body}
+    </div>
+</aura:component>

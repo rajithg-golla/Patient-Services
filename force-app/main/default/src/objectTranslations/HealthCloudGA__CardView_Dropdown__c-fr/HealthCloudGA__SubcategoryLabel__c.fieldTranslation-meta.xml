@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si votre étiquette a un préfixe d’espace de noms, utilisez Label_Namespace.Label_Name. Sinon, utilisez c.Label_Name.</help>
+    <label><!-- Subcategory Label --></label>
+    <name>HealthCloudGA__SubcategoryLabel__c</name>
+</CustomFieldTranslation>

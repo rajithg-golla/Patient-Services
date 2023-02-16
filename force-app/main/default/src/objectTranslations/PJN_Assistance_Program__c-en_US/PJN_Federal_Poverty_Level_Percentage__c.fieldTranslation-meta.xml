@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Estimated ratio of income for household size against the federal poverty level returned from the financial clearing house --></help>
+    <label><!-- Federal Poverty Level Percentage --></label>
+    <name>PJN_Federal_Poverty_Level_Percentage__c</name>
+</CustomFieldTranslation>

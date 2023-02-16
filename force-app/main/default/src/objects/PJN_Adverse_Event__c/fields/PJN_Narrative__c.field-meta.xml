@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Narrative__c</fullName>
+    <description>E2B (R2): B.5.1, narrativeincludeclinical (20000 AN)
+
+E2B (R3): H.1 Case Narrative Including Clinical Course, Therapeutic Measures, Outcome and Additional
+Relevant Information
+User Guidance: This data element captures a focused, factual and clear description of the case,
+including the words or short phrases used by the reporter.
+Conformance: Required
+Data Type: 100000AN
+OID: None
+Value Allowed: Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures a focused, factual and clear description of the case,
+including the words or short phrases used by the reporter.</inlineHelpText>
+    <label>Narrative</label>
+    <length>100000</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

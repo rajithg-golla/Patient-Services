@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Value__c</fullName>
+    <description>Set by workflow when contact info is created or updated, this field stores the formatted value. This used to be a formula but prevented encryption of phone fields used in formulas</description>
+    <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

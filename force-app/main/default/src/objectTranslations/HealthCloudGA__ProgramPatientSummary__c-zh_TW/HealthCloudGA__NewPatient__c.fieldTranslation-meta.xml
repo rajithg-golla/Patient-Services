@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>表示病患是新的 Medicare 病患或繼續註冊者的病患。</help>
+    <label><!-- New Patient --></label>
+    <name>HealthCloudGA__NewPatient__c</name>
+</CustomFieldTranslation>

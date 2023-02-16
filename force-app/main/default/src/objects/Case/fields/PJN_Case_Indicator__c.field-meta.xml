@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case_Indicator__c</fullName>
+    <description>Displays an indicator icon based on a non care plan case&apos;s Priority and Due Date values.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+RecordType.DeveloperName == &quot;CarePlan&quot; || IsClosed,
+NULL,
+IF(
+ISBLANK(HealthCloudGA__DueDate__c),
+IMAGE(&quot;/resource/PJNImages/NoDueDate.png?V=1&quot;,&quot;No Due Date&quot;, 30, 110),
+IF(
+HealthCloudGA__DueDate__c == TODAY(),
+IMAGE(&quot;/resource/PJNImages/DueToday.png?V=1&quot;,&quot;Due Today&quot;, 30, 105),
+IF(
+HealthCloudGA__DueDate__c &lt; TODAY(),
+IMAGE(&quot;/resource/PJNImages/Overdue.png?V=1&quot;,&quot;Overdue&quot;, 30, 105),
+IMAGE(&quot;/resource/PJNImages/NotDue.png?V=1&quot;,&quot;Not Due&quot;, 30, 105)
+)
+)
+)
+)</formula>
+    <label>Case Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

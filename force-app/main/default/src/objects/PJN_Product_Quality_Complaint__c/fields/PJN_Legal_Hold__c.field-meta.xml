@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Legal_Hold__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates that the record cannot be modified, anonymized, or deleted because there is a legal hold</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that the record cannot be modified, anonymized, or deleted because there is a legal hold</inlineHelpText>
+    <label>Legal Hold</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

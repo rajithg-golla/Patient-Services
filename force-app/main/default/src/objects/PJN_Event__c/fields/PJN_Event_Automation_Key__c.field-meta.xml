@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Event_Automation_Key__c</fullName>
+    <description>Key to match an event automation record.</description>
+    <externalId>false</externalId>
+    <formula>PJN_Fulfillment_Request__r.PJN_Care_Plan__r.PJN_Program_DeveloperName__c 
++ &apos;-&apos; 
++  PJN_Status__c 
++  PJN_Sub_Status__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Event Automation Key</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>HealthCloudGA__Category__c</name>
+    <picklistValues>
+        <masterLabel>Disease Management</masterLabel>
+        <translation>Krankheitsmanagement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology and Metabolism</masterLabel>
+        <translation>Endokrinologie und Metabolismus</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Health</masterLabel>
+        <translation>Häusliche Krankenpflege</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wellness</masterLabel>
+        <translation>Wohlbefinden</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Quality Complaint</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Quality Complaints</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Change Record Owner --></label>
+        <name>PJN_Change_Record_Owner</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Product Quality Complaint --></label>
+        <name>PJN_Product_Quality_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Quality Complaint - Closed --></label>
+        <name>PJN_Product_Quality_Complaint_Closed</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Can only reopen when record is closed. --></errorMessage>
+        <name>PJN_Can_only_Reopen_when_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit closed Product Quality Complaint records --></errorMessage>
+        <name>PJN_Cannot_Edit_When_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record is on legal hold and cannot be modified. --></errorMessage>
+        <name>PJN_Cannot_Modify_with_Legal_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot edit without permission to QA --></errorMessage>
+        <name>PJN_Need_Perm_to_QA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Due Date can not be modified. --></errorMessage>
+        <name>PJN_Prevent_Due_Date_Modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reopen Reason can only be assigned when reopening a PQC. --></errorMessage>
+        <name>PJN_Prevent_Editing_Reopen_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only users with special permission can re-open closed or canceled PQCs --></errorMessage>
+        <name>PJN_Reopen_with_Perm_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All PQCs must have a country. --></errorMessage>
+        <name>PJN_Require_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide Reopen Reason --></errorMessage>
+        <name>PJN_Require_Reopen_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must provide a transfer reason when changing owner --></errorMessage>
+        <name>PJN_Require_Transfer_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All PQCs must be tied to an Interaction and the Interaction cannot be changed --></errorMessage>
+        <name>PJN_Require_and_Lock_Interaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot close the PQC unless the Date/Time Submitted is populated. --></errorMessage>
+        <name>PJN_Require_to_Close_DateTime_Submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The PQC Reconciliation number is required to close the PQC --></errorMessage>
+        <name>PJN_Require_to_Close_Reconciliation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must document the complaint before submitting --></errorMessage>
+        <name>PJN_Require_to_Submit_Complaint</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify a Product to submit the PQC. --></errorMessage>
+        <name>PJN_Require_to_Submit_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot set date opened in the future --></errorMessage>
+        <name>PJN_Valid_Date_Opened</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot set the Date of Complaint in the future --></errorMessage>
+        <name>PJN_Valid_Date_of_Complaint</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot set the Submission Date in the future or before the date of the complaint --></errorMessage>
+        <name>PJN_Valid_Date_of_Submission</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- PJN_Close_PQC --></label>
+        <name>PJN_Close_PQC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PJN_New_Product_Quality_Complaint --></label>
+        <name>PJN_New_Product_Quality_Complaint</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PJN_Send_PQC_Email --></label>
+        <name>PJN_Send_PQC_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

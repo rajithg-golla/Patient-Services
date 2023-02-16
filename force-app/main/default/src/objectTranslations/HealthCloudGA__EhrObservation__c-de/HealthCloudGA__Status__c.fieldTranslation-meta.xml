@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>HealthCloudGA__Status__c</name>
+    <picklistValues>
+        <masterLabel>amended</masterLabel>
+        <translation>abgeändert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>final</masterLabel>
+        <translation>endgültig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>preliminary</masterLabel>
+        <translation>vorläufig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>registered</masterLabel>
+        <translation>registriert</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Completed_Appointment_Number__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Incremental number field which calculates the order of the completed appointments (i.e first appointment which is marked as complete = 1, second completed appointment = 2, etc.)</description>
+    <externalId>false</externalId>
+    <label>Completed Appointment Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>제품 | 패키지 코드 시스템</help>
+    <label><!-- Medication Kind System --></label>
+    <name>HealthCloudGA__MedicationKindSystem__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Email_Opt_In_Required</fullName>
+    <active>true</active>
+    <description>Verifies if the primary email is opted in for the account on the care plan.</description>
+    <errorConditionFormula>Account_MVN__r.Primary_Email_Opt_In_MVN__c = false</errorConditionFormula>
+    <errorMessage>The primary email for the account must be opted in.</errorMessage>
+</ValidationRule>

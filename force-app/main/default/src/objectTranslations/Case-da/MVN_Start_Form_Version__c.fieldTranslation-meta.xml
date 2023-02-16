@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Start Form Version --></label>
+    <name>MVN_Start_Form_Version__c</name>
+    <picklistValues>
+        <masterLabel>Version 1</masterLabel>
+        <translation><!-- Version 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Version 2</masterLabel>
+        <translation><!-- Version 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Version 3</masterLabel>
+        <translation><!-- Version 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Version 4</masterLabel>
+        <translation><!-- Version 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Version 5</masterLabel>
+        <translation><!-- Version 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

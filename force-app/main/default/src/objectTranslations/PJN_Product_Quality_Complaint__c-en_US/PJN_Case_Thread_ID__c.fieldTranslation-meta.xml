@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Formula to generate the Interaction&apos;s Thread ID, which is used to relate an incoming email to the Interaction using email-to-case. --></help>
+    <label><!-- Interaction Thread ID --></label>
+    <name>PJN_Case_Thread_ID__c</name>
+</CustomFieldTranslation>

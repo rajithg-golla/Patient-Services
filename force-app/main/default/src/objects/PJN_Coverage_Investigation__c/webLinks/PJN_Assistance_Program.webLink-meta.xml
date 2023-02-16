@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Assistance_Program</fullName>
+    <availability>online</availability>
+    <description>Creates an Assistance Program record with pre-defaulted values (e.g. Care Plan).</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Assistance Program</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/o/PJN_Assistance_Program__c/new?useRecordTypeCheck=1&amp;defaultFieldValues=PJN_Care_Plan__c={!PJN_Coverage_Investigation__c.PJN_Care_PlanId__c},PJN_Coverage_Investigation__c={!PJN_Coverage_Investigation__c.Id}</url>
+</WebLink>

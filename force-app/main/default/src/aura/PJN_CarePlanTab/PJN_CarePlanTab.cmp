@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global">
+
+    <!--Attributes-->
+    <aura:attribute name="caseFields" type="Case"/>
+
+    <!--Component Start-->
+
+    <!--Lightning Workspace API-->
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    <!--Lightning Force Data to get Case record-->
+    <force:recordData aura:id="caseRecordData"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.caseFields}"
+                      recordUpdated="{!c.handleRecordUpdate}"/>
+    <!--Component End-->
+</aura:component>

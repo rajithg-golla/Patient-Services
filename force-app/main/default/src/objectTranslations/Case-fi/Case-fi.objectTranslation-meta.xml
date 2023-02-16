@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- HcCareGapList --></label>
+        <name>HealthCloudGA__HcCareGapList</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Care Plan Selector Screen --></label>
+        <name>PJN_Care_Plan_Selector_Screen</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Coverage Investigation Update Screen --></label>
+        <name>PJN_Coverage_Investigation_Update_Screen</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Merge Tool Card Care Plan Fields --></label>
+        <name>PJN_Merge_Tool_Card_Care_Plan_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Merge Tool Table Care Plan Fields --></label>
+        <name>PJN_Merge_Tool_Table_Care_Plan_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recurring Case Clone Fields --></label>
+        <name>PJN_Recurring_Case_Clone_Fields</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Defines a DEDSI Program Participant care plan --></description>
+        <label><!-- DEDSI Participant CarePlan --></label>
+        <name>DEDSI_Participant_CarePlan</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a care gap for an individual --></description>
+        <label><!-- CareGap --></label>
+        <name>HealthCloudGA__CareGap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a care plan for an individual and their care team --></description>
+        <label><!-- CarePlan --></label>
+        <name>HealthCloudGA__CarePlan</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines a Libtayo Marketing care plan --></description>
+        <label><!-- Libtayo Marketing Care Plan --></label>
+        <name>Libtayo_Marketing_Care_Plan_MVN</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines missing enrollment information activities related to a patient&apos;s care plan --></description>
+        <label><!-- Missing Information --></label>
+        <name>MVN_Missing_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines activities related to a patient&apos;s care plan --></description>
+        <label><!-- Activity --></label>
+        <name>PJN_Activity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Defines activities outside of a patient&apos;s care plan like enrollments, and inbound inquiries --></description>
+        <label><!-- Request --></label>
+        <name>PJN_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A Coordinator must be selected for the patient&apos;s Care Plan to close this activity. --></errorMessage>
+        <name>MVN_Care_Plan_Coordinator_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Missing Information must be selected to close this activity. --></errorMessage>
+        <name>PJN_Missing_Info_on_Closed_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify a reason for cancellation. --></errorMessage>
+        <name>PJN_Reason_on_Cancelled_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When marking an Activity to repeat, provide values for &quot;Repeat Every&quot; and &quot;Cadence&quot;. --></errorMessage>
+        <name>PJN_Require_Repeat_Activity_Values</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Apply_Care_Plan_Templates --></label>
+        <name>HealthCloudGA__Apply_Care_Plan_Templates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MVN_Create_Package --></label>
+        <name>MVN_Create_Package</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Specialist_Search_MVN --></label>
+        <name>Specialist_Search_MVN</name>
+    </webLinks>
+</CustomObjectTranslation>

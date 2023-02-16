@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__LanguageCode__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>CASE(HealthCloudGA__Language__c,
+&quot;English (United States)&quot;, &quot;en_US&quot;,
+&quot;English (United Kingdom)&quot;,&quot;en_GB&quot;,
+&quot;Deutsch&quot;,&quot;de&quot;,
+&quot;German&quot;,&quot;de&quot;,
+&quot;Español&quot;,&quot;es&quot;,
+&quot;Spanish&quot;,&quot;es&quot;,
+&quot;Français&quot;, &quot;fr&quot;,
+&quot;French&quot;, &quot;fr&quot;,
+&quot;Português (Brasil)&quot;,&quot;pt_BR&quot;,
+&quot;Portuguese (Brazil)&quot;,&quot;pt_BR&quot;,
+&quot;Nederlands&quot;,&quot;nl_NL&quot;,
+&quot;Dutch&quot;,&quot;nl_NL&quot;,
+&quot;Español (México)&quot;,&quot;es_MX&quot;,
+&quot;Spanish (Mexico)&quot;,&quot;es_MX&quot;,
+&quot;Chinese (Simplified)&quot;, &quot;zh_CN&quot;,
+&quot;Chinese (Traditional)&quot;, &quot;zh_TW&quot;,
+&quot;Korean&quot;, &quot;ko&quot;,
+&quot;Japanese&quot;, &quot;ja&quot;,
+&quot;Danish&quot;, &quot;da&quot;,
+&quot;Russian&quot;, &quot;ru&quot;,
+&quot;Italian&quot;, &quot;it&quot;,
+&quot;Finnish&quot;, &quot;fi&quot;,
+&quot;en_US&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Language Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

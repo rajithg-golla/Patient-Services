@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caregiver_Primary_on_Conversion_MVN__c</fullName>
+    <description>Indicates whether the &apos;Caregiver as Primary Contact&apos; checkbox was selected when the consumer was converted to an account.</description>
+    <externalId>false</externalId>
+    <label>Caregiver Primary on Conversion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No_MVN</valueSetName>
+    </valueSet>
+</CustomField>

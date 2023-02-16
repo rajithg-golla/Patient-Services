@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Defines a custom contact Role Map (e.g. Decision Maker~Signer1; Economic Buyer~Carbon Copy). Maps to &quot;CCRM&quot;. --></help>
+    <label><!-- Custom Contact Role Map --></label>
+    <name>PJN_Custom_Contact_Role_Map__c</name>
+</CustomFieldTranslation>

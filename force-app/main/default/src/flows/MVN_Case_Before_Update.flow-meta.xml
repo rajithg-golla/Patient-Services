@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Coordinato</name>
+        <label>Coordinator</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Set_or_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MVN_Coordinator__c</leftValueReference>
+                <operator>WasSet</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.MVN_Coordinator__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Coordinator_Amazon_Connect_UN</targetReference>
+            </connector>
+            <label>Set or Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Record_Type</name>
+        <label>Record Type</label>
+        <locationX>336</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Care_Plan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CarePlan</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Coordinato</targetReference>
+            </connector>
+            <label>Care Plan</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>Coordinator_Amazon_Connect_Username</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!$Record.MVN_Coordinator__r.Id}),
+&quot;&quot;,
+TRIM(LEFT({!$Record.MVN_Coordinator__r.Id}, LEN({!$Record.MVN_Coordinator__r.Id})-3))
+&amp; &quot;@&quot; &amp; {!$Organization.Id})</expression>
+    </formulas>
+    <interviewLabel>Case - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - MVN Before Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Coordinator_Amazon_Connect_UN</name>
+        <label>Update Coordinator Amazon Connect UN</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>MVN_Coordinator_Amazon_Connect_Username__c</field>
+            <value>
+                <elementReference>Coordinator_Amazon_Connect_Username</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Record_Type</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Need_Lookup_Field_Defined</fullName>
+    <active>true</active>
+    <description>Needs to define the parent field to search for the correct one when retrieved.</description>
+    <errorConditionFormula>AND(MVN_Is_Lookup_Field__c, OR(ISBLANK( MVN_Lookup_Field_Filter__c ), ISBLANK( MVN_Lookup_sObject__c )))</errorConditionFormula>
+    <errorDisplayField>MVN_Is_Lookup_Field__c</errorDisplayField>
+    <errorMessage>Needs to define the lookup field filter to active it.</errorMessage>
+</ValidationRule>

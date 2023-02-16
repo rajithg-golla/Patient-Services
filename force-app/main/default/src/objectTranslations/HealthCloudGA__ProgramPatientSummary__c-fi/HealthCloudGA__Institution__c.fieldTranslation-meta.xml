@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Osoittaa, onko potilas laitoksessa.</help>
+    <label><!-- Institution --></label>
+    <name>HealthCloudGA__Institution__c</name>
+</CustomFieldTranslation>

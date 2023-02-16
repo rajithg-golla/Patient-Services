@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Date_MVN__c</fullName>
+    <defaultValue>IF($RecordType.DeveloperName = &quot;MVN_Evkeeza&quot;,  TODAY() ,NULL)</defaultValue>
+    <description>The scheduled date of the appointment</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Appointment Date</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>調剤数量単位あたりに供給する薬剤の量</help>
+    <label><!-- Dispense Quantity Unit --></label>
+    <name>HealthCloudGA__DispenseQuantityUnit__c</name>
+</CustomFieldTranslation>

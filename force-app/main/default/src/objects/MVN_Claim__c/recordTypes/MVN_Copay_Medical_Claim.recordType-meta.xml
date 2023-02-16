@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Copay_Medical_Claim</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>MVN_Claim_Compact_Layout</compactLayoutAssignment>
+    <label>Copay Medical Claim</label>
+    <picklistValues>
+        <picklist>MVN_Denial_Reason__c</picklist>
+        <values>
+            <fullName>Expenses for supplies%2C procedures%2C or physician-related services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expenses incurred after annual benefit limit met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expenses incurred after program term of eligibility end</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expenses incurred more than 120 days prior to program approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-product-specific copays%2C co-insurance%2C or deductibles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Missing_Information__c</picklist>
+        <values>
+            <fullName>CMS-1500 %2F CMS-1350 Claim Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Mailing Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Payable To</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date of Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Explanation of Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement Amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Outcome__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Review_Outcome__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

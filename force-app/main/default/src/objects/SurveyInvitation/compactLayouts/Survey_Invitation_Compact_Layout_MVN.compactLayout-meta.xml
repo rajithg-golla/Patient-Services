@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Invitation_Compact_Layout_MVN</fullName>
+    <fields>Name</fields>
+    <fields>SurveyId</fields>
+    <fields>ParticipantId</fields>
+    <fields>ResponseStatus</fields>
+    <fields>Response_Completion_Date_and_Time_MVN__c</fields>
+    <label>Survey Invitation Compact Layout</label>
+</CompactLayout>

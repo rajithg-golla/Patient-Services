@@ -1,0 +1,13 @@
+<apex:page >
+    <!--
+        This page simply returns a reference to the docusign create envelope page with a confirmation token
+         appended to ensure CSRF does not occur. URLFOR is not available directly in lighting so this posts a
+         message back to the lightning component that this page should be embedded in.
+    -->
+    <script>
+        parent.postMessage( // no idea why this is double wrapped but we need to go up two levels to the right parent
+            "{!URLFOR('/apex/dsfs__DocuSign_CreateEnvelope')}",
+            "{!$CurrentPage.parameters.host}"
+        );
+    </script>
+</apex:page>

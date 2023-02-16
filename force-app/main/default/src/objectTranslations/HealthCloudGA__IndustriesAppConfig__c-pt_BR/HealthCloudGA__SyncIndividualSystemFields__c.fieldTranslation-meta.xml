@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Sincronizar campos de Conta e Contato quando registros forem criados no modelo de objeto individual.</help>
+    <label><!-- Sync Individual System Fields --></label>
+    <name>HealthCloudGA__SyncIndividualSystemFields__c</name>
+</CustomFieldTranslation>

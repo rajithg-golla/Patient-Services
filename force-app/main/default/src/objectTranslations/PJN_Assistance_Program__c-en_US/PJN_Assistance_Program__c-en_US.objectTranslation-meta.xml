@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assistance Program</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assistance Programs</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Coverage Investigation Update Screen --></label>
+        <name>PJN_Coverage_Investigation_Update_Screen</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- An enrollment into the Clinical Trial Transition Program. --></description>
+        <label><!-- Clinical Trial Transition Program --></label>
+        <name>MVN_Clinical_Trial_Transition_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An enrollment into the Interim Access Program. --></description>
+        <label><!-- Interim Access Program --></label>
+        <name>MVN_Interim_Access_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An enrollment into the Bridge assistance program. --></description>
+        <label><!-- Bridge --></label>
+        <name>PJN_Bridge</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An enrollment into Copay savings program. --></description>
+        <label><!-- Copay Savings --></label>
+        <name>PJN_Copay</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An enrollment into the Patient Assistance Program. --></description>
+        <label><!-- Patient Assistance Program --></label>
+        <name>PJN_Patient_Assistance_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A Patient Assistance Program record with a read-only page layout. --></description>
+        <label><!-- Patient Assistance Program Locked --></label>
+        <name>PJN_Patient_Assistance_Program_Locked</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- An enrollment into the Quick Start assistance program. --></description>
+        <label><!-- Quick Start --></label>
+        <name>PJN_Quick_Start</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Expiration Date cannot be before the Effective Date. --></errorMessage>
+        <name>Effective_Date_before_Expiration_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must set the Effective Date and Expiration Date when setting the Outcome to Eligible. --></errorMessage>
+        <name>Effective_Expiration_Date_If_Eligible</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Eligibility Type must be selected to change outcome to eligible --></errorMessage>
+        <name>Must_Select_Eligibility_Type_if_Eligible</name>
+    </validationRules>
+</CustomObjectTranslation>

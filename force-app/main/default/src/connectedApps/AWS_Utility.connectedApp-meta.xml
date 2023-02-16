@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>vponna@mavens.com</contactEmail>
+    <label>AWS_Utility</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIEojCCA4qgAwIBAgIOAYMFvkz0AAAAADnMKSUwDQYJKoZIhvcNAQELBQAwgY0xJTAjBgNVBAMMHEFXU19TZWxmU2lnbmVkQ2VydF8wM1NlcDIwMjIxGDAWBgNVBAsMDzAwRDNoMDAwMDA2NlQzejEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMjIwOTAzMjM0NTAxWhcNMjMwOTAzMTIwMDAwWjCBjTElMCMGA1UEAwwcQVdTX1NlbGZTaWduZWRDZXJ0XzAzU2VwMjAyMjEYMBYGA1UECwwPMDBEM2gwMDAwMDY2VDN6MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALRUhD+GtuOIaBMv3qyNUAUGJaB5SEGLrGDXJVEJNfghuFg2xRwACtImk2KqEWJP/VzZKZaAyMH9q0Gdp+B0fpYELCrpoTvByPDcdvNU5nhOlmWKVZx3p7cqgkj4vJxTupXXPnWfk/yROqAJqYr9HtytCDpXHdscr05h0OREdAFavIAg5gHZWmxLCntJf3L7P7g4y/8vEuBS8CAqBfCaTxe+p+HnM9ABIpr3Taxu1zD5DKr9afZkfdqgDPmy9JUrTXoZ3tkWYYKv8C7mw9gnAOHH6LqAkMJO78/Nzj1lLg1gUZKHz7eDLyd7B4tB0YsrNJA+5Bt9IoNLdir+ZlWMprUCAwEAAaOB/TCB+jAdBgNVHQ4EFgQU0xg64DBQVy2CC6Ivmxa3A6L91lEwDwYDVR0TAQH/BAUwAwEB/zCBxwYDVR0jBIG/MIG8gBTTGDrgMFBXLYILoi+bFrcDov3WUaGBk6SBkDCBjTElMCMGA1UEAwwcQVdTX1NlbGZTaWduZWRDZXJ0XzAzU2VwMjAyMjEYMBYGA1UECwwPMDBEM2gwMDAwMDY2VDN6MRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQYIOAYMFvkz0AAAAADnMKSUwDQYJKoZIhvcNAQELBQADggEBAIl26onGLwf/owEquYZ67SojeBuJVIyWU6kBEpezbi1/J8qrnDE2DEIj+hyYIXVEm3T7Kb7RCGbWqoA2hl6soQf1SuQYoFapShNxligAqqDexADffrHolSrWKIfDGxqazIqe21jOaGAKu6yi1+4fss+cjABtNG/eanEp/kVE+wd90kex+dabXZM/TrrGRp89/+lS7pHVcbK4FCVzhXncV/ne3C2gau0fXC7RYgg3aVnhRljscbjsZ7Z38ufJH57NyBXDC2/Cx1iNqD7LPfFtdMMjFdY4LIdj3X0JQSWB6yd5rtW9C6m3ednj7pBDe8xrGqXi2l7MWSX0aJUjAbcXdZI=</certificate>
+        <consumerKey>3MVG9Kip4IKAZQEXH3QRISZ4gTPQjma5E6ux_o3oWHEBA_HFonYy6ro2sTGDpptsxqI.hEze4w6r6ejtXEVnS</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>AWS_Utility</permissionSetName>
+</ConnectedApp>

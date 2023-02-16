@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Signing_Group_Values</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(PJN_DocuSign_One_Click_Recipient__r.PJN_Type__c) == &apos;Signing Group&apos;
+&amp;&amp;
+( 
+  CASE(TEXT(PJN_Field__c), 
+    &apos;SigningGroup&apos;, &apos;false&apos;,
+    &apos;Role&apos;, &apos;false&apos;,
+    &apos;RoutingOrder&apos;, &apos;false&apos;,
+    &apos;AccessCode&apos;, &apos;false&apos;,
+    &apos;RecipientNote&apos;, &apos;false&apos;,
+    &apos;LoadDefaultContacts&apos;, &apos;false&apos;,
+    &apos;true&apos;
+  ) = &apos;true&apos;
+)</errorConditionFormula>
+    <errorDisplayField>PJN_Field__c</errorDisplayField>
+    <errorMessage>Selected Field is not valid for a Signing Group recipient Type</errorMessage>
+</ValidationRule>

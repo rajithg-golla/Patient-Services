@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>echosign_dev1__Status__c</name>
+    <picklistValues>
+        <masterLabel>ACCEPTED</masterLabel>
+        <translation><!-- ACCEPTED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APPROVED</masterLabel>
+        <translation><!-- APPROVED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARCHIVED</masterLabel>
+        <translation><!-- ARCHIVED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELIVERED</masterLabel>
+        <translation><!-- DELIVERED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPIRED</masterLabel>
+        <translation><!-- EXPIRED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FORM</masterLabel>
+        <translation><!-- FORM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FORM_FILLED</masterLabel>
+        <translation><!-- FORM_FILLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HIDDEN</masterLabel>
+        <translation><!-- HIDDEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IN_REVIEW</masterLabel>
+        <translation><!-- IN_REVIEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOT_YET_VISIBLE</masterLabel>
+        <translation><!-- NOT_YET_VISIBLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUT_FOR_ACCEPTANCE</masterLabel>
+        <translation><!-- OUT_FOR_ACCEPTANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUT_FOR_APPROVAL</masterLabel>
+        <translation><!-- OUT_FOR_APPROVAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUT_FOR_DELIVERY</masterLabel>
+        <translation><!-- OUT_FOR_DELIVERY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUT_FOR_FORM_FILLING</masterLabel>
+        <translation><!-- OUT_FOR_FORM_FILLING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUT_FOR_SIGNATURE</masterLabel>
+        <translation><!-- OUT_FOR_SIGNATURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARTIAL</masterLabel>
+        <translation><!-- PARTIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RECALLED</masterLabel>
+        <translation><!-- RECALLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGNED</masterLabel>
+        <translation><!-- SIGNED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNKNOWN</masterLabel>
+        <translation><!-- UNKNOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_AUTHORING</masterLabel>
+        <translation><!-- WAITING_FOR_AUTHORING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_FAXIN</masterLabel>
+        <translation><!-- WAITING_FOR_FAXIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_ACCEPTANCE</masterLabel>
+        <translation><!-- WAITING_FOR_MY_ACCEPTANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_ACKNOWLEDGEMENT</masterLabel>
+        <translation><!-- WAITING_FOR_MY_ACKNOWLEDGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_APPROVAL</masterLabel>
+        <translation><!-- WAITING_FOR_MY_APPROVAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_DELEGATION</masterLabel>
+        <translation><!-- WAITING_FOR_MY_DELEGATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_FORM_FILLING</masterLabel>
+        <translation><!-- WAITING_FOR_MY_FORM_FILLING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_REVIEW</masterLabel>
+        <translation><!-- WAITING_FOR_MY_REVIEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING_FOR_MY_SIGNATURE</masterLabel>
+        <translation><!-- WAITING_FOR_MY_SIGNATURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIDGET</masterLabel>
+        <translation><!-- WIDGET --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

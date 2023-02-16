@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_One_Click_Options__c</fullName>
+    <description>Defines whether to Send or Tag. Send will attempt to send immediate. Tag will navigate the use to the Tag screen. Default is Send. Maps to &quot;OCO&quot;.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Defines whether to Send or Tag. Send will attempt to send immediate. Tag will navigate the use to the Tag screen. Default is Send. Maps to &quot;OCO&quot;.</inlineHelpText>
+    <label>One Click Options</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Send</fullName>
+                <default>true</default>
+                <label>Send</label>
+            </value>
+            <value>
+                <fullName>Tag</fullName>
+                <default>false</default>
+                <label>Tag</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

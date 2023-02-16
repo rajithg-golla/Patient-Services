@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Hide progress buttons" >
+    <aura:attribute name="hide" type="Boolean" />
+</aura:event>

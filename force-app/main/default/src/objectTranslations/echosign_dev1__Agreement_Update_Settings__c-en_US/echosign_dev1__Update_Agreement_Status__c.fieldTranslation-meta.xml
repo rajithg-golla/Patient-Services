@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to update the status of an agreement. Disabling this setting will disable certain updates on the agreement record --></help>
+    <label><!-- Update Agreement Status --></label>
+    <name>echosign_dev1__Update_Agreement_Status__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Class, implementing the PJN_FinancialClearingHouseIntf which will be called to process eligibility transactions --></help>
+    <label><!-- Clearing House Class --></label>
+    <name>PJN_Clearing_House_Class__c</name>
+</CustomFieldTranslation>

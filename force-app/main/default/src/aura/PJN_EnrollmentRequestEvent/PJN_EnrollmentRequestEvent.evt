@@ -1,0 +1,7 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="programDeveloperName" type="String" />
+    <aura:attribute name="patientId" type="Id" />
+    <aura:attribute name="carePlanId" type="Id" />
+    <aura:attribute name="sourceCaseId" type="Id" />
+    <aura:attribute name="selectedFileId" type="Id" />
+</aura:event>

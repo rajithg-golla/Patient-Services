@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The territory any case tied to this ZTT is assigned to. --></help>
+    <label><!-- RBM Director Territory --></label>
+    <name>MVN_RBM_Director_Territory__c</name>
+</CustomFieldTranslation>

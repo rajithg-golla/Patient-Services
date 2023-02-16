@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Object__c</fullName>
+    <description>The object that the field is on.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Object</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Case</fullName>
+                <default>false</default>
+                <label>Case</label>
+            </value>
+            <value>
+                <fullName>Child_Account_vod__c</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Child_Account_vod__c</label>
+            </value>
+            <value>
+                <fullName>PJN_Affiliation__c</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PJN_Affiliation__c</label>
+            </value>
+            <value>
+                <fullName>PJN_Contact_Information__c</fullName>
+                <default>false</default>
+                <label>PJN_Contact_Information__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

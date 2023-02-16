@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Contact_Attempt_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>WhatId</fields>
+    <fields>PJN_Attempt_Date_Time__c</fields>
+    <fields>PJN_Outcome__c</fields>
+    <label>Contact Attempt Compact Layout</label>
+</CompactLayout>

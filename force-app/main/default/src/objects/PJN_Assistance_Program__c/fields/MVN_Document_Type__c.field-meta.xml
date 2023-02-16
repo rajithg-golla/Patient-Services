@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Document_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Federal Tax Returns</fullName>
+                <default>false</default>
+                <label>Federal Tax Returns</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pay Stubs</fullName>
+                <default>false</default>
+                <label>Pay Stubs</label>
+            </value>
+            <value>
+                <fullName>Real-Time Income Projector</fullName>
+                <default>false</default>
+                <label>Real-Time Income Projector</label>
+            </value>
+            <value>
+                <fullName>Social Security Benefits</fullName>
+                <default>false</default>
+                <label>Social Security Benefits</label>
+            </value>
+            <value>
+                <fullName>W-2 Forms</fullName>
+                <default>false</default>
+                <label>W-2 Forms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Start_Date__c</fullName>
+    <description>E2B (R2):  B.1.7.1b, patientmedicalstartdateformat (3N) --&gt; Value should be 102 AND B.1.7.1c, patientmedicalstartdate (8N) --&gt; convert to CCYYMMDD
+E2B (R2):  B.1.10.7.1b, parentmedicalstartdateformat (3N) --&gt; Value should be 102 AND B.1.10.7.1c, parentmedicalstartdate (8N) --&gt; convert to CCYYMMDD
+
+E2B (R3): D.7.1.r.2 Start Date
+E2B (R3): D.10.7.1.r.2 Start Date
+Conformance: Optional
+Data Type: Date / Time
+OID: None
+Value Allowed:
+See Appendix II for further information
+nullFlavor: MSK, ASKU, NASK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>If precise dates are unknown and a text description aids in understanding the medical history, or if concise additional information is helpful in showing the relevance of the past medical history, this information can be included in the comments.</inlineHelpText>
+    <label>Start Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

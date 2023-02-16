@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Enrollment Type --></label>
+    <name>HealthCloudGA__EnrollmentType__c</name>
+    <picklistValues>
+        <masterLabel>Dual</masterLabel>
+        <translation>Dubbel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESRD</masterLabel>
+        <translation>ESRD</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FBDual</masterLabel>
+        <translation>FBDubbel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NonDual</masterLabel>
+        <translation>Niet dubbel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PBDual</masterLabel>
+        <translation>PBDubbel</translation>
+    </picklistValues>
+</CustomFieldTranslation>

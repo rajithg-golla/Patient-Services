@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates that this field should be shown in the main row of the search results. --></help>
+    <label><!-- Show in Primary Results --></label>
+    <name>PJN_Show_in_Primary_Results__c</name>
+</CustomFieldTranslation>

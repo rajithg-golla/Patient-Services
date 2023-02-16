@@ -1,0 +1,60 @@
+<template>
+    <lightning-card>
+        <template if:false={showMetrics}>
+            <lightning-button
+                label={newButtonLabel}
+                slot="actions"
+                onclick={handleNewButtonClick}>
+            </lightning-button>
+        </template>
+
+        <h2 slot="title" class="slds-card__header-title">
+            <span class="slds-card__header-link slds-truncate">
+                <lightning-icon icon-name="standard:case" size="small" class="slds-m-right_small"></lightning-icon>
+                {objectLabel}
+            </span>
+        </h2>
+        <div class="slds-text-align_center">
+            <lightning-button-group>
+                <template for:each={recordTypes} for:item="recordType">
+                    <lightning-button
+                        label={recordType.name}
+                        variant={recordType.variant}
+                        key={recordType.recordTypeId}
+                        onclick={handleRecordTypeClick}>
+                    </lightning-button>
+                </template>
+            </lightning-button-group>
+        </div>
+
+        <template if:true={showMetrics}>
+            <c-pjn-metrics
+                care-plan-id={recordId}
+                patient-id={patientId}
+                show-all-for-current-patient={listShowAllForCurrentPatient}>
+            </c-pjn-metrics>
+        </template>
+        <template if:false={showMetrics}>
+            <c-pjn-medical-history-list
+                care-plan-id={recordId}
+                record-type-id={selectedRecordTypeId}
+                rows-per-page={listRecordsPerPage}
+                initial-sort-field={listInitialSortField}
+                initial-sort-direction={listInitialSortDirectiton}
+                show-all-for-current-patient={listShowAllForCurrentPatient}
+                med-hist-object-info={medHistObjectInfo}>
+            </c-pjn-medical-history-list>
+        </template>
+
+        <template if:true={creatingRecord}>
+            <c-pjn-new-medical-history-record
+                show-modal={showModal}
+                heading={newButtonLabel}
+                patient-id={patientId}
+                care-plan-id={recordId}
+                record-type-id={selectedRecordTypeId}
+                onclosemodal={handleModalClose}>
+            </c-pjn-new-medical-history-record>
+        </template>
+    </lightning-card>
+</template>

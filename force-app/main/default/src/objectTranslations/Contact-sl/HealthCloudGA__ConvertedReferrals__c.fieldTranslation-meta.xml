@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Skupno število napotnic, ki jih ta napotni zdravnik poslal v zadnjih 6 mesecih in imajo stanje &quot;Zaključeno in pretvorjeno&quot;.</help>
+    <label><!-- Converted Referrals --></label>
+    <name>HealthCloudGA__ConvertedReferrals__c</name>
+</CustomFieldTranslation>

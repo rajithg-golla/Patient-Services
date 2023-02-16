@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-form-element slds-card slds-p-around_xx-small">
+        <label class="slds-form-element__label">
+            <span class="">Program</span>
+        </label>
+        <div class="slds-form-element__control">
+            <div class="slds-select_container">
+                <select class="slds-select"
+                        onchange={handleProgramSelection}>
+                    <option value="">-- Select --</option>
+                    <template for:each={programs} for:item="program">
+                        <option key={program.Id} class="uiInputSelectOption" value={program.Id}>{program.MasterLabel}</option>
+                    </template>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <template if:true={selectedProgram}>
+        <c-pjn-program-visualizer
+            program-id={selectedProgram}
+        ></c-pjn-program-visualizer>
+    </template>
+</template>

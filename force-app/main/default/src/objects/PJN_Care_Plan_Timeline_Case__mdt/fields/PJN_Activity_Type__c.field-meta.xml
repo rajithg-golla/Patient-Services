@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Activity_Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Activity Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>closed</fullName>
+                <default>true</default>
+                <label>closed</label>
+            </value>
+            <value>
+                <fullName>open</fullName>
+                <default>false</default>
+                <label>open</label>
+            </value>
+            <value>
+                <fullName>planned</fullName>
+                <default>false</default>
+                <label>planned</label>
+            </value>
+            <value>
+                <fullName>cancelled</fullName>
+                <default>false</default>
+                <label>cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>코드가 더 이상 유효하지 않은 연도입니다.</help>
+    <label><!-- Valid Through --></label>
+    <name>HealthCloudGA__ValidThrough__c</name>
+</CustomFieldTranslation>

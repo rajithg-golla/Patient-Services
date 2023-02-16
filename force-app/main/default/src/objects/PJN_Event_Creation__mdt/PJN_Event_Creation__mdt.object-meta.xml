@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Fulfillment Request Creation
+Purpose: Defines the fields that will be pre-populated when a fulfillment request is created.
+Metadata Relationship(s): Program
+Created by Mavens: Yes</description>
+    <label>Event Creation</label>
+    <pluralLabel>Events Creation</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

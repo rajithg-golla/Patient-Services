@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this setting to display and enable the ‘Sender Signs Only’/‘Only I sign&apos; option in the Recipients section of the send agreement page.  When the ‘Sender Signs Only’ option is used, the agreement or document is presented to only to the sender to sign --></help>
+    <label><!-- Enable Sender Signs Only --></label>
+    <name>echosign_dev1__Enable_Sender_Signs_Only__c</name>
+</CustomFieldTranslation>

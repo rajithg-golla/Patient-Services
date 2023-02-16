@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Details__c</fullName>
+    <description>Summarized details of the Event, formatted dependent on record type.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+RecordType.DeveloperName == &quot;PJN_Therapy_Status_Update&quot;,
+IF(ISBLANK(TEXT(PJN_New_Therapy_Status__c)) &amp;&amp; ISBLANK(TEXT(PJN_New_Therapy_Sub_Status__c)), &quot;[none]&quot;, PJN_New_Therapy_Status_Formula__c),
+IF(
+RecordType.DeveloperName == &quot;PJN_Physician_Change&quot;,
+IF(ISBLANK(PJN_Previous_Physician__c), &quot;[none]&quot;, PJN_Previous_Physician_Formula__c) &amp; &quot; --&gt; &quot; &amp; IF(ISBLANK(PJN_New_Physician__c), &quot;[none]&quot;, PJN_New_Physician_Formula__c),
+NULL
+)
+)</formula>
+    <label>Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

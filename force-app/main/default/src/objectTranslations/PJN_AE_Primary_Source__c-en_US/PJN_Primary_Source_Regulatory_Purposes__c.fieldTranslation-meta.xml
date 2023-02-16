@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element identifies which primary source to use for regulatory
+purposes and in case of multiple sources.  Conformance Required for one and only one instance of this element. --></help>
+    <label><!-- Primary Source for Regulatory Purposes --></label>
+    <name>PJN_Primary_Source_Regulatory_Purposes__c</name>
+</CustomFieldTranslation>

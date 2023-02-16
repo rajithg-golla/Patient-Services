@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This item should be used if exact dates of drug administration are unavailable at the time of the report, but there is information concerning the duration of drug administration.  The information requested is the overall duration of drug administration. --></help>
+    <label><!-- Duration of Drug Administration (Unit) --></label>
+    <name>PJN_Duration_of_Drug_Administration_Unit__c</name>
+</CustomFieldTranslation>

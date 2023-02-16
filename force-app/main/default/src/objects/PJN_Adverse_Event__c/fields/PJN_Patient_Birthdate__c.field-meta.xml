@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Patient_Birthdate__c</fullName>
+    <description>E2B (R2): B.1.2.1a, patientbirthdateformat (3N) --&gt; Value should be 102 AND B.1.2.1b, patientbirthdate (8N) --&gt; convert to CCYYMMDD
+
+E2B (R3): D.2.1 Date of Birth
+Conformance: Optional
+Data Type: Date / Time
+OID: None
+Value Allowed:
+See Appendix II for further information. nullFlavor: MSK</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>A full precision date should be used (i.e., day, month, year). If the full date of birth is
+unknown, an approximate age can be used</inlineHelpText>
+    <label>Patient Birthdate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

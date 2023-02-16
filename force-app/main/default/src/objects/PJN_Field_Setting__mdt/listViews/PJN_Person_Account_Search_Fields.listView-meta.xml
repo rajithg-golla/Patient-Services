@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Person_Account_Search_Fields</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>PJN_Object__c</columns>
+    <columns>PJN_Field__c</columns>
+    <columns>PJN_Account_Record_Type__c</columns>
+    <columns>PJN_Contact_Info_Record_Type__c</columns>
+    <columns>PJN_Search_Field_Order__c</columns>
+    <columns>PJN_Search_Results_Order__c</columns>
+    <columns>PJN_Show_in_Primary_Results__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PJN_Is_Person_Record_Type__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>1. Person Account Search Fields</label>
+    <language>en_US</language>
+</ListView>

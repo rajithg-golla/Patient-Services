@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Missing_Information_Care_Plan__c</fullName>
+    <externalId>false</externalId>
+    <label>Missing Information (Care Plan)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Authorization to Disclose/Use Health Information</fullName>
+                <default>false</default>
+                <label>Authorization to Disclose/Use Health Information</label>
+            </value>
+            <value>
+                <fullName>Complete Prescription</fullName>
+                <default>false</default>
+                <label>Complete Prescription</label>
+            </value>
+            <value>
+                <fullName>Diagnosis Code</fullName>
+                <default>false</default>
+                <label>Diagnosis Code</label>
+            </value>
+            <value>
+                <fullName>Patient Address</fullName>
+                <default>false</default>
+                <label>Patient Address</label>
+            </value>
+            <value>
+                <fullName>Patient BIN</fullName>
+                <default>false</default>
+                <label>Patient BIN</label>
+            </value>
+            <value>
+                <fullName>Patient Certifications</fullName>
+                <default>false</default>
+                <label>Patient Certifications</label>
+            </value>
+            <value>
+                <fullName>Patient Date of Birth</fullName>
+                <default>false</default>
+                <label>Patient Date of Birth</label>
+            </value>
+            <value>
+                <fullName>Patient Gender</fullName>
+                <default>false</default>
+                <label>Patient Gender</label>
+            </value>
+            <value>
+                <fullName>Patient Group Number</fullName>
+                <default>false</default>
+                <label>Patient Group Number</label>
+            </value>
+            <value>
+                <fullName>Patient Household Size</fullName>
+                <default>false</default>
+                <label>Patient Household Size</label>
+            </value>
+            <value>
+                <fullName>Patient Income</fullName>
+                <default>false</default>
+                <label>Patient Income</label>
+            </value>
+            <value>
+                <fullName>Patient Member ID</fullName>
+                <default>false</default>
+                <label>Patient Member ID</label>
+            </value>
+            <value>
+                <fullName>Patient Name</fullName>
+                <default>false</default>
+                <label>Patient Name</label>
+            </value>
+            <value>
+                <fullName>Patient Phone</fullName>
+                <default>false</default>
+                <label>Patient Phone</label>
+            </value>
+            <value>
+                <fullName>Patient Weight</fullName>
+                <default>false</default>
+                <label>Patient Weight</label>
+            </value>
+            <value>
+                <fullName>Physician Address</fullName>
+                <default>false</default>
+                <label>Physician Address</label>
+            </value>
+            <value>
+                <fullName>Physician Fax</fullName>
+                <default>false</default>
+                <label>Physician Fax</label>
+            </value>
+            <value>
+                <fullName>Physician Name</fullName>
+                <default>false</default>
+                <label>Physician Name</label>
+            </value>
+            <value>
+                <fullName>Physician NPI</fullName>
+                <default>false</default>
+                <label>Physician NPI</label>
+            </value>
+            <value>
+                <fullName>Physician Phone</fullName>
+                <default>false</default>
+                <label>Physician Phone</label>
+            </value>
+            <value>
+                <fullName>Physician Signature</fullName>
+                <default>false</default>
+                <label>Physician Signature</label>
+            </value>
+            <value>
+                <fullName>Physician Signature Date</fullName>
+                <default>false</default>
+                <label>Physician Signature Date</label>
+            </value>
+            <value>
+                <fullName>Start Form</fullName>
+                <default>false</default>
+                <label>Start Form</label>
+            </value>
+            <value>
+                <fullName>Trial Site Name</fullName>
+                <default>false</default>
+                <label>Trial Site Name</label>
+            </value>
+            <value>
+                <fullName>Trial Site Study ID</fullName>
+                <default>false</default>
+                <label>Trial Site Study ID</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

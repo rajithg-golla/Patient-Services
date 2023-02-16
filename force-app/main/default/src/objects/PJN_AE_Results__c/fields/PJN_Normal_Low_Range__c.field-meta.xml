@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Normal_Low_Range__c</fullName>
+    <description>E2B (R2): B.3.1.1, lowtestrange (50AN)
+
+E2B (R3): F.r.4 Normal Low Value
+User Guidance: This data element captures the ‘lowest’ value in the normal range for the
+test. This value is usually published by the laboratory providing the test
+results. The same units as used in F.r.3.3 are implied.
+Conformance: Optional
+Data Type: 50AN
+OID: None
+Value Allowed: Free text</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures the ‘lowest’ value in the normal range for the
+test. This value is usually published by the laboratory providing the test
+results. The same units as the test results are implied.</inlineHelpText>
+    <label>Normal Low Range</label>
+    <length>50</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

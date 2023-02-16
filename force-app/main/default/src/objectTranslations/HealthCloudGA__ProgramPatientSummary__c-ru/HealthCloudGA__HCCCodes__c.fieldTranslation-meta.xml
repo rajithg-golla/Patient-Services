@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Окончательные коды HCC, применимые к пациенту после применения логики замещения</help>
+    <label><!-- HCC Codes --></label>
+    <name>HealthCloudGA__HCCCodes__c</name>
+</CustomFieldTranslation>

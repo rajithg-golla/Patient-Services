@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is this connection setting active for Event to CRM? If it&apos;s not active it will not run. --></help>
+    <label><!-- Active for Event to CRM --></label>
+    <name>PJN_Event_to_CRM_Active__c</name>
+</CustomFieldTranslation>

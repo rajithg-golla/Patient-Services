@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specifies if the record type is a person account record type. --></help>
+    <label><!-- Is Person Record Type? --></label>
+    <name>PJN_Is_Person_Record_Type__c</name>
+</CustomFieldTranslation>

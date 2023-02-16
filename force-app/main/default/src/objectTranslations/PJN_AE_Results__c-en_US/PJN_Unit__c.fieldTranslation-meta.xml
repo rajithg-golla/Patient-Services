@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the unit for the test value. When a UCUM code
+is not suitable, or results and units cannot be split,
+Results (free text) should be used. --></help>
+    <label><!-- Unit --></label>
+    <name>PJN_Unit__c</name>
+</CustomFieldTranslation>

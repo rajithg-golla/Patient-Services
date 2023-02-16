@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Secondary_PA_Requires_LMN__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Secondary PA Requires LMN --&gt; SECONDARY_PA_REQUIRES_LMN,</description>
+    <externalId>false</externalId>
+    <label>Secondary PA Requires LMN</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

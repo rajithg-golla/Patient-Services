@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Program__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The program this ZTT is related to. Created July 11, 2019</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The program this ZTT is related to</inlineHelpText>
+    <label>Program</label>
+    <referenceTo>CareProgram</referenceTo>
+    <relationshipLabel>Zip To Team</relationshipLabel>
+    <relationshipName>PJN_Zip_To_Teams</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

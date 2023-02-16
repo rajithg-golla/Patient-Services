@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Care_Plan_Coordinator_Required</fullName>
+    <active>true</active>
+    <description>Requires the user to select a Coordinator on the patient&apos;s Care Plan so that the Coordinator can be set as the owner of the next activity in the program.</description>
+    <errorConditionFormula>ISBLANK(Parent.MVN_Coordinator__c) &amp;&amp;
+PJN_Program_Case_DeveloperName__c = &quot;MVN_EVK_Verify_Coverage_Case&quot; &amp;&amp;
+ISPICKVAL(Status, &quot;Closed&quot;)</errorConditionFormula>
+    <errorMessage>A Coordinator must be selected for the patient&apos;s Care Plan to close this activity.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__QuarantineLocation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Name of the location where the person is to quarantine.</description>
+    <externalId>false</externalId>
+    <label>Quarantine Location</label>
+    <referenceTo>Location</referenceTo>
+    <relationshipLabel>Housing Assessments</relationshipLabel>
+    <relationshipName>HousingAssessments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

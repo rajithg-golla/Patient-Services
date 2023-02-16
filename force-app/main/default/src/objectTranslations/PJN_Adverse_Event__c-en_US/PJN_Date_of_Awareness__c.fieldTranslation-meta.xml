@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: For organisations transmitting an initial case, this data element should be
+the date when the information was received from the primary source and
+fulfilling the 4 minimum criteria. --></help>
+    <label><!-- Date of Awareness --></label>
+    <name>PJN_Date_of_Awareness__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hvis din betegnelse har et navneområdepræfiks, skal du bruge Label_Namespace.Label_Name. Ellers skal du bruge c.Label_Name.</help>
+    <label><!-- Tab Label --></label>
+    <name>HealthCloudGA__TabLabel__c</name>
+</CustomFieldTranslation>

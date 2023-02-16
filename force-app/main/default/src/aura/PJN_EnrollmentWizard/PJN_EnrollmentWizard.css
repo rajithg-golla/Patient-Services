@@ -1,0 +1,21 @@
+.THIS .max-width {
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .THIS iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .THIS .full-height {
+    height: 100%;
+  }
+
+  .THIS .progress-indicator-tooltip {
+    position: 'overflowBoundaryElement'
+  }
+
+.THIS .slds-modal__container {
+    width: 100%;
+}

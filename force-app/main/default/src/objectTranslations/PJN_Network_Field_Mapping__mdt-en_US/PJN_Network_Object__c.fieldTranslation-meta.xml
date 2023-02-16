@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SObject which this field mapping is related to --></help>
+    <label><!-- Network Object --></label>
+    <name>PJN_Network_Object__c</name>
+    <relationshipLabel><!-- Network Field Mappings --></relationshipLabel>
+</CustomFieldTranslation>

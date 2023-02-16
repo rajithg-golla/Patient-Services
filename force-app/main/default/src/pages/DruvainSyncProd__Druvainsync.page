@@ -1,0 +1,262 @@
+<apex:page standardStylesheets="false" title="inSync" sidebar="false" applyBodyTag="false" docType="html-5.0" cache="false"  tabStyle="Druvainsync__tab" lightningStyleSheets="true">    
+    <head>
+    <apex:slds />
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Cache-Control" content="max-age=0"/>
+    <!--<apex:stylesheet value="{!URLFOR($Resource.SLDS_Druva, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />-->
+    <apex:includeScript value="{!URLFOR($Resource.DruvainSyncProd__JQuery, 'jquery.min.js')}"/>  
+    <apex:includeScript value="{!URLFOR($Resource.DruvainSyncProd__ChartJS,'/Chart.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.DruvainSyncProd__JQuery_UI,'jquery-ui-1.12.1/jquery-ui.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.DruvainSyncProd__JQuery_UI,'jquery-ui-1.12.1/jquery-ui.css')}"/>
+    
+    <style>
+        dt{
+        font-weight:normal;
+        }
+        dd{
+        font-weight:bold;
+        }  
+        .Druva .slds-scrollable::-webkit-scrollbar-thumb {
+        background: #a8b7c7;
+        border-radius: 0.5rem;
+        box-shadow: #e0e5ee 0 0 0 1px inset;
+        }
+        .Druva .slds-scrollable::-webkit-scrollbar-track {
+        background: #e0e5ee;
+        }
+        
+        .ui-tooltip {
+        background: white;
+        border: 0px solid white;
+        padding: 1px 3px;
+        color: #16325c;
+        border-radius: 2px;
+        font: normal 8px "Salesforce Sans", Arial, sans-serif;
+        
+        box-shadow: 0 0 0px black;
+        }
+        
+        .ui-tooltip-content{
+            font-size : 0.75rem;
+        }
+        .left-column{
+            width: 30%;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            margin-left: 0.25rem;
+        }
+        .right-column{
+            width: 70%;
+            font-weight: bold;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+        
+    </style>
+    
+    <script>
+    var j$ = jQuery.noConflict(); 
+    
+    </script>   
+    </head>
+    <div class="Druva slds-scope" style="height:625px; width:99%; min-width:1200px; min-height:450px;" id="mainVFPageDiv"> 
+        
+        <div id="errorDialog" class="slds-hide">
+            <div role="dialog" tabindex="-1" class="  slds-modal slds-fade-in-open">
+                <div class="slds-modal__container" style="min-width:450px; width:470px;">
+                    <div class="slds-modal__header slds-modal__header slds-modal__header--empty">
+                        <button class="slds-button slds-modal__close slds-button--icon-inverse" onclick="hideError();" title="Close">
+                            <img src="{!URLFOR($Resource.SLDS_Druva,'assets/icons/action/close_60.png')}" />
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div>
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <div>
+                            <p class="slds-align--absolute-center">
+                                <img src="{!URLFOR($Resource.SLDS_Druva,'assets/icons/utility/warning_60.png')}" style=" width: 1rem; height: 1rem; margin-right: 10px;" class="slds-m-horizontal--small" />
+                                Something went wrong, please try again later
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+        </div>
+        
+        <div class="slds-spinner_container " style="z-index:9000; height:625px;">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--medium" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+        
+        <script>
+        
+        function showError(value){
+            if(value=='true'){
+                j$('#errorDialog').addClass('slds-show');
+                j$('#errorDialog').removeClass('slds-hide');  
+            }      
+        }
+        
+        function hideError(){
+            j$('#errorDialog').addClass('slds-hide');
+            j$('#errorDialog').removeClass('slds-show');  
+        }
+        </script>
+        
+        <div class="slds-size--1-of-1 slds-large-size--5-of-6 slds-large-order--1 mainVFPageNavBar" >
+            <img src="{!$Resource.Druva_Logo_New}" style="width:100px;" />
+        </div>
+        
+        <div class="slds-tabs--default slds-size--1-of-1" style="width: 100%; height:90%;">
+            
+            <ul class="slds-tabs--default__nav mainVFPageNavBar" role="tablist" >
+                <li class="slds-tabs--default__item slds-text-title--caps slds-active " id="Dashboard" title="Dashboard" role="presentation">
+                    <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Dashboard</a></li>
+                <li class="slds-tabs--default__item slds-text-title--caps" id="Restore" title="Restore" role="presentation">
+                    <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Restore</a></li>
+                <!--<li class="slds-tabs--default__item slds-text-title--caps" id="Download" title="Download" role="presentation">
+                    <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Download</a></li>-->
+                <li class="slds-tabs--default__item slds-text-title--caps" id="Activity Stream" title="Activity Stream" role="presentation">
+                    <a class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-4" id="tab-default-4__item">Activity Stream</a></li>
+                <li  class="slds-text-title--caps" id="Help" title="Help" role="presentation">
+                    <a target="_blank" style="border-bottom:0px solid white; float:right; position:absolute; right:0; margin-right:2rem;" class="slds-tabs--default__link" 
+                    href="http://docs.druva.com/?cid=en-US_cloudadmin_integrate_salesforce" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-4" id="tab-default-4__item">Help</a></li>
+            </ul>
+            
+            <div id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item" style="height:95%; padding-top: 10px;">
+                <c:DashBoard />
+            </div>
+            
+            <div id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item" style="height:95%; padding-top: 10px;">
+                <c:RestoreNew />
+            </div>
+            
+            <!--<div id="tab-default-3" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item" style="height:95%; padding-top: 10px;">
+                <c:Download1 />
+            </div>-->
+            
+            <div id="tab-default-4" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-4__item" style="height:95%; padding-top: 10px;">
+                <c:ActivityStream />
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script>
+ 
+function gotoActivityTab(){
+        
+        var dashboardTab = j$('#tab-default-1__item').parent();
+        dashboardTab.removeClass('slds-active');
+        dashboardTab.siblings().find('a').attr('aria-selected', false);
+        j$('#tab-default-1').addClass('slds-hide');
+        j$('#tab-default-1').removeClass('slds-show');        
+        
+        var activityTab = j$('#tab-default-4__item').parent();
+        activityTab.addClass('slds-active');
+        activityTab.siblings().find('a').attr('aria-selected', true);
+        j$('#tab-default-4').addClass('slds-show');
+        j$('#tab-default-4').removeClass('slds-hide');
+        j$('.Druva').css({"height":"700px"});
+        j$('.slds-spinner_container').css({"height":"700px"});
+        try{
+            activityrefresh();
+        }catch(err){
+        }
+        
+    }
+    
+    function showLoader(){       
+        j$('.slds-spinner_container').addClass('slds-show');
+        j$('.slds-spinner_container').removeClass('slds-hide');
+    }
+    
+    function hideLoader(){        
+        j$('.slds-spinner_container').addClass('slds-hide');
+        j$('.slds-spinner_container').removeClass('slds-show');
+    } 
+    
+    
+    j$('.slds-tabs--default__item').on('click', function(){  
+        
+        if(j$(this).attr('id')==='Help'){
+            
+        }else{
+            
+            j$(this).addClass('slds-active');
+            j$(this).find('a').attr('aria-selected', true);
+            var $contentToShow = j$('#'+j$(this).find('a').attr('aria-controls'));
+            $contentToShow.removeClass('slds-hide');
+            $contentToShow.addClass('slds-show');
+            
+            j$(this).siblings().removeClass('slds-active');
+            j$(this).siblings().find('a').attr('aria-selected', false);
+            $contentToShow.siblings('.slds-tabs--default__content').removeClass('slds-show');
+            $contentToShow.siblings('.slds-tabs--default__content').addClass('slds-hide');
+            
+            try{
+                var tabName = j$(this).attr('id');                    
+                showLoader();
+                j$('.Druva').css({"height":"700px"});
+                j$('.slds-spinner_container').css({"height":"700px"});
+                if(tabName=='Dashboard')
+                    dashboardrefresh();                     
+                if(tabName=='Restore')
+                    restorerefresh();
+                if(tabName=='Download')
+                    downloadrefresh();
+                if(tabName=='Activity Stream')
+                    activityrefresh();                 
+            }catch(err){
+                showError('true');
+            }
+            
+        }
+    });
+    
+    j$(document).ready(function($){
+        //alert(window.navigator.platform);
+        hideLoader(); 
+        j$('.slds-button--icon').tooltip({
+            position: {
+                my: "center bottom-1",
+                at: "center top",
+                collision : "flipfit",
+                track:true
+            }
+        });
+        
+        j$(window).resize(function(){  
+            
+            try{
+                generateChart(); 
+            }catch(e){
+                
+            }            
+        });
+        j$(".mainVFPageNavBar").on("click", function(){
+            var snapshotVal = j$("input[id$='snapshotDatePicker']").val();
+            if(snapshotVal.length < 12)
+                j$("input[id$='snapshotDatePicker']").val('');
+            j$("#snapshotdatepickerdiv").addClass('slds-hide');
+            var beforeVal = j$("input[id$='beforeDateInput']").val();
+            if(beforeVal.length < 12)
+            {
+                j$("input[id$='beforeDateInput']").val('');
+            }
+            j$("#beforeSnapshotDatePickerPopup").addClass('slds-hide');
+            var afterVal = j$("input[id$='afterDateInput']").val();
+            if(afterVal.length < 12)
+            {
+                j$("input[id$='afterDateInput']").val('');
+            }
+            j$("#afterSnapshotDatePickerPopup").addClass('slds-hide');
+        });
+    }); 
+    </script>
+</apex:page>

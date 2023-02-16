@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Cannot_Modify_with_Legal_Hold</fullName>
+    <active>true</active>
+    <description>Cannot modify the record while there is a legal hold</description>
+    <errorConditionFormula>!ISCHANGED(PJN_Legal_Hold__c) &amp;&amp; PJN_Legal_Hold__c</errorConditionFormula>
+    <errorMessage>This record is on legal hold and cannot be modified.</errorMessage>
+</ValidationRule>

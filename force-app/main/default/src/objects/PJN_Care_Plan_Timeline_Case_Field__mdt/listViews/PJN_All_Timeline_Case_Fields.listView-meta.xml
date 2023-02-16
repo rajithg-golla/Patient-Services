@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_All_Timeline_Case_Fields</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>PJN_Care_Plan_Timeline_Case__c</columns>
+    <columns>PJN_Field_Label__c</columns>
+    <columns>PJN_Field_API_Name__c</columns>
+    <columns>PJN_Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Timeline Case Fields</label>
+    <language>en_US</language>
+</ListView>

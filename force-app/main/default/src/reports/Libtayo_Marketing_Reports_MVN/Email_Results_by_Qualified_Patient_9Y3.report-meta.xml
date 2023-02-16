@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96969685</developerName>
+        <masterLabel>Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>QP BCC Getting Started Kit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC Share your success story</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP BCC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <value>Qualified Patient BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>QP CSCC Getting Started Kit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC Share your success story</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP CSCC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <value>Qualified Patient CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>QP NSCLC Getting Started Kit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC LIBTAYO experience survey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC Overcoming challenges</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC Preparing for your infusions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC Share your success story</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC Staying engaged with your healthcare team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QP NSCLC Understanding treatment goals and setting expectations</sourceValue>
+            </sourceValues>
+            <value>Qualified Patient NSCLC</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63850534</developerName>
+        <masterLabel>Unqualified Journey</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ BCC LIBTAYO for BCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ BCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified BCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ CSCC LIBTAYO for CSCC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ CSCC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified CSCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>UQ NSCLC LIBTAYO for NSCLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Meaningful stories</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UQ NSCLC Welcome Email Resend</sourceValue>
+            </sourceValues>
+            <value>Unqualified NSCLC</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_96969685</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CUST_NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Clicked__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__Opened__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__NumberOfUniqueClicks__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>et4ae5__IndividualEmailResult__c.et4ae5__HardBounce__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>QP</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96969685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Email Results by Qualified Patient</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$et4ae5__IndividualEmailResult__c@et4ae5__IndividualEmailResult__c.Account_MVN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>et4ae5__IndividualEmailResult__c.et4ae5__DateSent__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

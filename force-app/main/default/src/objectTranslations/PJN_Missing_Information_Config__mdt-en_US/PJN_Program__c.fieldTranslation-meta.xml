@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Care Plan program which applies this configuration. Eg: Evkeeza --></help>
+    <label><!-- Program --></label>
+    <name>PJN_Program__c</name>
+    <relationshipLabel><!-- Missing Information Configs --></relationshipLabel>
+</CustomFieldTranslation>

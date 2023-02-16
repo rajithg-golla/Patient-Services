@@ -1,0 +1,12 @@
+<apex:page controller="echosign_dev1.ManageAgreementsController" title="Manage Agreements" action="{!onInit}">
+	<apex:includeScript value="{!$Resource.echosign_dev1__walkmeimpt}"/>
+	
+	<apex:pagemessages id="theMessages"/>
+	<!-- iframe should be better secured in html5 using sandbox https://www.w3schools.com/tags/att_iframe_sandbox.asp
+	Based on the recording in DCSI-16354, it appears that at least one link (the audit trail) 
+	opens in a new window or tab, which presumably means the current page won’t unload, if we use sandbox.
+	So, removing sandbox attribute for now.-->
+	<!-- DCSI-14700: Added sandbox attribute to iframe for minimal restriction. -->
+
+    <iframe src="{!manageAgreementsUrl}" width="100%" height="1050px" frameborder="0" sandbox="allow-downloads allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"/>
+</apex:page>

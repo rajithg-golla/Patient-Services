@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Country__c</fullName>
+    <description>E2B (R2): A.2.1.3, reportercountry (2A)
+
+E2B (R3): C.2.r.3 Reporter’s Country Code
+User Guidance: This data element captures the two letter ISO 3166 Part 1 code (ISO
+3166-1 alpha-2) to represent the name of the reporter’s country. In
+exceptional cases where the country of the primary source is not available
+to the sender, the country where the reaction/event occurred (E.i.9) must
+be provided.
+Conformance: Optional, but required if C.2.r.5 = 1.
+Data Type: 2A
+OID: 1.0.3166.1.2.2
+Value Allowed: ISO 3166-1 (alpha 2), EU, nullFlavor: MSK, ASKU, NASK, UNK</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User Guidance: This data element captures the name of the reporter’s country. In
+exceptional cases where the country of the primary source is not available
+to the sender, the country where the reaction/event occurred (E.i.9) must
+be provided.</inlineHelpText>
+    <label>Country</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>HealthCloudGA__Countries</valueSetName>
+    </valueSet>
+</CustomField>

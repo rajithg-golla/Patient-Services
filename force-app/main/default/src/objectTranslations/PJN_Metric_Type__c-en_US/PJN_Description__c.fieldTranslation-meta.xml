@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Describes what this Metric Type means. Displayed on the Medical History Metric Type components --></help>
+    <label><!-- Description --></label>
+    <name>PJN_Description__c</name>
+</CustomFieldTranslation>

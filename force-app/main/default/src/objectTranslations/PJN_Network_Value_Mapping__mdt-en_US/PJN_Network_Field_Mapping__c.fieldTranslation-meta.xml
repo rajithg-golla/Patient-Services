@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Network Field mapping where this value mapping is applied. --></help>
+    <label><!-- Network Field Mapping --></label>
+    <name>PJN_Network_Field_Mapping__c</name>
+    <relationshipLabel><!-- Network Value Mappings --></relationshipLabel>
+</CustomFieldTranslation>

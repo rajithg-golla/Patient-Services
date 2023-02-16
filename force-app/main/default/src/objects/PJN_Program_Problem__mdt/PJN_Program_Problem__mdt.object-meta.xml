@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Program Builder
+Purpose: Define the attributes of the problems/stages that comprise a Program. Program Problems are distinct stages in the patient’s journey that are (typically) completed before moving on to the next stage.
+Metadata Relationship(s): Program; Program Case
+Created by Mavens: Yes</description>
+    <label>Program Problem</label>
+    <pluralLabel>Program Problems</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

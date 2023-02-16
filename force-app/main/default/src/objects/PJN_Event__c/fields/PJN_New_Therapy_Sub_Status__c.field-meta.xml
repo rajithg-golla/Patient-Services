@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_New_Therapy_Sub_Status__c</fullName>
+    <description>Updated Therapy Sub-Status of the patient, as reported by a user.</description>
+    <externalId>false</externalId>
+    <label>New Therapy Sub-Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PJN_New_Therapy_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>PJN_Sub_Status</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Treatment Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Patient Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Prescriber Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Transfer to SP IAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Transfer to SP PAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prior Authorization Support Start</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prior Authorization Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prior Authorization Denied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Support (1st Level)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Support (2nd Level)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Support (3rd Level)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Support (Peer-to-Peer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Appeal Denied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>PA/Appeal Support Max Attempts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Claims Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Copay Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Adverse Event Reported (Call Transfer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Adverse Event Reported (Form Submission)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>New Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Missing Information, Patient Outreach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Missing Information, HCP Outreach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Missing Information, RBM Outreach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prescriber Welcome Call Attempted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prescriber Welcome Call Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Patient Welcome Call Attempted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Patient Welcome Call Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Copay Card Enrolled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Copay Card Not Eligible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Transfer to SP CTTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Benefits Investigation Start</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Benefits Investigation Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Access Plan Pending Confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Access Plan Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Hospital Pharmacy Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Transfer to HCP B&amp;B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Transfer to SP Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>SD Order Confirmed (Verbal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>SD Order Confirmed (Data)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>SP Shipment Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Site of Care Delayed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Site of Care Changed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Site of Care Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Site of Care Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Benefit Investigation COB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prior Authorization Support Queued</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Prior Authorization Support Unnecessary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Pending Onboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Medical Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Step Therapy Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Patient Travel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Genetic Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Prescriber Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>On Hold Hospital formulary/EMR build</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Missing Information, Max Attempts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Indication Criteria Not Met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Requirement Not Met - Patient Residency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Requirement Not Met - Prescriber License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Unable to Reach Patient on Required Contact, Max Attempts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Unable to Reach Prescriber on Required Contact, Max Attempts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Decision - Alternate Therapy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Decision - Financial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Decision - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Prescriber Decision - Alternate Therapy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Prescriber Decision - Financial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Prescriber Decision - Coverage Effort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Prescriber Decision - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Medical Delay, Max Delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>No Route of Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Deceased</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Clinical Trial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>No coverage: Appeals exhausted and PAP ineligible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <valueName>Patient does not want infusion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled</controllingFieldValue>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Administration Barrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Decision - MyRare Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Patient Off Therapy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Discontinued</controllingFieldValue>
+            <valueName>Reported Reaction</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The seriousness criteria of the reaction/event should be based on the definitions provided in the ICH E2A and E2D guidelines. More than one seriousness criteria can be chosen. If the event is not serious, all of these data elements should be left blank. --></help>
+    <label><!-- Caused/Prolonged Hospitalization --></label>
+    <name>PJN_Caused_Prolonged_Hospitalization__c</name>
+</CustomFieldTranslation>

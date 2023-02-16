@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Clinical_Trial_Transition_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Prescription for patients transitioning from a clinical trial.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Prescription for Clinical Trial Transition Manufacturer-Provided Product (no cost to patient).</inlineHelpText>
+    <label>Clinical Trial Transition Product</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

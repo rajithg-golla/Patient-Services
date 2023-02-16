@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>tuote | paketin selkokielinen nimi</help>
+    <label><!-- Dispense Medication Kind Label --></label>
+    <name>HealthCloudGA__DispenseMedicationKindLabel__c</name>
+</CustomFieldTranslation>

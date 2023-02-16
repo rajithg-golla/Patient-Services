@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Libtayo Marketing Diagnosis</label>
+    <protected>false</protected>
+    <values>
+        <field>Care_Plan_Field_Name_MVN__c</field>
+        <value xsi:type="xsd:string">Diagnosis_MVN__c</value>
+    </values>
+    <values>
+        <field>Care_Plan_Record_Type_DeveloperName_MVN__c</field>
+        <value xsi:type="xsd:string">Libtayo_Marketing_Care_Plan_MVN</value>
+    </values>
+    <values>
+        <field>Care_Plan_Record_Type_Namespace_Pref_MVN__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Is_Active_MVN__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Lead_Field_Name_MVN__c</field>
+        <value xsi:type="xsd:string">Diagnosis_MVN__c</value>
+    </values>
+    <values>
+        <field>Text_Value_MVN__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

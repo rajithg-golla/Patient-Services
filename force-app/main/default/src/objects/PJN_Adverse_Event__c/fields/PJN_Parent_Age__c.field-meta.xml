@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Parent_Age__c</fullName>
+    <description>E2B (R2): B.1.10.2.2a, parentage (2N) AND B.1.10.2.2b, parentageunit (3N) --&gt; Value should be 801 (year)
+
+E2B (R3): D.10.2.2a Age of Parent (number)
+Conformance: Optional, but required if D.10.2.2b is populated.
+Data Type: 3N
+OID: None
+Value Allowed: Numeric</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date of birth should be used if the precise birthday is known; otherwise the age
+should be used.</inlineHelpText>
+    <label>Parent Age (Years)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

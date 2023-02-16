@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This should be used to specify any additional information pertinent to the case that is
+not covered by above sections. This item can also be used to provide additional information concerning the indication for the drug. --></help>
+    <label><!-- Additional Information on Drug --></label>
+    <name>PJN_Additional_Information_on_Drug__c</name>
+</CustomFieldTranslation>

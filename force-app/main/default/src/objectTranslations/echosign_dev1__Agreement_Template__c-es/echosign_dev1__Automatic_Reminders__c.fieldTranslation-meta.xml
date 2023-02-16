@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Enviar recordatorios automáticos a los firmantes.</help>
+    <label><!-- Automatic Reminders --></label>
+    <name>echosign_dev1__Automatic_Reminders__c</name>
+    <picklistValues>
+        <masterLabel>Every Day, Until Signed</masterLabel>
+        <translation>Cada día, hasta que se firme</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Every Week, Until Signed</masterLabel>
+        <translation>Cada semana, hasta que se firme</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Never</masterLabel>
+        <translation>Nunca</translation>
+    </picklistValues>
+</CustomFieldTranslation>

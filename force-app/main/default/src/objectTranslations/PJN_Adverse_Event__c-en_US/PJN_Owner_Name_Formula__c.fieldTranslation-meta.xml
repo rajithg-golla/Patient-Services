@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Calculates the owner name to use for tracking ownership. --></help>
+    <label><!-- Owner Name Formula --></label>
+    <name>PJN_Owner_Name_Formula__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Defines whether to Send or Tag. Send will attempt to send immediate. Tag will navigate the use to the Tag screen. Default is Send. Maps to &quot;OCO&quot;. --></help>
+    <label><!-- One Click Options --></label>
+    <name>PJN_One_Click_Options__c</name>
+    <picklistValues>
+        <masterLabel>Send</masterLabel>
+        <translation><!-- Send --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tag</masterLabel>
+        <translation><!-- Tag --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

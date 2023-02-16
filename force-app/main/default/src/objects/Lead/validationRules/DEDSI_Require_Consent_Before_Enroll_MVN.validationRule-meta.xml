@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEDSI_Require_Consent_Before_Enroll_MVN</fullName>
+    <active>true</active>
+    <description>Requires the status move to Consented prior to Enrolled.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;DEDSI_Consumer_MVN&quot; &amp;&amp;
+ISCHANGED(Status) &amp;&amp;
+ISPICKVAL(Status, &quot;Enrolled&quot;) &amp;&amp;
+NOT(ISPICKVAL(PRIORVALUE(Status), &quot;Consented&quot;))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>The participant must be consented prior to enrolling.</errorMessage>
+</ValidationRule>

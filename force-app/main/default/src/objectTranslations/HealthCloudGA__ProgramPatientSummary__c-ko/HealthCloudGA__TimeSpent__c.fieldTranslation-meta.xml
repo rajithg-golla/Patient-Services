@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>활동 자격을 얻기 위해 측정 기간에 환자와 함께 소비한 총 시간입니다.</help>
+    <label><!-- Time Spent --></label>
+    <name>HealthCloudGA__TimeSpent__c</name>
+</CustomFieldTranslation>

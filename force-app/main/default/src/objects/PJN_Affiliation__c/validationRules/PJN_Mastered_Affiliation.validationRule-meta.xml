@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Mastered_Affiliation</fullName>
+    <active>true</active>
+    <description>Once the relationship is mastered the accounts can not be updated</description>
+    <errorConditionFormula>AND(
+ NOT( ISNEW() ),
+ OR(
+    ISCHANGED( PJN_Child_Account__c ),
+    ISCHANGED( PJN_Parent_Account__c )
+   )
+)</errorConditionFormula>
+    <errorMessage>This affiliation is mastered and cannot be changed. If this relationship no longer exist, please update the status to Inactve.</errorMessage>
+</ValidationRule>

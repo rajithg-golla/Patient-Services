@@ -1,0 +1,16 @@
+<aura:documentation>
+	<aura:description>
+        This component abstracts out the modal functionality of lightning:overlayLibrary with a
+        simple, two method, API; open and close. This allows any component to be treated as a modal
+        without modification or handling any modal-related events. Once placed within the containing
+        component, a modal may be opened by calling its open method with three parameters:
+        - Modal header / title
+        - The fully qualified name of the component to be hosted
+        - Any parameters to pass to the hosted component (including aura:id if desired)
+        Note: The hosted component must be completely self-contained as there is no communication
+        between the modal wrapper and the component being hosted.
+
+        The close method simply closes the modal via the overlay library’s notifyClose method. Given
+        this, the modal may also be closed by calling the library function directly within your code.
+    </aura:description>
+</aura:documentation>

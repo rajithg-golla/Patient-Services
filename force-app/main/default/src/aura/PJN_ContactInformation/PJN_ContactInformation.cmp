@@ -1,0 +1,76 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="PJN_ContactInformationCtrl">
+    <!-- ATTRIBUTES -->
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="iconName" type="String" default="custom:custom78"/>
+    <aura:attribute name="iconSize" type="String" default="small"/>
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="numberOfRecords" type="Integer"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="actions" type="List"/>
+    <aura:attribute name="isAccount" type="Boolean"/>
+    <aura:attribute name="isCarePlan" type="Boolean"/>
+    <aura:attribute name="showNew" type="Boolean"/>
+    <aura:attribute name="isLoading" type="Boolean"/>
+    <aura:attribute name="defaultFieldValues" type="Object"/>
+
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="carePlan" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="force:refreshView" action="{!c.onInit}" />
+    <aura:handler event="lightning:tabFocused" action="{!c.onInit}" />
+
+    <!-- HELPERS -->
+    <c:PJN_ToastErrorHandler aura:id="toastErrorHandler" />
+    <lightning:navigation aura:id="navService"/>
+    <aura:if isTrue="{!v.isCarePlan}">
+        <force:recordData
+            fields="Id,AccountId,PJN_Program_DeveloperName__c"
+            recordId="{!v.recordId}"
+            targetError="{!v.recordError}"
+            targetRecord="{!v.record}"
+            targetFields ="{!v.carePlan}"
+            mode="VIEW"/>
+    </aura:if>
+
+    <!-- BODY -->
+    <article class="slds-card slds-card_boundary">
+        <c:PJN_Loader isLoading="{!v.isLoading}" />
+        <div class="slds-card__header slds-page-header slds-grid" style="padding-bottom: 10px;">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="{!v.iconName}" size="{!v.iconSize}"/>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a onclick="{!c.onViewAll}" class="slds-card__header-link slds-truncate">
+                            <span>{!format($Label.c.PJN_Contact_Information_Widget_Title, v.numberOfRecords)}</span>
+                        </a>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning:button label="New" onclick="{!c.onNew}"/>
+                </div>
+            </header>
+        </div>
+        <aura:if isTrue="{!v.data.length}">
+            <div class="slds-card__body">
+                <lightning:datatable
+                    keyField="Id"
+                    data="{!v.data}"
+                    columns="{!v.columns}"
+                    hideCheckboxColumn="true"
+                    onrowaction="{!c.onHandleRowAction}"/>
+            </div>
+            <footer class="slds-card__footer">
+                <a class="slds-card__footer-action" onclick="{!c.onViewAll}">
+                    {!$Label.c.PJN_Contact_Information_Widget_View_All}
+                </a>
+            </footer>
+        </aura:if>
+    </article>
+
+    <c:PJN_CreateRecordWithRecordType sObjectName="PJN_Contact_Information__c" show="{!v.showNew}" defaultFieldValues="{!v.defaultFieldValues}" />
+</aura:component>

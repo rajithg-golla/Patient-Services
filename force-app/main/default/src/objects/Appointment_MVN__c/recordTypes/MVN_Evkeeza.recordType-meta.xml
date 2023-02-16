@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Evkeeza</fullName>
+    <active>true</active>
+    <description>Defines appointments related to Evkeeza</description>
+    <label>Evkeeza</label>
+    <picklistValues>
+        <picklist>Attended_MVN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Diagnosis_MVN__c</picklist>
+        <values>
+            <fullName>Diabetic Macular Edema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diabetic Retinopathy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPDR - Mild</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPDR - Moderate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPDR - Severe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proliferative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Missed_Appointment_Reason_MVN__c</picklist>
+        <values>
+            <fullName>Changed Physician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Issues</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Physician_Specialty_MVN__c</picklist>
+        <values>
+            <fullName>Ophthalmologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optometrist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retinal Specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recommended_Treatment_MVN__c</picklist>
+        <values>
+            <fullName>Injection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

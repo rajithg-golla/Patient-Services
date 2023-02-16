@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The major uses of intervals are to cover circumstances where both the dates are known but the interval is very short (e.g., minutes, such as in anaphylaxis) and when only imprecise dates are known but more information concerning the interval is known. --></help>
+    <label><!-- Time Between Start of Drug and Reaction --></label>
+    <name>PJN_Time_From_Start_of_Drug_to_Reaction__c</name>
+</CustomFieldTranslation>

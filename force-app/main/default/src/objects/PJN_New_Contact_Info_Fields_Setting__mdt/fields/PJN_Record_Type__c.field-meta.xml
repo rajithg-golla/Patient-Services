@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Record_Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Record Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PJN_Address</fullName>
+                <default>false</default>
+                <label>PJN_Address</label>
+            </value>
+            <value>
+                <fullName>PJN_Phone</fullName>
+                <default>false</default>
+                <label>PJN_Phone</label>
+            </value>
+            <value>
+                <fullName>PJN_Email</fullName>
+                <default>true</default>
+                <label>PJN_Email</label>
+            </value>
+            <value>
+                <fullName>PJN_Fax</fullName>
+                <default>false</default>
+                <label>PJN_Fax</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

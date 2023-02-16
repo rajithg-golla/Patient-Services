@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Screening Results --></label>
+    <name>Screening_Results_MVN__c</name>
+    <picklistValues>
+        <masterLabel>No Signs of DR</masterLabel>
+        <translation><!-- No Signs of DR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Yet Screened</masterLabel>
+        <translation><!-- Not Yet Screened --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs of DR</masterLabel>
+        <translation><!-- Signs of DR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

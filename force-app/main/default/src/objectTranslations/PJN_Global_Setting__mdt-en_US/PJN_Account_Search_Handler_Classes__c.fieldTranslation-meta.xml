@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma separated list of classes used in the Account Search. Results from each class are merged. The win order is the order they are listed (eg: A,B,C means A&gt;B&gt;C with A being the winner). --></help>
+    <label><!-- Account Search Handler Classes --></label>
+    <name>PJN_Account_Search_Handler_Classes__c</name>
+</CustomFieldTranslation>

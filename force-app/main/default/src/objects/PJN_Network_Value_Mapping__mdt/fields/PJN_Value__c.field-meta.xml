@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Value__c</fullName>
+    <description>Salesforce field value</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Salesforce field value</inlineHelpText>
+    <label>Value</label>
+    <length>4000</length>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

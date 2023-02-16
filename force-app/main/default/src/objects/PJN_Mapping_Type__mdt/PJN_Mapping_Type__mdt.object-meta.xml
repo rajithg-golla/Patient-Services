@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App: Patient Journey Navigator
+Impacted Functionality: Mapping Engine
+Purpose: Define the handler class in code associated to a Mapping Type. This is a global setting for all Programs and should not need to be changed.
+Metadata Relationship(s): --
+Created by Mavens: Yes</description>
+    <label>Mapping Type</label>
+    <pluralLabel>Mapping Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

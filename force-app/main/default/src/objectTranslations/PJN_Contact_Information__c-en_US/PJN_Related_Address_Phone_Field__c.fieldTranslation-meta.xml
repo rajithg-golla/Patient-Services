@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Related Address Phone Field --></label>
+    <name>PJN_Related_Address_Phone_Field__c</name>
+    <picklistValues>
+        <masterLabel>Phone_2_vod__c</masterLabel>
+        <translation><!-- Phone_2_vod__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone_vod__c</masterLabel>
+        <translation><!-- Phone_vod__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

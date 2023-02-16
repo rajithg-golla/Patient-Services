@@ -1,0 +1,12 @@
+<aura:event type="COMPONENT"
+            description="Signals that an action has been taken on a particular record"
+>
+    <aura:attribute name="id"
+                    type="String"
+                    description="Id of the record under consideration"
+    />
+    <aura:attribute name="action"
+                    type="String"
+                    description="The action to take, e.g. [Create, Update, Delete]"
+    />
+</aura:event>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diagnosis_MVN__c</fullName>
+    <description>The diagnosis the participant received after their appointment.</description>
+    <externalId>false</externalId>
+    <label>Diagnosis</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diabetic Macular Edema</fullName>
+                <default>false</default>
+                <label>Diabetic Macular Edema</label>
+            </value>
+            <value>
+                <fullName>Diabetic Retinopathy</fullName>
+                <default>false</default>
+                <label>Diabetic Retinopathy</label>
+            </value>
+            <value>
+                <fullName>NPDR - Mild</fullName>
+                <default>false</default>
+                <label>NPDR - Mild</label>
+            </value>
+            <value>
+                <fullName>NPDR - Moderate</fullName>
+                <default>false</default>
+                <label>NPDR - Moderate</label>
+            </value>
+            <value>
+                <fullName>NPDR - Severe</fullName>
+                <default>false</default>
+                <label>NPDR - Severe</label>
+            </value>
+            <value>
+                <fullName>Proliferative</fullName>
+                <default>false</default>
+                <label>Diabetic Retinopathy - Proliferative</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

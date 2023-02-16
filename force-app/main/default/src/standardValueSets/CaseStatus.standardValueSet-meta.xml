@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>false</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow-Up</fullName>
+        <default>false</default>
+        <label>Follow-Up</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed (On Therapy)</fullName>
+        <default>false</default>
+        <label>Closed (On Therapy)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed (Opt Out)</fullName>
+        <default>false</default>
+        <label>Closed (Opt Out)</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Activate</fullName>
+        <default>false</default>
+        <label>Activate</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Engage</fullName>
+        <default>false</default>
+        <label>Engage</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Maintain</fullName>
+        <default>false</default>
+        <label>Maintain</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

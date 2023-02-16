@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Verdeiro quando esta pontuação aditiva é aplicada se o paciente for deficiente e tiver condições adicionais.</help>
+    <label><!-- Apply If Disabled --></label>
+    <name>HealthCloudGA__ApplyIfDisabled__c</name>
+</CustomFieldTranslation>

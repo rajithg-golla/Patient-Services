@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Restituisce true (vero) se il valore del campo Etichetta stato NON è uguale a &apos; Risolto &apos;, altrimenti restituisce false (falso).</help>
+    <label><!-- IsVisibleOnPatientCard --></label>
+    <name>HealthCloudGA__IsVisibleOnPatientCard__c</name>
+</CustomFieldTranslation>

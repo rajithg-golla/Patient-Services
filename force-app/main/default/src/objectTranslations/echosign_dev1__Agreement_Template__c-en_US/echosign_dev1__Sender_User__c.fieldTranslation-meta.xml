@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When the agreement is auto sent or sent using an automated workflow, the agreement will be sent on behalf of the user specified by this field. If not specified, the current context user will be used as usual. --></help>
+    <label><!-- Send On Behalf Of --></label>
+    <name>echosign_dev1__Sender_User__c</name>
+</CustomFieldTranslation>

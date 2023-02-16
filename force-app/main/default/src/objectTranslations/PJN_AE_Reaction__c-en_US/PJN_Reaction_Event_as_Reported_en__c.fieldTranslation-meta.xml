@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Captures the original reporter&apos;s words and/or short phrases used to describe the reaction/event should be provided in an English translation for international transmission. --></help>
+    <label><!-- Reaction/Event as Reported (English) --></label>
+    <name>PJN_Reaction_Event_as_Reported_en__c</name>
+</CustomFieldTranslation>

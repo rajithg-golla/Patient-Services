@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Zip_To_Team_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>PJN_Program__c</fields>
+    <fields>PJN_Region__c</fields>
+    <fields>PJN_Territory__c</fields>
+    <fields>PJN_Case_Manager__c</fields>
+    <label>Zip To Team Compact Layout</label>
+</CompactLayout>

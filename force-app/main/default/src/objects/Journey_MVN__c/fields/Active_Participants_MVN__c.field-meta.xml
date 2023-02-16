@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Participants_MVN__c</fullName>
+    <description>Number of active Journey participants.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of active Journey participants.</inlineHelpText>
+    <label>Active Participants</label>
+    <summaryFilterItems>
+        <field>Journey_Contact_MVN__c.Exit_Date_MVN__c</field>
+        <operation>equals</operation>
+        <value/>
+    </summaryFilterItems>
+    <summaryForeignKey>Journey_Contact_MVN__c.Journey_MVN__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

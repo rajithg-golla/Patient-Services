@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Update_CM_Status_Values__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to Update CM Status Values.</description>
+    <externalId>false</externalId>
+    <label>Update CM Status Values</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

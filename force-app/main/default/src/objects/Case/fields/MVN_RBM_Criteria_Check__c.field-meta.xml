@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_RBM_Criteria_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>populated via flow and linked to RBM care plan visibility via case sharing rule</description>
+    <externalId>false</externalId>
+    <label>RBM Criteria Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

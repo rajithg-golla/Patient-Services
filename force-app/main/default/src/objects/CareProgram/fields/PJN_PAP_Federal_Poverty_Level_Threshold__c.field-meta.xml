@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_PAP_Federal_Poverty_Level_Threshold__c</fullName>
+    <description>The threshold for this program to determine PAP eligibility. Any value above this is considered ineligible.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The threshold for this program to determine PAP eligibility. Any value above this is considered ineligible.</inlineHelpText>
+    <label>PAP Federal Poverty Level Threshold</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

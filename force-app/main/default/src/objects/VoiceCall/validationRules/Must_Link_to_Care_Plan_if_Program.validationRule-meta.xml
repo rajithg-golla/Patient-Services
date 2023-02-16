@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Link_to_Care_Plan_if_Program</fullName>
+    <active>true</active>
+    <errorConditionFormula>(INCLUDES(Program_Interest__c , &quot;Ambassador&quot;) || INCLUDES(Program_Interest__c , &quot;SNOW&quot;)) 
+&amp;&amp; ISBLANK( MVN_Case__c ) 
+&amp;&amp; MVN_Case__r.RecordType.Name = &quot;CarePlan&quot;
+&amp;&amp; ISPICKVAL( MVN_Outcome__c, &quot;Call Completed&quot;) 
+&amp;&amp; NOT(ISBLANK( Program_Offered__c))</errorConditionFormula>
+    <errorDisplayField>RelatedRecordId</errorDisplayField>
+    <errorMessage>You must link to a care plan if caller shows interest in a program</errorMessage>
+</ValidationRule>

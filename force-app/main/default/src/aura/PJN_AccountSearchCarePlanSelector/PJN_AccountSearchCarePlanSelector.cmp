@@ -1,0 +1,63 @@
+<aura:component controller="PJN_AccountSearchCarePlanSelectorCtrl">
+    <aura:attribute name = "account" type = "Account" />
+    <aura:attribute name = "case"    type = "Case" />
+    <aura:attribute name = "plansWrapper"   type = "PJN_CarePlanSelectorWrapper.PJN_CarePlanRecordWrapper[]" />
+    <aura:attribute name = "fields"   type = "String" />
+    <aura:attribute name = "fieldsList"   type = "String[]" />
+    <aura:attribute name = "fieldsLabels"   type = "String[]" />
+    <aura:attribute name = "columnSize"   type = "Integer" />
+    <aura:attribute name = "show"   type = "Boolean" default="false" />
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+    <aura:handler name   = "recordSelectedEvent"
+                  event  = "c:PJN_AccountSearchRecordEvent"
+                  action = "{!c.handleCarePlanEvent}"
+    />
+
+    <aura:registerEvent name="refreshCase" type="c:PJN_AccountSearchRefreshCase"/>
+
+    <lightning:notificationsLibrary aura:id="notifLib" />
+    <lightning:overlayLibrary       aura:id="overlayLib" />
+
+    <div class="slds-m-top_xx-large">
+        <!-- Care plan options for {!v.account.FirstName} &nbsp; {!v.account.LastName} -->
+        <aura:if isTrue="{!v.show}">
+            <div class="slds-text-heading_medium slds-m-bottom_large">
+                {!$Label.c.PJN_Select_Care_Plan_Explanation_Text}
+            </div>
+
+            <div class="slds-grid slds-gutters slds-p-vertical_xxx-small slds-m-top_medium">
+                <div class="slds-col slds-size_1-of-12 slds-m-right_medium">
+                </div>
+                <aura:iteration items="{!v.fieldsLabels}" var="label">
+                    <div class="{!'slds-col slds-size_'+v.columnSize+'-of-12'}">
+                        <div class="centered-area slds-text-title_caps">{!label}</div>
+                    </div>
+                </aura:iteration>
+            </div>
+
+            <div class="slds-p-bottom_medium">
+                <aura:iteration items="{!v.plansWrapper}" var="plan">
+                    <c:PJN_AccountSearchSelectableRecord
+                        record = "{!plan.carePlanRecord}"
+                        recordAccess = "{!plan.hasAccess}"
+                        fields = "{!v.fields}"
+                        columnSize = "{!v.columnSize}"
+                    />
+                </aura:iteration>
+            </div>
+
+            <div class="slds-align_absolute-center">
+            <lightning:button
+                variant = "brand"
+                label   = "{!$Label.c.PJN_Select_Care_Plan_Button}"
+                onclick = "{! c.skipPlan }"
+            />
+            </div>
+            <aura:set attribute="else">
+                <c:PJN_Loader isLoading="true" />
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Missing_Info_on_Closed_Case</fullName>
+    <active>true</active>
+    <description>Requires the user to specify what information is missing to close the Missing Information activity.</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;MVN_Missing_Information&quot;,
+ISCHANGED(Status),
+ISPICKVAL(Status, &quot;Closed&quot;),
+ISBLANK(MVN_Missing_Information_Activity__c)
+)</errorConditionFormula>
+    <errorDisplayField>MVN_Missing_Information_Activity__c</errorDisplayField>
+    <errorMessage>Missing Information must be selected to close this activity.</errorMessage>
+</ValidationRule>

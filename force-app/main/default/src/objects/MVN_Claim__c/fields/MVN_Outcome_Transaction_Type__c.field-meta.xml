@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Outcome_Transaction_Type__c</fullName>
+    <description>Used in Claims related lists to display the value for Claim Outcome or Transaction Type stored across different fields depending on record type.</description>
+    <externalId>false</externalId>
+    <formula>CASE(RecordType.DeveloperName,
+&quot;MVN_Copay_Medical_Claim&quot;, MVN_Claim_Outcome__c,
+&quot;MVN_Copay_Pharmacy_Claim&quot;, MVN_Transaction_Type__c,
+&quot;MVN_Insurance_Claim&quot;, TEXT(MVN_Outcome__c),
+null)</formula>
+    <label>Outcome / Transaction Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

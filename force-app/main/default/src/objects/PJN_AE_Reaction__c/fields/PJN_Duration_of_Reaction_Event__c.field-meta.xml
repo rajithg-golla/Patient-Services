@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Duration_of_Reaction_Event__c</fullName>
+    <description>E2B (R2): B.2.i.6a, reactionduration (5N)
+
+E2B (R3): E.i.6a Duration of Reaction / Event (number)
+Conformance: Optional, but required if E.i.6b is populated.
+Data Type: 5N
+OID: None
+Value Allowed: Numeric</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This section will usually be computed from the start/end date and time of the reaction/event. However, there might be situations in which the precise duration of the reaction/event and date can be useful.</inlineHelpText>
+    <label>Duration of Reaction/Event</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

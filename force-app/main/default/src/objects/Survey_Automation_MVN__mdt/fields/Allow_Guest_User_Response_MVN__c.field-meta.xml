@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Guest_User_Response_MVN__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Option when sending survey invitation</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Option when sending survey invitation</inlineHelpText>
+    <label>Allow Guest User Response</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Signer Verification Method --></label>
+    <name>echosign_dev1__Signer_Verification_Method__c</name>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation>電子郵件</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government ID</masterLabel>
+        <translation>政府核發證件</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KBA</masterLabel>
+        <translation><!-- KBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password</masterLabel>
+        <translation>密碼</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation>電話</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social</masterLabel>
+        <translation>身分證</translation>
+    </picklistValues>
+</CustomFieldTranslation>

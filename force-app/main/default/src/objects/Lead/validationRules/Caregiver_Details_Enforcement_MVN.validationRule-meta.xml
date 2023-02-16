@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caregiver_Details_Enforcement_MVN</fullName>
+    <active>true</active>
+    <description>Enforces the population of caregiver fields if the Caregiver checkbox is selected.</description>
+    <errorConditionFormula>AND(
+ Caregiver_as_Primary_Contact_MVN__c = TRUE,
+OR(
+ ISBLANK(Caregiver_First_Name_MVN__c),
+ ISBLANK(Caregiver_Last_Name_MVN__c),
+ ISBLANK(TEXT(Caregiver_Gender_MVN__c))
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Caregiver_as_Primary_Contact_MVN__c</errorDisplayField>
+    <errorMessage>You must enter all caregiver information if the &apos;Caregiver as Primary Contact&apos; checkbox is selected.</errorMessage>
+</ValidationRule>

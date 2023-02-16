@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identifier for program. --></help>
+    <label><!-- Group Number --></label>
+    <name>MVN_Group_Number__c</name>
+</CustomFieldTranslation>

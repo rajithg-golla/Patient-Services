@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Related Care Plan Goal5 --></label>
+    <name>HealthCloudGA__RelatedCarePlanGoal5__c</name>
+    <relationshipLabel><!-- Care Plan Activities --></relationshipLabel>
+</CustomFieldTranslation>

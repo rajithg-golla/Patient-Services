@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Metric_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The metric type this med history record is tied to. A record with record type PJN_Metric should have a metric.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The metric type this med history record is tied to. A record with record type PJN_Metric should have a metric.</inlineHelpText>
+    <label>Metric Type</label>
+    <referenceTo>PJN_Metric_Type__c</referenceTo>
+    <relationshipLabel>Metrics</relationshipLabel>
+    <relationshipName>PJN_Medical_History</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Insurance Type --></label>
+    <name>HealthCloudGA__InsuranceType__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation>Коммерческое</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicaid</masterLabel>
+        <translation>Бесплатная мед. помощь неимущим</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicare</masterLabel>
+        <translation>Бесплатная мед. помощь престарелым</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Другое</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self-pay</masterLabel>
+        <translation>Самостоятельная оплата</translation>
+    </picklistValues>
+</CustomFieldTranslation>

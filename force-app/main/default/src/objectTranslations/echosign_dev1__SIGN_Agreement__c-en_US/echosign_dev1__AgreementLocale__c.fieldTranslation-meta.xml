@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the language of the recipients. --></help>
+    <label><!-- Language --></label>
+    <name>echosign_dev1__AgreementLocale__c</name>
+    <picklistValues>
+        <masterLabel>Chinese (China)</masterLabel>
+        <translation><!-- Chinese (China) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese (Taiwan region)</masterLabel>
+        <translation><!-- Chinese (Taiwan region) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Croatian (Croatia)</masterLabel>
+        <translation><!-- Croatian (Croatia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Czech (Czech Republic)</masterLabel>
+        <translation><!-- Czech (Czech Republic) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danish (Denmark)</masterLabel>
+        <translation><!-- Danish (Denmark) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dutch (Netherlands)</masterLabel>
+        <translation><!-- Dutch (Netherlands) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English (United Kingdom)</masterLabel>
+        <translation><!-- English (United Kingdom) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English (United States)</masterLabel>
+        <translation><!-- English (United States) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finnish (Finland)</masterLabel>
+        <translation><!-- Finnish (Finland) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French (France)</masterLabel>
+        <translation><!-- French (France) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>German (Germany)</masterLabel>
+        <translation><!-- German (Germany) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hungarian (Hungary)</masterLabel>
+        <translation><!-- Hungarian (Hungary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Icelandic (Iceland)</masterLabel>
+        <translation><!-- Icelandic (Iceland) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indonesian (Indonesia)</masterLabel>
+        <translation><!-- Indonesian (Indonesia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Italian (Italy)</masterLabel>
+        <translation><!-- Italian (Italy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japanese (Japan)</masterLabel>
+        <translation><!-- Japanese (Japan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korean (South Korea)</masterLabel>
+        <translation><!-- Korean (South Korea) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Malay (Malaysia)</masterLabel>
+        <translation><!-- Malay (Malaysia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegian (Bokmal: Norway)</masterLabel>
+        <translation><!-- Norwegian (Bokmal: Norway) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegian (Norway)</masterLabel>
+        <translation><!-- Norwegian (Norway) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwegian (Nynorsk: Norway)</masterLabel>
+        <translation><!-- Norwegian (Nynorsk: Norway) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polish (Poland)</masterLabel>
+        <translation><!-- Polish (Poland) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portuguese (Brazil)</masterLabel>
+        <translation><!-- Portuguese (Brazil) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portuguese (Portugal)</masterLabel>
+        <translation><!-- Portuguese (Portugal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Romanian (Romania)</masterLabel>
+        <translation><!-- Romanian (Romania) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russian (Russia)</masterLabel>
+        <translation><!-- Russian (Russia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovak (Slovakia)</masterLabel>
+        <translation><!-- Slovak (Slovakia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovenian (Slovenia)</masterLabel>
+        <translation><!-- Slovenian (Slovenia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish (Basque: Spain)</masterLabel>
+        <translation><!-- Spanish (Basque: Spain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish (Catalan: Spain)</masterLabel>
+        <translation><!-- Spanish (Catalan: Spain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish (Spain)</masterLabel>
+        <translation><!-- Spanish (Spain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swedish (Sweden)</masterLabel>
+        <translation><!-- Swedish (Sweden) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thai (Thailand)</masterLabel>
+        <translation><!-- Thai (Thailand) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkish (Turkey)</masterLabel>
+        <translation><!-- Turkish (Turkey) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ukrainian (Ukraine)</masterLabel>
+        <translation><!-- Ukrainian (Ukraine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vietnamese (Vietnam)</masterLabel>
+        <translation><!-- Vietnamese (Vietnam) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

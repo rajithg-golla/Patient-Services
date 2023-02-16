@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Phone record to pull information from. This value will supercede the Account Primary phone, but not a value in the Phone field of this record. --></help>
+    <label><!-- Phone Lookup --></label>
+    <lookupFilter>
+        <errorMessage><!-- Must select a Phone Contact Information record associated to the patient. --></errorMessage>
+    </lookupFilter>
+    <name>PJN_Phone_Lookup__c</name>
+    <relationshipLabel><!-- Assistance Programs (Phone Lookup) --></relationshipLabel>
+</CustomFieldTranslation>

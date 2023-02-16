@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the reporter&apos;s comments on the diagnosis, causality
+assessment or other issues considered relevant. --></help>
+    <label><!-- Reporter&apos;s Comments --></label>
+    <name>PJN_Reporter_s_Comments__c</name>
+</CustomFieldTranslation>

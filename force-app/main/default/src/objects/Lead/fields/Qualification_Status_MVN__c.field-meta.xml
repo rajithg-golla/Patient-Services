@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification_Status_MVN__c</fullName>
+    <description>Determines the qualified/unqualified status of the care plan created on conversion.</description>
+    <externalId>false</externalId>
+    <formula>CASE( RecordType.DeveloperName ,
+
+/* Libtayo Marketing */
+&quot;Libtayo_Marketing_Consumer_MVN&quot; ,
+    IF( ISPICKVAL( Prescribed_MVN__c, &quot;Yes&quot; ), &quot;Qualified&quot;, &quot;Unqualified&quot; ),
+
+/* Default */
+&quot;&quot;
+)</formula>
+    <label>Qualification Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

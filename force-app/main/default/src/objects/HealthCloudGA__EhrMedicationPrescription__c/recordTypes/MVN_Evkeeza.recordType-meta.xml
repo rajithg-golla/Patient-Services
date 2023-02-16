@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Evkeeza</fullName>
+    <active>true</active>
+    <description>Prescription for Evkeeza (evinacumab-dgnb) injection.</description>
+    <label>Evkeeza</label>
+    <picklistValues>
+        <picklist>MVN_Dose__c</picklist>
+        <values>
+            <fullName>15 mg%2Fkg IV once monthly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Infusion_Fluid_Type__c</picklist>
+        <values>
+            <fullName>0%2E9%25 Sodium Chloride Injection%2C USP 250 mL bag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%25 Dextrose Injection%2C USP 250 mL bag</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Substitution__c</picklist>
+        <values>
+            <fullName>Dispense As Written</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substitution Permitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Dose_Instructions__c</picklist>
+        <values>
+            <fullName>Four Times a Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once Every Other Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once a Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Times a Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twice a Day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Dosing_Info__c</picklist>
+        <values>
+            <fullName>Four times a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Once every other day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three times a day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twice a day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Pharmacy_Selection_Reason__c</picklist>
+        <values>
+            <fullName>Patient Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payer Mandated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Round Robin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Physician_Signature__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Quantity__c</picklist>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_FR_MaterialsOrder_Map</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MasterLabel</field>
+        <operation>contains</operation>
+        <value>Material</value>
+    </filters>
+    <label>Fulfillment Request Materials Order Map</label>
+    <language>en_US</language>
+</ListView>

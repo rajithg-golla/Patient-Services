@@ -1,0 +1,20 @@
+<aura:component implements="c:PJN_EnrollmentWizardStepIntf">
+    <aura:attribute name="listRecordsPerPage" type="Integer" />
+    <aura:attribute name="listInitialSortField" type="String"/>
+    <aura:attribute name="listInitialSortDirectiton" type="String"/>
+    <aura:attribute name="listShowAllForCurrentPatient" type="Boolean"/>
+    <aura:attribute name="showModal" type="Boolean"/>
+
+    <aura:handler event="lightning:tabRefreshed" action="{!c.refresh}"/>
+    <aura:handler event="force:refreshView" action="{!c.refresh}"/>
+
+    <c:pjnMedicalHistory
+        aura:id="medHistory"
+        listRecordsPerPage="{! v.listRecordsPerPage }"
+        listInitialSortField="{! v.listInitialSortField }"
+        listInitialSortDirectiton="{! v.listInitialSortDirectiton }"
+        listShowAllForCurrentPatient="{! v.listShowAllForCurrentPatient }"
+        showModal="{! v.showModal}"
+        recordId="{! v.carePlanId}">
+    </c:pjnMedicalHistory>
+</aura:component>

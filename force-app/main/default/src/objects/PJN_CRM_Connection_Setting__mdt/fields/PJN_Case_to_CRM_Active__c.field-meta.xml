@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Case_to_CRM_Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this connection setting active for Case to CRM?</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Is this connection setting active for Case to CRM? If it&apos;s not active it will not run.</inlineHelpText>
+    <label>Active for Case to CRM</label>
+    <type>Checkbox</type>
+</CustomField>

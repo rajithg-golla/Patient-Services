@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_RBM_Central_Care_Plans_HIPAA_Consent</fullName>
+    <columns>MVN_Patient_Id__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>PJN_Physician__c</columns>
+    <columns>PJN_Therapy_Status_Formula__c</columns>
+    <columns>PJN_Program_Formula__c</columns>
+    <columns>MVN_Patient_Initials__c</columns>
+    <columns>MVN_Organization__c</columns>
+    <columns>MVN_Treatment_Site__c</columns>
+    <columns>PJN_Owner_Name_Formula__c</columns>
+    <columns>MVN_Coordinator__c</columns>
+    <columns>MVN_RBM_User__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.HealthCloudGA__CarePlan</value>
+    </filters>
+    <filters>
+        <field>MVN_HIPAA_Consent_Status__c</field>
+        <operation>equals</operation>
+        <value>Opt In</value>
+    </filters>
+    <filters>
+        <field>MVN_RBM_TerrName__c</field>
+        <operation>equals</operation>
+        <value>Central</value>
+    </filters>
+    <label>RBM Central - Care Plans (HIPAA Consent)</label>
+    <sharedTo>
+        <group>MVN_EVK_RBM</group>
+        <group>MVN_EVK_Read_Only</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,8 @@
+<aura:component >
+    <!-- CONTAINER NEEDS slds-is-relative CLASS -->
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+
+    <aura:if isTrue="{!v.isLoading}">
+        <lightning:spinner class="slds-align_absolute-center" alternativeText="Loading" size="small" />
+    </aura:if>
+</aura:component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Copay_Coinsurance_Amount__c</fullName>
+    <description>Amount in $ paid by primary insurance. This is required for approved claims only. Rejected claims may or may not have this available.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Amount in $ paid by primary insurance. This is required for approved claims only. Rejected claims may or may not have this available.</inlineHelpText>
+    <label>Copay/Coinsurance Amount</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If an event is reported by a non healthcare professional (e.g. lawyers, consumers), this data element indicates whether the occurrence of the event was subsequently confirmed by a healthcare professional. --></help>
+    <label><!-- Confirmed by HCP --></label>
+    <name>PJN_Confirmed_by_HCP__c</name>
+</CustomFieldTranslation>

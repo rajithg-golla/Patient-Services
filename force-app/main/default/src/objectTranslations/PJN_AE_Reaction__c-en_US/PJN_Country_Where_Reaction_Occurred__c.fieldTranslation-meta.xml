@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This data element captures the country where the reaction occurred. --></help>
+    <label><!-- Country Where Reaction/Event Occurred --></label>
+    <name>PJN_Country_Where_Reaction_Occurred__c</name>
+</CustomFieldTranslation>

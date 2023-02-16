@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="CarePlanPath problem gets selected">
+    <!-- ATTRIBUTES-->
+    <aura:attribute name="selectedProblem" type="HealthCloudGA__CarePlanProblem__c" />
+</aura:event>

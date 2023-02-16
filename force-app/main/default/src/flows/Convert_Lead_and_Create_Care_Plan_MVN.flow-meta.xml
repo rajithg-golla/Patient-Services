@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>For the newly converted lead pull notes from lead and apply them to the care plan</description>
+        <name>Apply_Account_Notes_to_Care_Plan_MVN</name>
+        <label>Apply Account Notes to Care Plan</label>
+        <locationX>176</locationX>
+        <locationY>1391</locationY>
+        <actionName>ApplyAccountNotesToCarePlanMVN</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Consents</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Pass new care plan Id to method to apply care plan template</description>
+        <name>Apply_Care_Plan_Template_MVN</name>
+        <label>Apply Care Plan Template</label>
+        <locationX>176</locationX>
+        <locationY>1271</locationY>
+        <actionName>ApplyCarePlanTemplateHdlrMVN</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Apply_Account_Notes_to_Care_Plan_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>If caregiver values are present on the newly converted account then create a care giver, add to the care team and set as primary contact for the care plan, otherwise just set the new account to be the primary contact</description>
+        <name>Create_Caregiver_and_Set_Primary_Contact_MVN</name>
+        <label>Create Caregiver and Set Primary Contact</label>
+        <locationX>176</locationX>
+        <locationY>1151</locationY>
+        <actionName>CareGiverHandlerMVN</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Apply_Care_Plan_Template_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Pass lead id to invokable apex</description>
+        <name>Create_CarePlan_and_Care_Team_MVN</name>
+        <label>Create CarePlan and Care Team</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <actionName>HealthCloudGA__HcProcessCreateCarePlan</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Care_Plan_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Create_Consents</name>
+        <label>Create Consents</label>
+        <locationX>176</locationX>
+        <locationY>1511</locationY>
+        <actionName>CreateConsentsHdlrMVN</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Pass Lead to Invokable apex</description>
+        <name>Lead_To_Individual_Conversion_MVN</name>
+        <label>Lead To Individual Conversion</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <actionName>HealthCloudGA__HcProcessLeadToIndividual</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_CarePlan_and_Care_Team_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>Populates Care Plan fields based on Custom Metadata mappings.</description>
+        <name>Populate_Care_Plans</name>
+        <label>Populate Care Plans</label>
+        <locationX>176</locationX>
+        <locationY>911</locationY>
+        <actionName>PopulateCarePlanHdlrMVN</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Reparent_Lead_Children_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>For configured objects (Lead Convert Child Mappings) re-parent them to the account and/or care plan</description>
+        <name>Reparent_Lead_Children_MVN</name>
+        <label>Reparent Lead Children</label>
+        <locationX>176</locationX>
+        <locationY>1031</locationY>
+        <actionName>LeadConvertReparentChildrenMVN</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Caregiver_and_Set_Primary_Contact_MVN</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>carePlanIds</name>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Populate the care plan with a lookup to the original lead so that it can be used to populate the care plan with fields from the lead on conversion.</description>
+        <name>Set_Care_Plan_Converted_Lead_MVN</name>
+        <label>Set Care Plan Converted Lead</label>
+        <locationX>176</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Care_Plan_MVN.Converted_Lead_MVN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Care_Plan_MVN</targetReference>
+        </connector>
+    </assignments>
+    <description>Convert a consumer (lead) to an account and care plan with care team and apply care plan template</description>
+    <interviewLabel>Convert Lead and Create Care Plan {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Convert Lead and Create Care Plan</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Care_Plan_MVN</name>
+        <label>Get Care Plan</label>
+        <locationX>176</locationX>
+        <locationY>551</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Care_Plan_Converted_Lead_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_CarePlan_and_Care_Team_MVN</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Converted_Lead_MVN__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update care plan with Converted Lead ID.</description>
+        <name>Update_Care_Plan_MVN</name>
+        <label>Update Care Plan</label>
+        <locationX>176</locationX>
+        <locationY>791</locationY>
+        <connector>
+            <targetReference>Populate_Care_Plans</targetReference>
+        </connector>
+        <inputReference>Get_Care_Plan_MVN</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lead_To_Individual_Conversion_MVN</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>HealthCloudGA__IsMarkedForPatientConversion__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsConverted</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

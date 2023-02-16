@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Allergy</fullName>
+    <active>true</active>
+    <description>Current or historic allergies or intolerances which have affected the patient.</description>
+    <label>Allergy/Intolerance</label>
+    <picklistValues>
+        <picklist>MVN_Diagnostic__c</picklist>
+        <values>
+            <fullName>Clinical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genetic Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Other_Treatment__c</picklist>
+        <values>
+            <fullName>Bempedoic Acid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niacin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omega 3-6-9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MVN_Treatment__c</picklist>
+        <values>
+            <fullName>Apheresis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juxtapid %28lomitapide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCSK9i</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zetia %28ezetimibe%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PJN_Type__c</picklist>
+        <values>
+            <fullName>Allergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intolerance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

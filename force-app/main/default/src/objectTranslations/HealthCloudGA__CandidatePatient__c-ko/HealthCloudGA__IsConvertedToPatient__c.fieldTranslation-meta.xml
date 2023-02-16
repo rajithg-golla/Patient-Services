@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>이 지원 환자가 표시되고 계정 레코드인 경우 적용</help>
+    <label><!-- IsConvertedToPatient --></label>
+    <name>HealthCloudGA__IsConvertedToPatient__c</name>
+</CustomFieldTranslation>

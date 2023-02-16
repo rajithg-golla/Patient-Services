@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Product which was prescribed.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please select an active product.</errorMessage>
+        <filterItems>
+            <field>CareProgramProduct.Status</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>CareProgramProduct</referenceTo>
+    <relationshipLabel>Prescriptions</relationshipLabel>
+    <relationshipName>Prescriptions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

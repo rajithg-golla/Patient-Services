@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Immettere fino a 7 nomi di campi separati da virgola relativi a questo oggetto. I dettagli del campo vengono visualizzati quando gli utenti passano il mouse sopra un oggetto nella sequenza temporale.</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

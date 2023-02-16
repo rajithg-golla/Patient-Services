@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Palauttaa arvon true, jos Kieltäytymisen osoitin = False AND Vanhentumispäivä &gt; Now().  muussa tapauksessa palauttaa arvon false.</help>
+    <label><!-- IsVisibleOnPatientCard --></label>
+    <name>HealthCloudGA__IsVisibleOnPatientCard__c</name>
+</CustomFieldTranslation>

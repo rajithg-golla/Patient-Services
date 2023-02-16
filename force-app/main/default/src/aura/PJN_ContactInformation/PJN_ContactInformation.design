@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="iconName" label="Icon Name" placeholder="custom:custom78"/>
+    <design:attribute name="iconSize" label="Icon Size" datasource="x-small,small,medium,large,x-large" default="small"/>
+</design:component>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVN_Topic__c</fullName>
+    <externalId>false</externalId>
+    <label>Topic</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>HCP Appeal</fullName>
+                <default>false</default>
+                <label>HCP Appeal</label>
+            </value>
+            <value>
+                <fullName>HCP General Support</fullName>
+                <default>false</default>
+                <label>HCP General Support</label>
+            </value>
+            <value>
+                <fullName>HCP Shipment Coordination</fullName>
+                <default>false</default>
+                <label>HCP Shipment Coordination</label>
+            </value>
+            <value>
+                <fullName>HCP Welcome Call</fullName>
+                <default>false</default>
+                <label>HCP Welcome Call</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Patient General Support</fullName>
+                <default>false</default>
+                <label>Patient General Support</label>
+            </value>
+            <value>
+                <fullName>Patient Shipment Coordination</fullName>
+                <default>false</default>
+                <label>Patient Shipment Coordination</label>
+            </value>
+            <value>
+                <fullName>Patient Welcome Call</fullName>
+                <default>false</default>
+                <label>Patient Welcome Call</label>
+            </value>
+            <value>
+                <fullName>Payer Communication</fullName>
+                <default>false</default>
+                <label>Payer Communication</label>
+            </value>
+            <value>
+                <fullName>RBM Communication</fullName>
+                <default>false</default>
+                <label>RBM Communication</label>
+            </value>
+            <value>
+                <fullName>SP Communication</fullName>
+                <default>false</default>
+                <label>SP Communication</label>
+            </value>
+            <value>
+                <fullName>Test Call</fullName>
+                <default>false</default>
+                <label>Test Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

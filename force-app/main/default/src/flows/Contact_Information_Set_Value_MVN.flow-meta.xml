@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Format and assign PJN_Address_Line_1__c, PJN_Address_Line_2__c, PJN_City__c, PJN_State__c, PJN_Postal_Code__c to PJN_Value__c</description>
+        <name>Assign_Address_MVN</name>
+        <label>Assign Address</label>
+        <locationX>440</locationX>
+        <locationY>439</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Value__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Address_Formatted_MVN</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Assign PJN_Email__c to PJN_Value__c</description>
+        <name>Assign_Email_MVN</name>
+        <label>Assign Email</label>
+        <locationX>584</locationX>
+        <locationY>438</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Value__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PJN_Email__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Format and assign PJN_Fax__c to PJN_Value__c</description>
+        <name>Assign_Fax_MVN</name>
+        <label>Assign Fax</label>
+        <locationX>748</locationX>
+        <locationY>440</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Value__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fax_Formatted_MVN</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Format and assign PJN_Phone__c to PJN_Value__c</description>
+        <name>Assign_Phone_MVN</name>
+        <label>Assign Phone</label>
+        <locationX>877</locationX>
+        <locationY>442</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PJN_Value__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Phone_Formatted_MVN</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Branch off different logic depending on the record type of the Contact Information record being saved</description>
+        <name>Record_Type_MVN</name>
+        <label>Record  Type</label>
+        <locationX>626</locationX>
+        <locationY>118</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name_MVN.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Email_MVN</targetReference>
+            </connector>
+            <label>Email</label>
+        </rules>
+        <rules>
+            <name>Phone_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name_MVN.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Phone</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Phone_MVN</targetReference>
+            </connector>
+            <label>Phone</label>
+        </rules>
+        <rules>
+            <name>Fax_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name_MVN.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Fax</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Fax_MVN</targetReference>
+            </connector>
+            <label>Fax</label>
+        </rules>
+        <rules>
+            <name>Address_MVN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Record_Type_Name_MVN.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Address</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Address_MVN</targetReference>
+            </connector>
+            <label>Address</label>
+        </rules>
+    </decisions>
+    <description>Set the complete value of a contact information record. Phone and fax numbers are displayed as (xxx) xxx-xxxx, email is displayed as an email address and addresses are displayed as address line 1, address line 2, city, state, ZIP code</description>
+    <formulas>
+        <description>Concatenated address field</description>
+        <name>Address_Formatted_MVN</name>
+        <dataType>String</dataType>
+        <expression>IF(!ISBLANK({!$Record.PJN_Address_Line_1__c}),
+{!$Record.PJN_Address_Line_1__c} + &apos;, &apos;, &apos;&apos;) +
+IF(!ISBLANK({!$Record.PJN_Address_Line_2__c}),
+{!$Record.PJN_Address_Line_2__c} + &apos;, &apos;,&apos;&apos;) +
+IF(!ISBLANK({!$Record.PJN_City__c}),
+{!$Record.PJN_City__c} + &apos;, &apos;, &apos;&apos;) +
+IF(!ISBLANK(TEXT({!$Record.PJN_State__c})),
+TEXT({!$Record.PJN_State__c}), &apos;&apos;)+ &apos; &apos;+
+IF(!ISBLANK({!$Record.PJN_Postal_Code__c}),
+{!$Record.PJN_Postal_Code__c},&apos;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <description>Formatted fax number</description>
+        <name>Fax_Formatted_MVN</name>
+        <dataType>String</dataType>
+        <expression>IF(
+LEN(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;))= 11,
+&quot;(&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),2,3)&amp;
+&quot;) &quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),5,3)&amp;
+&quot;-&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),8,4),
+&quot;(&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),1,3)&amp;
+&quot;) &quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),4,3)&amp;
+&quot;-&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Fax__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),7,4))</expression>
+    </formulas>
+    <formulas>
+        <description>Formatted phone number</description>
+        <name>Phone_Formatted_MVN</name>
+        <dataType>String</dataType>
+        <expression>IF(
+LEN(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;))= 11,
+&quot;(&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),2,3)&amp;
+&quot;) &quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),5,3)&amp;
+&quot;-&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),8,4),
+&quot;(&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),1,3)&amp;
+&quot;) &quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),4,3)&amp;
+&quot;-&quot;&amp;
+MID(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( {!$Record.PJN_Phone__c} , &quot;.&quot;, &apos;&apos;),&quot;-&quot;,&quot;&quot;),&quot;+&quot;,&quot;&quot;),7,4))</expression>
+    </formulas>
+    <interviewLabel>Contact Information Set Value {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact Information Set Value</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get record type name for the current record</description>
+        <name>Get_Record_Type_Name_MVN</name>
+        <label>Get Record Type Name</label>
+        <locationX>467</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_Type_MVN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Record_Type_Name_MVN</targetReference>
+        </connector>
+        <object>PJN_Contact_Information__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

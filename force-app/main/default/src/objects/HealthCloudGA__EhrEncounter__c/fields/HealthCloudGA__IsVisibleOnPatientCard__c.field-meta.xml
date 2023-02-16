@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__IsVisibleOnPatientCard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Return True if Status != planned OR cancelled AND Period End is greatest else returns false</description>
+    <externalId>false</externalId>
+    <formula>IF( AND( UPPER(HealthCloudGA__Status__c)  &lt;&gt; &apos;PLANNED&apos;, UPPER(HealthCloudGA__Status__c)  &lt;&gt; &apos;CANCELLED&apos;),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsVisibleOnPatientCard</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

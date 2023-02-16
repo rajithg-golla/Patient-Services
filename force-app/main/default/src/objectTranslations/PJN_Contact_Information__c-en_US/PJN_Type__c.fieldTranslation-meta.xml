@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>PJN_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business</masterLabel>
+        <translation><!-- Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home</masterLabel>
+        <translation><!-- Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailing</masterLabel>
+        <translation><!-- Mailing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile</masterLabel>
+        <translation><!-- Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Box</masterLabel>
+        <translation><!-- PO Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal</masterLabel>
+        <translation><!-- Personal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping</masterLabel>
+        <translation><!-- Shipping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work</masterLabel>
+        <translation><!-- Work --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

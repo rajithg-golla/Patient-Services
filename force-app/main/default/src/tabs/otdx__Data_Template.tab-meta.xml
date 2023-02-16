@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <auraComponent>otdx__DataTemplatePage</auraComponent>
+    <description>Created by Lightning App Builder</description>
+    <label>Data Template</label>
+    <motif>Custom66: Dice</motif>
+</CustomTab>

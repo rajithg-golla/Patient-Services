@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>この設定の名前。特定の設定の正確な名前については、ドキュメントを参照してください。</help>
+    <label><!-- Setting Name --></label>
+    <name>HealthCloudGA__SettingName__c</name>
+</CustomFieldTranslation>

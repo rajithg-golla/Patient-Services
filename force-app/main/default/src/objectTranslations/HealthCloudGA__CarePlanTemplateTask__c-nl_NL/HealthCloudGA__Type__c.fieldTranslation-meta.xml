@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>HealthCloudGA__Type__c</name>
+    <picklistValues>
+        <masterLabel>Administrative</masterLabel>
+        <translation>Administratief</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical</masterLabel>
+        <translation>Klinisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Overig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncategorized</masterLabel>
+        <translation>Niet-gecategoriseerd</translation>
+    </picklistValues>
+</CustomFieldTranslation>

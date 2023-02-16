@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geben Sie bis zu 7 kommagetrennte Feldnamen mit Bezug zu diesem Objekt ein. Felddetails werden angezeigt, wenn Benutzer den Mauszeiger über ein Objekt auf der Zeitachse bewegen.</help>
+    <label><!-- Hover Field Name --></label>
+    <name>HealthCloudGA__HoverFieldName__c</name>
+</CustomFieldTranslation>

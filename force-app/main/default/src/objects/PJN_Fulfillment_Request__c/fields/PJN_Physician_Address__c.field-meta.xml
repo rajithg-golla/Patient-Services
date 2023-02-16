@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PJN_Physician_Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to a physician&apos;s address.</description>
+    <externalId>false</externalId>
+    <label>Physician Address</label>
+    <referenceTo>PJN_Contact_Information__c</referenceTo>
+    <relationshipLabel>Fulfillment Requests (Physician Address)</relationshipLabel>
+    <relationshipName>Fulfillment_Requests1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

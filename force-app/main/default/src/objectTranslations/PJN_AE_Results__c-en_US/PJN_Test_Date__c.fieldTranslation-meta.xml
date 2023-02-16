@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User Guidance: This data element captures the date of the test or procedure. Imprecise
+dates can be used. --></help>
+    <label><!-- Test Date --></label>
+    <name>PJN_Test_Date__c</name>
+</CustomFieldTranslation>

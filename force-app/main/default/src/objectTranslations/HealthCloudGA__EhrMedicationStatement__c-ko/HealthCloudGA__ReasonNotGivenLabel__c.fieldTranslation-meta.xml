@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>처방전 작성의 이유 코드 또는 징후에 대한 식별 이름</help>
+    <label><!-- Reason Not Given Label --></label>
+    <name>HealthCloudGA__ReasonNotGivenLabel__c</name>
+</CustomFieldTranslation>

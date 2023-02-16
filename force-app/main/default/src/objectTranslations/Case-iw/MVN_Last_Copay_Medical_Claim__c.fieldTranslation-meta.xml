@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Copay Medical Claim --></label>
+    <name>MVN_Last_Copay_Medical_Claim__c</name>
+    <relationshipLabel><!-- Cases (Last Medical Copay Claim) --></relationshipLabel>
+</CustomFieldTranslation>

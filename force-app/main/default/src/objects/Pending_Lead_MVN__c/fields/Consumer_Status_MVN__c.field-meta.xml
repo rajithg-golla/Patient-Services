@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consumer_Status_MVN__c</fullName>
+    <externalId>false</externalId>
+    <label>Consumer Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>true</default>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <fullName>Interaction</fullName>
+                <default>false</default>
+                <label>Interaction</label>
+            </value>
+            <value>
+                <fullName>Consented</fullName>
+                <default>false</default>
+                <label>Consented</label>
+            </value>
+            <value>
+                <fullName>Declined Consent</fullName>
+                <default>false</default>
+                <label>Declined Consent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

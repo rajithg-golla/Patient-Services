@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Missed Appointment Reason --></label>
+    <name>Missed_Appointment_Reason_MVN__c</name>
+    <picklistValues>
+        <masterLabel>Changed Physician</masterLabel>
+        <translation><!-- Changed Physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rescheduled</masterLabel>
+        <translation><!-- Rescheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation Issues</masterLabel>
+        <translation><!-- Transportation Issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
